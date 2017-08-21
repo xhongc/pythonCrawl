@@ -29,7 +29,7 @@ def login():
         'source':'None',
         'redir':'https://www.douban.com',
         'form_email': '408737515@qq.com',
-        'form_password': 'chao123456789..',
+        'form_password': '****',
         'remember':'on',
         'login': '登录',
         'captcha-solution': capt[0],
