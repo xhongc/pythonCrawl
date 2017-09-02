@@ -1,5 +1,5 @@
 def shell_sort(lists):
-    # 希尔排序
+    希尔排序
     count = len(lists)
     step = 2
     group = count // step
