@@ -1,1 +1,0 @@
-@"d:\work\python\learngit\blog_env\scripts\python.exe" "d:\work\python\learngit\blog_env\Scripts\markdown_py" %*
