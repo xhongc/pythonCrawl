@@ -1,55 +1,43 @@
 ## ladou_spider<br />
-&amp;nbsp;<br />
+<br />
 *使用scrapy、redis、mysq l实现的一个分布式网络爬虫,底层存储MySQL数据库,分布式使用redis实现。*<br />
-&amp;nbsp;<br />
+<br />
 - 分布式使用redis实现，redis中存储了工程的request，stats信息，能够对各个机器上的爬虫实现集中管理，这样可以 解决爬虫的性能瓶颈，利用redis的高效和易于扩展能够轻松实现高效率下载：当redis存储或者访问速度遇到瓶颈时，可以 通过增大redis集群数和爬虫集群数量改善。<br />
 - MySQL存储，将拉勾网Python相关的职位信息存入数据库。爬取内容包括职位信息、薪酬、公司名称、公司地点、发布时间等<br />
 - 反爬虫策略：<br />
 +创建cookie.py 实现模拟登录，并保存cookie，实现在download middleware 加载cookie&nbsp;<br />
 +实现了一个download middleware，不停的变user-aget<br />
-<br />
-<br />
 - 调试策略的实现：<br />
 将系统log信息写到文件中<br />
-<br />
-<br />
 - 文件，信息存储<br />
-实现了FilePipeline可以将指定扩展名的文件下载到本地，保存为json或csv格式。<br />
+实现了FilePipeline可以将指定扩展名的文件下载到本地，保存为json或csv格式。
 实现了Pipeline连接 mysql 保存数据库。<br />
-<br />
-<br />
 - 访问速度动态控制:<br />
 跟据网络延迟，分析出scrapy服务器和网站的响应速度，动态改变网站下载延迟<br />
+### 运行redis
 <br />
-<br />
-### 运行redis<br />
-&amp;nbsp;<br />
 - 想要加载自己的配置需要打开一个cmd窗口 使用cd命令切换目录到 D:\redis 运行 redis-server.exe redis.windows.conf 。<br />
 - 记得每一次运行程序时要记得清空redis缓存，不然爬虫不会进行<br />
 redis-cli flushdb<br />
 - 再另启一个cmd窗口，原来的不要关闭，不然就无法访问服务端了。<br />
 切换到redis目录下运行 redis-cli.exe -h 127.0.0.1 -p 6379&nbsp;<br />
 <br />
-<br />
-&amp;nbsp;<br />
+
 ### scrapy-redis 配置<br />
-&gt; settings.py配置redis（在scrapy-redis 自带的例子中已经配置好）<br />
-&gt; SCHEDULER = &quot;scrapy_redis.scheduler.Scheduler&quot;<br />
-&gt; SCHEDULER_PERSIST = True<br />
-&gt; SCHEDULER_QUEUE_CLASS = 'scrapy_redis.queue.SpiderPriorityQueue'<br />
-&gt; REDIS_URL = None<span style="white-space:pre">							</span> # 一般情况可以省去<br />
-&gt; REDIS_HOST = '127.0.0.1' <span style="white-space:pre">				</span># 也可以根据情况改成 localhost<br />
-&gt; REDIS_PORT = 6379<br />
-&gt; spider 继承RedisSpider<br />
-&gt; class tempSpider(RedisSpider) &nbsp;<br />
-&gt; name = &quot;temp&quot;<br />
-&gt; redis_key &nbsp;= ''temp:start_url&quot;<br />
-<br />
-<br />
-<br />
-<br />
+>  settings.py配置redis（在scrapy-redis 自带的例子中已经配置好）<br />
+> SCHEDULER = &quot;scrapy_redis.scheduler.Scheduler&quot;<br />
+> SCHEDULER_PERSIST = True<br />
+> SCHEDULER_QUEUE_CLASS = 'scrapy_redis.queue.SpiderPriorityQueue'<br />
+REDIS_URL = None<span style="white-space:pre">							</span> # 一般情况可以省去<br />
+ REDIS_HOST = '127.0.0.1' <span style="white-space:pre">				</span># 也可以根据情况改成 localhost<br />
+ REDIS_PORT = 6379<br />
+ spider 继承RedisSpider<br />
+ class tempSpider(RedisSpider) &nbsp;<br />
+name = &quot;temp&quot;<br />
+redis_key &nbsp;= ''temp:start_url&quot;<br />
+
 ### Scrapy-Redis 全部配置<br />
-```<br />
+```
 #启用Redis调度存储请求队列<br />
 SCHEDULER = &quot;scrapy_redis.scheduler.Scheduler&quot;<br />
 &nbsp;<br />
