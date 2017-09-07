@@ -29,19 +29,19 @@ redis-cli flushdb
 &nbsp;
 ### scrapy-redis 配置
 > settings.py配置redis（在scrapy-redis 自带的例子中已经配置好）
-SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-SCHEDULER_PERSIST = True
-SCHEDULER_QUEUE_CLASS = 'scrapy_redis.queue.SpiderPriorityQueue'
-REDIS_URL = None							 # 一般情况可以省去
-REDIS_HOST = '127.0.0.1' 				# 也可以根据情况改成 localhost
-REDIS_PORT = 6379
-spider 继承RedisSpider
-class tempSpider(RedisSpider)  
-name = "temp"
-redis_key  = ''temp:start_url"
+> SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+> SCHEDULER_PERSIST = True
+> SCHEDULER_QUEUE_CLASS = 'scrapy_redis.queue.SpiderPriorityQueue'
+> REDIS_URL = None							 # 一般情况可以省去
+> REDIS_HOST = '127.0.0.1' 				# 也可以根据情况改成 localhost
+> REDIS_PORT = 6379
+> spider 继承RedisSpider
+> class tempSpider(RedisSpider)  
+> name = "temp"
+> redis_key  = ''temp:start_url"
 
 
-###Scrapy-Redis 全部配置
+### Scrapy-Redis 全部配置
 ```
 #启用Redis调度存储请求队列
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
