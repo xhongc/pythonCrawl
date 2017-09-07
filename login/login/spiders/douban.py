@@ -52,5 +52,4 @@ class DoubanSpider(scrapy.Spider):
         item = LoginItem()
         name = response.xpath("//div[@class='info']/h1/text()").extract_first().strip()
         item['name'] = name
-
         yield item

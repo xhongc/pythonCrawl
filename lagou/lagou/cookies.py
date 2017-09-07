@@ -28,4 +28,4 @@ def get_cookies(account,password):
     else:
         print('Error')
 if __name__ =='__main__':
-    get_cookies("15260959391","chao123456789..")
+    get_cookies("**","$$")
