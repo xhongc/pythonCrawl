@@ -6,15 +6,16 @@
     def start_requests(self):
         return [Request('https://accounts.douban.com/login',meta={'cookiejar':1},callback=self.login)]
 ```
-<br>
+
 2. 回调到login函数实现登陆。<br>
 - 获取验证码<br>
+
 ```python
-capt = response.xpath('//div[@class="item item-captcha"]/div/img/@src').extract_first()
+    capt = response.xpath('//div[@class="item item-captcha"]/div/img/@src').extract_first()
 ```
 - 手动输入并传入参数<br>
 ```python
-captcha = input('请手动输入captcha:\n')
+    captcha = input('请手动输入captcha:\n')
             data = {
                 'source': 'None',
                 'redir': 'https://www.douban.com',
@@ -36,7 +37,7 @@ captcha = input('请手动输入captcha:\n')
 
 3. Formrequest 返回表单信息<br>
 ```python
-return [Request(self.start_urls,
+    return [Request(self.start_urls,
                        meta={'cookiejar':response.meta['cookiejar']},
                        callback=self.parse
                        )]
