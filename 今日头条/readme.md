@@ -13,7 +13,8 @@
 我们查看网页审查，分析Ajax加载的秘密。 
 首先动态加载肯定不是Doc目录下的，所以应该在XHR下查找。 
 ![](http://img.blog.csdn.net/20170620072635684?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ3g4NjQxMDIyNTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-2. 分析街头美拍详细页面的网页组成
-3. 分析索引页内容
-4. 下载图片及保存数据库
-5. 开启循环和多进程
+2. 分析街头美拍详细页面的网页组成<br>
+3. 分析索引页内容<br>
+4. 下载图片及保存数据库<br>
+5. 开启循环和多进程<br>
+<br>
