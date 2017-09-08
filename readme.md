@@ -15,4 +15,4 @@
 [IP爬虫](https://github.com/xhongc/pythonCrawl)
 <br>
 ### 利用tesseract库实现简单验证码的识别
-[验证过识别](https://github.com/xhongc/pythonCrawl)
+[验证码识别](https://github.com/xhongc/pythonCrawl)
