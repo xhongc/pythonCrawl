@@ -9,18 +9,22 @@ class CrawlCai491(CrawlSpider):
     start_urls = ["https://496.cc"]
 
     rules = [
-        Rule(LinkExtractor(allow=('zl/List\.Aspx\?id\=([\d]+)')), callback="parse_item1"),
-        Rule(LinkExtractor(allow=(r'https://496.cc/zl/articletypelist.aspx?typeid=\d+')),callback='parse_item2')
+        Rule(LinkExtractor(allow=('/zl/List\.Aspx\?id\=([\d+])'))),
+        Rule(LinkExtractor(allow=('/zl/view\.aspx.*?')),callback='parse_item1')
     ]
 
     def parse_item1(self,response):
-        print(response.url)
+        url = response.url
         item = Cai491Item()
         li1 = response.xpath("//html/body/div[@class='xx']").extract()
-        item['name'] = li1
-        print(item)
+        item['name'] = url
+        #print(item)
         yield item
 
 
-    def parse_utem2(self):
-        pass
+    # def parse_item2(self):
+    #     url2 = response.url
+    #     print(url2)
+    #     tem = Cai491Item()
+    #     item['name'] = url2
+    #     yield item
