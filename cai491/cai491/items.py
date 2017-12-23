@@ -10,5 +10,7 @@ import scrapy
 
 class Cai491Item(scrapy.Item):
     # define the fields for your item here like:
-    name = scrapy.Field()
+    title = scrapy.Field()
 
+class Cai491(scrapy.Item):
+    content = scrapy.Field()
