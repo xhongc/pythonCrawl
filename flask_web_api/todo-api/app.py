@@ -1,6 +1,6 @@
 from flask import Flask,jsonify,abort,request,url_for
 import json
-from flask.ext.httpauth import HTTPBasicAuth
+from flask_httpauth import HTTPBasicAuth
 app = Flask(__name__)
 auth = HTTPBasicAuth()
 tasks = [
