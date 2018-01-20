@@ -27,6 +27,14 @@ class App(QWidget):
             print('what do you want?')
         self.show()
 
+'''Overview		
+QMessageBox.Cancel	QMessageBox.Ok	QMessageBox.Help
+QMessageBox.Open	QMessageBox.Save	QMessageBox.SaveAll
+QMessageBox.Discard	QMessageBox.Close	QMessageBox.Apply
+QMessageBox.Reset	QMessageBox.Yes	QMessageBox.YesToAll
+QMessageBox.No	QMessageBox.NoToAll	QMessageBox.NoButton
+QMessageBox.RestoreDefaults	QMessageBox.Abort	QMessageBox.Retry'''
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = App()
