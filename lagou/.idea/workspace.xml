@@ -31,8 +31,8 @@
       <file leaf-file-name="crawl_lagou.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lagou/spiders/crawl_lagou.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="468">
+              <caret line="38" column="61" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="61" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -43,8 +43,8 @@
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lagou/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+            <state relative-caret-position="252">
+              <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="68" />
               <folding>
                 <marker date="1501659841746" expanded="true" signature="861:947" ph="insert into info01... " />
               </folding>
@@ -77,11 +77,21 @@
       <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lagou/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="324">
+              <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
                 <element signature="e#168#194#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lagou/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="62" column="48" lean-forward="false" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,14 +121,14 @@
       <list>
         <option value="$PROJECT_DIR$/lagou/items.py" />
         <option value="$PROJECT_DIR$/lagou/pipelines.py" />
-        <option value="$PROJECT_DIR$/lagou/settings.py" />
-        <option value="$PROJECT_DIR$/lagou/spiders/crawl_lagou.py" />
         <option value="$PROJECT_DIR$/lagou/user_agents.py" />
         <option value="$PROJECT_DIR$/lagou/middlewares.py" />
         <option value="$USER_HOME$/Desktop/wei.py" />
         <option value="$PROJECT_DIR$/lagou/cookies.py" />
         <option value="$USER_HOME$/Desktop/test/Auto_v4 - 副本.py" />
         <option value="$USER_HOME$/Desktop/test/Auto_v4.py" />
+        <option value="$PROJECT_DIR$/lagou/settings.py" />
+        <option value="$PROJECT_DIR$/lagou/spiders/crawl_lagou.py" />
       </list>
     </option>
   </component>
@@ -149,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -178,12 +189,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../支付宝" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -481,9 +491,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18759455" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -796,13 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lagou/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../SinaSpider-master/Sina_spider3/Sina_spider3/user_agents.py" />
     <entry file="file://$PROJECT_DIR$/../SinaSpider-master/Sina_spider3/Sina_spider3/middleware.py" />
     <entry file="file://$PROJECT_DIR$/../SinaSpider-master/Sina_spider1/Sina_spider1/cookies.py" />
@@ -831,6 +834,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/test/Auto_v4 - 副本.py" />
+    <entry file="file://$USER_HOME$/Desktop/test/Auto_v4.py" />
+    <entry file="file://$PROJECT_DIR$/lagou/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="68" />
+          <folding>
+            <marker date="1501659841746" expanded="true" signature="861:947" ph="insert into info01... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lagou/user_agents.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -841,30 +856,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lagou/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="324">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
           <folding>
             <element signature="e#168#194#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/test/Auto_v4 - 副本.py" />
-    <entry file="file://$USER_HOME$/Desktop/test/Auto_v4.py" />
-    <entry file="file://$PROJECT_DIR$/lagou/pipelines.py">
+    <entry file="file://$PROJECT_DIR$/lagou/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-          <folding>
-            <marker date="1501659841746" expanded="true" signature="861:947" ph="insert into info01... " />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="62" column="48" lean-forward="false" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lagou/spiders/crawl_lagou.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="468">
+          <caret line="38" column="61" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="61" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>

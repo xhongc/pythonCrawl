@@ -58,9 +58,11 @@ REDIS_PORT = 6379
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'lagou.middlewares.MyCustomDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+    'lagou.middlewares.MyCustomDownloaderMiddleware': 543,
+    'lagou.middlewares.UserAgentMiddleware': 540,
+
+}
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
