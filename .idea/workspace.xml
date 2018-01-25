@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1be0d9-07b3-4efa-9499-f6dde6cd94c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/spider_api.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/eggs/projectcp/ver0124.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/eggs/projectcp/ver20180124.egg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/.idea/workspace.xml" afterPath="$PROJECT_DIR$/cp_plan/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/settings.py" afterPath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/spider_api.py" afterPath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/spider_api.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/settings.py" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spider_api.py" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/spider_api.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/open_wait.json" afterPath="$PROJECT_DIR$/cp_plan/open_wait.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/plan_content.json" afterPath="$PROJECT_DIR$/cp_plan/plan_content.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/scrapy.cfg" afterPath="$PROJECT_DIR$/cp_plan/scrapy.cfg" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,8 +46,8 @@
       <file leaf-file-name="doubanbook.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/豆瓣图书/doubanbook.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state relative-caret-position="18">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,14 +159,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -176,11 +178,28 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cp_plan" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../支付宝" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -469,10 +488,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-7" y="0" width="697" height="775" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41225415" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42700157" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -898,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/豆瓣图书/doubanbook.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        <state relative-caret-position="18">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
