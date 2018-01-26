@@ -1,0 +1,45 @@
+2018-01-26 20:10:21 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: cp_plan)
+2018-01-26 20:10:21 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'cp_plan', 'DOWNLOAD_DELAY': 1.5, 'FEED_EXPORT_ENCODING': 'utf-8', 'LOG_FILE': 'logs\\cp_plan\\pk10\\d5ce602e029111e8b0d5089e01bd501c.log', 'NEWSPIDER_MODULE': 'cp_plan.spiders', 'SPIDER_MODULES': ['cp_plan.spiders']}
+2018-01-26 20:10:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-01-26 20:10:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'cp_plan.middlewares.RandomUserAgent',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-01-26 20:10:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-01-26 20:10:21 [scrapy.middleware] INFO: Enabled item pipelines:
+['cp_plan.pipelines.CpPlanPipeline']
+2018-01-26 20:10:21 [scrapy.core.engine] INFO: Spider opened
+2018-01-26 20:10:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-01-26 20:10:21 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6031
+2018-01-26 20:10:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: None)
+2018-01-26 20:10:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)
+2018-01-26 20:10:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)
+2018-01-26 20:10:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)
+2018-01-26 20:10:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)
+2018-01-26 20:10:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)
+2018-01-26 20:11:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)
+2018-01-26 20:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)
+2018-01-26 20:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)
+2018-01-26 20:11:22 [scrapy.extensions.logstats] INFO: Crawled 9 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-26 20:11:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)
+2018-01-26 20:11:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)
+2018-01-26 20:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)
+2018-01-26 20:11:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)
+2018-01-26 20:11:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pk10.json> (referer: http://56070.la/json/pk10.json)

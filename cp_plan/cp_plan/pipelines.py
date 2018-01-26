@@ -11,7 +11,9 @@ class CpPlanPipeline(object):
     def __init__(self):
         self.f = open('plan_content.json','w',encoding='utf-8')
         self.g = open('open_wait.json', 'w', encoding='utf-8')
+        self.sign_count = 0
     def process_item(self, item, spider):
+        
         if isinstance(item, CpPlanItem):
             # 你的处理方法
             content = json.dumps(dict(item), ensure_ascii=False) + ",\n"

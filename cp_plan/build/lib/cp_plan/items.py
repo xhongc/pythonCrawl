@@ -14,7 +14,7 @@ class CpPlanItem(scrapy.Item):
     title = scrapy.Field()
     type = scrapy.Field()
     gameId = scrapy.Field()
-
+    
 class Wait_Item(scrapy.Item):
     N1 =scrapy.Field()
     N2 =scrapy.Field()
