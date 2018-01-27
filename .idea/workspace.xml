@@ -2,48 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1be0d9-07b3-4efa-9499-f6dde6cd94c2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/46aa49dc029111e8abfb089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/6ff8f412029011e898c4089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/8e09044a029111e894c5089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/b7650fee029011e89891089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/d5f2c2ac029111e885c3089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/feeb5d34029011e8a894089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/230da582029111e89eef089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/7098ef02029011e8b92b089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/7860c406024911e881a7089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/bd0e34f6028f11e8ba3e089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/d597a9a2029111e89dd3089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/f429d0e4028f11e8895a089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/e0d1fb68028f11e8a979089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/049833ee029011e88408089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/4689526c029111e8bbf2089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/705b294c029011e8b4e1089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/b1bc908c029111e88198089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/db3aed24029011e89eeb089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/f5b7608c028f11e886f2089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/232c2e28029111e8832d089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/70361458029011e8bbc4089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/d60ce398029111e8be6d089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/f62984b4028f11e89159089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/22c177ac029111e8aef3089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/70b6cc12029011e8ab0d089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/d5ce602e029111e8b0d5089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/f69629b0028f11e8a161089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/0c90df18026f11e8941e089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/3054808a026f11e89887089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/9b9e2fcc026f11e8b324089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/f7293940028f11e8aa28089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/22b047f6029111e8bbb3089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/6fe3a8e2029011e8b933089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/d6305d34029111e8ae95089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/f7ba2040028f11e89393089e01bd501c.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/SpiderKeeper.db" afterPath="$PROJECT_DIR$/cp_plan/SpiderKeeper.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/dbs/cp_plan.db" afterPath="$PROJECT_DIR$/cp_plan/dbs/cp_plan.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/.idea/workspace.xml" afterPath="$PROJECT_DIR$/cp_plan/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/04ab5d7a029011e8bfa9089e01bd501c.log" afterPath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/04ab5d7a029011e8bfa9089e01bd501c.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/2858d064029011e88cee089e01bd501c.log" afterPath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/2858d064029011e88cee089e01bd501c.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/4c1ad264029011e89306089e01bd501c.log" afterPath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/4c1ad264029011e89306089e01bd501c.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/7017b652029011e88c0f089e01bd501c.log" afterPath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/7017b652029011e88c0f089e01bd501c.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/ac29d762029211e8b615089e01bd501c.log" afterPath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/ac29d762029211e8b615089e01bd501c.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/open_wait.json" afterPath="$PROJECT_DIR$/cp_plan/open_wait.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/plan_content.json" afterPath="$PROJECT_DIR$/cp_plan/plan_content.json" />
     </list>
@@ -68,8 +30,8 @@
       <file leaf-file-name="beijingpk10.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cp_result/cp_result/spiders/beijingpk10.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="21" column="66" lean-forward="false" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+            <state relative-caret-position="235">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -184,6 +146,7 @@
         <option value="$PROJECT_DIR$/算法系列/shell_sort.py" />
         <option value="$PROJECT_DIR$/websocket.py" />
         <option value="$PROJECT_DIR$/py3_md5.py" />
+        <option value="$USER_HOME$/Desktop/zhifubao/zfb_main.py" />
       </list>
     </option>
   </component>
@@ -218,7 +181,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../支付宝" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/zhifubao/zfb_main.py" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -548,22 +511,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/py3_md5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/login/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/login/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -924,21 +871,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cp_result/cp_result/spiders/beijingpk10.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="21" column="66" lean-forward="false" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/login/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/zhifubao/zfb_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="124" column="40" lean-forward="true" selection-start-line="124" selection-start-column="40" selection-end-line="124" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/zhifubao/zfb_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cp_result/cp_result/spiders/beijingpk10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
