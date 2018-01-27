@@ -1,0 +1,424 @@
+2018-01-26 20:30:05 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: cp_plan)
+2018-01-26 20:30:05 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'cp_plan', 'DOWNLOAD_DELAY': 1.5, 'FEED_EXPORT_ENCODING': 'utf-8', 'LOG_FILE': 'logs\\cp_plan\\ssc\\a0c58b0c029411e8849f089e01bd501c.log', 'NEWSPIDER_MODULE': 'cp_plan.spiders', 'SPIDER_MODULES': ['cp_plan.spiders']}
+2018-01-26 20:30:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-01-26 20:30:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'cp_plan.middlewares.RandomUserAgent',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-01-26 20:30:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-01-26 20:30:06 [scrapy.middleware] INFO: Enabled item pipelines:
+['cp_plan.pipelines.CpPlanPipeline']
+2018-01-26 20:30:06 [scrapy.core.engine] INFO: Spider opened
+2018-01-26 20:30:06 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-01-26 20:30:06 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-01-26 20:30:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: None)
+2018-01-26 20:30:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: None)
+2018-01-26 20:30:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: None)
+2018-01-26 20:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: None)
+2018-01-26 20:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-26 20:30:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-26 20:31:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://56070.la/json/cqssc_h3zx.json> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2018-01-26 20:31:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://56070.la/json/cqssc_h3z6.json> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+2018-01-26 20:31:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://56070.la/json/cqssc.json> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2018-01-26 20:31:06 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2018-01-26 20:31:25 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://56070.la/json/cqssc_h3z6.json> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2018-01-26 20:31:30 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://56070.la/json/cqssc.json> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+2018-01-26 20:31:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-26 20:31:43 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://56070.la/json/cqssc_h3zx.json> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+2018-01-26 20:31:46 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET http://56070.la/json/cqssc_h3z6.json> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2018-01-26 20:31:46 [scrapy.core.scraper] ERROR: Error downloading <GET http://56070.la/json/cqssc_h3z6.json>
+Traceback (most recent call last):
+  File "c:\users\hongchao\appdata\local\programs\python\python36\lib\site-packages\twisted\internet\defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "c:\users\hongchao\appdata\local\programs\python\python36\lib\site-packages\twisted\python\failure.py", line 393, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "c:\users\hongchao\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2018-01-26 20:32:06 [scrapy.extensions.logstats] INFO: Crawled 7 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2018-01-26 20:32:06 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET http://56070.la/json/cqssc_h3zx.json> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2018-01-26 20:32:06 [scrapy.core.scraper] ERROR: Error downloading <GET http://56070.la/json/cqssc_h3zx.json>
+Traceback (most recent call last):
+  File "c:\users\hongchao\appdata\local\programs\python\python36\lib\site-packages\twisted\internet\defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "c:\users\hongchao\appdata\local\programs\python\python36\lib\site-packages\twisted\python\failure.py", line 393, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "c:\users\hongchao\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2018-01-26 20:32:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-26 20:32:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'N1': '9',
+ 'N2': '6',
+ 'N3': '1',
+ 'N4': '6',
+ 'N5': '8',
+ 'gameId': '重庆时时彩',
+ 'gamedate': 20180126087}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'title': '087-089期 后二【0124679-0125679】第2期 088期 等开'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '086-088期 后二【0134568-0235678】第1期 086期 61582 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '084-086期 后二【0134578-0345789】第2期 085期 48773 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '083-085期 后二【0123589-0356789】第1期 083期 54298 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '082-084期 后二【0123479-1356789】第1期 082期 16901 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '081-083期 后二【0134578-0123458】第1期 081期 82908 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '078-080期 后二【0124567-0234578】第3期 080期 55069 挂',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '076-078期 后二【0235679-0234679】第2期 077期 27659 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '075-077期 后二【0124678-1346789】第1期 075期 36171 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '074-076期 后二【1234578-0345678】第1期 074期 14228 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '071-073期 后二【0124578-0124679】第3期 073期 27109 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '068-070期 后二【0124579-1345679】第3期 070期 04084 挂',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '065-067期 后二【0124569-0346789】第3期 067期 42467 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '062-064期 后二【2345679-0235678】第3期 064期 54561 挂',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '060-062期 后二【0134567-0134789】第2期 061期 82137 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '057-059期 后二【0126789-0124689】第3期 059期 02006 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '056-058期 后二【0145689-0145679】第1期 056期 21917 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '055-057期 后二【0345689-0123468】第1期 055期 27803 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '054-056期 后二【1345678-1245679】第1期 054期 18145 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '052-054期 后二【0345679-0134567】第2期 053期 81235 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '051-053期 后二【1234689-0234679】第1期 051期 30840 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '048-050期 后二【1345789-1235679】第3期 050期 18326 挂',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '046-048期 后二【0135789-2356789】第2期 047期 27472 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '045-047期 后二【0134567-0123459】第1期 045期 08515 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '044-046期 后二【0235679-0345679】第1期 044期 48975 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '043-045期 后二【0124678-0234569】第1期 043期 16322 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '042-044期 后二【0456789-1256789】第1期 042期 63447 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '040-042期 后二【2345678-0123489】第2期 041期 39261 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '039-041期 后二【1345678-0135789】第1期 039期 24135 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '036-038期 后二【0124568-0456789】第3期 038期 77794 挂',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '035-037期 后二【0134567-0234678】第1期 035期 44278 中',
+ 'type': '后二'}
+2018-01-26 20:32:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '032-034期 后二【0126789-0134679】第3期 034期 17530 挂',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '030-032期 后二【1245679-1234679】第2期 031期 82219 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '028-030期 后二【1256789-0234578】第2期 029期 91280 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '027-029期 后二【0234569-0123579】第1期 027期 94009 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '026-028期 后二【0234567-1245789】第1期 026期 42222 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '025-027期 后二【1234679-0236789】第1期 025期 71167 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '023-025期 后二【0123569-1234578】第2期 024期 25802 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '022-024期 后二【0123459-0246789】第1期 022期 17106 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '020-022期 后二【0123459-0135679】第2期 021期 12829 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '017-019期 后二【0156789-0123678】第3期 019期 64844 挂',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '014-016期 后二【1236789-0246789】第3期 016期 38586 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '013-015期 后二【0156789-0123679】第1期 013期 50951 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '012-014期 后二【0125678-0123489】第1期 012期 19569 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '011-013期 后二【1235689-2345689】第1期 011期 03795 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '008-010期 后二【0234568-2456789】第3期 010期 65419 挂',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '007-009期 后二【0134567-0124789】第1期 007期 42534 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '005-007期 后二【0123467-3456789】第2期 006期 99664 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '004-006期 后二【0123568-0123479】第1期 004期 85707 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '003-005期 后二【0134579-1245789】第1期 003期 16141 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '002-004期 后二【0135689-0125678】第1期 002期 33696 中',
+ 'type': '后二'}
+2018-01-26 20:32:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '120-002期 后二【1234579-1356789】第2期 001期 99251 中',
+ 'type': '后二'}
+2018-01-26 20:33:06 [scrapy.extensions.logstats] INFO: Crawled 9 pages (at 2 pages/min), scraped 53 items (at 53 items/min)
+2018-01-26 20:33:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'N1': '9',
+ 'N2': '6',
+ 'N3': '1',
+ 'N4': '6',
+ 'N5': '8',
+ 'gameId': '重庆时时彩',
+ 'gamedate': 20180126087}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'title': '088-090期 个位【01357】第1期 088期 等开'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '086-088期 个位【13589】第2期 087期 96168 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '085-087期 个位【13468】第1期 085期 48773 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '082-084期 个位【25679】第3期 084期 67336 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '081-083期 个位【14578】第1期 081期 82908 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '079-081期 个位【14789】第2期 080期 55069 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '078-080期 个位【02478】第1期 078期 34534 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '077-079期 个位【35679】第1期 077期 27659 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '074-076期 个位【02459】第3期 076期 56165 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '072-074期 个位【05689】第2期 073期 27109 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '070-072期 个位【01236】第2期 071期 13043 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '069-071期 个位【01469】第1期 069期 11670 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '068-070期 个位【12367】第1期 068期 30932 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '066-068期 个位【01578】第2期 067期 42467 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '065-067期 个位【02378】第1期 065期 03452 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '063-065期 个位【01257】第2期 064期 54561 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '062-064期 个位【03467】第1期 062期 52007 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '059-061期 个位【01378】第3期 061期 82137 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '057-059期 个位【45679】第2期 058期 95815 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '056-058期 个位【12467】第1期 056期 21917 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '053-055期 个位【03678】第3期 055期 27803 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '051-053期 个位【26789】第2期 052期 98586 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '048-050期 个位【01369】第3期 050期 18326 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '046-048期 个位【12346】第2期 047期 27472 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '045-047期 个位【02456】第1期 045期 08515 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '044-046期 个位【12457】第1期 044期 48975 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '041-043期 个位【02589】第3期 043期 16322 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '040-042期 个位【04589】第1期 040期 48045 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '039-041期 个位【23456】第1期 039期 24135 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '037-039期 个位【34679】第2期 038期 77794 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '036-038期 个位【02479】第1期 036期 90072 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '035-037期 个位【03458】第1期 035期 44278 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '032-034期 个位【13479】第3期 034期 17530 挂', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '030-032期 个位【03689】第2期 031期 82219 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '029-031期 个位【02348】第1期 029期 91280 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '026-028期 个位【04567】第3期 028期 54842 挂', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '025-027期 个位【01789】第1期 025期 71167 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '023-025期 个位【12367】第2期 024期 25802 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '021-023期 个位【12368】第2期 022期 17106 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '019-021期 个位【12578】第2期 020期 11522 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '018-020期 个位【14679】第1期 018期 40544 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '017-019期 个位【23489】第1期 017期 97638 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '016-018期 个位【01456】第1期 016期 38586 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '013-015期 个位【24789】第3期 015期 83031 挂', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '011-013期 个位【46789】第2期 012期 19569 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '009-011期 个位【23689】第2期 010期 65419 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '008-010期 个位【02569】第1期 008期 73016 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '007-009期 个位【02479】第1期 007期 42534 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '006-008期 个位【14679】第1期 006期 99664 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '003-005期 个位【05689】第3期 005期 83502 挂', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '002-004期 个位【01568】第1期 002期 33696 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '120-002期 个位【01568】第2期 001期 99251 中', 'type': '个位'}
+2018-01-26 20:33:27 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-01-26 20:33:27 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 8,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 5,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 3,
+ 'downloader/request_bytes': 4671,
+ 'downloader/request_count': 18,
+ 'downloader/request_method_count/GET': 18,
+ 'downloader/response_bytes': 55471,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 1, 26, 12, 33, 27, 987897),
+ 'item_scraped_count': 106,
+ 'log_count/DEBUG': 125,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 3,
+ 'response_received_count': 10,
+ 'retry/count': 6,
+ 'retry/max_reached': 2,
+ 'retry/reason_count/twisted.internet.error.TCPTimedOutError': 3,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 3,
+ 'scheduler/dequeued': 18,
+ 'scheduler/dequeued/memory': 18,
+ 'scheduler/enqueued': 18,
+ 'scheduler/enqueued/memory': 18,
+ 'start_time': datetime.datetime(2018, 1, 26, 12, 30, 6, 121028)}
+2018-01-26 20:33:27 [scrapy.core.engine] INFO: Spider closed (finished)

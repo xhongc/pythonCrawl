@@ -2,37 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1be0d9-07b3-4efa-9499-f6dde6cd94c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_2fc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_ffc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_jssc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_pcdd.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_pk10.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_xyft.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/dbs/project.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/dbs/projectcp.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/eggs/project/0125.egg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/project/5fc/27e1049201a011e8935a089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/project/5fc/2880cfdc01a511e89cb0089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/project/5fc/4ccb35c6019511e8b771089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/project/5fc/64581468018f11e8a31f089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/project/5fc/89422fcc019a11e892ae089e01bd501c.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/project/5fc/c61d4be2019711e8af8f089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/46aa49dc029111e8abfb089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/6ff8f412029011e898c4089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/8e09044a029111e894c5089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/b7650fee029011e89891089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/d5f2c2ac029111e885c3089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/feeb5d34029011e8a894089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/230da582029111e89eef089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/7098ef02029011e8b92b089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/7860c406024911e881a7089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/bd0e34f6028f11e8ba3e089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/d597a9a2029111e89dd3089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/f429d0e4028f11e8895a089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/e0d1fb68028f11e8a979089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/049833ee029011e88408089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/4689526c029111e8bbf2089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/705b294c029011e8b4e1089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/b1bc908c029111e88198089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/db3aed24029011e89eeb089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/f5b7608c028f11e886f2089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/232c2e28029111e8832d089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/70361458029011e8bbc4089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/d60ce398029111e8be6d089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/f62984b4028f11e89159089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/22c177ac029111e8aef3089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/70b6cc12029011e8ab0d089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/d5ce602e029111e8b0d5089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/f69629b0028f11e8a161089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/0c90df18026f11e8941e089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/3054808a026f11e89887089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/9b9e2fcc026f11e8b324089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/f7293940028f11e8aa28089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/22b047f6029111e8bbb3089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/6fe3a8e2029011e8b933089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/d6305d34029111e8ae95089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/f7ba2040028f11e89393089e01bd501c.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/SpiderKeeper.db" afterPath="$PROJECT_DIR$/cp_plan/SpiderKeeper.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/dbs/cp_plan.db" afterPath="$PROJECT_DIR$/cp_plan/dbs/cp_plan.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/.idea/workspace.xml" afterPath="$PROJECT_DIR$/cp_plan/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/items.py" afterPath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/pipelines.py" afterPath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/settings.py" afterPath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/spider_api.py" afterPath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/spider_api.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/spiders/spiders_5fc.py" afterPath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/spiders/spiders_5fc.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/items.py" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/pipelines.py" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_5fc.py" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_5fc.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_ssc.py" afterPath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_ssc.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/04ab5d7a029011e8bfa9089e01bd501c.log" afterPath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/04ab5d7a029011e8bfa9089e01bd501c.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/2858d064029011e88cee089e01bd501c.log" afterPath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/2858d064029011e88cee089e01bd501c.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/4c1ad264029011e89306089e01bd501c.log" afterPath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/4c1ad264029011e89306089e01bd501c.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/7017b652029011e88c0f089e01bd501c.log" afterPath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/7017b652029011e88c0f089e01bd501c.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/open_wait.json" afterPath="$PROJECT_DIR$/cp_plan/open_wait.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_plan/plan_content.json" afterPath="$PROJECT_DIR$/cp_plan/plan_content.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lagou/.idea/workspace.xml" afterPath="$PROJECT_DIR$/lagou/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />

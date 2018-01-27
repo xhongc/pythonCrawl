@@ -1,0 +1,2260 @@
+2018-01-27 09:12:06 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: cp_plan)
+2018-01-27 09:12:06 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'cp_plan', 'DOWNLOAD_DELAY': 1.5, 'FEED_EXPORT_ENCODING': 'utf-8', 'LOG_FILE': 'logs\\cp_plan\\2fc\\13ffa7d002ff11e8804e089e01bd501c.log', 'NEWSPIDER_MODULE': 'cp_plan.spiders', 'SPIDER_MODULES': ['cp_plan.spiders']}
+2018-01-27 09:12:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-01-27 09:12:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'cp_plan.middlewares.RandomUserAgent',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-01-27 09:12:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-01-27 09:12:06 [scrapy.middleware] INFO: Enabled item pipelines:
+['cp_plan.pipelines.CpPlanPipeline']
+2018-01-27 09:12:06 [scrapy.core.engine] INFO: Spider opened
+2018-01-27 09:12:06 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:12:06 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6031
+2018-01-27 09:12:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/sfc.json> (referer: None)
+2018-01-27 09:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/sfc_h2zx.json> (referer: None)
+2018-01-27 09:12:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/sfc_h3zx.json> (referer: None)
+2018-01-27 09:12:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/sfc_h3z6.json> (referer: None)
+2018-01-27 09:12:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/sfc.json> (referer: http://56070.la/json/sfc.json)
+2018-01-27 09:12:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/sfc_h2zx.json> (referer: http://56070.la/json/sfc_h2zx.json)
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'title': '277-279期 后二【0234567-0123469】第1期 277期 等开'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '276-278期 后二【1356789-0145689】第1期 276期 78064 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '273-275期 后二【0123568-0123689】第3期 275期 35126 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '270-272期 后二【1234589-0345678】第3期 272期 73186 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '269-271期 后二【0135689-1245689】第1期 269期 66911 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '267-269期 后二【0345679-0235789】第2期 268期 01367 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '264-266期 后二【1234679-0134579】第3期 266期 79655 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '263-265期 后二【0256789-0123569】第1期 263期 72363 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '262-264期 后二【0124679-0123568】第1期 262期 36901 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '260-262期 后二【0136789-0124568】第2期 261期 16500 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '259-261期 后二【0125789-0234567】第1期 259期 27310 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '258-260期 后二【1345789-2345689】第1期 258期 77212 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '256-258期 后二【0134678-0134578】第2期 257期 12841 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '255-257期 后二【1246789-0346789】第1期 255期 39264 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '254-256期 后二【0125689-0124679】第1期 254期 89991 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '253-255期 后二【0145789-0134568】第1期 253期 06705 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '252-254期 后二【0236789-0234678】第1期 252期 22278 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '249-251期 后二【0345789-0135689】第3期 251期 64171 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '248-250期 后二【0123569-0123568】第1期 248期 23096 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '245-247期 后二【0123678-0123478】第3期 247期 48602 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '244-246期 后二【0234678-0125678】第1期 244期 87001 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '241-243期 后二【1245678-0123479】第3期 243期 82931 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '239-241期 后二【0245689-0256789】第2期 240期 27748 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '238-240期 后二【0124689-0136789】第1期 238期 07418 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '237-239期 后二【0134568-0125678】第1期 237期 31432 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '235-237期 后二【0234789-0234579】第2期 236期 02903 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '234-236期 后二【0123589-1234568】第1期 234期 13612 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '232-234期 后二【1345689-0123457】第2期 233期 26351 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '231-233期 后二【1345789-1234568】第1期 231期 17276 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '228-230期 后二【0134568-0256789】第3期 230期 55412 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '227-229期 后二【1345679-0145678】第1期 227期 01966 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '226-228期 后二【0235689-1234789】第1期 226期 54194 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '225-227期 后二【0123457-1236789】第1期 225期 98557 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '224-226期 后二【0456789-0235689】第1期 224期 67003 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '221-223期 后二【0134589-0456789】第3期 223期 40530 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '220-222期 后二【1235689-0125789】第1期 220期 57218 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '219-221期 后二【0134789-1245689】第1期 219期 32895 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '218-220期 后二【1235789-2345789】第1期 218期 83177 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '216-218期 后二【0235678-0234578】第2期 217期 15325 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '215-217期 后二【0123578-0236789】第1期 215期 67403 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '213-215期 后二【0234568-0123457】第2期 214期 07662 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '210-212期 后二【0123478-0134568】第3期 212期 18460 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '209-211期 后二【0245789-1345689】第1期 209期 79674 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '208-210期 后二【1236789-0124567】第1期 208期 53414 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '205-207期 后二【1245678-2456789】第3期 207期 36141 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '204-206期 后二【2345679-0145679】第1期 204期 76051 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '202-204期 后二【0124678-0235678】第2期 203期 22247 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '199-201期 后二【0124689-2345789】第3期 201期 06015 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '197-199期 后二【0123459-0123569】第2期 198期 44730 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '194-196期 后二【0145689-0123689】第3期 196期 41923 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '191-193期 后二【2456789-0123457】第3期 193期 36549 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '190-192期 后二【0123589-0235689】第1期 190期 98953 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '187-189期 后二【1356789-0124589】第3期 189期 64342 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '185-187期 后二【0235679-0123479】第2期 186期 91957 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '182-184期 后二【0123679-0123679】第3期 184期 83050 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '181-183期 后二【0345678-0123457】第1期 181期 03801 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '180-182期 后二【0234568-0135789】第1期 180期 57163 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '177-179期 后二【0124579-0123567】第3期 179期 39672 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '176-178期 后二【1234679-0124579】第1期 176期 55797 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '175-177期 后二【0235789-0145678】第1期 175期 91691 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '174-176期 后二【0124567-0234689】第1期 174期 84223 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '173-175期 后二【1234578-1246789】第1期 173期 69656 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '172-174期 后二【0134569-1246789】第1期 172期 01191 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '171-173期 后二【0245789-1245789】第1期 171期 85725 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '170-172期 后二【0124678-1234568】第1期 170期 37372 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '167-169期 后二【0123579-0345689】第3期 169期 93177 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '164-166期 后二【0345679-2345789】第3期 166期 39966 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '161-163期 后二【1235678-2356789】第3期 163期 67188 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '158-160期 后二【0345689-0123568】第3期 160期 48436 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '156-158期 后二【0234789-0123689】第2期 157期 91479 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '155-157期 后二【2346789-0234589】第1期 155期 09370 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '152-154期 后二【0124567-0136789】第3期 154期 35396 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '149-151期 后二【0123478-0135689】第3期 151期 77243 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '148-150期 后二【1234678-0234569】第1期 148期 79945 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '146-148期 后二【0456789-0134679】第2期 147期 06444 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '145-147期 后二【1235689-0124568】第1期 145期 67388 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '144-146期 后二【1234589-0234567】第1期 144期 77820 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '141-143期 后二【0135678-0124568】第3期 143期 22509 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '138-140期 后二【0134678-0135689】第3期 140期 46675 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '136-138期 后二【0245679-0234589】第2期 137期 13902 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '134-136期 后二【1356789-0134589】第2期 135期 60655 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '132-134期 后二【0145678-0345689】第2期 133期 90350 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '131-133期 后二【1235679-1245679】第1期 131期 78156 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '128-130期 后二【0145789-0134568】第3期 130期 88933 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '127-129期 后二【1345678-0123689】第1期 127期 10589 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '124-126期 后二【1245789-0134567】第3期 126期 60889 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '121-123期 后二【0234569-0245678】第3期 123期 93713 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '120-122期 后二【0345689-0134567】第1期 120期 04266 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '118-120期 后二【1234689-0123468】第2期 119期 55721 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '115-117期 后二【0135789-0356789】第3期 117期 99800 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '114-116期 后二【0234689-1345679】第1期 114期 47669 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '113-115期 后二【0135679-1235678】第1期 113期 27958 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '110-112期 后二【0123479-2345789】第3期 112期 75919 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '107-109期 后二【0134579-0234578】第3期 109期 00752 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '106-108期 后二【0124569-0123789】第1期 106期 38643 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '105-107期 后二【0235789-0134568】第1期 105期 87735 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '104-106期 后二【0245789-0234589】第1期 104期 95555 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '103-105期 后二【0123589-1234689】第1期 103期 49558 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '101-103期 后二【0124569-1246789】第2期 102期 68619 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '098-100期 后二【1246789-0123459】第3期 100期 98551 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '097-099期 后二【0235679-0145678】第1期 097期 86907 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '096-098期 后二【1234679-1234789】第1期 096期 53129 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '093-095期 后二【0235679-0234689】第3期 095期 07693 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '092-094期 后二【0124679-1235679】第1期 092期 89547 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '090-092期 后二【1235679-0123456】第2期 091期 85260 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '088-090期 后二【0246789-1234689】第2期 089期 62171 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '087-089期 后二【0235679-1234569】第1期 087期 30494 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '086-088期 后二【0124579-0123789】第1期 086期 38441 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '083-085期 后二【2356789-0145678】第3期 085期 70531 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '080-082期 后二【1234578-1345789】第3期 082期 34104 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '077-079期 后二【0245678-0123467】第3期 079期 02721 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '075-077期 后二【0234589-0124689】第2期 076期 39150 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '072-074期 后二【1234679-0123589】第3期 074期 84122 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '070-072期 后二【1235678-0125679】第2期 071期 21177 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '068-070期 后二【1236789-0256789】第2期 069期 62688 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '065-067期 后二【0125689-1345689】第3期 067期 73336 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '064-066期 后二【0125689-2345789】第1期 064期 66729 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '061-063期 后二【0235689-0123578】第3期 063期 06471 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '060-062期 后二【0345679-1256789】第1期 060期 68596 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '059-061期 后二【0126789-0124578】第1期 059期 57395 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '056-058期 后二【0345679-1234789】第3期 058期 21529 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '055-057期 后二【0123468-1356789】第1期 055期 18316 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '052-054期 后二【0134567-2345689】第3期 054期 03593 挂',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '049-051期 后二【1345679-1356789】第3期 051期 37658 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '047-049期 后二【1234569-0346789】第2期 048期 42228 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '046-048期 后二【1456789-0123467】第1期 046期 83764 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '045-047期 后二【2345678-0123489】第1期 045期 40089 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '043-045期 后二【1235689-1346789】第2期 044期 26883 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '041-043期 后二【0146789-1235689】第2期 042期 79743 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '039-041期 后二【0123479-0234679】第2期 040期 70977 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '038-040期 后二【1234567-0356789】第1期 038期 63767 中',
+ 'type': '后二'}
+2018-01-27 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '036-038期 后二【0234789-0346789】第2期 037期 93626 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '035-037期 后二【1245689-3456789】第1期 035期 40726 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '034-036期 后二【1234567-0123578】第1期 034期 84155 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '033-035期 后二【0125679-0123468】第1期 033期 75623 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '032-034期 后二【1356789-0135689】第1期 032期 57798 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '029-031期 后二【1234569-2356789】第3期 031期 49585 挂',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '027-029期 后二【3456789-0125679】第2期 028期 43342 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '024-026期 后二【0125678-1256789】第3期 026期 47272 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '023-025期 后二【0134569-0234689】第1期 023期 63046 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '020-022期 后二【0135678-0245678】第3期 022期 09459 挂',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '018-020期 后二【0145678-0145789】第2期 019期 29601 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '016-018期 后二【0234579-0245689】第2期 017期 74238 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '015-017期 后二【0136789-0124578】第1期 015期 56035 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '014-016期 后二【0345689-0134568】第1期 014期 90556 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '012-014期 后二【0234567-0234589】第2期 013期 33208 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '009-011期 后二【0234569-0123689】第3期 011期 76929 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '007-009期 后二【1245679-0123468】第2期 008期 60563 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '004-006期 后二【0246789-1234578】第3期 006期 08048 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '002-004期 后二【0123469-0245678】第2期 003期 15565 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '001-003期 后二【0245679-1234678】第1期 001期 52272 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'gameId': '二分彩',
+ 'title': '720-002期 后二【0123678-0124579】第1期 720期 98130 中',
+ 'type': '后二'}
+2018-01-27 09:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h2zx.json>
+{'N1': '7',
+ 'N2': '8',
+ 'N3': '0',
+ 'N4': '6',
+ 'N5': '4',
+ 'gameId': '二分彩',
+ 'gamedate': 20180127276}
+2018-01-27 09:12:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/sfc_h3zx.json> (referer: http://56070.la/json/sfc_h3zx.json)
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'title': '277-279期 后三【01234567-01235679-02345678】第1期 277期 等开'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '276-278期 后三【01345689-01235689-01345679】第1期 276期 78064 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '275-277期 后三【12456789-01236789-13456789】第1期 275期 35126 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '274-276期 后三【01234568-02345678-23456789】第1期 274期 57578 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '272-274期 后三【12345678-12345679-01234679】第2期 273期 06442 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '271-273期 后三【01256789-01234678-12356789】第1期 271期 78742 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '270-272期 后三【12345679-23456789-01345679】第1期 270期 44477 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '269-271期 后三【01234589-01234568-01234689】第1期 269期 66911 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '268-270期 后三【12346789-02356789-01245789】第1期 268期 01367 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '265-267期 后三【12345789-12345678-01234689】第3期 267期 02381 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '263-265期 后三【02456789-02346789-01234569】第2期 264期 66585 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '261-263期 后三【13456789-01234567-12456789】第2期 262期 36901 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '260-262期 后三【02346789-12345689-01235679】第1期 260期 48627 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '259-261期 后三【01234579-01234567-01235679】第1期 259期 27310 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '256-258期 后三【12346789-01236789-01234578】第3期 258期 77212 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '254-256期 后三【01234568-12345679-01345678】第2期 255期 39264 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '252-254期 后三【01456789-02456789-02345679】第2期 253期 06705 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '251-253期 后三【12456789-02456789-01245789】第1期 251期 64171 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '249-251期 后三【12345678-02345678-01345789】第2期 250期 43737 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '248-250期 后三【02345678-02345679-01245689】第1期 248期 23096 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '245-247期 后三【02345678-01345789-02356789】第3期 247期 48602 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '244-246期 后三【01234679-01345689-12346789】第1期 244期 87001 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '242-244期 后三【01235689-01234589-01246789】第2期 243期 82931 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '241-243期 后三【12345679-01346789-02456789】第1期 241期 97334 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '240-242期 后三【02356789-01234567-12345789】第1期 240期 27748 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '237-239期 后三【01235689-13456789-01235689】第3期 239期 85423 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '236-238期 后三【12345689-01346789-01345679】第1期 236期 02903 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '233-235期 后三【01234689-02346789-02345679】第3期 235期 93018 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '232-234期 后三【01235689-01246789-01245679】第1期 232期 82066 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '230-232期 后三【01234679-23456789-02345689】第2期 231期 17276 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '229-231期 后三【03456789-01234679-12345789】第1期 229期 77027 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '228-230期 后三【01234679-01234578-03456789】第1期 228期 30920 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '227-229期 后三【12345689-02346789-01235689】第1期 227期 01966 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '225-227期 后三【01234579-01234789-01246789】第2期 226期 54194 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '224-226期 后三【01234568-01245789-01234578】第1期 224期 67003 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '222-224期 后三【01234568-02345689-01245789】第2期 223期 40530 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '221-223期 后三【02345679-01236789-01245679】第1期 221期 70492 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '219-221期 后三【01234689-01236789-01246789】第2期 220期 57218 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '218-220期 后三【01356789-12345678-12356789】第1期 218期 83177 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '215-217期 后三【12345789-01235689-01245678】第3期 217期 15325 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '214-216期 后三【02346789-01234569-02345679】第1期 214期 07662 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '212-214期 后三【01235679-12345789-12346789】第2期 213期 46949 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '211-213期 后三【01456789-02356789-01234578】第1期 211期 35593 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '208-210期 后三【01345689-01234679-02356789】第3期 210期 26262 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '207-209期 后三【01234679-01246789-01235689】第1期 207期 36141 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '204-206期 后三【02356789-01246789-01346789】第3期 206期 24653 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '203-205期 后三【12345678-12345679-02456789】第1期 203期 22247 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '202-204期 后三【02346789-12456789-01234569】第1期 202期 43989 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '201-203期 后三【01234569-01234689-01245679】第1期 201期 06015 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '198-200期 后三【23456789-01234589-12345789】第3期 200期 04475 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '195-197期 后三【01234568-12345689-01245789】第3期 197期 17728 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '193-195期 后三【01234678-01234569-12356789】第2期 194期 18147 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '192-194期 后三【12345679-01234679-12345789】第1期 192期 09602 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '190-192期 后三【01236789-12345689-02456789】第2期 191期 50814 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '187-189期 后三【01235789-01245689-23456789】第3期 189期 64342 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '186-188期 后三【01235689-02356789-02345679】第1期 186期 91957 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '184-186期 后三【13456789-12456789-01235678】第2期 185期 12780 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '181-183期 后三【01245679-01234679-02356789】第3期 183期 31789 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '178-180期 后三【01234568-01234589-01256789】第3期 180期 57163 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '175-177期 后三【01256789-01235678-01234679】第3期 177期 84287 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '174-176期 后三【01234678-01234678-01234689】第1期 174期 84223 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '171-173期 后三【02345689-01234679-01245689】第3期 173期 69656 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '170-172期 后三【01345678-01245679-01234579】第1期 170期 37372 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '169-171期 后三【01256789-01456789-01234579】第1期 169期 93177 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '166-168期 后三【12345678-01235789-01236789】第3期 168期 77937 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '165-167期 后三【12346789-01234589-03456789】第1期 165期 78613 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '164-166期 后三【02346789-03456789-01234579】第1期 164期 89489 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '163-165期 后三【01234568-01234689-01234678】第1期 163期 67188 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '160-162期 后三【01345679-01246789-02345789】第3期 162期 45181 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '159-161期 后三【01245689-01356789-01256789】第1期 159期 62087 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '158-160期 后三【03456789-01246789-01234589】第1期 158期 11411 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '156-158期 后三【01234569-01345678-12345689】第2期 157期 91479 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '154-156期 后三【12345678-01234789-01234579】第2期 155期 09370 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '153-155期 后三【12456789-01345679-01235679】第1期 153期 40733 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '151-153期 后三【01356789-12345678-01245679】第2期 152期 96842 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '149-151期 后三【01345679-01234679-12346789】第2期 150期 00596 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '148-150期 后三【01345679-02346789-02345678】第1期 148期 79945 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '146-148期 后三【01345689-03456789-02346789】第2期 147期 06444 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '145-147期 后三【01345689-13456789-01345789】第1期 145期 67388 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '144-146期 后三【02456789-12345689-01234679】第1期 144期 77820 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '142-144期 后三【01234568-01246789-01234579】第2期 143期 22509 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '141-143期 后三【01236789-01245689-02345689】第1期 141期 99126 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '139-141期 后三【01234689-02456789-01235678】第2期 140期 46675 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '137-139期 后三【01234589-12346789-12456789】第2期 138期 70062 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '136-138期 后三【03456789-01245789-01456789】第1期 136期 99786 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '134-136期 后三【01345678-01345689-01256789】第2期 135期 60655 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '132-134期 后三【03456789-01234569-02345679】第2期 133期 90350 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '131-133期 后三【12356789-01356789-01234679】第1期 131期 78156 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '130-132期 后三【01245679-12345789-12356789】第1期 130期 88933 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '129-131期 后三【01234678-02456789-13456789】第1期 129期 31309 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '126-128期 后三【02345678-01345689-01235678】第3期 128期 97289 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '125-127期 后三【01345689-01234589-01345789】第1期 125期 58698 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '124-126期 后三【01234569-13456789-12356789】第1期 124期 09059 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '122-124期 后三【01245678-01345678-01345689】第2期 123期 93713 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '121-123期 后三【12346789-01456789-01345689】第1期 121期 23971 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '119-121期 后三【01246789-01346789-01245678】第2期 120期 04266 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '118-120期 后三【12345689-02456789-01245678】第1期 118期 75972 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '116-118期 后三【12345789-01235689-01256789】第2期 117期 99800 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '114-116期 后三【12345789-01234569-01245789】第2期 115期 85849 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '113-115期 后三【01345689-01235689-01234589】第1期 113期 27958 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '110-112期 后三【12345689-12345689-01345789】第3期 112期 75919 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '109-111期 后三【01235789-02345679-12356789】第1期 109期 00752 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '108-110期 后三【01356789-01234569-02345678】第1期 108期 93565 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '107-109期 后三【02346789-01345678-01235679】第1期 107期 44079 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '106-108期 后三【01245678-12345789-01235678】第1期 106期 38643 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '103-105期 后三【12346789-01245678-01234678】第3期 105期 87735 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '101-103期 后三【01246789-01234578-01345679】第2期 102期 68619 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '099-101期 后三【01235678-13456789-01346789】第2期 100期 98551 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '096-098期 后三【01234678-13456789-01256789】第3期 098期 09504 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '095-097期 后三【01346789-12345689-12346789】第1期 095期 07693 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '093-095期 后三【01235789-01234679-01346789】第2期 094期 21217 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '090-092期 后三【01245678-01234789-02345689】第3期 092期 89547 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '088-090期 后三【12356789-01245789-01235689】第2期 089期 62171 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '087-089期 后三【01234789-01234569-01346789】第1期 087期 30494 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '085-087期 后三【01345789-12456789-12345679】第2期 086期 38441 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '084-086期 后三【01245789-01245678-13456789】第1期 084期 69816 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '083-085期 后三【01234678-12346789-12345689】第1期 083期 46611 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '082-084期 后三【12345789-01345678-01345679】第1期 082期 34104 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '081-083期 后三【01234569-01346789-01356789】第1期 081期 10099 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '078-080期 后三【01345689-23456789-01234789】第3期 080期 33904 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '076-078期 后三【01235679-12346789-01346789】第2期 077期 67110 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '075-077期 后三【12346789-01345679-01235689】第1期 075期 10443 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '073-075期 后三【01345689-12456789-02345789】第2期 074期 84122 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '072-074期 后三【01345679-13456789-23456789】第1期 072期 14955 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '071-073期 后三【01246789-01234567-01346789】第1期 071期 21177 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '070-072期 后三【01234679-01345789-01235679】第1期 070期 02795 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '069-071期 后三【02345689-01346789-01234789】第1期 069期 62688 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '068-070期 后三【02345789-01346789-01234679】第1期 068期 31531 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '067-069期 后三【01234578-12345689-01234678】第1期 067期 73336 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '064-066期 后三【12345678-12456789-01234678】第3期 066期 00236 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '062-064期 后三【01234569-01245789-01234567】第2期 063期 06471 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '060-062期 后三【01256789-02345679-01235789】第2期 061期 07829 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '059-061期 后三【02345789-02356789-01235789】第1期 059期 57395 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '058-060期 后三【01235679-12346789-01345789】第1期 058期 21529 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '056-058期 后三【02356789-01345679-01235678】第2期 057期 20015 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '054-056期 后三【01236789-12346789-01345689】第2期 055期 18316 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '053-055期 后三【01234689-01345789-01245678】第1期 053期 56111 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '052-054期 后三【02346789-01345678-02345679】第1期 052期 62647 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '050-052期 后三【12345679-01235679-01234689】第2期 051期 37658 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '049-051期 后三【01356789-01245678-12345689】第1期 049期 04325 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '047-049期 后三【01234569-01245689-01246789】第2期 048期 42228 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '045-047期 后三【23456789-01235679-01246789】第2期 046期 83764 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '044-046期 后三【01236789-01345678-13456789】第1期 044期 26883 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '043-045期 后三【02345679-01234679-13456789】第1期 043期 31243 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '040-042期 后三【01356789-01234679-01234589】第3期 042期 79743 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '039-041期 后三【12356789-01245679-12345789】第1期 039期 33875 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '037-039期 后三【02345789-01256789-01234578】第2期 038期 63767 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '036-038期 后三【03456789-01234679-01234679】第1期 036期 05866 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '034-036期 后三【01345789-01234678-01234689】第2期 035期 40726 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '033-035期 后三【02456789-02456789-12345689】第1期 033期 75623 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '032-034期 后三【02356789-01234589-01234678】第1期 032期 57798 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '029-031期 后三【01356789-12345678-02356789】第3期 031期 49585 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '026-028期 后三【01345678-03456789-01234679】第3期 028期 43342 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '023-025期 后三【01245689-01235679-12356789】第3期 025期 59373 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '020-022期 后三【01234579-02356789-12346789】第3期 022期 09459 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '019-021期 后三【01456789-01234567-01356789】第1期 019期 29601 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '017-019期 后三【02345679-01456789-02346789】第2期 018期 74776 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '016-018期 后三【01235678-01245689-01235789】第1期 016期 28641 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '015-017期 后三【01245678-23456789-01256789】第1期 015期 56035 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '014-016期 后三【01235679-12345679-01234569】第1期 014期 90556 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '013-015期 后三【01235679-01456789-01236789】第1期 013期 33208 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '011-013期 后三【12356789-01346789-01235679】第2期 012期 14386 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '010-012期 后三【01356789-01235678-02345679】第1期 010期 05865 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '007-009期 后三【01236789-01356789-01256789】第3期 009期 46744 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '006-008期 后三【01346789-02345678-01345789】第1期 006期 08048 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '003-005期 后三【02345789-01236789-01236789】第3期 005期 70166 挂',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '001-003期 后三【12345689-13456789-01356789】第2期 002期 34357 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'gameId': '二分彩',
+ 'title': '720-002期 后三【01234569-02356789-01234678】第1期 720期 98130 中',
+ 'type': '后三'}
+2018-01-27 09:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3zx.json>
+{'N1': '7',
+ 'N2': '8',
+ 'N3': '0',
+ 'N4': '6',
+ 'N5': '4',
+ 'gameId': '二分彩',
+ 'gamedate': 20180127276}
+2018-01-27 09:12:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/sfc_h3z6.json> (referer: http://56070.la/json/sfc_h3z6.json)
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'title': '275-277期 后三【012345789】第3期 277期 等开'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '273-275期 后三【023456789】第2期 274期 57578 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '272-274期 后三【012456789】第1期 272期 73186 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '269-271期 后三【012356789】第3期 271期 78742 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '266-268期 后三【023456789】第3期 268期 01367 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '263-265期 后三【023456789】第3期 265期 41909 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '261-263期 后三【012346789】第2期 262期 36901 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '258-260期 后三【012456789】第3期 260期 48627 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '256-258期 后三【013456789】第2期 257期 12841 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '254-256期 后三【123456789】第2期 255期 39264 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '253-255期 后三【012345678】第1期 253期 06705 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '252-254期 后三【012345678】第1期 252期 22278 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '249-251期 后三【012345679】第3期 251期 64171 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '246-248期 后三【123456789】第3期 248期 23096 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '244-246期 后三【012345789】第2期 245期 21954 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '243-245期 后三【013456789】第1期 243期 82931 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '240-242期 后三【012345679】第3期 242期 60786 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '239-241期 后三【012345679】第1期 239期 85423 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '238-240期 后三【012345689】第1期 238期 07418 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '237-239期 后三【012346789】第1期 237期 31432 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '234-236期 后三【023456789】第3期 236期 02903 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '232-234期 后三【123456789】第2期 233期 26351 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '231-233期 后三【012346789】第1期 231期 17276 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '230-232期 后三【012345789】第1期 230期 55412 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '229-231期 后三【012345678】第1期 229期 77027 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '227-229期 后三【023456789】第2期 228期 30920 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '224-226期 后三【012456789】第3期 226期 54194 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '223-225期 后三【012356789】第1期 223期 40530 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '222-224期 后三【012345789】第1期 222期 34375 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '221-223期 后三【023456789】第1期 221期 70492 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '220-222期 后三【012345789】第1期 220期 57218 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '217-219期 后三【012346789】第3期 219期 32895 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '216-218期 后三【013456789】第1期 216期 20319 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '215-217期 后三【012346789】第1期 215期 67403 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '212-214期 后三【012356789】第3期 214期 07662 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '210-212期 后三【012345679】第2期 211期 35593 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '209-211期 后三【012345679】第1期 209期 79674 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '206-208期 后三【012346789】第3期 208期 53414 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '205-207期 后三【012345689】第1期 205期 90109 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '202-204期 后三【013456789】第3期 204期 76051 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '201-203期 后三【012345689】第1期 201期 06015 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '199-201期 后三【013456789】第2期 200期 04475 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '198-200期 后三【012356789】第1期 198期 44730 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '197-199期 后三【012345789】第1期 197期 17728 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '195-197期 后三【023456789】第2期 196期 41923 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '194-196期 后三【012345678】第1期 194期 18147 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '193-195期 后三【013456789】第1期 193期 36549 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '192-194期 后三【012345678】第1期 192期 09602 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '190-192期 后三【012346789】第2期 191期 50814 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '187-189期 后三【012345789】第3期 189期 64342 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '184-186期 后三【123456789】第3期 186期 91957 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '183-185期 后三【012346789】第1期 183期 31789 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '180-182期 后三【023456789】第3期 182期 08687 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '178-180期 后三【012345678】第2期 179期 39672 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '176-178期 后三【023456789】第2期 177期 84287 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '175-177期 后三【012345679】第1期 175期 91691 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '172-174期 后三【012345689】第3期 174期 84223 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '171-173期 后三【123456789】第1期 171期 85725 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '169-171期 后三【012345679】第2期 170期 37372 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '166-168期 后三【012345678】第3期 168期 77937 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '165-167期 后三【123456789】第1期 165期 78613 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '163-165期 后三【012345789】第2期 164期 89489 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '160-162期 后三【012356789】第3期 162期 45181 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '158-160期 后三【012345789】第2期 159期 62087 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '156-158期 后三【012346789】第2期 157期 91479 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '155-157期 后三【012356789】第1期 155期 09370 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '153-155期 后三【023456789】第2期 154期 35396 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '152-154期 后三【012345789】第1期 152期 96842 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '151-153期 后三【123456789】第1期 151期 77243 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '150-152期 后三【012345689】第1期 150期 00596 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '149-151期 后三【012356789】第1期 149期 60867 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '146-148期 后三【013456789】第3期 148期 79945 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '143-145期 后三【123456789】第3期 145期 67388 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '142-144期 后三【123456789】第1期 142期 10139 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '140-142期 后三【012345689】第2期 141期 99126 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '139-141期 后三【012345678】第1期 139期 14725 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '137-139期 后三【012345678】第2期 138期 70062 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '136-138期 后三【012356789】第1期 136期 99786 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '133-135期 后三【012456789】第3期 135期 60655 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '132-134期 后三【012345789】第1期 132期 15587 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '130-132期 后三【012345689】第2期 131期 78156 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '129-131期 后三【023456789】第1期 129期 31309 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '128-130期 后三【012345789】第1期 128期 97289 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '125-127期 后三【012345678】第3期 127期 10589 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '122-124期 后三【023456789】第3期 124期 09059 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '119-121期 后三【023456789】第3期 121期 23971 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '116-118期 后三【012345678】第3期 118期 75972 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '114-116期 后三【013456789】第2期 115期 85849 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '112-114期 后三【012456789】第2期 113期 27958 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '110-112期 后三【012345679】第2期 111期 90426 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '108-110期 后三【012456789】第2期 109期 00752 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '106-108期 后三【012345789】第2期 107期 44079 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '103-105期 后三【012345689】第3期 105期 87735 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '100-102期 后三【012346789】第3期 102期 68619 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '098-100期 后三【012356789】第2期 099期 26627 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '095-097期 后三【012345678】第3期 097期 86907 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '094-096期 后三【012356789】第1期 094期 21217 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '093-095期 后三【012345789】第1期 093期 56725 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '091-093期 后三【123456789】第2期 092期 89547 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '089-091期 后三【123456789】第2期 090期 02517 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '086-088期 后三【012346789】第3期 088期 04337 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '085-087期 后三【123456789】第1期 085期 70531 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '083-085期 后三【123456789】第2期 084期 69816 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '081-083期 后三【012345789】第2期 082期 34104 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '080-082期 后三【012345679】第1期 080期 33904 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '079-081期 后三【012456789】第1期 079期 02721 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '077-079期 后三【012345679】第2期 078期 84325 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '074-076期 后三【013456789】第3期 076期 39150 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '071-073期 后三【012345678】第3期 073期 72416 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '069-071期 后三【012456789】第2期 070期 02795 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '067-069期 后三【012345679】第2期 068期 31531 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '066-068期 后三【123456789】第1期 066期 00236 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '065-067期 后三【023456789】第1期 065期 13402 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '064-066期 后三【012346789】第1期 064期 66729 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '062-064期 后三【012345679】第2期 063期 06471 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '060-062期 后三【012346789】第2期 061期 07829 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '059-061期 后三【012345679】第1期 059期 57395 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '058-060期 后三【012345789】第1期 058期 21529 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '057-059期 后三【012345679】第1期 057期 20015 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '056-058期 后三【012345789】第1期 056期 09105 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '053-055期 后三【012456789】第3期 055期 18316 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '051-053期 后三【012345679】第2期 052期 62647 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '050-052期 后三【023456789】第1期 050期 60386 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '047-049期 后三【012456789】第3期 049期 04325 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '044-046期 后三【012345678】第3期 046期 83764 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '043-045期 后三【012345678】第1期 043期 31243 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '042-044期 后三【012345789】第1期 042期 79743 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '040-042期 后三【012456789】第2期 041期 60284 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '039-041期 后三【012356789】第1期 039期 33875 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '036-038期 后三【123456789】第3期 038期 63767 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '034-036期 后三【123456789】第2期 035期 40726 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '033-035期 后三【012345678】第1期 033期 75623 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '030-032期 后三【023456789】第3期 032期 57798 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '029-031期 后三【023456789】第1期 029期 17206 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '027-029期 后三【012346789】第2期 028期 43342 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '024-026期 后三【012356789】第3期 026期 47272 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '023-025期 后三【012346789】第1期 023期 63046 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '021-023期 后三【012345789】第2期 022期 09459 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '020-022期 后三【012345689】第1期 020期 40495 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '018-020期 后三【012456789】第2期 019期 29601 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '017-019期 后三【012345678】第1期 017期 74238 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '016-018期 后三【012345679】第1期 016期 28641 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '013-015期 后三【123456789】第3期 015期 56035 挂',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '011-013期 后三【012346789】第2期 012期 14386 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '009-011期 后三【023456789】第2期 010期 05865 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '007-009期 后三【012356789】第2期 008期 60563 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '005-007期 后三【012345789】第2期 006期 08048 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '003-005期 后三【013456789】第2期 004期 78857 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '001-003期 后三【012345678】第2期 002期 34357 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'gameId': '二分彩',
+ 'title': '720-002期 后三【012345678】第1期 720期 98130 中',
+ 'type': '后三'}
+2018-01-27 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc_h3z6.json>
+{'N1': '7',
+ 'N2': '8',
+ 'N3': '0',
+ 'N4': '6',
+ 'N5': '4',
+ 'gameId': '二分彩',
+ 'gamedate': 20180127276}
+2018-01-27 09:12:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/sfc.json> (referer: http://56070.la/json/sfc.json)
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'title': '277-279期 个位【03589】第1期 277期 等开'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '274-276期 个位【01237】第3期 276期 78064 挂', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '273-275期 个位【25789】第1期 273期 06442 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '272-274期 个位【01679】第1期 272期 73186 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '269-271期 个位【23568】第3期 271期 78742 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '268-270期 个位【23567】第1期 268期 01367 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '266-268期 个位【12467】第2期 267期 02381 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '263-265期 个位【24689】第3期 265期 41909 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '260-262期 个位【23489】第3期 262期 36901 挂', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '258-260期 个位【01678】第2期 259期 27310 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '257-259期 个位【01568】第1期 257期 12841 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '256-258期 个位【03468】第1期 256期 75236 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '255-257期 个位【13458】第1期 255期 39264 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '254-256期 个位【13458】第1期 254期 89991 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '252-254期 个位【12456】第2期 253期 06705 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '250-252期 个位【01489】第2期 251期 64171 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '247-249期 个位【01378】第3期 249期 14212 挂', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '246-248期 个位【04589】第1期 246期 51115 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '243-245期 个位【02345】第3期 245期 21954 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '242-244期 个位【36789】第1期 242期 60786 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '241-243期 个位【14578】第1期 241期 97334 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '240-242期 个位【34689】第1期 240期 27748 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '239-241期 个位【34679】第1期 239期 85423 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '236-238期 个位【05789】第3期 238期 07418 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '235-237期 个位【03478】第1期 235期 93018 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '233-235期 个位【02367】第2期 234期 13612 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '232-234期 个位【35689】第1期 232期 82066 中', 'type': '个位'}
+2018-01-27 09:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '231-233期 个位【01367】第1期 231期 17276 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '229-231期 个位【02348】第2期 230期 55412 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '226-228期 个位【35789】第3期 228期 30920 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '225-227期 个位【34679】第1期 225期 98557 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '224-226期 个位【13459】第1期 224期 67003 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '221-223期 个位【04678】第3期 223期 40530 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '218-220期 个位【01689】第3期 220期 57218 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '217-219期 个位【56789】第1期 217期 15325 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '214-216期 个位【45789】第3期 216期 20319 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '213-215期 个位【02679】第1期 213期 46949 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '212-214期 个位【01248】第1期 212期 18460 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '209-211期 个位【01369】第3期 211期 35593 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '206-208期 个位【24678】第3期 208期 53414 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '204-206期 个位【46789】第2期 205期 90109 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '201-203期 个位【02468】第3期 203期 22247 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '199-201期 个位【56789】第2期 200期 04475 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '198-200期 个位【01247】第1期 198期 44730 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '195-197期 个位【01289】第3期 197期 17728 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '192-194期 个位【45678】第3期 194期 18147 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '190-192期 个位【01469】第2期 191期 50814 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '188-190期 个位【02379】第2期 189期 64342 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '186-188期 个位【35689】第2期 187期 33486 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '185-187期 个位【01236】第1期 185期 12780 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '184-186期 个位【04589】第1期 184期 83050 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '182-184期 个位【02359】第2期 183期 31789 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '180-182期 个位【14589】第2期 181期 03801 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '179-181期 个位【23567】第1期 179期 39672 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '176-178期 个位【24569】第3期 178期 34787 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '173-175期 个位【04789】第3期 175期 91691 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '172-174期 个位【12578】第1期 172期 01191 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '171-173期 个位【03567】第1期 171期 85725 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '170-172期 个位【12468】第1期 170期 37372 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '167-169期 个位【03589】第3期 169期 93177 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '166-168期 个位【05678】第1期 166期 39966 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '163-165期 个位【01345】第3期 165期 78613 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '162-164期 个位【13489】第1期 162期 45181 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '161-163期 个位【13589】第1期 161期 11248 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '160-162期 个位【13568】第1期 160期 48436 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '157-159期 个位【23567】第3期 159期 62087 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '154-156期 个位【14789】第3期 156期 53557 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '153-155期 个位【01369】第1期 153期 40733 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '151-153期 个位【12689】第2期 152期 96842 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '150-152期 个位【03678】第1期 150期 00596 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '149-151期 个位【25679】第1期 149期 60867 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '146-148期 个位【12369】第3期 148期 79945 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '145-147期 个位【23468】第1期 145期 67388 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '142-144期 个位【13456】第3期 144期 77820 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '139-141期 个位【03467】第3期 141期 99126 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '138-140期 个位【12679】第1期 138期 70062 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '137-139期 个位【25689】第1期 137期 13902 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '134-136期 个位【02478】第3期 136期 99786 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '131-133期 个位【02589】第3期 133期 90350 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '130-132期 个位【34579】第1期 130期 88933 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '129-131期 个位【34789】第1期 129期 31309 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '126-128期 个位【01234】第3期 128期 97289 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '123-125期 个位【01258】第3期 125期 58698 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '122-124期 个位【24789】第1期 122期 31312 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '119-121期 个位【23579】第3期 121期 23971 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '118-120期 个位【02469】第1期 118期 75972 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '117-119期 个位【01267】第1期 117期 99800 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '114-116期 个位【01234】第3期 116期 87994 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '113-115期 个位【02589】第1期 113期 27958 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '111-113期 个位【01349】第2期 112期 75919 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '108-110期 个位【01346】第3期 110期 47771 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '107-109期 个位【23579】第1期 107期 44079 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '104-106期 个位【12789】第3期 106期 38643 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '103-105期 个位【46789】第1期 103期 49558 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '102-104期 个位【24679】第1期 102期 68619 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '101-103期 个位【14579】第1期 101期 55574 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '100-102期 个位【13489】第1期 100期 98551 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '099-101期 个位【12578】第1期 099期 26627 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '097-099期 个位【01469】第2期 098期 09504 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '096-098期 个位【23789】第1期 096期 53129 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '094-096期 个位【03459】第2期 095期 07693 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '093-095期 个位【13569】第1期 093期 56725 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '090-092期 个位【12346】第3期 092期 89547 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '089-091期 个位【12356】第1期 089期 62171 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '088-090期 个位【25679】第1期 088期 04337 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '087-089期 个位【23489】第1期 087期 30494 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '086-088期 个位【15679】第1期 086期 38441 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '083-085期 个位【23589】第3期 085期 70531 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '080-082期 个位【02358】第3期 082期 34104 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '077-079期 个位【12468】第3期 079期 02721 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '074-076期 个位【04579】第3期 076期 39150 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '073-075期 个位【16789】第1期 073期 72416 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '071-073期 个位【03569】第2期 072期 14955 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '068-070期 个位【24679】第3期 070期 02795 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '067-069期 个位【24678】第1期 067期 73336 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '064-066期 个位【13457】第3期 066期 00236 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '061-063期 个位【03478】第3期 063期 06471 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '060-062期 个位【02567】第1期 060期 68596 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '059-061期 个位【12567】第1期 059期 57395 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '056-058期 个位【12468】第3期 058期 21529 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '054-056期 个位【01267】第2期 055期 18316 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '053-055期 个位【13478】第1期 053期 56111 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '051-053期 个位【23457】第2期 052期 62647 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '048-050期 个位【02347】第3期 050期 60386 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '045-047期 个位【13678】第3期 047期 76884 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '042-044期 个位【14689】第3期 044期 26883 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '039-041期 个位【01236】第3期 041期 60284 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '036-038期 个位【12789】第3期 038期 63767 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '034-036期 个位【23467】第2期 035期 40726 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '033-035期 个位【34579】第1期 033期 75623 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '032-034期 个位【35678】第1期 032期 57798 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '031-033期 个位【12356】第1期 031期 49585 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '029-031期 个位【01458】第2期 030期 17774 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '027-029期 个位【12569】第2期 028期 43342 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '024-026期 个位【45689】第3期 026期 47272 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '022-024期 个位【24568】第2期 023期 63046 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '020-022期 个位【34679】第2期 021期 36697 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '018-020期 个位【12489】第2期 019期 29601 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '015-017期 个位【02369】第3期 017期 74238 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '014-016期 个位【16789】第1期 014期 90556 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '011-013期 个位【01345】第3期 013期 33208 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '010-012期 个位【13459】第1期 010期 05865 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '009-011期 个位【14678】第1期 009期 46744 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '007-009期 个位【01238】第2期 008期 60563 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '006-008期 个位【01358】第1期 006期 08048 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '003-005期 个位【23468】第3期 005期 70166 中', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'gameId': '二分彩', 'title': '720-002期 个位【13589】第3期 002期 34357 挂', 'type': '个位'}
+2018-01-27 09:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/sfc.json>
+{'N1': '7',
+ 'N2': '8',
+ 'N3': '0',
+ 'N4': '6',
+ 'N5': '4',
+ 'gameId': '二分彩',
+ 'gamedate': 20180127276}
+2018-01-27 09:12:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-01-27 09:12:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2216,
+ 'downloader/request_count': 9,
+ 'downloader/request_method_count/GET': 9,
+ 'downloader/response_bytes': 143353,
+ 'downloader/response_count': 9,
+ 'downloader/response_status_count/200': 9,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 1, 27, 1, 12, 26, 94330),
+ 'item_scraped_count': 621,
+ 'log_count/DEBUG': 631,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 2,
+ 'response_received_count': 9,
+ 'scheduler/dequeued': 9,
+ 'scheduler/dequeued/memory': 9,
+ 'scheduler/enqueued': 9,
+ 'scheduler/enqueued/memory': 9,
+ 'start_time': datetime.datetime(2018, 1, 27, 1, 12, 6, 372712)}
+2018-01-27 09:12:26 [scrapy.core.engine] INFO: Spider closed (finished)

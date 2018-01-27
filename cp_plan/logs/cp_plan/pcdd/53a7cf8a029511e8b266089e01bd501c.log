@@ -1,0 +1,422 @@
+2018-01-26 20:35:10 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: cp_plan)
+2018-01-26 20:35:10 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'cp_plan', 'DOWNLOAD_DELAY': 1.5, 'FEED_EXPORT_ENCODING': 'utf-8', 'LOG_FILE': 'logs\\cp_plan\\pcdd\\53a7cf8a029511e8b266089e01bd501c.log', 'NEWSPIDER_MODULE': 'cp_plan.spiders', 'SPIDER_MODULES': ['cp_plan.spiders']}
+2018-01-26 20:35:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-01-26 20:35:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'cp_plan.middlewares.RandomUserAgent',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-01-26 20:35:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-01-26 20:35:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['cp_plan.pipelines.CpPlanPipeline']
+2018-01-26 20:35:10 [scrapy.core.engine] INFO: Spider opened
+2018-01-26 20:35:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-01-26 20:35:10 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-01-26 20:35:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pcdd.json> (referer: None)
+2018-01-26 20:35:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pcdd.json> (referer: http://56070.la/json/pcdd.json)
+2018-01-26 20:35:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/pcdd.json> (referer: http://56070.la/json/pcdd.json)
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'title': '265-267期 个位【3 6 7 8 9】第1期 265期 等开'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '264-266期 个位【0 5 7 8 9】第1期 264期 898 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '261-263期 个位【4 5 6 7 9】第3期 263期 201 挂',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '260-262期 个位【1 3 4 7 9】第1期 260期 511 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '258-260期 个位【0 1 2 6 8】第2期 259期 598 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '255-257期 个位【0 2 4 6 7】第3期 257期 327 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '254-256期 个位【3 4 5 6 9】第1期 254期 474 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '252-254期 个位【0 1 3 6 7】第2期 253期 983 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '251-253期 个位【2 3 4 5 9】第1期 251期 629 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '248-250期 个位【1 3 7 8 9】第3期 250期 060 挂',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '247-249期 个位【1 5 6 7 8】第1期 247期 038 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '244-246期 个位【1 2 3 4 7】第3期 246期 595 挂',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '243-245期 个位【3 4 7 8 9】第1期 243期 284 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '242-244期 个位【0 2 3 4 9】第1期 242期 539 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '241-243期 个位【1 3 5 7 8】第1期 241期 028 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '240-242期 个位【3 4 5 7 8】第1期 240期 534 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '238-240期 个位【1 5 6 7 9】第2期 239期 821 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '237-239期 个位【2 5 6 8 9】第1期 237期 526 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '236-238期 个位【1 3 5 8 9】第1期 236期 928 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '233-235期 个位【1 4 5 7 8】第3期 235期 092 挂',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '231-233期 个位【0 2 3 5 7】第2期 232期 922 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '228-230期 个位【2 3 4 7 8】第3期 230期 256 挂',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '225-227期 个位【1 2 3 7 8】第3期 227期 843 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '224-226期 个位【0 1 6 8 9】第1期 224期 578 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '221-223期 个位【0 2 3 7 8】第3期 223期 408 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '219-221期 个位【3 4 6 7 9】第2期 220期 876 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '218-220期 个位【1 2 3 7 9】第1期 218期 843 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '215-217期 个位【1 2 5 7 8】第3期 217期 232 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '213-215期 个位【1 2 4 5 9】第2期 214期 334 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '212-214期 个位【0 1 3 6 8】第1期 212期 476 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '211-213期 个位【0 1 4 6 7】第1期 211期 816 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '210-212期 个位【0 1 4 5 6】第1期 210期 024 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '208-210期 个位【1 2 4 5 7】第2期 209期 331 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '206-208期 个位【0 2 7 8 9】第2期 207期 197 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '205-207期 个位【1 3 4 7 8】第1期 205期 921 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '204-206期 个位【0 2 3 7 9】第1期 204期 753 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '203-205期 个位【1 2 6 8 9】第1期 203期 869 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '202-204期 个位【3 4 5 8 9】第1期 202期 655 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '201-203期 个位【0 5 6 8 9】第1期 201期 149 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '200-202期 个位【0 1 3 5 6】第1期 200期 071 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '199-201期 个位【0 1 3 5 8】第1期 199期 773 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '198-200期 个位【1 2 7 8 9】第1期 198期 368 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '197-199期 个位【0 3 5 6 7】第1期 197期 287 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '196-198期 个位【0 1 6 8 9】第1期 196期 240 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '194-196期 个位【1 5 6 7 8】第2期 195期 537 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '193-195期 个位【0 2 5 7 8】第1期 193期 065 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '190-192期 个位【0 5 6 7 9】第3期 192期 378 挂',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '189-191期 个位【0 2 3 7 8】第1期 189期 720 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '188-190期 个位【2 3 5 8 9】第1期 188期 415 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '187-189期 个位【1 3 7 8 9】第1期 187期 668 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '186-188期 个位【0 1 3 8 9】第1期 186期 958 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '185-187期 个位【2 3 4 6 9】第1期 185期 019 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '183-185期 个位【1 5 7 8 9】第2期 184期 969 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '180-182期 个位【1 3 4 6 8】第3期 182期 036 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '179-181期 个位【3 5 7 8 9】第1期 179期 853 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '178-180期 个位【3 5 6 8 9】第1期 178期 233 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '177-179期 个位【0 2 4 7 9】第1期 177期 190 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '175-177期 个位【1 3 6 7 8】第2期 176期 767 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '172-174期 个位【1 4 5 6 7】第3期 174期 577 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '171-173期 个位【0 3 5 6 8】第1期 171期 235 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '170-172期 个位【0 2 3 8 9】第1期 170期 628 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '169-171期 个位【1 2 3 4 8】第1期 169期 641 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '168-170期 个位【3 4 5 7 9】第1期 168期 235 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '167-169期 个位【1 2 3 6 9】第1期 167期 496 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '166-168期 个位【1 3 4 5 8】第1期 166期 008 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '163-165期 个位【2 3 4 5 7】第3期 165期 448 挂',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '162-164期 个位【1 2 3 4 6】第1期 162期 352 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '160-162期 个位【3 4 7 8 9】第2期 161期 307 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '158-160期 个位【0 1 7 8 9】第2期 159期 188 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '157-159期 个位【0 1 3 6 9】第1期 157期 871 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '154-156期 个位【3 4 5 6 8】第3期 156期 770 挂',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '153-155期 个位【5 6 7 8 9】第1期 153期 037 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '152-154期 个位【0 1 2 4 8】第1期 152期 911 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '151-153期 个位【2 5 6 7 9】第1期 151期 955 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '150-152期 个位【1 4 7 8 9】第1期 150期 148 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '149-151期 个位【0 1 2 5 8】第1期 149期 821 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '148-150期 个位【0 4 6 7 8】第1期 148期 300 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '147-149期 个位【2 3 4 7 8】第1期 147期 063 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '146-148期 个位【0 1 5 7 8】第1期 146期 467 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '144-146期 个位【0 1 3 5 9】第2期 145期 069 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '142-144期 个位【0 1 3 8 9】第2期 143期 761 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '141-143期 个位【0 2 3 4 5】第1期 141期 802 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '138-140期 个位【0 1 3 6 8】第3期 140期 380 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '137-139期 个位【0 2 3 5 6】第1期 137期 613 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '136-138期 个位【1 3 5 6 9】第1期 136期 179 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '133-135期 个位【1 5 6 8 9】第3期 135期 045 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '132-134期 个位【0 2 3 8 9】第1期 132期 043 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '131-133期 个位【1 3 4 8 9】第1期 131期 578 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '129-131期 个位【3 4 5 7 8】第2期 130期 225 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '128-130期 个位【3 4 5 8 9】第1期 128期 954 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '127-129期 个位【1 2 4 5 6】第1期 127期 316 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'gameId': 'PC蛋蛋',
+ 'title': '126-128期 个位【0 2 3 4 6】第1期 126期 756 中',
+ 'type': '个位'}
+2018-01-26 20:35:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/pcdd.json>
+{'N1': '8', 'N2': '9', 'N3': '8', 'gameId': 'PC蛋蛋', 'gamedate': 869264}
+2018-01-26 20:35:19 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-01-26 20:35:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 742,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 27277,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 1, 26, 12, 35, 19, 695810),
+ 'item_scraped_count': 93,
+ 'log_count/DEBUG': 97,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2018, 1, 26, 12, 35, 10, 759112)}
+2018-01-26 20:35:19 [scrapy.core.engine] INFO: Spider closed (finished)

@@ -1,0 +1,765 @@
+2018-01-27 09:11:48 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: cp_plan)
+2018-01-27 09:11:48 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'cp_plan', 'DOWNLOAD_DELAY': 1.5, 'FEED_EXPORT_ENCODING': 'utf-8', 'LOG_FILE': 'logs\\cp_plan\\ssc\\fbf349be02fe11e89138089e01bd501c.log', 'NEWSPIDER_MODULE': 'cp_plan.spiders', 'SPIDER_MODULES': ['cp_plan.spiders']}
+2018-01-27 09:11:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-01-27 09:11:48 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'cp_plan.middlewares.RandomUserAgent',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-01-27 09:11:48 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-01-27 09:11:48 [scrapy.middleware] INFO: Enabled item pipelines:
+['cp_plan.pipelines.CpPlanPipeline']
+2018-01-27 09:11:48 [scrapy.core.engine] INFO: Spider opened
+2018-01-27 09:11:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:11:48 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6030
+2018-01-27 09:11:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: None)
+2018-01-27 09:11:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: None)
+2018-01-27 09:12:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: None)
+2018-01-27 09:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: None)
+2018-01-27 09:12:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:12:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:12:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:12:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:12:49 [scrapy.extensions.logstats] INFO: Crawled 9 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:12:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:12:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:13:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:13:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:13:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:13:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:13:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:13:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:13:51 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:13:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:13:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:14:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:14:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:14:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:14:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:14:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:14:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:14:52 [scrapy.extensions.logstats] INFO: Crawled 27 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:14:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:15:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:15:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:15:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:15:54 [scrapy.extensions.logstats] INFO: Crawled 36 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:16:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:16:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:16:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:16:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:16:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:16:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:16:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:16:48 [scrapy.extensions.logstats] INFO: Crawled 44 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:16:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:16:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:17:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:17:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:17:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:17:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:17:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:17:49 [scrapy.extensions.logstats] INFO: Crawled 53 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:17:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:17:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:18:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:18:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:18:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:18:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:18:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:18:51 [scrapy.extensions.logstats] INFO: Crawled 62 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:18:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:18:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:19:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:19:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:19:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:19:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:19:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:19:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:19:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:19:52 [scrapy.extensions.logstats] INFO: Crawled 71 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:19:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:19:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:20:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:20:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:20:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:20:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:20:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:20:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:20:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:20:53 [scrapy.extensions.logstats] INFO: Crawled 80 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:20:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:21:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:21:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:21:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:21:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:21:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:21:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:21:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:21:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:21:55 [scrapy.extensions.logstats] INFO: Crawled 89 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:21:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:22:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:22:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:22:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:22:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:22:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:22:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:22:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:22:49 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:22:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:22:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:23:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:23:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:23:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:23:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:23:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:23:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:23:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:23:50 [scrapy.extensions.logstats] INFO: Crawled 106 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:24:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:24:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:24:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:24:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:24:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:24:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:24:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:24:51 [scrapy.extensions.logstats] INFO: Crawled 115 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:24:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:24:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:25:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:25:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:25:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:25:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:25:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:25:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:25:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:25:53 [scrapy.extensions.logstats] INFO: Crawled 124 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:25:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:26:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:26:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:26:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:26:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:26:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:26:49 [scrapy.extensions.logstats] INFO: Crawled 132 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:26:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:27:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:27:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:27:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:27:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:27:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:27:52 [scrapy.extensions.logstats] INFO: Crawled 141 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:27:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:27:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:28:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:28:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:28:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:28:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:28:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:28:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:28:53 [scrapy.extensions.logstats] INFO: Crawled 150 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:28:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:29:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:29:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:29:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:29:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:29:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:29:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:29:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:29:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:29:54 [scrapy.extensions.logstats] INFO: Crawled 159 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:29:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:30:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:30:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:30:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:30:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:30:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:30:51 [scrapy.extensions.logstats] INFO: Crawled 167 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:30:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:30:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:31:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:31:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:31:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:31:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:31:54 [scrapy.extensions.logstats] INFO: Crawled 176 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:31:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:32:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:32:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:32:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:32:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:32:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:32:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:32:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:32:49 [scrapy.extensions.logstats] INFO: Crawled 184 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:32:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:32:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:33:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:33:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:33:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:33:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:33:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:33:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:33:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:33:51 [scrapy.extensions.logstats] INFO: Crawled 193 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:33:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:33:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:34:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:34:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:34:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:34:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:34:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:34:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:34:52 [scrapy.extensions.logstats] INFO: Crawled 202 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:34:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:34:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:35:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:35:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:35:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:35:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:35:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:35:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:35:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:35:54 [scrapy.extensions.logstats] INFO: Crawled 211 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:35:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:36:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:36:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:36:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:36:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:36:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:36:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:36:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:36:48 [scrapy.extensions.logstats] INFO: Crawled 219 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:36:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:36:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:37:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:37:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:37:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:37:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:37:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:37:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:37:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:37:49 [scrapy.extensions.logstats] INFO: Crawled 228 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:37:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:37:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:38:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:38:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:38:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:38:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:38:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:38:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:38:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:38:51 [scrapy.extensions.logstats] INFO: Crawled 237 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:38:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:38:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:39:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:39:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:39:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:39:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:39:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:39:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:39:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:39:52 [scrapy.extensions.logstats] INFO: Crawled 246 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:39:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:39:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:40:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:40:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:40:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:40:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:40:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:40:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:40:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:40:53 [scrapy.extensions.logstats] INFO: Crawled 255 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:40:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:41:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:41:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:41:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:41:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:41:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:41:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:41:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:41:54 [scrapy.extensions.logstats] INFO: Crawled 264 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:41:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:42:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:42:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:42:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:42:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:42:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:42:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:42:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:42:49 [scrapy.extensions.logstats] INFO: Crawled 272 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:42:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:42:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:43:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:43:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:43:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:43:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:43:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:43:50 [scrapy.extensions.logstats] INFO: Crawled 281 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:43:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:44:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:44:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:44:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:44:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:44:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:44:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:44:52 [scrapy.extensions.logstats] INFO: Crawled 290 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:44:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:44:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:45:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:45:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:45:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:45:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:45:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:45:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:45:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:45:53 [scrapy.extensions.logstats] INFO: Crawled 299 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:45:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:46:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:46:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:46:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:46:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:46:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:46:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:46:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:46:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:46:54 [scrapy.extensions.logstats] INFO: Crawled 308 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:46:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:47:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:47:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:47:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:47:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:47:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:47:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:47:48 [scrapy.extensions.logstats] INFO: Crawled 316 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:47:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:47:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:48:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:48:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:48:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:48:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:48:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:48:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:48:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:48:50 [scrapy.extensions.logstats] INFO: Crawled 325 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:48:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:49:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:49:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:49:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:49:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:49:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:49:51 [scrapy.extensions.logstats] INFO: Crawled 334 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:49:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:49:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:50:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:50:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:50:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:50:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:50:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:50:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:50:52 [scrapy.extensions.logstats] INFO: Crawled 343 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:50:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:51:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:51:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:51:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:51:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:51:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:51:53 [scrapy.extensions.logstats] INFO: Crawled 352 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:51:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:52:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:52:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:52:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:52:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:52:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:52:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:52:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:52:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:52:54 [scrapy.extensions.logstats] INFO: Crawled 361 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:52:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:53:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:53:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:53:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:53:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:53:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:53:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:53:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:53:49 [scrapy.extensions.logstats] INFO: Crawled 369 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:53:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:53:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:54:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:54:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:54:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:54:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:54:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:54:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:54:50 [scrapy.extensions.logstats] INFO: Crawled 378 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:54:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:54:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:55:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:55:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:55:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:55:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:55:51 [scrapy.extensions.logstats] INFO: Crawled 387 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:55:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:55:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:56:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:56:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:56:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:56:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:56:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:56:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:56:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:56:52 [scrapy.extensions.logstats] INFO: Crawled 396 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:56:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:56:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:57:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:57:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:57:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:57:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:57:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:57:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:57:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:57:53 [scrapy.extensions.logstats] INFO: Crawled 405 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:57:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:58:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:58:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:58:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:58:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:58:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:58:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:58:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:58:54 [scrapy.extensions.logstats] INFO: Crawled 414 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:58:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:59:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:59:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:59:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:59:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:59:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 09:59:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 09:59:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 09:59:49 [scrapy.extensions.logstats] INFO: Crawled 422 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 09:59:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 09:59:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 10:00:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 10:00:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 10:00:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 10:00:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 10:00:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 10:00:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 10:00:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 10:00:50 [scrapy.extensions.logstats] INFO: Crawled 431 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 10:00:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 10:00:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 10:00:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 10:00:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 10:00:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3z6.json> (referer: http://56070.la/json/cqssc_h3z6.json)
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'N1': '5',
+ 'N2': '7',
+ 'N3': '0',
+ 'N4': '8',
+ 'N5': '1',
+ 'gameId': '重庆时时彩',
+ 'gamedate': 20180127024}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'title': '025-027期 后三【012346789】第1期 025期 等开'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '022-024期 后三【012345678】第3期 024期 57081 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '021-023期 后三【013456789】第1期 021期 61891 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '019-021期 后三【123456789】第2期 020期 51416 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '018-020期 后三【013456789】第1期 018期 30039 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '015-017期 后三【012345678】第3期 017期 90343 挂',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '014-016期 后三【012456789】第1期 014期 42028 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '013-015期 后三【012456789】第1期 013期 36640 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '012-014期 后三【013456789】第1期 012期 83609 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '010-012期 后三【012345689】第2期 011期 56198 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '009-011期 后三【123456789】第1期 009期 76579 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '007-009期 后三【012356789】第2期 008期 69128 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '004-006期 后三【012346789】第3期 006期 46468 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '003-005期 后三【013456789】第1期 003期 63517 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '001-003期 后三【012345689】第2期 002期 94145 中',
+ 'type': '后三'}
+2018-01-27 10:00:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3z6.json>
+{'gameId': '重庆时时彩',
+ 'title': '120-002期 后三【012346789】第1期 120期 05634 中',
+ 'type': '后三'}
+2018-01-27 10:00:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc.json> (referer: http://56070.la/json/cqssc.json)
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'N1': '5',
+ 'N2': '7',
+ 'N3': '0',
+ 'N4': '8',
+ 'N5': '1',
+ 'gameId': '重庆时时彩',
+ 'gamedate': 20180127024}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'title': '024-026期 个位【23459】第2期 025期 等开'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '023-025期 个位【01469】第1期 023期 29896 中', 'type': '个位'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '022-024期 个位【12347】第1期 022期 02292 中', 'type': '个位'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '021-023期 个位【12349】第1期 021期 61891 中', 'type': '个位'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '020-022期 个位【01456】第1期 020期 51416 中', 'type': '个位'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '018-020期 个位【01234】第2期 019期 17023 中', 'type': '个位'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '016-018期 个位【12345】第2期 017期 90343 中', 'type': '个位'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '014-016期 个位【01257】第2期 015期 29002 中', 'type': '个位'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '012-014期 个位【01348】第2期 013期 36640 中', 'type': '个位'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '010-012期 个位【05689】第2期 011期 56198 中', 'type': '个位'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '007-009期 个位【01249】第3期 009期 76579 中', 'type': '个位'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '004-006期 个位【14567】第3期 006期 46468 挂', 'type': '个位'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '001-003期 个位【34678】第3期 003期 63517 中', 'type': '个位'}
+2018-01-27 10:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc.json>
+{'gameId': '重庆时时彩', 'title': '120-002期 个位【01469】第1期 120期 05634 中', 'type': '个位'}
+2018-01-27 10:01:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h2zx.json> (referer: http://56070.la/json/cqssc_h2zx.json)
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'N1': '5',
+ 'N2': '7',
+ 'N3': '0',
+ 'N4': '8',
+ 'N5': '1',
+ 'gameId': '重庆时时彩',
+ 'gamedate': 20180127024}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'title': '025-027期 后二【0346789-0145689】第1期 025期 等开'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '022-024期 后二【0234567-0234578】第3期 024期 57081 挂',
+ 'type': '后二'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '019-021期 后二【0345679-2456789】第3期 021期 61891 挂',
+ 'type': '后二'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '018-020期 后二【0123568-1245679】第1期 018期 30039 中',
+ 'type': '后二'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '015-017期 后二【1234579-1234568】第3期 017期 90343 中',
+ 'type': '后二'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '014-016期 后二【0234569-1345689】第1期 014期 42028 中',
+ 'type': '后二'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '013-015期 后二【0134569-0123568】第1期 013期 36640 中',
+ 'type': '后二'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '010-012期 后二【1345678-0256789】第3期 012期 83609 挂',
+ 'type': '后二'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '007-009期 后二【1346789-1234569】第3期 009期 76579 中',
+ 'type': '后二'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '006-008期 后二【1234689-1236789】第1期 006期 46468 中',
+ 'type': '后二'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '004-006期 后二【1234689-1234567】第2期 005期 32292 中',
+ 'type': '后二'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '003-005期 后二【1234678-0134679】第1期 003期 63517 中',
+ 'type': '后二'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '002-004期 后二【0134568-1256789】第1期 002期 94145 中',
+ 'type': '后二'}
+2018-01-27 10:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h2zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '120-002期 后二【0124569-0145679】第2期 001期 89740 中',
+ 'type': '后二'}
+2018-01-27 10:01:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://56070.la/json/cqssc_h3zx.json> (referer: http://56070.la/json/cqssc_h3zx.json)
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'N1': '5',
+ 'N2': '7',
+ 'N3': '0',
+ 'N4': '8',
+ 'N5': '1',
+ 'gameId': '重庆时时彩',
+ 'gamedate': 20180127024}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'title': '025-027期 后三【01256789-02356789-13456789】第1期 025期 等开'}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '024-026期 后三【01345789-02346789-01356789】第1期 024期 57081 中',
+ 'type': '后三'}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '021-023期 后三【01234567-01234569-03456789】第3期 023期 29896 挂',
+ 'type': '后三'}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '018-020期 后三【01234568-01245679-01246789】第3期 020期 51416 中',
+ 'type': '后三'}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '015-017期 后三【01236789-01234567-01346789】第3期 017期 90343 中',
+ 'type': '后三'}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '013-015期 后三【01245679-02356789-12356789】第2期 014期 42028 中',
+ 'type': '后三'}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '011-013期 后三【01356789-01245789-01235679】第2期 012期 83609 中',
+ 'type': '后三'}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '010-012期 后三【01234567-01236789-12345789】第1期 010期 73494 中',
+ 'type': '后三'}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '007-009期 后三【01234689-03456789-01245789】第3期 009期 76579 挂',
+ 'type': '后三'}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '006-008期 后三【12345678-01245678-01234689】第1期 006期 46468 中',
+ 'type': '后三'}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '003-005期 后三【02345679-02345789-13456789】第3期 005期 32292 挂',
+ 'type': '后三'}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '002-004期 后三【01235689-01345678-01345689】第1期 002期 94145 中',
+ 'type': '后三'}
+2018-01-27 10:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://56070.la/json/cqssc_h3zx.json>
+{'gameId': '重庆时时彩',
+ 'title': '120-002期 后三【02345789-12345789-02346789】第2期 001期 89740 中',
+ 'type': '后三'}
+2018-01-27 10:01:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-01-27 10:01:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 118564,
+ 'downloader/request_count': 439,
+ 'downloader/request_method_count/GET': 439,
+ 'downloader/response_bytes': 781527,
+ 'downloader/response_count': 439,
+ 'downloader/response_status_count/200': 439,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 1, 27, 2, 1, 3, 752006),
+ 'item_scraped_count': 61,
+ 'log_count/DEBUG': 501,
+ 'log_count/INFO': 56,
+ 'request_depth_max': 109,
+ 'response_received_count': 439,
+ 'scheduler/dequeued': 439,
+ 'scheduler/dequeued/memory': 439,
+ 'scheduler/enqueued': 439,
+ 'scheduler/enqueued/memory': 439,
+ 'start_time': datetime.datetime(2018, 1, 27, 1, 11, 48, 480970)}
+2018-01-27 10:01:03 [scrapy.core.engine] INFO: Spider closed (finished)
