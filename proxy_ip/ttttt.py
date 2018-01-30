@@ -59,4 +59,5 @@ def for_close_api():
     close_url ='http://778vpn.com/other/closeChannel'
     a = requests.post(close_url,data=data)
     print(a.text)
-    
+
+get_data()
