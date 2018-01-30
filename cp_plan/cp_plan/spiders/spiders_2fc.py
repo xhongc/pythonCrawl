@@ -50,7 +50,7 @@ class CpPlansSpider(scrapy.Spider):
             item['title'] = each['Ruestl']
             item['type'] = html.get('GameMultiple')['Gt']
             item['gameId'] = '二分彩'
-            count_num = len(item['title'])
+
             yield item
             # 爬取 即刻开奖信息
         item = Wait_Item()

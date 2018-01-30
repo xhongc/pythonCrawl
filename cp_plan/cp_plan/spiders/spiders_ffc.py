@@ -59,6 +59,11 @@ class CpPlansSpider(scrapy.Spider):
         item['N3'] = html.get('TopGame')['R3']
         item['N4'] = html.get('TopGame')['R4']
         item['N5'] = html.get('TopGame')['R5']
+        item['N6'] = 4418
+        item['N7'] = 4418
+        item['N8'] = 4418
+        item['N9'] = 4418
+        item['N10'] = 4418
         item['gamedate'] = html.get('TopGame')['gameid']
         item['gameId'] = '分分彩'
 
