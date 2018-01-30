@@ -1,6 +1,7 @@
 import requests
 from pprint import pprint
 import json
+
 def get_data():
     url ='https://wx.tenpay.com/userroll/userrolllist?count=10&sort_type=1&exportkey=ARWXt0ZDScMJgrNhzVf%2BKRQ%3D'
     headers = {
@@ -60,4 +61,3 @@ def for_close_api():
     a = requests.post(close_url,data=data)
     print(a.text)
 
-get_data()

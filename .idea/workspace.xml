@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1be0d9-07b3-4efa-9499-f6dde6cd94c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proxy_ip/.idea/workspace.xml" afterPath="$PROJECT_DIR$/proxy_ip/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proxy_ip/ttttt.py" afterPath="$PROJECT_DIR$/proxy_ip/ttttt.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyqt5/.idea/workspace.xml" afterPath="$PROJECT_DIR$/pyqt5/.idea/workspace.xml" />
