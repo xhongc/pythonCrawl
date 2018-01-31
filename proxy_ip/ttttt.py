@@ -15,7 +15,7 @@ def get_data():
     a = requests.get(url,verify=False,headers=headers)
     html = a.text
     res = json.loads(html,encoding='utf-8')
-    pprint(res)
+    #pprint(res)
     return res
 
 def parse_data():
@@ -61,3 +61,5 @@ def for_close_api():
     a = requests.post(close_url,data=data)
     print(a.text)
 
+a = parse_data()
+print(a)
