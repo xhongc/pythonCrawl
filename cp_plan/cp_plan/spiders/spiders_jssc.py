@@ -47,24 +47,25 @@ class CpPlansSpider(scrapy.Spider):
             item = CpPlanItem()
             # print(each)
             item['title'] = each['Ruestl']
-            item['type'] = html.get('GameMultiple')['Gt']
-            item['gameId'] = '极速赛车'
+            item['type'] = 71
+            item['gameId'] = 7
             count_num = len(item['title'])
             yield item
             # 爬取 即刻开奖信息
         item = Wait_Item()
-        item['N1'] = html.get('TopGame')['R1']
-        item['N2'] = html.get('TopGame')['R2']
-        item['N3'] = html.get('TopGame')['R3']
-        item['N4'] = html.get('TopGame')['R4']
-        item['N5'] = html.get('TopGame')['R5']
-        item['N6'] = html.get('TopGame')['R6']
-        item['N7'] = html.get('TopGame')['R7']
-        item['N8'] = html.get('TopGame')['R8']
-        item['N9'] = html.get('TopGame')['R9']
-        item['N10'] = html.get('TopGame')['R10']
+        N1 = html.get('TopGame')['R1']
+        N2 = html.get('TopGame')['R2']
+        N3 = html.get('TopGame')['R3']
+        N4 = html.get('TopGame')['R4']
+        N5 = html.get('TopGame')['R5']
+        N6 = html.get('TopGame')['R6']
+        N7 = html.get('TopGame')['R7']
+        N8 = html.get('TopGame')['R8']
+        N9 = html.get('TopGame')['R9']
+        N10 = html.get('TopGame')['R10']
+        item['num'] = '{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}'.format(N1, N2, N3, N4, N5, N6, N7, N8, N9, N10)
         item['gamedate'] = html.get('TopGame')['gameid']
-        item['gameId'] = '极速赛车'
+        item['gameId'] = 7
 
         yield item
 

@@ -48,19 +48,27 @@ class CpPlansSpider(scrapy.Spider):
             item = CpPlanItem()
             # print(each)
             item['title'] = each['Ruestl']
-            item['type'] = html.get('GameMultiple')['Gt']
-            item['gameId'] = '二分彩'
+            if response.url == 'http://56070.la/json/sfc.json':
+                item['type'] = 61
+            elif response.url == 'http://56070.la/json/sfc_h2zx.json':
+                item['type'] = 62
+            elif response.url == 'http://56070.la/json/sfc_h3zx.json':
+                item['type'] = 63
+            else:
+                item['type'] = 64
+            item['gameId'] = 6
 
             yield item
             # 爬取 即刻开奖信息
         item = Wait_Item()
-        item['N1'] = html.get('TopGame')['R1']
-        item['N2'] = html.get('TopGame')['R2']
-        item['N3'] = html.get('TopGame')['R3']
-        item['N4'] = html.get('TopGame')['R4']
-        item['N5'] = html.get('TopGame')['R5']
+        N1 = html.get('TopGame')['R1']
+        N2 = html.get('TopGame')['R2']
+        N3 = html.get('TopGame')['R3']
+        N4 = html.get('TopGame')['R4']
+        N5 = html.get('TopGame')['R5']
+        item['num'] = '{0},{1},{2},{3},{4},{5}'.format(N1,N2,N3,N4,N5)
         item['gamedate'] = html.get('TopGame')['gameid']
-        item['gameId'] = '二分彩'
+        item['gameId'] = 6
 
         yield item
 

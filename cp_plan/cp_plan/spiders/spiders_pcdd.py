@@ -46,19 +46,18 @@ class CpPlansSpider(scrapy.Spider):
             item = CpPlanItem()
             # print(each)
             item['title'] = each['Ruestl']
-            item['type'] = html.get('GameMultiple')['Gt']
-            item['gameId'] = 'PC蛋蛋'
+            item['type'] = 41
+            item['gameId'] = 4
             count_num = len(item['title'])
             yield item
             # 爬取 即刻开奖信息
         item = Wait_Item()
-        item['N1'] = html.get('TopGame')['R1']
-        item['N2'] = html.get('TopGame')['R2']
-        item['N3'] = html.get('TopGame')['R3']
-        #item['N4'] = html.get('TopGame')['R4']
-        #item['N5'] = html.get('TopGame')['R5']
+        N1 = html.get('TopGame')['R1']
+        N2 = html.get('TopGame')['R2']
+        N3 = html.get('TopGame')['R3']
+        item['num'] = '{0},{1},{2}'.format(N1, N2, N3)
         item['gamedate'] = html.get('TopGame')['gameid']
-        item['gameId'] = 'PC蛋蛋'
+        item['gameId'] = 4
 
         yield item
 

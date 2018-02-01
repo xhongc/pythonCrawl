@@ -1,0 +1,14 @@
+使用本工具，请安装python环境
+
+一、无环境或32位环境
+
+1、首先安装python-2.7.8 为python环境
+2、依次安装pywin32；matplotlib；numpy；pyparsing；python；scipy；pyHook；pycurl；PIL
+3、再将AR_User覆盖环境中的Lib的文件夹
+4、最后将cv2；hamcrest；six；ImageRecognize覆盖环境中的Lib\site-packages的文件夹
+
+二、64位环境
+
+1、依次安装pywin32；matplotlib；numpy；pyparsing；python；scipy；pyHook；pycurl；PIL
+2、再将AR_User覆盖环境中的Lib的文件夹
+3、最后将pyHook；cv2；hamcrest；six；ImageRecognize覆盖环境中的Lib\site-packages的文件夹

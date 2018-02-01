@@ -242,8 +242,8 @@ for __func_name in __always_supported:
     try:
         globals()[__func_name] = __get_hash(__func_name)
     except ValueError:
-        import logging
-        logging.exception('code for hash %s was not found.', __func_name)
+        import logging_t
+        logging_t.exception('code for hash %s was not found.', __func_name)
 
 
 # Cleanup locals()

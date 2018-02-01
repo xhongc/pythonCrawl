@@ -16,15 +16,6 @@ class CpPlanItem(scrapy.Item):
     gameId = scrapy.Field()
     
 class Wait_Item(scrapy.Item):
-    N1 =scrapy.Field()
-    N2 =scrapy.Field()
-    N3 =scrapy.Field()
-    N4 =scrapy.Field()
-    N5 =scrapy.Field()
-    N6 =scrapy.Field()
-    N7 =scrapy.Field()
-    N8 =scrapy.Field()
-    N9 =scrapy.Field()
-    N10 =scrapy.Field()
+    num = scrapy.Field()
     gamedate =scrapy.Field()
     gameId = scrapy.Field()

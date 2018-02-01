@@ -1,17 +1,30 @@
 import pythoncom
 import pyHook
+import sys
+import configparser
 
 def onMouseEvent(event):
-    print("MessageName:", event.MessageName)
-    print("Message:", event.Message)
-    print("Time:", event.Time)
-    print("Window:", event.Window)
-    print("WindowName:", event.WindowName)
-    print("Position:", event.Position)
-    print("Wheel:", event.Wheel)
-    print("Injected:", event.Injected)
+    # print("MessageName:", event.MessageName)
+    # print("Message:", event.Message)
+    # print("Time:", event.Time)
+    # print("Window:", event.Window)
+    # print("WindowName:", event.WindowName)
+    # print("Position:", event.Position)
+    # print("Wheel:", event.Wheel)
+    # print("Injected:", event.Injected)
+    # print("---")
+    if event.MessageName=="mouse left down":
 
-    print("---")
+        with open('pyhookconfig.txt','a') as f:
+            position = event.Position
+            print(position)
+            f.write(str(position))
+            f.write('\n')
+
+
+    elif event.MessageName=="mouse right down":
+        sys.exit()
+
     return True
 
 def onKeyboardEvent(event):

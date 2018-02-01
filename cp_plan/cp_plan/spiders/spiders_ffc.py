@@ -48,24 +48,27 @@ class CpPlansSpider(scrapy.Spider):
             item = CpPlanItem()
             # print(each)
             item['title'] = each['Ruestl']
-            item['type'] = html.get('GameMultiple')['Gt']
-            item['gameId'] = '分分彩'
+            if response.url == 'http://56070.la/json/ffc.json':
+                item['type'] = 51
+            elif response.url == 'http://56070.la/json/ffc_h2zx.json':
+                item['type'] = 52
+            elif response.url == 'http://56070.la/json/ffc_h3zx.json':
+                item['type'] = 53
+            else:
+                item['type'] = 54
+            item['gameId'] = 5
             count_num = len(item['title'])
             yield item
             # 爬取 即刻开奖信息
         item = Wait_Item()
-        item['N1'] = html.get('TopGame')['R1']
-        item['N2'] = html.get('TopGame')['R2']
-        item['N3'] = html.get('TopGame')['R3']
-        item['N4'] = html.get('TopGame')['R4']
-        item['N5'] = html.get('TopGame')['R5']
-        item['N6'] = 4418
-        item['N7'] = 4418
-        item['N8'] = 4418
-        item['N9'] = 4418
-        item['N10'] = 4418
+        N1 = html.get('TopGame')['R1']
+        N2 = html.get('TopGame')['R2']
+        N3 = html.get('TopGame')['R3']
+        N4 = html.get('TopGame')['R4']
+        N5 = html.get('TopGame')['R5']
+        item['num'] = '{0},{1},{2},{3},{4}'.format(N1, N2, N3, N4, N5)
         item['gamedate'] = html.get('TopGame')['gameid']
-        item['gameId'] = '分分彩'
+        item['gameId'] = 5
 
         yield item
 

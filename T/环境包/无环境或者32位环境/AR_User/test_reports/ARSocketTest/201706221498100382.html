@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AR社区Socket接口测试环境其他模块执行报告(服务器:172.24.128.14,端口:5816)</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link type="text/css" rel="stylesheet" href="http://qa-demo.web.sdp.101.com/assets/pyunit.css" />
+    <script type="text/javascript" src="http://qa-demo.web.sdp.101.com/assets/jquery.min.js"></script>
+    <script type="text/javascript" src="http://qa-demo.web.sdp.101.com/assets/pyunit.js"></script>
+    
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+function showAllDetail(){
+    showCase(2)
+    var details_divs = document.getElementsByClassName('popup_window')
+    for (var i = 0; i < details_divs.length; i++){
+        details_divs[i].style.display = 'block'
+    }    
+}
+
+/*
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+*/
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+
+<div class='heading'>
+<h1>AR社区Socket接口测试环境其他模块执行报告(服务器:172.24.128.14,端口:5816)</h1>
+
+<p class='attribute'><strong>该次测试执行于:</strong> 2017-06-22 10:59:42</p>
+<p class='attribute'><strong>接口运行时间:</strong> 0:00:16.861000</p>
+<p class='attribute'><strong>状态:</strong> 通过 15</p>
+
+
+<p class='description'></p>
+</div>
+
+
+
+<p id='show_detail_line'>显示：
+<a href='javascript:showCase(0)'>概要信息</a>
+<a href='javascript:showCase(1)'>失败的测试</a>
+<a href='javascript:showCase(2)'>所有测试</a>
+<a href='javascript:showAllDetail()'>显示所有详情</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+
+<tr id='header_row'>
+    <td>测试套件集/测试用例</td>
+    <td>统计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>更多</td>
+</tr>
+
+<tr class='passClass'>
+    <td>pet_tc.v01.test_get_protozoan_list.GetProtozoanListTest</td>
+    <td>4</td>
+    <td>4</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',4)" class="detail-link">查看详情</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_get_protozoan_list_success(获取原生宠列表成功        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >通过</a>
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt1.1: start run getProtozoanList test ......connect server&lt;br&gt;2017-06-22 10:59:42:send =&gt; login(62321): {"token": "00000", "user_type": "im", "account_id": 1955722744}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:42:receive =&gt; login(62321): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25009}&lt;br&gt;2017-06-22 10:59:42:send =&gt; modifyInfo(62321): {"nick_name": "cxrdtb", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:42:receive =&gt; modifyInfo(62321): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:42:send =&gt; scanFace(62321): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/6.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:43:receive =&gt; scanFace(62321): {"item_type":1,"item_code":10001,"item_id":8017,"item_count":1,"total_count":1,"scan_normal":1999}&lt;br&gt;2017-06-22 10:59:43:send =&gt; scanFace(62321): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/6.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:43:receive =&gt; scanFace(62321): {"item_type":1,"item_code":10001,"item_id":8017,"item_count":1,"total_count":2,"scan_normal":1998}&lt;br&gt;2017-06-22 10:59:43:send =&gt; scanFace(62321): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/6.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:43:receive =&gt; scanFace(62321): {"item_type":0,"item_code":0,"item_id":8018,"item_count":1,"total_count":1,"scan_normal":1997}&lt;br&gt;2017-06-22 10:59:43:send =&gt; scanFace(62321): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/6.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:43:receive =&gt; scanFace(62321): {"item_type":2,"item_code":0,"item_id":0,"item_count":10000,"total_count":90010000,"scan_normal":1996}&lt;br&gt;2017-06-22 10:59:43:send =&gt; scanFace(62321): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/6.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:44:receive =&gt; scanFace(62321): {"item_type":1,"item_code":10001,"item_id":8017,"item_count":1,"total_count":3,"scan_normal":1995}&lt;br&gt;2017-06-22 10:59:44:send =&gt; scanFace(62321): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/6.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:44:receive =&gt; scanFace(62321): {"item_type":2,"item_code":0,"item_id":0,"item_count":10000,"total_count":90020000,"scan_normal":1994}&lt;br&gt;2017-06-22 10:59:44:send =&gt; scanFace(62321): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/6.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:44:receive =&gt; scanFace(62321): {"item_type":0,"item_code":0,"item_id":8018,"item_count":1,"total_count":2,"scan_normal":1993}&lt;br&gt;2017-06-22 10:59:44:send =&gt; scanFace(62321): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/6.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:45:receive =&gt; scanFace(62321): {"item_type":1,"item_code":10001,"item_id":8017,"item_count":1,"total_count":4,"scan_normal":1992}&lt;br&gt;2017-06-22 10:59:45:send =&gt; scanFace(62321): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/6.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:45:receive =&gt; scanFace(62321): {"item_type":0,"item_code":0,"item_id":8018,"item_count":1,"total_count":3,"scan_normal":1991}&lt;br&gt;2017-06-22 10:59:45:send =&gt; scanFace(62321): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/6.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:45:receive =&gt; scanFace(62321): {"item_type":1,"item_code":10001,"item_id":8017,"item_count":1,"total_count":5,"scan_normal":1990}&lt;br&gt;2017-06-22 10:59:45:send =&gt; getProtozoanList(62321): {"user_id": 25009}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:45:receive =&gt; getProtozoanList(62321): [{"item_id":8017,"user_id":25009,"item_code":10001,"item_name":"西王母","item_count":5,"item_type":1}]&lt;br&gt;getProtozoanList test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>3.572s</div></td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_get_protozoan_list_user_id_error(获取原生宠列表失败--用户id错误        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >通过</a>
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt1.2: start run getProtozoanList test ......connect server&lt;br&gt;2017-06-22 10:59:45:send =&gt; login(24388): {"token": "00000", "user_type": "im", "account_id": 1099883920}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:45:receive =&gt; login(24388): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25010}&lt;br&gt;2017-06-22 10:59:45:send =&gt; modifyInfo(24388): {"nick_name": "ayxrjr", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:46:receive =&gt; modifyInfo(24388): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:46:send =&gt; getProtozoanList(24388): {"user_id": "aggkgnxg"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:46:receive =&gt; getProtozoanList(24388): []&lt;br&gt;getProtozoanList test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>0.047s</div></td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_get_protozoan_no_protozoan(获取原生宠列表--没有原生宠        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >通过</a>
+    <div id='div_pt1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt1.3: start run getProtozoanList test ......connect server&lt;br&gt;2017-06-22 10:59:46:send =&gt; login(42910): {"token": "00000", "user_type": "im", "account_id": 280346050}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:46:receive =&gt; login(42910): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25011}&lt;br&gt;2017-06-22 10:59:46:send =&gt; modifyInfo(42910): {"nick_name": "ocjzfz", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:46:receive =&gt; modifyInfo(42910): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:46:send =&gt; getProtozoanList(42910): {"user_id": 25011}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:46:receive =&gt; getProtozoanList(42910): []&lt;br&gt;getProtozoanList test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>0.047s</div></td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_get_protozoan_other_user_list(获取原生宠列表--获取其他玩家原生宠列表        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >通过</a>
+    <div id='div_pt1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt1.4: start run getProtozoanList test ......connect server&lt;br&gt;玩家A获取原生宠：&lt;br&gt;2017-06-22 10:59:46:send =&gt; login(38268): {"token": "00000", "user_type": "im", "account_id": 1397521386}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:46:receive =&gt; login(38268): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25012}&lt;br&gt;2017-06-22 10:59:46:send =&gt; modifyInfo(38268): {"nick_name": "yufwms", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:46:receive =&gt; modifyInfo(38268): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:46:send =&gt; scanFace(38268): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:46:receive =&gt; scanFace(38268): {"item_type":1,"item_code":10001,"item_id":8022,"item_count":1,"total_count":1,"scan_normal":1999}&lt;br&gt;2017-06-22 10:59:46:send =&gt; scanFace(38268): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:46:receive =&gt; scanFace(38268): {"item_type":2,"item_code":0,"item_id":0,"item_count":10000,"total_count":90010000,"scan_normal":1998}&lt;br&gt;2017-06-22 10:59:46:send =&gt; scanFace(38268): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:47:receive =&gt; scanFace(38268): {"item_type":1,"item_code":10001,"item_id":8022,"item_count":1,"total_count":2,"scan_normal":1997}&lt;br&gt;2017-06-22 10:59:47:send =&gt; scanFace(38268): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:48:receive =&gt; scanFace(38268): {"item_type":1,"item_code":10001,"item_id":8022,"item_count":1,"total_count":3,"scan_normal":1996}&lt;br&gt;2017-06-22 10:59:48:send =&gt; scanFace(38268): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:48:receive =&gt; scanFace(38268): {"item_type":0,"item_code":0,"item_id":8023,"item_count":1,"total_count":1,"scan_normal":1995}&lt;br&gt;2017-06-22 10:59:48:send =&gt; scanFace(38268): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:48:receive =&gt; scanFace(38268): {"item_type":1,"item_code":10001,"item_id":8022,"item_count":1,"total_count":4,"scan_normal":1994}&lt;br&gt;2017-06-22 10:59:48:send =&gt; scanFace(38268): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:49:receive =&gt; scanFace(38268): {"item_type":1,"item_code":10001,"item_id":8022,"item_count":1,"total_count":5,"scan_normal":1993}&lt;br&gt;2017-06-22 10:59:49:send =&gt; scanFace(38268): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; scanFace(38268): {"item_type":1,"item_code":10001,"item_id":8022,"item_count":1,"total_count":6,"scan_normal":1992}&lt;br&gt;2017-06-22 10:59:50:send =&gt; scanFace(38268): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; scanFace(38268): {"item_type":1,"item_code":10001,"item_id":8022,"item_count":1,"total_count":7,"scan_normal":1991}&lt;br&gt;2017-06-22 10:59:50:send =&gt; scanFace(38268): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; scanFace(38268): {"item_type":2,"item_code":0,"item_id":0,"item_count":10000,"total_count":90020000,"scan_normal":1990}&lt;br&gt;玩家B获取玩A的原生宠列表：&lt;br&gt;2017-06-22 10:59:50:send =&gt; login(38268): {"token": "00000", "user_type": "im", "account_id": 100861}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; login(38268): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25013}&lt;br&gt;2017-06-22 10:59:50:send =&gt; getProtozoanList(38268): {"user_id": 25012}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; getProtozoanList(38268): []&lt;br&gt;getProtozoanList test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>8.486s</div></td>
+</tr>
+
+<tr class='passClass'>
+    <td>pet_tc.v01.test_get_soul_pet_list.GetSoulListTest</td>
+    <td>4</td>
+    <td>4</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',4)" class="detail-link">查看详情</a></td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_get_soul_list_user_id_error(获取灵魂列表失败--用户id错误        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >通过</a>
+    <div id='div_pt2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt2.1: start run getSoulPetList test ......connect server&lt;br&gt;2017-06-22 10:59:50:send =&gt; login(81469): {"token": "00000", "user_type": "im", "account_id": 1229075499}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; login(81469): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25014}&lt;br&gt;2017-06-22 10:59:50:send =&gt; modifyInfo(81469): {"nick_name": "ubwtdj", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; modifyInfo(81469): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:50:send =&gt; getSoulPetList(81469): {"user_id": "wdybngqv"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; getSoulPetList(81469): []&lt;br&gt;getSoulPetList test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>0.032s</div></td>
+</tr>
+
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_get_soul_no_soul_pet(获取灵魂宠列表--没有灵魂宠        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >通过</a>
+    <div id='div_pt2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt2.2: start run getSoulPetList test ......connect server&lt;br&gt;2017-06-22 10:59:50:send =&gt; login(41258): {"token": "00000", "user_type": "im", "account_id": 1201086795}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; login(41258): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25015}&lt;br&gt;2017-06-22 10:59:50:send =&gt; modifyInfo(41258): {"nick_name": "zuzzdc", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; modifyInfo(41258): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:50:send =&gt; getSoulPetList(41258): {"user_id": 25015}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; getSoulPetList(41258): []&lt;br&gt;getSoulPetList test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>0.046s</div></td>
+</tr>
+
+<tr id='pt2.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_get_soul_other_user_list(获取灵魂宠列表--获取其他玩家灵魂宠列表        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.3')" >通过</a>
+    <div id='div_pt2.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt2.3: start run getSoulPetList test ......connect server&lt;br&gt;玩家A获取灵魂：&lt;br&gt;2017-06-22 10:59:50:send =&gt; login(20954): {"token": "00000", "user_type": "im", "account_id": 1457251901}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; login(20954): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25016}&lt;br&gt;2017-06-22 10:59:50:send =&gt; modifyInfo(20954): {"nick_name": "wccnft", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; modifyInfo(20954): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:50:send =&gt; scanFace(20954): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; scanFace(20954): {"item_type":0,"item_code":0,"item_id":8028,"item_count":1,"total_count":1,"scan_normal":1999}&lt;br&gt;2017-06-22 10:59:50:send =&gt; scanFace(20954): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:50:receive =&gt; scanFace(20954): {"item_type":2,"item_code":0,"item_id":0,"item_count":10000,"total_count":90010000,"scan_normal":1998}&lt;br&gt;2017-06-22 10:59:50:send =&gt; scanFace(20954): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:51:receive =&gt; scanFace(20954): {"item_type":2,"item_code":0,"item_id":0,"item_count":10000,"total_count":90020000,"scan_normal":1997}&lt;br&gt;2017-06-22 10:59:51:send =&gt; scanFace(20954): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:51:receive =&gt; scanFace(20954): {"item_type":0,"item_code":0,"item_id":8028,"item_count":1,"total_count":2,"scan_normal":1996}&lt;br&gt;2017-06-22 10:59:51:send =&gt; scanFace(20954): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:51:receive =&gt; scanFace(20954): {"item_type":2,"item_code":0,"item_id":0,"item_count":10000,"total_count":90030000,"scan_normal":1995}&lt;br&gt;2017-06-22 10:59:51:send =&gt; scanFace(20954): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:51:receive =&gt; scanFace(20954): {"item_type":1,"item_code":10001,"item_id":8029,"item_count":1,"total_count":1,"scan_normal":1994}&lt;br&gt;2017-06-22 10:59:51:send =&gt; scanFace(20954): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:52:receive =&gt; scanFace(20954): {"item_type":1,"item_code":10001,"item_id":8029,"item_count":1,"total_count":2,"scan_normal":1993}&lt;br&gt;2017-06-22 10:59:52:send =&gt; scanFace(20954): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:52:receive =&gt; scanFace(20954): {"item_type":1,"item_code":10001,"item_id":8029,"item_count":1,"total_count":3,"scan_normal":1992}&lt;br&gt;2017-06-22 10:59:52:send =&gt; scanFace(20954): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:52:receive =&gt; scanFace(20954): {"item_type":2,"item_code":0,"item_id":0,"item_count":10000,"total_count":90040000,"scan_normal":1991}&lt;br&gt;2017-06-22 10:59:52:send =&gt; scanFace(20954): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/1.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:52:receive =&gt; scanFace(20954): {"item_type":2,"item_code":0,"item_id":0,"item_count":10000,"total_count":90050000,"scan_normal":1990}&lt;br&gt;玩家B获取玩A的灵魂列表：&lt;br&gt;2017-06-22 10:59:52:send =&gt; login(20954): {"token": "00000", "user_type": "im", "account_id": 100861}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:53:receive =&gt; login(20954): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25013}&lt;br&gt;2017-06-22 10:59:53:send =&gt; getSoulPetList(20954): {"user_id": 25016}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:53:receive =&gt; getSoulPetList(20954): []&lt;br&gt;getSoulPetList test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>2.075s</div></td>
+</tr>
+
+<tr id='pt2.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_get_soul_pet_list_success(获取灵魂宠列表        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.4')" >通过</a>
+    <div id='div_pt2.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt2.4: start run getSoulPetList test ......connect server&lt;br&gt;2017-06-22 10:59:53:send =&gt; login(99104): {"token": "00000", "user_type": "im", "account_id": 49995865}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:53:receive =&gt; login(99104): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25017}&lt;br&gt;2017-06-22 10:59:53:send =&gt; modifyInfo(99104): {"nick_name": "alzdhc", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:53:receive =&gt; modifyInfo(99104): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:53:send =&gt; scanFace(99104): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/10.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:53:receive =&gt; scanFace(99104): {"item_type":1,"item_code":10001,"item_id":8031,"item_count":1,"total_count":1,"scan_normal":1999}&lt;br&gt;2017-06-22 10:59:53:send =&gt; scanFace(99104): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/10.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:53:receive =&gt; scanFace(99104): {"item_type":2,"item_code":0,"item_id":0,"item_count":10000,"total_count":90010000,"scan_normal":1998}&lt;br&gt;2017-06-22 10:59:53:send =&gt; scanFace(99104): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/10.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:53:receive =&gt; scanFace(99104): {"item_type":0,"item_code":0,"item_id":8032,"item_count":1,"total_count":1,"scan_normal":1997}&lt;br&gt;2017-06-22 10:59:53:send =&gt; scanFace(99104): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/10.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:54:receive =&gt; scanFace(99104): {"item_type":1,"item_code":10001,"item_id":8031,"item_count":1,"total_count":2,"scan_normal":1996}&lt;br&gt;2017-06-22 10:59:54:send =&gt; scanFace(99104): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/10.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:54:receive =&gt; scanFace(99104): {"item_type":2,"item_code":0,"item_id":0,"item_count":10000,"total_count":90020000,"scan_normal":1995}&lt;br&gt;2017-06-22 10:59:54:send =&gt; scanFace(99104): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/10.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:54:receive =&gt; scanFace(99104): {"item_type":1,"item_code":10001,"item_id":8031,"item_count":1,"total_count":3,"scan_normal":1994}&lt;br&gt;2017-06-22 10:59:54:send =&gt; scanFace(99104): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/10.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:54:receive =&gt; scanFace(99104): {"item_type":0,"item_code":0,"item_id":8032,"item_count":1,"total_count":2,"scan_normal":1993}&lt;br&gt;2017-06-22 10:59:54:send =&gt; scanFace(99104): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/10.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:55:receive =&gt; scanFace(99104): {"item_type":1,"item_code":10001,"item_id":8031,"item_count":1,"total_count":4,"scan_normal":1992}&lt;br&gt;2017-06-22 10:59:55:send =&gt; scanFace(99104): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/10.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:55:receive =&gt; scanFace(99104): {"item_type":0,"item_code":0,"item_id":8032,"item_count":1,"total_count":3,"scan_normal":1991}&lt;br&gt;2017-06-22 10:59:55:send =&gt; scanFace(99104): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/10.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:55:receive =&gt; scanFace(99104): {"item_type":2,"item_code":0,"item_id":0,"item_count":10000,"total_count":90030000,"scan_normal":1990}&lt;br&gt;2017-06-22 10:59:55:send =&gt; getSoulPetList(99104): {"user_id": 25017}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:55:receive =&gt; getSoulPetList(99104): [{"item_id":8032,"user_id":25017,"item_code":1,"item_name":"la","item_count":3}]&lt;br&gt;getSoulPetList test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>4.865s</div></td>
+</tr>
+
+<tr class='passClass'>
+    <td>pet_tc.v01.test_set_pet_mode_ver.SetPetModeVerTest</td>
+    <td>7</td>
+    <td>7</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c3',7)" class="detail-link">查看详情</a></td>
+</tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_set_pet_mode_ver_cultivate(设置人脸宠属性--设置养成宠属性        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >通过</a>
+    <div id='div_pt3.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt3.1: start run setPetModelVer test ......connect server&lt;br&gt;2017-06-22 10:59:55:send =&gt; login(1902): {"token": "00000", "user_type": "im", "account_id": 646197230}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:55:receive =&gt; login(1902): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25018}&lt;br&gt;2017-06-22 10:59:55:send =&gt; modifyInfo(1902): {"nick_name": "jxsxwz", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:55:receive =&gt; modifyInfo(1902): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:55:send =&gt; scanFace(1902): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/123456789.jpg", "scan_advance": 1, "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:56:receive =&gt; scanFace(1902): {"has_glass":0,"item_type":3,"item_code":10001,"item_id":8034,"item_count":1,"total_count":1,"scan_advance":1999}&lt;br&gt;2017-06-22 10:59:56:send =&gt; capturePet(1902): {"pet_id": 8034}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:56:receive =&gt; capturePet(1902): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:56:send =&gt; setCultivatePet(1902): {"pet_id": 8034}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:56:receive =&gt; setCultivatePet(1902): {"pet_idx":1}&lt;br&gt;2017-06-22 10:59:56:send =&gt; setPetModelVer(1902): {"pet_id": 8034, "ver": 123}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:56:receive =&gt; setPetModelVer(1902): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;setPetModelVer test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>0.702s</div></td>
+</tr>
+
+<tr id='pt3.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_set_pet_mode_ver_error_pet_id(设置人脸宠属性失败--错误的宠物id        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.2')" >通过</a>
+    <div id='div_pt3.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt3.2: start run setPetModelVer test ......connect server&lt;br&gt;2017-06-22 10:59:56:send =&gt; login(20782): {"token": "00000", "user_type": "im", "account_id": 1687147529}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:56:receive =&gt; login(20782): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25019}&lt;br&gt;2017-06-22 10:59:56:send =&gt; modifyInfo(20782): {"nick_name": "wyzhbq", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:56:receive =&gt; modifyInfo(20782): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:56:send =&gt; setPetModelVer(20782): {"pet_id": 356, "ver": 123}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:56:receive =&gt; setPetModelVer(20782): {"code":8,"err_msg":"EC_NOT_FOUND_PET"}&lt;br&gt;setPetModelVer test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>0.047s</div></td>
+</tr>
+
+<tr id='pt3.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_set_pet_mode_ver_error_ver(设置人脸宠属性失败--无效的版本        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.3')" >通过</a>
+    <div id='div_pt3.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt3.3: start run setPetModelVer test ......connect server&lt;br&gt;2017-06-22 10:59:56:send =&gt; login(97021): {"token": "00000", "user_type": "im", "account_id": 1058974809}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:56:receive =&gt; login(97021): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25020}&lt;br&gt;2017-06-22 10:59:56:send =&gt; modifyInfo(97021): {"nick_name": "vkcioh", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:56:receive =&gt; modifyInfo(97021): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:56:send =&gt; scanFace(97021): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/123456789.jpg", "scan_advance": 1, "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:57:receive =&gt; scanFace(97021): {"has_glass":0,"item_type":3,"item_code":10001,"item_id":8037,"item_count":1,"total_count":1,"scan_advance":1999}&lt;br&gt;2017-06-22 10:59:57:send =&gt; capturePet(97021): {"pet_id": 8037}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:57:receive =&gt; capturePet(97021): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:57:send =&gt; setPetModelVer(97021): {"pet_id": 8037, "ver": "fsrmcd"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:57:receive =&gt; setPetModelVer(97021): {"code":3,"err_msg":"EC_INVALID_REQUEST_PARAM"}&lt;br&gt;setPetModelVer test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>0.671s</div></td>
+</tr>
+
+<tr id='pt3.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_set_pet_mode_ver_no_param(设置人脸宠属性失败--请求未带参数        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.4')" >通过</a>
+    <div id='div_pt3.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt3.4: start run setPetModelVer test ......connect server&lt;br&gt;2017-06-22 10:59:57:send =&gt; login(70678): {"token": "00000", "user_type": "im", "account_id": 1376624607}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:57:receive =&gt; login(70678): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25021}&lt;br&gt;2017-06-22 10:59:57:send =&gt; modifyInfo(70678): {"nick_name": "cyriit", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:57:receive =&gt; modifyInfo(70678): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:57:send =&gt; setPetModelVer(70678): {}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:57:receive =&gt; setPetModelVer(70678): {"code":8,"err_msg":"EC_NOT_FOUND_PET"}&lt;br&gt;setPetModelVer test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>0.031s</div></td>
+</tr>
+
+<tr id='pt3.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_set_pet_mode_ver_other_pet(设置人脸宠属性--设置原生宠/灵魂宠属性        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.5')" >通过</a>
+    <div id='div_pt3.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt3.5: start run setPetModelVer test ......connect server&lt;br&gt;2017-06-22 10:59:57:send =&gt; login(50821): {"token": "00000", "user_type": "im", "account_id": 377648470}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:57:receive =&gt; login(50821): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25022}&lt;br&gt;2017-06-22 10:59:57:send =&gt; modifyInfo(50821): {"nick_name": "bqjzhe", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:57:receive =&gt; modifyInfo(50821): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:57:send =&gt; scanFace(50821): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/123456789.jpg", "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:57:receive =&gt; scanFace(50821): {"item_type":1,"item_code":10001,"item_id":8040,"item_count":1,"total_count":1,"scan_normal":1999}&lt;br&gt;2017-06-22 10:59:57:send =&gt; setPetModelVer(50821): {"pet_id": 8040, "ver": 123}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:57:receive =&gt; setPetModelVer(50821): {"code":8,"err_msg":"EC_NOT_FOUND_PET"}&lt;br&gt;setPetModelVer test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>0.686s</div></td>
+</tr>
+
+<tr id='pt3.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_set_pet_mode_ver_other_user(设置人脸宠属性--设置其他玩家宠物        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.6')" >通过</a>
+    <div id='div_pt3.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt3.6: start run setPetModelVer test ......connect server&lt;br&gt;玩家A获取人脸宠：&lt;br&gt;2017-06-22 10:59:57:send =&gt; login(42199): {"token": "00000", "user_type": "im", "account_id": 1560805299}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:57:receive =&gt; login(42199): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25023}&lt;br&gt;2017-06-22 10:59:57:send =&gt; modifyInfo(42199): {"nick_name": "krwacz", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:57:receive =&gt; modifyInfo(42199): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:57:send =&gt; scanFace(42199): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/123456789.jpg", "scan_advance": 1, "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:58:receive =&gt; scanFace(42199): {"has_glass":0,"item_type":3,"item_code":10001,"item_id":8042,"item_count":1,"total_count":1,"scan_advance":1999}&lt;br&gt;2017-06-22 10:59:58:send =&gt; capturePet(42199): {"pet_id": 8042}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:58:receive =&gt; capturePet(42199): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;玩家B设置玩A的人脸宠属性：&lt;br&gt;2017-06-22 10:59:58:send =&gt; login(42199): {"token": "00000", "user_type": "im", "account_id": 100861}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:58:receive =&gt; login(42199): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25013}&lt;br&gt;2017-06-22 10:59:58:send =&gt; setPetModelVer(42199): {"pet_id": 8042, "ver": 123}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:58:receive =&gt; setPetModelVer(42199): {"code":8,"err_msg":"EC_NOT_FOUND_PET"}&lt;br&gt;setPetModelVer test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>0.702s</div></td>
+</tr>
+
+<tr id='pt3.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_set_pet_mode_ver_success(设置人脸宠属性成功        开发：黄良江(900000)        测试：王 玲(222067))</div></td>
+
+    <td colspan='4' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.7')" >通过</a>
+    <div id='div_pt3.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <div class="error-info">
+        &lt;br&gt;pt3.7: start run setPetModelVer test ......connect server&lt;br&gt;2017-06-22 10:59:58:send =&gt; login(54842): {"token": "00000", "user_type": "im", "account_id": 319871676}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:58:receive =&gt; login(54842): {"code":11,"err_msg":"EC_NO_CREATE_ROLE","user_id":25024}&lt;br&gt;2017-06-22 10:59:58:send =&gt; modifyInfo(54842): {"nick_name": "hnxuly", "icon": "https://www.baidu.com/", "sign": "API\u6d4b\u8bd5"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:58:receive =&gt; modifyInfo(54842): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:58:send =&gt; scanFace(54842): {"url": "http://192.168.19.220/v0.1/static/cscommon/avatar/123456789/123456789.jpg", "scan_advance": 1, "name": "la"}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:59:receive =&gt; scanFace(54842): {"has_glass":0,"item_type":3,"item_code":10001,"item_id":8044,"item_count":1,"total_count":1,"scan_advance":1999}&lt;br&gt;2017-06-22 10:59:59:send =&gt; capturePet(54842): {"pet_id": 8044}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:59:receive =&gt; capturePet(54842): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;2017-06-22 10:59:59:send =&gt; setPetModelVer(54842): {"pet_id": 8044, "ver": 123}&lt;br&gt;send data...&lt;br&gt;2017-06-22 10:59:59:receive =&gt; setPetModelVer(54842): {"code":0,"err_msg":"EC_SUCCESS"}&lt;br&gt;setPetModelVer test complete.....close socket&lt;br&gt;&lt;br&gt;
+        </div>
+    </div>
+    <!--css div popup end-->
+    </td>
+
+    <td colspan='1' align='center'><div class='spendTime'>3.51s</div></td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>15</td>
+    <td>15</td>
+    <td>0</td>
+    <td>0</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>
