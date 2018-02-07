@@ -176,10 +176,10 @@ def save2(money, page):
             time.sleep(0.2)
 
     LeftClick(read_conf('action8')[0], read_conf('action8')[1])  # 保存图片
-    time.sleep(0.2)
+    time.sleep(0.4)
     LeftClick(read_conf('action9')[0], read_conf('action9')[1])  # 清楚金额
     # print('tiaoz')
-    time.sleep(0.2)
+    time.sleep(0.4)
 
 def read_conf(action):
     action_conf =conf.get('auto_set',action)
@@ -188,10 +188,10 @@ def read_conf(action):
 
 def work(money, page):
 
-    LeftClick_with_screen(read_conf('action1')[0], read_conf('action1')[1],local_action='action1',action='now1',size='60x30')  # 设置金额
-    time.sleep(1)  # 延时1s
+    LeftClick(read_conf('action1')[0], read_conf('action1')[1])  # 设置金额
+    time.sleep(0.8)  # 延时1s
     LeftClick_with_screen(read_conf('action2')[0], read_conf('action2')[1],local_action='action2',action='now2',size='60x30')  # 添加收款理由
-    time.sleep(0.2)
+    time.sleep(0.4)
 
     # LeftClick(53, 666)  # 点击输入
     # time.sleep(0.5)
@@ -210,7 +210,7 @@ def work(money, page):
     time.sleep(0.4)
 
     win32api.SendMessage(w3, win32con.WM_SETTEXT, None, str(money))
-    time.sleep(0.2)
+    time.sleep(0.4)
 
     LeftClick(read_conf('action5')[0], read_conf('action5')[1])  # 点击发送
     time.sleep(0.4)
@@ -275,14 +275,14 @@ def wechat_work(money,page):
     no = '-0' + str(page)
     reason = num + str(money) + no
     win32api.SendMessage(w3, win32con.WM_SETTEXT, None, reason)
-    time.sleep(0.2)
+    time.sleep(0.4)
     PressOnce(x=13)
     # 点击确定
     LeftClick(read_conf('action5')[0], read_conf('action5')[1])
     time.sleep(0.5)
     # 点击输入
     LeftClick(read_conf('action6')[0], read_conf('action6')[1])
-    time.sleep(0.2)
+    time.sleep(0.4)
     win32api.SendMessage(w3, win32con.WM_SETTEXT, None, str(money))
     PressOnce(x=13)
     # 点击确定

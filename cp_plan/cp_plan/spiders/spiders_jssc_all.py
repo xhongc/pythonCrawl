@@ -9,7 +9,7 @@ import time
 class CpPlansSpider(scrapy.Spider):
     name = 'jssc_all'
     allowed_domains = ['http://56070.la/']
-    start_urls = ['http://56070.la/json/pk10.json']
+    start_urls = ['http://56070.la/json/jssc.json']
     sign_num = 4418
 
     def parse(self, response):

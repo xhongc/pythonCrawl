@@ -9,74 +9,74 @@ from cp_plan.items import CpPlanItem,Wait_Item
 import pymysql
 #数据库配置信息
 db_config = {
-    'host':'192.168.3.162',
+    'host':'192.168.3.88',
     'port': 3306,
     'user':'root',
-    'password':'quziwei123',
-    'db':'info',
-    'charset':'cpjh',
+    'password':'qian4418',
+    'db':'cpjh',
+    'charset':'utf8',
 }
-
-class CpPlanPipeline(object):
-    def __init__(self):
-        self.f = open('plan_content.json','w',encoding='utf-8')
-        self.g = open('open_wait.json', 'w', encoding='utf-8')
-        self.sign_count = 0
-    def process_item(self, item, spider):
-
-        if isinstance(item, CpPlanItem):
-            # 你的处理方法
-            content = json.dumps(dict(item), ensure_ascii=False) + ",\n"
-            self.f.write(content)
-            return item
-        else:
-            content = json.dumps(dict(item), ensure_ascii=False) + ",\n"
-            self.g.write(content)
-            return item
-
-    def close_spider(self,spider):
-        self.f.close()
-        self.g.close()
-
 
 # class CpPlanPipeline(object):
 #     def __init__(self):
-#         self.conn = pymysql.connect(**db_config)
-#         self.cursor = self.conn.cursor()
+#         self.f = open('plan_content.json','w',encoding='utf-8')
+#         self.g = open('open_wait.json', 'w', encoding='utf-8')
+#         self.sign_count = 0
 #     def process_item(self, item, spider):
 #
 #         if isinstance(item, CpPlanItem):
 #             # 你的处理方法
-#             sql = 'insert into cp_info(ticket_infomation,game_id,ticket_id) values(%s,%s,%s)'
-#
-#             try:
-#                 self.cursor.execute(sql, (item['title'],
-#                                           item['type'],
-#                                           item['gameId']
-#
-#                                           )
-#                                     )
-#                 self.conn.commit()
-#             except pymysql.Error as e:
-#                 print(e.args)
+#             content = json.dumps(dict(item), ensure_ascii=False) + ",\n"
+#             self.f.write(content)
 #             return item
 #         else:
-#             sql = 'insert into cp_lottery(number,issue,ticket_id) values(%s,%s,%s)'
-#
-#             try:
-#                 self.cursor.execute(sql, (
-#                                           item['num'],
-#                                           item['gamedate'],
-#                                           item['gameId']
-#
-#                                           )
-#                                     )
-#                 self.conn.commit()
-#             except pymysql.Error as e:
-#                 print(e.args)
+#             content = json.dumps(dict(item), ensure_ascii=False) + ",\n"
+#             self.g.write(content)
 #             return item
 #
-#     def close_spider(self, spider):
-#         self.cursor.close()
-#         self.conn.close()
+#     def close_spider(self,spider):
+#         self.f.close()
+#         self.g.close()
+
+
+class CpPlanPipeline(object):
+    def __init__(self):
+        self.conn = pymysql.connect(**db_config)
+        self.cursor = self.conn.cursor()
+    def process_item(self, item, spider):
+
+        if isinstance(item, CpPlanItem):
+            # 你的处理方法
+            sql = 'insert into cp_info(ticket_information,game_id,ticket_id) values(%s,%s,%s)'
+
+            try:
+                self.cursor.execute(sql, (item['title'],
+                                          item['type'],
+                                          item['gameId']
+
+                                          )
+                                    )
+                self.conn.commit()
+            except pymysql.Error as e:
+                print(e.args)
+            return item
+        else:
+            sql = 'insert into cp_lottery(number,issue,ticket_id) values(%s,%s,%s)'
+
+            try:
+                self.cursor.execute(sql, (
+                                          item['num'],
+                                          item['gamedate'],
+                                          item['gameId']
+
+                                          )
+                                    )
+                self.conn.commit()
+            except pymysql.Error as e:
+                print(e.args)
+            return item
+
+    def close_spider(self, spider):
+        self.cursor.close()
+        self.conn.close()
 
