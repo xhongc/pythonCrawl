@@ -32,8 +32,8 @@ class CpPlansSpider(scrapy.Spider):
             time.sleep(6.66)
             return scrapy.Request(response.url, callback=self.parse, dont_filter=True)
         elif self.sign_num != count_num:
-
             print('3:%s' % self.sign_num)
+
             return scrapy.Request(response.url, callback=self.parse_data, dont_filter=True)
 
     def parse_data(self, response):
@@ -42,9 +42,18 @@ class CpPlansSpider(scrapy.Spider):
         endlist = html.get('EndList')
         item = CpPlanItem()
         item['title'] = html.get('NewGame')['WaitGame']
+        if response.url == 'http://56070.la/json/ffc.json':
+            item['type'] = 51
+        elif response.url == 'http://56070.la/json/ffc_h2zx.json':
+            item['type'] = 52
+        elif response.url == 'http://56070.la/json/ffc_h3zx.json':
+            item['type'] = 53
+        else:
+            item['type'] = 54
+        item['gameId'] = 5
         yield item
         # 其余的计划信息
-        for each in endlist:
+        for each in endlist[0:10]:
             item = CpPlanItem()
             # print(each)
             item['title'] = each['Ruestl']
@@ -57,9 +66,8 @@ class CpPlansSpider(scrapy.Spider):
             else:
                 item['type'] = 54
             item['gameId'] = 5
-            count_num = len(item['title'])
             yield item
-            # 爬取 即刻开奖信息
+        # 爬取 即刻开奖信息
         item = Wait_Item()
         N1 = html.get('TopGame')['R1']
         N2 = html.get('TopGame')['R2']

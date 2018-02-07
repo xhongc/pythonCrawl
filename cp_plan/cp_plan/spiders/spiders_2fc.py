@@ -42,6 +42,15 @@ class CpPlansSpider(scrapy.Spider):
         endlist = html.get('EndList')
         item = CpPlanItem()
         item['title'] = html.get('NewGame')['WaitGame']
+        if response.url == 'http://56070.la/json/sfc.json':
+            item['type'] = 61
+        elif response.url == 'http://56070.la/json/sfc_h2zx.json':
+            item['type'] = 62
+        elif response.url == 'http://56070.la/json/sfc_h3zx.json':
+            item['type'] = 63
+        else:
+            item['type'] = 64
+        item['gameId'] = 6
         yield item
         # 其余的计划信息
         for each in endlist:
@@ -66,7 +75,7 @@ class CpPlansSpider(scrapy.Spider):
         N3 = html.get('TopGame')['R3']
         N4 = html.get('TopGame')['R4']
         N5 = html.get('TopGame')['R5']
-        item['num'] = '{0},{1},{2},{3},{4},{5}'.format(N1,N2,N3,N4,N5)
+        item['num'] = '{0},{1},{2},{3},{4}'.format(N1,N2,N3,N4,N5)
         item['gamedate'] = html.get('TopGame')['gameid']
         item['gameId'] = 6
 

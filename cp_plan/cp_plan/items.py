@@ -19,3 +19,10 @@ class Wait_Item(scrapy.Item):
     num = scrapy.Field()
     gamedate =scrapy.Field()
     gameId = scrapy.Field()
+
+class Cp_wait_Item(scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    title = scrapy.Field()
+    type = scrapy.Field()
+    gameId = scrapy.Field()

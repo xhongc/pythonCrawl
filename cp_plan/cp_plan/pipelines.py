@@ -9,8 +9,8 @@ from cp_plan.items import CpPlanItem,Wait_Item
 import pymysql
 #数据库配置信息
 db_config = {
-    'host':'uupp777.vicp.cc',
-    'port': 28771,
+    'host':'192.168.3.162',
+    'port': 3306,
     'user':'root',
     'password':'quziwei123',
     'db':'info',

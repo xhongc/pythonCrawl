@@ -61,5 +61,5 @@ def for_close_api():
     a = requests.post(close_url,data=data)
     print(a.text)
 
-a = parse_data()
+a = get_data()
 print(a)

@@ -41,6 +41,8 @@ class CpPlansSpider(scrapy.Spider):
         endlist = html.get('EndList')
         item = CpPlanItem()
         item['title'] = html.get('NewGame')['WaitGame']
+        item['type'] = 71
+        item['gameId'] = 7
         yield item
         # 其余的计划信息
         for each in endlist:
@@ -49,7 +51,7 @@ class CpPlansSpider(scrapy.Spider):
             item['title'] = each['Ruestl']
             item['type'] = 71
             item['gameId'] = 7
-            count_num = len(item['title'])
+
             yield item
             # 爬取 即刻开奖信息
         item = Wait_Item()
