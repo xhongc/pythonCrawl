@@ -109,7 +109,7 @@ def screen(x,y,action):
 
     if not os.path.isdir("cature/260x160"):
         os.mkdir("cature/260x160")
-    box = (x-120,y-75,x+130,y+0)
+    box = (x-110,y-75,x+130,y+0)
     pic = ImageGrab.grab(box)
     pic.save("cature/260x160/" + str(action) + ".png")
 
