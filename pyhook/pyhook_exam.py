@@ -85,4 +85,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    page = '1'
+    money = 250
+    money = money + int(page) *10 **(-2)
+    print money

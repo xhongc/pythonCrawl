@@ -7,8 +7,8 @@ def get_data():
     url = 'https://wx.tenpay.com/userroll/userrolllist?count=5&sort_type=1&exportkey=ASYV8jvsx1DT18hVOFiMrNs%3D'
     headers = {
         'User-Agent':'Mozilla/5.0 (Linux; Android 6.0; MI 5 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043808 Mobile Safari/537.36 MicroMessenger/6.6.1.1220(0x26060133) NetType/WIFI Language/zh_CN',
-        #'Cookie':'6_twPg0B88ZyGlzw3QzW6WS0iTE4q0-dphZbHYkt_w5OK7RB9agWaIcYSKnWORXzW2XYZ3CNyZ7pZc_TCSbQXaRw&openid=oX2-vjqDHHgwgWHF-EzJOSXPZVoc',
         'Cookie': 'userroll_pass_ticket=R4jDmSFmcSxBVhSMm3idoRCbXfKn/NGk7sMC9OO+I0IHljEbCjIvBPWg6v9SQ7hx; export_key=ASYV8jvsx1DT18hVOFiMrNs=',
+        #'Cookie': 'userroll_pass_ticket=7F48223D667A615458587767774758563D556A5A5F4348404A467F73B22FCB014; export_key=ASYV8jvsx1DT18hVOFiMrNs=',
         #'access_token':'6_twPg0B88ZyGlzw3QzW6WS0iTE4q0-dphZbHYkt_w5OK7RB9agWaIcYSKnWORXzW2XYZ3CNyZ7pZc_TCSbQXaRw',
         'Connection':'keep-alive',
         'X-Requested-With':'com.tencent.mm',
@@ -60,11 +60,11 @@ def for_close_api():
     a = requests.post(close_url,data=data)
     print(a.text)
 
-# a = parse_data()
-# print(a)
+#a = get_data()
+#pprint(a)
 item = {}
 item['PayJe'] = 1
-item['PayMore'] = '198-1-01'
+item['PayMore'] = '1.02'
 item['PayNO'] = '100003950118020900074331252343611966'
 item['payfangshi'] = 3
 for_api(item)

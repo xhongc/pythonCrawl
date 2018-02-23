@@ -63,26 +63,26 @@ def onMouseEvent(event):
 
         elif work_mode == 'weixin':
             if action == 'action1':
-                print u'请点击< 添加收款理由'
+                print u'请点击< 添加收钱备注'
                 screen(x, y, action)
             elif action == 'action2':
-                print u'在弹出的框中心点处> 点击'
+                print u'在弹出的输入框 点击》'
                 screen(x, y, action)
             elif action == 'action3':
                 screen(x, y, action)
-                print u'在 下方的输入框 》 点击'
+                print u'点击 取消后》直接输入金额》后按下回车'
             elif action == 'action4':
-                print u'输入备注后 》 按下回车>点击 < 确定按钮'
+                print u'在确定按钮左绿色区域 点击'
             elif action == 'action5':
-                print u'在 下方的输入框 》 点击>输入后 按下回车'
+                print u'在二维码右上角 黑色中点 》点击'
             elif action == 'action6':
-                print u'点击在确定左边 绿色空区域'
+                print u'点击》保存收款码'
             elif action == 'action7':
-                print u'请点击 二维码右上角 黑色区（同支付宝'
+                print u'点击》清除金额'
             elif action == 'action8':
-                print u'ok 点击保存收款码了'
+                print u'关闭控制台 开始work'
             elif action == 'action9':
-                print u'点击清除金额'
+                print u'关闭控制台 开始work'
             elif action == 'action10':
                 print u'退出模拟:直接关闭控制台'
             else:
@@ -196,7 +196,7 @@ def work(money, page):
     # LeftClick(53, 666)  # 点击输入
     # time.sleep(0.5)
     num = conf.get('settings', 'num')
-    no = '-0' + page
+    no = '-0' + str(page)
     reason = num + '-' + str(money) + no
     #print reason
     # time.sleep(0.2)
@@ -246,14 +246,14 @@ def save_we(money, page):
         # 截取图片
 
         win1 = win32gui.GetWindowDC(w1)
-        int = win32gui.GetPixel(win1, read_conf('action8')[0], read_conf('action8')[1])
+        int = win32gui.GetPixel(win1, read_conf('action6')[0], read_conf('action6')[1])
         print(int)
         if int:
             time.sleep(1)
 
-    LeftClick(read_conf('action9')[0], read_conf('action9')[1])  # 保存图片
+    LeftClick(read_conf('action7')[0], read_conf('action7')[1])  # 保存图片
     time.sleep(0.5)
-    LeftClick(read_conf('action10')[0], read_conf('action10')[1])  # 清楚金额
+    LeftClick(read_conf('action8')[0], read_conf('action8')[1])  # 清楚金额
     # print('tiaoz')
     time.sleep(0.5)
 
@@ -265,24 +265,26 @@ def wechat_work(money,page):
     LeftClick_with_screen(read_conf('action2')[0], read_conf('action2')[1],local_action='action2',action='now2',size='60x30')
     time.sleep(0.8)
     # 备注框中心 谢谢
-    LeftClick_with_screen(read_conf('action3')[0], read_conf('action3')[1],local_action='action3',action='now3',size='260x160')
-    #time.sleep(0.2)
+    LeftClick(read_conf('action3')[0], read_conf('action3')[1])
+    time.sleep(0.2)
     # 点击最下方输入框
     #LeftClick(read_conf('action4')[0], read_conf('action4')[1])
-    time.sleep(0.5)
-    # 输入备注
-    num = '237-'  # 修改编号
-    no = '-0' + str(page)
-    reason = num + str(money) + no
-    win32api.SendMessage(w3, win32con.WM_SETTEXT, None, reason)
-    time.sleep(0.4)
-    PressOnce(x=13)
-    # 点击确定
-    LeftClick(read_conf('action5')[0], read_conf('action5')[1])
+    # time.sleep(0.5)
+    # # 输入备注
+    # num = '237-'  # 修改编号
+    # no = '-0' + str(page)
+    # reason = num + str(money) + no
+    # win32api.SendMessage(w3, win32con.WM_SETTEXT, None, reason)
+    # time.sleep(0.4)
+    # PressOnce(x=13)
+    # 点击确定/quxiao
+    LeftClick(read_conf('action4')[0], read_conf('action4')[1])
     time.sleep(0.5)
     # 点击输入
-    LeftClick(read_conf('action6')[0], read_conf('action6')[1])
-    time.sleep(0.4)
+    # LeftClick(read_conf('action4')[0], read_conf('action4')[1])
+    # time.sleep(0.4)
+    print money,page
+    money = money + page *10 **(-2)
     win32api.SendMessage(w3, win32con.WM_SETTEXT, None, str(money))
     PressOnce(x=13)
     # 点击确定
@@ -291,7 +293,7 @@ def wechat_work(money,page):
     while int != 1682713:
         # time.sleep(0.2)
         win1 = win32gui.GetWindowDC(w1)
-        int = win32gui.GetPixel(win1,read_conf('action7')[0], read_conf('action7')[1])  # 获取确定像素
+        int = win32gui.GetPixel(win1,read_conf('action5')[0], read_conf('action5')[1])  # 获取确定像素
         print(int)
         if int != 15371536:
             if count == 50:
@@ -304,7 +306,7 @@ def wechat_work(money,page):
                 time.sleep(0.2)
                 print('wait a moment')
                 count +=1
-    LeftClick(read_conf('action7')[0], read_conf('action7')[1])  # 点击确定
+    LeftClick(read_conf('action5')[0], read_conf('action5')[1])  # 点击确定
     time.sleep(0.5)
     save_we(money, page)
 
@@ -335,19 +337,19 @@ def wechat_main():
     money_01_end = int(conf.get('settings','money_01_end')) +1
     step = int(conf.get('settings','step'))
     while money_01_start < money_01_end:  # 结束金额
-        wechat_work(money_01_start, str(1))
+        wechat_work(money_01_start, 1)
         money_01_start += step
 
     money_02_start = int(conf.get('settings', 'money_02_start'))
     money_02_end = int(conf.get('settings', 'money_02_end')) +1
     while money_02_start < money_02_end:  # 结束金额
-        wechat_work(money_02_start, str(2))
+        wechat_work(money_02_start, 2)
         money_02_start += step
 
     money_03_start = int(conf.get('settings', 'money_03_start'))
     money_03_end = int(conf.get('settings', 'money_03_end')) +1
     while money_03_start < money_03_end:  # 结束金额
-        wechat_work(money_03_start, str(3))
+        wechat_work(money_03_start, 3)
         money_03_start += step
 
 def que():

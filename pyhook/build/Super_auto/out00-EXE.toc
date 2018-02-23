@@ -2,7 +2,7 @@
  True,
  False,
  False,
- None,
+ 'isba.ico',
  None,
  False,
  False,
@@ -2477,7 +2477,7 @@
  [],
  False,
  False,
- 1518160768L,
+ 1518259770L,
  [('run.exe',
    'C:\\Python27\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
    'EXECUTABLE')])
