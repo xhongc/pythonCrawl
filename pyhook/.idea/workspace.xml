@@ -18,13 +18,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Super_auto.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Super_auto.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Super_auto.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1386">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="405" column="21" lean-forward="false" selection-start-line="405" selection-start-column="21" selection-end-line="405" selection-end-column="21" />
               <folding>
-                <element signature="e#25#34#0" expanded="true" />
+                <element signature="e#49#58#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,17 +43,17 @@
       <file leaf-file-name="auto.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auto.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
+            <state relative-caret-position="441">
               <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ttttt.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ttttt.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../proxy_ip/ttttt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1062">
+            <state relative-caret-position="1098">
               <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -89,8 +89,8 @@
         <option value="$PROJECT_DIR$/test1.py" />
         <option value="$PROJECT_DIR$/pyhook_exam.py" />
         <option value="$PROJECT_DIR$/../proxy_ip/ttttt.py" />
-        <option value="$PROJECT_DIR$/Super_auto.py" />
         <option value="$PROJECT_DIR$/auto.conf" />
+        <option value="$PROJECT_DIR$/Super_auto.py" />
       </list>
     </option>
   </component>
@@ -101,8 +101,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-5" />
-    <option name="y" value="9" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="784" />
   </component>
@@ -173,7 +173,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pyqt5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cp_plan" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -444,7 +444,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="9" width="1382" height="784" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16868381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -484,7 +484,7 @@
         <state relative-caret-position="216">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#49#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -520,7 +520,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#49#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -538,7 +538,7 @@
         <state relative-caret-position="306">
           <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#49#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -556,7 +556,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#49#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -589,7 +589,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#49#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -607,7 +607,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#49#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -690,24 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../proxy_ip/ttttt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auto.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pyhook_exam.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1098">
@@ -718,10 +700,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Super_auto.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1386">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="405" column="21" lean-forward="false" selection-start-line="405" selection-start-column="21" selection-end-line="405" selection-end-column="21" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#49#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../proxy_ip/ttttt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

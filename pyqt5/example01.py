@@ -50,7 +50,9 @@ class Example(QtWidgets.QWidget):
   elif text == "=":
    self.calculate() # 计算
   elif text == "Back":
-   pass
+   self.history.pop(-1)
+   self.number = self.number + text if self.number != "0" else text
+   self.display.setText(self.number)
   elif text == "Clear":
    self.reset()
   elif text == "Close":
