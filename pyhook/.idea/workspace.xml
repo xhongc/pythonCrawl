@@ -18,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Super_auto.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Super_auto.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Super_auto.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="405" column="21" lean-forward="false" selection-start-line="405" selection-start-column="21" selection-end-line="405" selection-end-column="21" />
+            <state relative-caret-position="-162">
+              <caret line="30" column="53" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="53" />
               <folding>
                 <element signature="e#49#58#0" expanded="true" />
               </folding>
@@ -50,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ttttt.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ttttt.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../proxy_ip/ttttt.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1098">
@@ -173,7 +173,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cp_plan" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../支付宝" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -698,16 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Super_auto.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="405" column="21" lean-forward="false" selection-start-line="405" selection-start-column="21" selection-end-line="405" selection-end-column="21" />
-          <folding>
-            <element signature="e#49#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auto.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -722,6 +712,16 @@
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Super_auto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="30" column="53" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="53" />
+          <folding>
+            <element signature="e#49#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
