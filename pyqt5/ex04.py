@@ -1,6 +1,7 @@
 from PyQt5 import QtWidgets,QtCore
 from button import Ui_Dialog
 import sys,time
+import configParser
 
 class Mysign(QtWidgets.QWidget,Ui_Dialog):
     _signal = QtCore.pyqtSignal(str) # 定义信号
