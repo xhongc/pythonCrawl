@@ -1,0 +1,352 @@
+
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/zh-CN/main.js"></script>
+    <script type="text/javascript" src="js/zh-CN/Validform.min.js"></script>
+    <script type="text/javascript" src="js/ajaxfileupload.js"></script>
+    <script type="text/javascript" src="laydate/laydate.zh-CN.js"></script>
+    <title>流水查询 -  商户管理平台</title>
+</head>
+
+<body>
+<div class="indexPage">
+    <div class="login_nav">
+        <div class="w1200 clearfix">
+            <div class="place_fr">
+                <span>您好：<a>2100800007966</a></span>
+                <span><a href="javascript:;" class="resetPassBtn">修改密码</a></span>
+                <span>切换语言:
+                    <select style="margin-top: -2px; font-size: 10px;" onchange="window.location.href=this.value">
+                                                    <option selected value="?language=zh-CN">中文</option>
+                                            </select>
+                </span>
+                <span><a href="//mch.speedpos.cn/index/logout">退出<img src="//mch.speedpos.cn/static/img/ico1.png" alt=""></a></span>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="w1200 clearfix">
+            <a class="logo"><b>SpeedPos</b>商户管理平台</a>
+            <ul class="top_menu">
+                <li class="indexController" rights="index"><a href="//mch.speedpos.cn/index/welcome">首页</a></li>
+                <li class="rolesController subusersController "><a href="//mch.speedpos.cn/roles">系统设置</a></li>
+                <li class="cashierController"><a href="//mch.speedpos.cn/cashier/index">商户管理</a></li>
+                <li class="ordersController"><a href="//mch.speedpos.cn/orders">交易管理</a></li>
+                <li class="settlelogController"><a href="//mch.speedpos.cn/settlelog/shops">结算管理</a></li>
+                <li class="billhistoryController"><a href="//mch.speedpos.cn/billhistory/shops">文件管理</a></li>
+                <li class="agentPayController"><a href="//mch.speedpos.cn/agentpay/shopInfo">代付管理</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="frameMax">
+        <div class="w1200">
+            <div class="clearfix content">
+                <div class="user_left">
+                    <div class="left_menu">
+                        <ul>
+                            <li class="father_item ">订单管理</li>
+                            <li class="orders_index_Page"><a href="//mch.speedpos.cn/orders">汇总数据</a></li>
+                            <li class="orders_lists_Page"><a href="//mch.speedpos.cn/orders/lists">流水查询</a></li>
+                            <li class="orders_single_Page"><a href="//mch.speedpos.cn/orders/single">单笔查询</a></li>
+                            <li class="orders_refund_Page"><a href="//mch.speedpos.cn/orders/refund">退款审核</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user_right">
+                    <div class="head clearfix">
+                        <h3 class="fl padding0_30">流水查询</h3>
+                    </div>
+                    <div class="margin0_30 orders_lists">
+                        <form method="post" action="//mch.speedpos.cn/orders/export">
+                            <div class="user_check border_bottom">
+                                <div class="formMenu margin_b24 clearfix">
+                                    <div class="import fl">
+                                        <h4 class="fl">请选择：</h4>
+                                        <div class="margin0_10 fl">
+                                            <select name="time_by">
+                                                <option value="create_time">下单时间</option>
+                                                <option value="pay_time">支付时间</option>
+                                            </select>
+                                            <input type="text" id="start_time" name="start_time" value="2018-03-02 00:00:00" readonly>
+                                            <strong class="margin0_10">-</strong>
+                                            <input type="text" id="end_time" name="end_time" value="2018-03-02 23:59:59" readonly>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" class="quick_select_day" value="2018-03-02" min_day="2018-02-24">
+                                    <span class="check_btn btnstybgf prev_day">前一天</span>
+                                    <span class="check_btn btnstybgf next_day">后一天</span>
+                                </div>
+                                <div class="formMenu margin_b24 clearfix">
+                                    <div class="import fl">
+                                        <div class="margin_r20 fl">
+                                            <h4 class="fl width60_tr margin_r10">支付类型：</h4>
+                                            <div class="fl rid_check">
+                                                <select name="trade_type">
+                                                    <option value="">全部</option>
+                                                    <option value="WXPAY.JSAPI">微信公众号支付</option>
+                                                    <option value="WXPAY.NATIVE">微信扫码支付</option>
+                                                    <option value="WXPAY.MICROPAY">微信刷卡支付</option>
+                                                    <option value="WXPAY.APP">微信APP支付</option>
+                                                    <option value="WXPAY.MWEB">微信H5支付</option>
+                                                    <option value="WXPAY.MINI">微信小程序</option>
+                                                    <option value="ALIPAY.JSAPI">支付宝服务窗支付</option>
+                                                    <option value="ALIPAY.NATIVE">支付宝扫码支付</option>
+                                                    <option value="ALIPAY.MICROPAY">支付宝刷卡支付</option>
+                                                    <option value="ALIPAY.APP">支付宝APP支付</option>
+                                                    <option value="SQPAY.JSAPI">手Q公众号支付</option>
+                                                    <option value="SQPAY.NATIVE">手Q扫码支付</option>
+                                                    <option value="SQPAY.MICROPAY">手Q刷卡支付</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="margin_r20 fl">
+                                            <h4 class="fl width60_tr margin_r10">交易状态：</h4>
+                                            <div class="fl rid_check">
+                                                <select name="order_status">
+                                                    <option value="">全部</option>
+                                                    <option value="1">未支付</option>
+                                                    <option value="2">已支付</option>
+                                                    <option value="3">已关闭</option>
+                                                    <option value="4">部分退款</option>
+                                                    <option value="5">完全退款</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="margin_r20 fl">
+                                            <h4 class="fl width60_tr margin_r10">所属门店：</h4>
+                                            <div class="fl rid_check select_store">
+                                                <input type="text" placeholder="所属门店" class="store_name" readonly>
+                                                <input type="hidden" class="store_id" value="0">
+                                                <span class="eliminate"></span>
+                                                <span class="seek"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="formMenu clearfix">
+                                    <span class="check_btn query ajax_load_btn" style="margin-left: 30px;">查询</span>
+                                    <button class="check_btn btnstybgf export_btn">导出</button>
+                                    <div class="hover_tips">
+                                        <div class="hover_tips_ico" title="最大支持导出10000条数据，超过限制请筛选条件后导出"><b class="dm_ico green green_bg">?</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="users_list">
+                            <div class="compile_btns">
+                                <span class="green apply_refund">申请退款</span>
+                                <span class="green sync_status">订单同步</span>
+                            </div>
+                            <div class="table">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>支付时间<br/>下单时间</th>
+                                        <th>商户订单号<br/>平台订单号</th>
+                                        <th>商户号</th>
+                                        <th>支付类型</th>
+                                        <th>交易状态</th>
+                                        <th>交易金额</th>
+                                        <th>退款金额</th>
+                                        <th>手续费</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr><td colspan="8">暂无数据</td></tr>                </tbody>
+                                </table>
+                                <div class="paging border_bgfff border_t0 clearfix">
+                                    <div class="fl"><select class="pagesize"><option value="10" selected>10</option><option value="20" >20</option><option value="30" >30</option><option value="40" >40</option><option value="50" >50</option><option value="100" >100</option></select><span class="fl up ajax_load_btn" title="上一页"></span><div class="formMenu fl"><input class="page" totalPages="0" currentPage="1" type="text" value="1"></div><span class="fl next ajax_load_btn" title="下一页"></span><span class="fl jump ajax_load_btn" title="跳转到指定页"></span></div><div class="fr"><p>共0条记录</p></div>            </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="pop_channel"></div>
+
+                    <div id="pop_shop"></div>
+                    <div id="pop_store"></div>
+
+                    <script type="text/javascript">
+                        var start = {
+                            isclear: false,
+                            istoday: false,
+                            elem: '#start_time',
+                            format: 'YYYY-MM-DD hh:mm:ss',
+                            max: laydate.now(),
+                            istime: true
+                        };
+                        var end = {
+                            isclear: false,
+                            istoday: false,
+                            elem: '#end_time',
+                            format: 'YYYY-MM-DD hh:mm:ss',
+                            max: laydate.now(),
+                            istime: true
+                        };
+                        laydate(start);
+                        laydate(end);
+
+
+
+                        $('.select_store input,.select_store .seek').click(function () {
+                            $('#pop_store').load('/store/getSelectLists?_loadpage=1');
+                        })
+
+                        $('.orders_lists').on('click', '.ajax_load_btn', function () {
+                            var start_time = $('#start_time').val();
+                            var end_time = $('#end_time').val();
+                            var trade_type = $('[name="trade_type"]').val();
+                            var order_status = $('[name="order_status"]').val();
+                            var store_id = $('.store_id').val();
+                            var time_by = $('[name="time_by"]').val();
+
+                            var page = ajax_page('.orders_lists', this);
+                            if (!page) {
+                                return false;
+                            }
+
+                            $('.orders_lists .table').load('/orders/lists', {
+                                '_loadpage': 1,
+                                'page': page,
+                                'start_time': start_time,
+                                'end_time': end_time,
+                                'trade_type': trade_type,
+                                'order_status': order_status,
+                                'store_id': store_id,
+                                'time_by': time_by
+                            });
+
+                            return false;
+                        })
+
+                        $('.orders_lists').on('dblclick', '.selectline', function () {
+                            $('#pop').load('/orders/info?_loadpage=1', {'order_no': $(this).attr('selectid')})
+                        })
+
+                        $('.apply_refund').click(function () {
+                            if (!$('.selected').attr('selectid')) {
+                                show_tip('请选择记录');
+                                return false;
+                            }
+                            $('.prompt_input').val('');
+                            prompt_tip('退款金额不能为空', 'apply_refund()');
+                        })
+                        function apply_refund() {
+                            var refund_fee = $('.prompt_input').val();
+                            if (refund_fee == '') {
+                                show_tip('退款金额不能为空');
+                                return false;
+                            }
+                            var regxp = /^\d{1,10}(\.\d{1,2})?$/;
+                            if (! regxp.test(refund_fee) || parseFloat(refund_fee) == 0) {
+                                show_tip('请输入正确的数值');
+                                return false;
+                            }
+
+                            var order_no = $('.selected').attr('selectid');
+                            $.post('/orders/refundApply', {'order_no': order_no, 'refund_fee': refund_fee}, function (r) {
+                                show_tip(r.msg, r.error);
+                            }, 'json')
+                        }
+
+                        $('.sync_status').click(function () {
+                            if (!$('.selected').attr('selectid')) {
+                                show_tip('请选择记录');
+                                return false;
+                            }
+                            show_tip('同步中');
+                            var order_no = $('.selected').attr('selectid');
+                            $.post('/orders/syncStatus', {'order_no': order_no}, function (r) {
+                                show_tip(r.msg, r.error, r.url);
+                            }, 'json')
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div></div>
+<!--弹窗容器-->
+<div id="pop"></div>
+<!-- 选中记录ID-->
+<input type="hidden" id="selectid" value="0">
+
+<!--信息提示 -->
+<div class="maskLayer showTipLayer">
+    <div class="popup" id="show_tip">
+        <div class="tips"></div>
+        <div class="popup_btns">
+            <button class="ok_btn">确定</button>
+        </div>
+    </div>
+</div>
+
+<!--确认提示 -->
+<div class="maskLayer">
+    <div class="popup" id="confirm_tip">
+        <div class="tips"></div>
+        <div class="popup_btns">
+            <button class="ok_btn">确定</button>
+            <button class="close_btn">取消</button>
+        </div>
+    </div>
+</div>
+
+<!--输入提示 -->
+<div class="maskLayer">
+    <div class="popup" id="prompt_tip">
+        <div class="tips"></div>
+        <input type="text" class="prompt_input">
+        <div class="popup_btns">
+            <button class="ok_btn">确定</button>
+            <button class="close_btn">取消</button>
+        </div>
+    </div>
+</div>
+
+<!--修改密码-->
+<div class="maskLayer resetPassLayer">
+    <div class="popupRulesBox3">
+        <div class="popupRulesBg3">
+            <div class="popupRules3 border_bgfff amend_pwd">
+                <form method="post" action="/index/resetPass">
+                    <div class="formMenu tc clearfix">
+                        <div class="import fl former_pwd">
+                            <span>旧密码：</span><input type="password" name="old_password" placeholder="旧密码" class="require_input banInputSapce" datatype="*" nullmsg="请输入旧密码">
+                        </div>
+                    </div>
+                    <div class="formMenu tc clearfix">
+                        <div class="import fl new_pwd">
+                            <span>新密码：</span><input type="password" name="new_password" placeholder="新密码" class="require_input banInputSapce" datatype="*6-18" nullmsg="请输入新密码">
+                        </div>
+                    </div>
+                    <div class="formMenu tc clearfix">
+                        <div class="import fl affirm_pwd">
+                            <span>确认密码：</span><input type="password" name="new_password_again" placeholder="重复输入新密码" class="require_input banInputSapce" datatype="*6-18" recheck="new_password"
+                                                     errormsg="两次输入密码不一致">
+                        </div>
+                    </div>
+                    <div class="formMenu tc margin_t30 clearfix">
+                        <input type="submit" class="check_btn" value="确定">
+                        <input type="reset" class="close_btn check_btn btnstybgf" value="关闭">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        AMOUNT_CONVER = 100;
+        $('.ordersController').addClass('pitchon').siblings('li').removeClass('pitchon');
+        $('.orders_lists_Page').addClass('on');
+        _Valid();
+    })
+</script>
+</body>
+</html>

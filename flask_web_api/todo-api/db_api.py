@@ -37,7 +37,7 @@ class Beijingpk10(db.Model):
     # def __repr__(self):
     #     return '%s,%s' % (self.turnNum, self.openNum)
 
-#
+#创建数据库
 db.create_all()
 
 
