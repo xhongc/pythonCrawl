@@ -35,9 +35,38 @@ class Water_user(db.Model):
         self.user_pwd = user_pwd
 db.create_all()
 
-# 调用speedpos。con 获取数据
-def speedpos(start_time,end_time,time_by,trade_type,order_status):
 
+def get_name(order_num):
+
+    url = 'https://mch.speedpos.cn/orders/info?_loadpage=1'
+    dataa = {'order_no': order_num}
+
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.4549.400 QQBrowser/9.7.12900.400',
+        'Referer': 'https://mch.speedpos.cn/index',
+        'X-Requested-With': 'XMLHttpRequest'
+    }
+    cookie = session['upSession']
+
+    res = requests.post(url, headers=headers, data=dataa,cookies=cookie)
+    # print(res.text)
+    selector = Selector(res)
+    title = selector.xpath('//div[@class="margin_r20 fl"]/input/@value').extract()
+    name1 = title[4]
+    name2 = title[7]
+    #print(name1,name2)
+    if name1 in name2:
+        #print(name1, name2)
+        return '无'
+    else:
+        return name1
+
+
+
+# 调用speedpos。con 获取数据
+def speedpos(start_time,end_time,trade_type,page='1',switch='false'):
+    #print('switch:',switch)
+    code ={}
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.4549.400 QQBrowser/9.7.12900.400',
         'Referer': 'https://mch.speedpos.cn/index',
@@ -45,12 +74,12 @@ def speedpos(start_time,end_time,time_by,trade_type,order_status):
     }
     post_data = {
         '_loadpage':'1',
-        'page':'1',
+        'page':page,
         'start_time':start_time,
         'end_time':end_time,
-        'time_by':time_by,
+        'time_by':'pay_time',
         'trade_type':trade_type,
-        'order_status':order_status,
+        'order_status':'2',
     }
     # 将cookie 存在session中全局调用
     cookie = session['upSession']
@@ -60,10 +89,9 @@ def speedpos(start_time,end_time,time_by,trade_type,order_status):
     # 获取数据
     try:
         res = requests.post('https://mch.speedpos.cn/orders/lists',headers=headers,data=post_data,cookies=cookie)
-        #print(res.text)
+        # print(res.text)
         selector = Selector(res)
         res_list = selector.xpath('//tr[@class="selectline"]')
-
         items = []
         for each in res_list:
             item = {}
@@ -74,12 +102,20 @@ def speedpos(start_time,end_time,time_by,trade_type,order_status):
             item['pay_mode'] = each[5]
             item['pay_status'] = each[6]
             item['pay_money'] = each[7]
+            if switch == 'true':
+                # print('switch is true')
+                item['store_name'] = get_name(item['order_num'])
+
+            #print(item)
             items.append(item)
             result = json.dumps(items,indent=4,ensure_ascii=False)
-    #print(post_data)
+        #print(items)
         return result
     except:
-        return '0'
+        code['code'] = 0
+        code['msg'] = u'无数据返回'
+        code = json.dumps(code, ensure_ascii=False)
+        return code
 
 # 登陆POST
 def login(login_name,login_pwd):
@@ -146,16 +182,19 @@ def login_api():
 @app.route('/search', methods=['GET'])
 def search():
     if not request.args['start_time'] and request.args['end_time']:
+        print('aa',request.args['start_time'])
         abort(400)
     else:
         start_time = request.args['start_time']
         end_time = request.args['end_time']
 
-    time_by = request.args['time_by']
+    # time_by = request.args['time_by']
     trade_type = request.args['trade_type']
-    order_status = request.args['order_status']
+    # order_status = request.args['order_status']
+    page = request.args['page']
+    switch = request.args['switch']
     #调用查询函数
-    result = speedpos(start_time,end_time,time_by,trade_type,order_status)
+    result = speedpos(start_time,end_time,trade_type,page,switch)
 
     return result
 

@@ -12,7 +12,7 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app,supports_credentials=True)
 
-def speedpos(start_time,end_time,time_by='create_time',trade_type=None,order_status=None):
+def speedpos(start_time,end_time,time_by='create_time',trade_type=None,order_status=None,page='1'):
     global session
 
     items = []
@@ -31,7 +31,7 @@ def speedpos(start_time,end_time,time_by='create_time',trade_type=None,order_sta
     html = session.post(url,headers=headers,data=data)
     post_data = {
         '_loadpage':'1',
-        'page':'1',
+        'page':page,
         'start_time':start_time,
         'end_time':end_time,
         'time_by':time_by,
@@ -51,6 +51,7 @@ def speedpos(start_time,end_time,time_by='create_time',trade_type=None,order_sta
             item['pay_mode'] = each[5]
             item['pay_status'] = each[6]
             item['pay_money'] = each[7]
+            # item['store_name'] = get_name(item['order_num'])
             items.append(item)
             result = json.dumps(items,indent=4,ensure_ascii=False)
         print(items)
@@ -69,9 +70,17 @@ def get_name(order_num):
         'X-Requested-With': 'XMLHttpRequest'
     }
     res = session.post(url,headers=headers,data=dataa)
-    # selector = Selector(res)
-    # title = selector.xpath('//div[@class="formMenu margin_b24 clearfix"]/')
-    print(res.text)
+    #print(res.text)
+    selector = Selector(res)
+    title = selector.xpath('//div[@class="margin_r20 fl"]/input/@value').extract()
+    name1 = title[4]
+    name2 = title[7]
+    if name1 in name2:
+
+        print(name1,name2)
+    else:
+        print('m')
+    return '0'
 
 @app.route('/search', methods=['GET'])
 def search():
@@ -94,4 +103,4 @@ if __name__ == '__main__':
     #     host='192.168.3.17',
     #     port= 8080,
     #     debug=True)
-    speedpos('2018-03-01 00:00:00','2018-03-01 23:59:59','create_time','','1')
+    speedpos('2018-03-02 00:00:00','2018-03-02 23:59:59','create_time','','1','2')
