@@ -4,4 +4,7 @@ import pymysql
 import json
 import time
 
+def login():
+    pass
 def get_data():
+    pass
