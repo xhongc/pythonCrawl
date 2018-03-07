@@ -1,11 +1,13 @@
 import random
 from flask import Flask, jsonify, request
 from flasgger import Swagger
+from flasgger.utils import swag_from
 
 
 app = Flask(__name__)
 swagger = Swagger(app)
 
+@swag_from('index.yml')
 @app.route('/api/<string:language>/', methods=['GET'])
 def index(language):
     """

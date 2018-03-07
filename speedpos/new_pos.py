@@ -1,13 +1,12 @@
+# -*- coding: utf-8 -*-
 import requests
 from scrapy.selector import Selector
-import pymysql
 import json
 import time
 from flask import Flask
 from flask import request,session
 from flask import jsonify,abort
 from flask_cors import *
-from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 
 databaseurl = 'mysql://root:xhongc@localhost/info'
@@ -61,7 +60,25 @@ def get_name(order_num):
     else:
         return name1
 
-
+def get_total_money(start_time,end_time,trade_type):
+    try:
+        url = 'https://mch.speedpos.cn/orders/index'
+        params = {
+            'start_time':start_time,
+            'end_time':end_time,
+            'trade_type':trade_type
+        }
+        cookie = session['upSession']
+        headers= session['headers']
+        html = requests.get(url,params=params,headers=headers,cookies=cookie)
+        html = html.text
+        html = json.loads(html,encoding='utf-8')
+        fee = html['data']['total_fee'] * 0.01
+        #print(fee)
+        return fee
+    except:
+        result = '00'
+        return result
 
 # 调用speedpos。con 获取数据
 def speedpos(start_time,end_time,trade_type,page='1',switch='false'):
@@ -83,7 +100,7 @@ def speedpos(start_time,end_time,trade_type,page='1',switch='false'):
     }
     # 将cookie 存在session中全局调用
     cookie = session['upSession']
-
+    session['headers'] = headers
     #print('new',cookie)
     #upSession = requests.Session()
     # 获取数据
@@ -93,27 +110,37 @@ def speedpos(start_time,end_time,trade_type,page='1',switch='false'):
         selector = Selector(res)
         res_list = selector.xpath('//tr[@class="selectline"]')
         items = []
+        total_money = 0
         for each in res_list:
             item = {}
             each = each.xpath('./td/text()').extract()
             item['pay_time'] = each[0]
             item['order_time'] = each[1]
             item['order_num'] = each[3]
-            item['pay_mode'] = each[5]
+            # item['pay_mode'] = each[5]
+            if each[5] == '微信公众号支付':
+                item['pay_mode'] = '微信支付'
+            else:
+                return '不支持该类型支付'
             item['pay_status'] = each[6]
             item['pay_money'] = each[7]
+            # total_money += int(each[7])
             if switch == 'true':
                 # print('switch is true')
                 item['store_name'] = get_name(item['order_num'])
-
             #print(item)
             items.append(item)
-            result = json.dumps(items,indent=4,ensure_ascii=False)
+        # 获取总金额
+        total_dict = {}
+        total_money = get_total_money(start_time,end_time,trade_type)
+        total_dict['total_money'] = str(total_money)
+        items.append(total_dict)
+        result = json.dumps(items,indent=4,ensure_ascii=False)
         #print(items)
         return result
     except:
         code['code'] = 0
-        code['msg'] = u'无数据返回'
+        code['msg'] = e
         code = json.dumps(code, ensure_ascii=False)
         return code
 

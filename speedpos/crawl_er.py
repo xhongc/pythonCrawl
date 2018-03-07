@@ -29,33 +29,47 @@ def speedpos(start_time,end_time,time_by='create_time',trade_type=None,order_sta
     }
     session = requests.Session()
     html = session.post(url,headers=headers,data=data)
-    post_data = {
-        '_loadpage':'1',
-        'page':page,
-        'start_time':start_time,
-        'end_time':end_time,
-        'time_by':time_by,
-        'trade_type':trade_type,
-        'order_status':order_status,
-    }
+    # post_data = {
+    #     '_loadpage':'1',
+    #     'page':page,
+    #     'start_time':start_time,
+    #     'end_time':end_time,
+    #     'time_by':time_by,
+    #     'trade_type':trade_type,
+    #     'order_status':order_status,
+    # }
+    # try:
+    #     res = session.post('https://mch.speedpos.cn/orders/lists',headers=headers,data=post_data)
+    #     selector = Selector(res)
+    #     res_list = selector.xpath('//tr[@class="selectline"]')
+    #     for each in res_list:
+    #         item = {}
+    #         each = each.xpath('./td/text()').extract()
+    #         item['pay_time'] = each[0]
+    #         item['order_time'] = each[1]
+    #         item['order_num'] = each[3]
+    #         item['pay_mode'] = each[5]
+    #         item['pay_status'] = each[6]
+    #         item['pay_money'] = each[7]
+    #         # item['store_name'] = get_name(item['order_num'])
+    #         items.append(item)
+    #         result = json.dumps(items,indent=4,ensure_ascii=False)
+    #     print(items)
+    #     return result
+    # total_money
     try:
-        res = session.post('https://mch.speedpos.cn/orders/lists',headers=headers,data=post_data)
-        selector = Selector(res)
-        res_list = selector.xpath('//tr[@class="selectline"]')
-        for each in res_list:
-            item = {}
-            each = each.xpath('./td/text()').extract()
-            item['pay_time'] = each[0]
-            item['order_time'] = each[1]
-            item['order_num'] = each[3]
-            item['pay_mode'] = each[5]
-            item['pay_status'] = each[6]
-            item['pay_money'] = each[7]
-            # item['store_name'] = get_name(item['order_num'])
-            items.append(item)
-            result = json.dumps(items,indent=4,ensure_ascii=False)
-        print(items)
-        return result
+        url = 'https://mch.speedpos.cn/orders/index'
+        params = {
+            'start_time':start_time,
+            'end_time':end_time,
+            'trade_type':''
+        }
+
+        html = session.get(url,params=params,headers=headers)
+        html = html.text
+        html = json.loads(html,encoding='utf-8')
+        fee = html['data']['total_fee'] * 0.01
+        print(fee)
     except:
         result = '大侠请重新来过'
         return result
@@ -103,4 +117,4 @@ if __name__ == '__main__':
     #     host='192.168.3.17',
     #     port= 8080,
     #     debug=True)
-    speedpos('2018-03-02 00:00:00','2018-03-02 23:59:59','create_time','','1','2')
+    speedpos('2018-03-01 00:00:00','2018-03-01 23:59:59','create_time','','1','2')
