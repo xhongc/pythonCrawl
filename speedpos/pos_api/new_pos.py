@@ -141,7 +141,7 @@ def speedpos(start_time,end_time,trade_type,page='1',switch='false'):
         return result
     except:
         code['code'] = 0
-        code['msg'] = e
+        code['msg'] = 'cuowu'
         code = json.dumps(code, ensure_ascii=False)
         return code
 
