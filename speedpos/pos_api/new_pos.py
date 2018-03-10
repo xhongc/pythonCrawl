@@ -206,6 +206,15 @@ def login_api():
                 code = json.dumps(code,ensure_ascii=False)
                 return code
 
+# 退出接口
+@app.route('/quit', methods=['GET'])
+def quit_api():
+    code ={}
+    code['code'] = 1
+    code['msg'] = u'退出登录'
+    code = json.dumps(code, ensure_ascii=False)
+    session['upSession'] = ''
+    return code
 # 查询接口
 @app.route('/search', methods=['GET'])
 def search():
@@ -337,6 +346,6 @@ def cha():
     return items
 if __name__ == '__main__':
     app.run(
-        host='127.0.0.1',
+        host='192.168.3.17',
         port=8080,
         )
