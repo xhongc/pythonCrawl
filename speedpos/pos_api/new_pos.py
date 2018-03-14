@@ -16,7 +16,7 @@ CORS(app,supports_credentials=True)
 app.config['SQLALCHEMY_DATABASE_URI'] = databaseurl
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-app.config['SECRET_KEY'] = '123456'
+app.config['SECRET_KEY'] = 'xhc1950'
 db = SQLAlchemy(app)
 
 #创建数据库
@@ -322,6 +322,7 @@ def gai():
         return json.dumps(code, ensure_ascii=False)
     else:
         Water_user.query.filter_by(id=request.form['id']).update(update_data)
+        db.session.commit()
         code['code'] = 1
         code['msg'] = u'修改成功'
         return json.dumps(code, ensure_ascii=False)
