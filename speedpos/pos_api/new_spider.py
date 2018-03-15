@@ -13,11 +13,13 @@ from flask_cors import *
 from flask_sqlalchemy import SQLAlchemy
 import threading
 
+# 数据库地址
 databaseurl = 'mysql://root:xhongc@localhost/info'
 app = Flask(__name__)
+# flask 解决跨域问题
 CORS(app,supports_credentials=True)
 app.config['SQLALCHEMY_DATABASE_URI'] = databaseurl
-app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True    # 数据修改自动提交
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['SECRET_KEY'] = 'xhc1950'
 db = SQLAlchemy(app)
@@ -58,6 +60,7 @@ class Water_user(db.Model):
         self.user_pwd = user_pwd
 db.create_all()
 
+# 获取商品备注
 def get_name(order_num):
 
     url = 'https://mch.speedpos.cn/orders/info?_loadpage=1'
@@ -83,6 +86,7 @@ def get_name(order_num):
     else:
         return name1
 
+# 获取总金额
 def get_total_money(start_time,end_time,trade_type):
     try:
         url = 'https://mch.speedpos.cn/orders/index'
@@ -103,6 +107,7 @@ def get_total_money(start_time,end_time,trade_type):
         result = '00'
         return result
 
+# sp 查询
 def speedpos(start_time,end_time,trade_type,page='1',switch='false'):
     #print('switch:',switch)
     code ={}
@@ -166,7 +171,7 @@ def speedpos(start_time,end_time,trade_type,page='1',switch='false'):
         code['msg'] = 'cuowu'
         code = json.dumps(code, ensure_ascii=False)
         return code
-
+#qmf查询
 def get_data(billDate,page='1',switch='false',trade_type=''):
     url = 'https://qr.chinaums.com/netpay-mer-portal/merchant/queryBills.do'
     wx_session = session['wx_session']
@@ -261,7 +266,7 @@ def get_data(billDate,page='1',switch='false',trade_type=''):
     items = json.dumps(items, ensure_ascii=False)
     return items
 
-
+#获取备注
 def get_beizhu(params):
     url = 'https://qr.chinaums.com/netpay-mer-portal/merchant/queryBill.do'
     params = params
