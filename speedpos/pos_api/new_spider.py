@@ -327,7 +327,7 @@ def login(login_name, login_pwd):
 
 
 def login_qmf(login_name, login_pwd, login_chinesename):
-    global session, code
+    global code
     code = {}
     url = 'https://qr.chinaums.com/netpay-mer-portal/merchant/merAuth.do'
 
@@ -474,9 +474,14 @@ def search():
         page = request.args['page']
         switch = request.args['switch']
         # 调用查询函数
+        if request.args['order_num'] == '':
+            result = speedpos(start_time, end_time, trade_type, page, switch)
+            return result
+        else:
+            order_num = request.args['order_num']
+            result = get_speedpos_order_num(trade_type, switch, order_num)
+            return result
 
-        result = speedpos(start_time, end_time, trade_type, page, switch)
-        return result
     if session['code'] == '3':
         billDate = request.args['billDate']
         billDate = billDate.split(' ')[0]
@@ -484,9 +489,153 @@ def search():
         switch = request.args['switch']
         # print(billDate,page)
         trade_type = request.args['trade_type']
-        result = get_data(billDate, page, switch, trade_type)
 
-        return result
+        if request.args['order_num'] == '':
+            result = get_data(billDate, page, switch, trade_type)
+            return result
+        else:
+            order_num = request.args['order_num']
+            result = get_qmf_order_num(billDate, switch, trade_type, order_num)
+            return result
+
+
+def get_speedpos_order_num(trade_type, switch, order_num):
+    try:
+        url = 'https://mch.speedpos.cn/orders/single'
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.4549.400 QQBrowser/9.7.12900.400',
+            'Referer': 'https://mch.speedpos.cn/orders/single',
+
+            'Upgrade-Insecure-Requests': '1'
+        }
+        data = {
+            'out_trade_no': '',
+            'order_no': order_num,
+            'transaction_id': ''
+        }
+        cookie = session['upSession']
+
+        res = requests.post('https://mch.speedpos.cn/orders/single', headers=headers, data=data, cookies=cookie)
+        # print(res.text)
+        selector = Selector(res)
+        res_list = selector.xpath('//tr[@class="selectline"]')
+        items = []
+        total_money = 0
+        for each in res_list:
+            item = {}
+            each = each.xpath('./td/text()').extract()
+            item['pay_time'] = each[0]
+            item['order_time'] = each[1]
+            item['order_num'] = each[3]
+            # item['pay_mode'] = each[5]
+            if each[5] == '微信公众号支付':
+                item['pay_mode'] = '微信支付'
+            else:
+                return '不支持该类型支付'
+            item['pay_status'] = each[6]
+            item['pay_money'] = each[7]
+            # total_money += int(each[7])
+            if switch == 'true':
+                # print('switch is true')
+                item['store_name'] = get_name(item['order_num'])
+            # print(item)
+            items.append(item)
+        total_money = item['pay_money']
+        total_dict = {'total_money': str(total_money)}
+        items.append(total_dict)
+        items = json.dumps(items, ensure_ascii=False)
+        return items
+    except BaseException as e:
+        print(e)
+        return '00'
+
+
+def get_qmf_order_num(billDate, switch, trade_type, order_num):
+    try:
+        url = 'https://qr.chinaums.com/netpay-mer-portal/wxmanage/queryOrder.do'
+        year = billDate.split('-')[0]
+        month = billDate.split('-')[1]
+        day = billDate.split('-')[2]
+        wx_session = session['wx_session']
+        reqmid = session['reqmid']
+        data = {
+            'reqMid': reqmid,
+            'merOrderId': order_num,
+            'billDate': '%s年%s月%s日' % (year, month, day)
+        }
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0.1; MI NOTE LTE Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043909 Mobile Safari/537.36 MicroMessenger/6.6.1.1220(0x26060135) NetType/WIFI Language/zh_CN',
+            'Host': 'qr.chinaums.com',
+            'Cookie': 'SESSION=%s; route=ff7ccc9ac07719e8e706ebafb1588dfa; JSESSIONID=GMMdB5gvvcQjvhVv0NyJdy1CwtZrcQBSHj21-Q3cdpgu73bmjFZV!-1058374088' % (
+            wx_session)
+
+        }
+        html = requests.post(url, data=data, headers=headers)
+
+        html = json.loads(html.text, encoding='utf-8')
+        html = html['model']
+        # print(html)
+        items = []
+        item = {}
+        # print(html['targetSys'],trade_type)
+        if html['targetSys'] == trade_type and trade_type == 'Alipay 2.0':
+            # print('ali')
+            pay_time = html['payTime'] * 0.001
+            pay_time = time.localtime(pay_time)
+            dt = time.strftime("%Y-%m-%d %H:%M:%S", pay_time)
+            item['paytime'] = dt
+            item['order_num'] = html['merOrderId']
+            item['pay_money'] = round(html['totalAmount'] * 0.01, 2)
+            item['trade_type'] = '支付宝支付'
+            if switch == 'true':
+                params_data = {'merOrderId': html['merOrderId'], 'billDate': billDate, 'mid': reqmid}
+                params = {
+                    'billsQueryInfo': str(params_data),
+                    'role': 'Merchant'}
+                item['detail'] = get_beizhu(params)
+            # print(items)
+            items.append(item)
+
+        elif html['targetSys'] == trade_type and trade_type == 'WXPay':
+            # print('wx')
+            pay_time = html['payTime'] * 0.001
+            pay_time = time.localtime(pay_time)
+            dt = time.strftime("%Y-%m-%d %H:%M:%S", pay_time)
+            item['paytime'] = dt
+            item['order_num'] = html['merOrderId']
+            item['pay_money'] = round(html['totalAmount'] * 0.01, 2)
+            item['trade_type'] = '支付宝支付'
+            if switch == 'true':
+                params_data = {'merOrderId': html['merOrderId'], 'billDate': billDate, 'mid': reqmid}
+                params = {
+                    'billsQueryInfo': str(params_data),
+                    'role': 'Merchant'}
+                item['detail'] = get_beizhu(params)
+            items.append(item)
+            # print(items)
+        elif trade_type == '':
+            pay_time = html['payTime'] * 0.001
+            pay_time = time.localtime(pay_time)
+            dt = time.strftime("%Y-%m-%d %H:%M:%S", pay_time)
+            item['pay_time'] = dt
+            item['order_num'] = html['merOrderId']
+            item['pay_money'] = round(html['totalAmount'] * 0.01, 2)
+            item['trade_type'] = html['targetSys'].replace('Alipay 2.0', '支付宝支付').replace('WXPay', '微信支付')
+            if switch == 'true':
+                params_data = {'merOrderId': html['merOrderId'], 'billDate': billDate, 'mid': reqmid}
+                params = {
+                    'billsQueryInfo': str(params_data),
+                    'role': 'Merchant'}
+                item['detail'] = get_beizhu(params)
+            items.append(item)
+        total_money = item['pay_money']
+        total_dict = {'total_money': str(total_money)}
+        items.append(total_dict)
+        items = json.dumps(items, ensure_ascii=False)
+        return items
+    except BaseException as e:
+        print(e)
+        return jsonify({'code': '0'})
 
 
 # 数据库增 接口
@@ -785,5 +934,5 @@ if __name__ == '__main__':
     app.run(
         host='192.168.3.17',
         port=8080,
-        debug=True,
+        debug=False,
         threaded=True)

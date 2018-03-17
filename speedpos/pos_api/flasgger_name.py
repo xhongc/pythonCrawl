@@ -23,7 +23,7 @@ def index(language):
         required: true
         description: The language name
       - name: size
-        in: query
+        in: query查询参数 formDate表单参数 body（json参数） path路径参数
         type: integer
         description: size of awesomeness
     responses:

@@ -1,17 +1,14 @@
-from flask import Flask, render_template
-from flask_socketio import SocketIO, emit
+import socket               # 导入 socket 模块
 
-app = Flask(__name__)
-app.config['SECRET_KEY'] = 'secret!'
-socketio = SocketIO(app)
+s = socket.socket()         # 创建 socket 对象
+host = socket.gethostname() # 获取本地主机名
+port = 12345                # 设置端口
+s.bind((host, port))        # 绑定端口
 
-@app.route('/')
-def index():
-    return 'hello'
-
-@socketio.on('my event')
-def test_message(message):
-    emit('my response', {'data': 'got it!'})
-
-if __name__ == '__main__':
-    socketio.run(app)
+s.listen(5)                 # 等待客户端连接
+while True:
+    c, addr = s.accept()     # 建立客户端连接。
+    print('连接地址：', addr)
+    a = u'欢迎访问菜鸟教程！'.encode(encoding='utf-8')
+    c.send(a)
+    c.close()                # 关闭连接

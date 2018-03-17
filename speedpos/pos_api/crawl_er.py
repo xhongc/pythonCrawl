@@ -19,8 +19,8 @@ def speedpos(start_time,end_time,time_by='create_time',trade_type=None,order_sta
     url = 'https://mch.speedpos.cn/index/index'
 
     data = {
-        'login_name':'2100800007966',
-        'login_pwd':'d976a22c'
+        'login_name':'2100800007925',
+        'login_pwd':'f9bcac36'
     }
     headers = {
         'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.4549.400 QQBrowser/9.7.12900.400',
@@ -29,6 +29,7 @@ def speedpos(start_time,end_time,time_by='create_time',trade_type=None,order_sta
     }
     session = requests.Session()
     html = session.post(url,headers=headers,data=data)
+    print(html)
     # post_data = {
     #     '_loadpage':'1',
     #     'page':page,
@@ -57,23 +58,65 @@ def speedpos(start_time,end_time,time_by='create_time',trade_type=None,order_sta
     #     print(items)
     #     return result
     # total_money
-    try:
-        url = 'https://mch.speedpos.cn/orders/index'
-        params = {
-            'start_time':start_time,
-            'end_time':end_time,
-            'trade_type':''
-        }
+    #----------------------------------------------------------
+    # try:
+    #     url = 'https://mch.speedpos.cn/orders/index'
+    #     params = {
+    #         'start_time':start_time,
+    #         'end_time':end_time,
+    #         'trade_type':''
+    #     }
+    #
+    #     html = session.get(url,params=params,headers=headers)
+    #     html = html.text
+    #     html = json.loads(html,encoding='utf-8')
+    #     fee = html['data']['total_fee'] * 0.01
+    #     print(fee)
+    # except:
+    #     result = '大侠请重新来过'
+    #     return result
+    # ----------------------------------------------------------
+    url = 'https://mch.speedpos.cn/orders/single'
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.4549.400 QQBrowser/9.7.12900.400',
+        'Referer': 'https://mch.speedpos.cn/orders/single',
 
-        html = session.get(url,params=params,headers=headers)
-        html = html.text
-        html = json.loads(html,encoding='utf-8')
-        fee = html['data']['total_fee'] * 0.01
-        print(fee)
-    except:
-        result = '大侠请重新来过'
-        return result
+        'Upgrade-Insecure-Requests': '1'
+    }
+    data = {
+        'out_trade_no': '',
+        'order_no': '81020180315091307353780241408502',
+        'transaction_id': ''
+    }
+    #cookie = session['upSession']
 
+    res = session.post('https://mch.speedpos.cn/orders/single', headers=headers, data=data)
+    #print(res.text)
+    selector = Selector(res)
+    res_list = selector.xpath('//tr[@class="selectline"]')
+    #print(res_list)
+    items = []
+    total_money = 0
+    for each in res_list:
+        item = {}
+        each = each.xpath('./td/text()').extract()
+        print(each)
+        item['pay_time'] = each[0]
+        item['order_time'] = each[1]
+        item['order_num'] = each[3]
+        # item['pay_mode'] = each[5]
+        if each[5] == '微信公众号支付':
+            item['pay_mode'] = '微信支付'
+        else:
+            return '不支持该类型支付'
+        item['pay_status'] = each[6]
+        item['pay_money'] = each[7]
+        # total_money += int(each[7])
+        #if switch == 'true':
+            # print('switch is true')
+            #item['store_name'] = get_name(item['order_num'])
+        print(item)
+        items.append(item)
 def get_name(order_num):
     url = 'https://mch.speedpos.cn/orders/info?_loadpage=1'
     dataa = {'order_no': order_num}
