@@ -113,7 +113,7 @@ def get_data(page='1', switch='false', trade_type=''):
             # item['pay_time'] = dt
             item['PayNO'] = each['merOrderId']
             item['PayJe'] = round(each['totalAmount'] * 0.01, 2)
-            item['payType'] = each['targetSys'].replace('Alipay 2.0', '支付宝支付').replace('WXPay', '微信支付')
+            item['payType'] = each['targetSys'].replace('Alipay 2.0', '1').replace('WXPay', '6')
             if switch == 'true':
                 params_data = {'merOrderId': each['merOrderId'], 'billDate': billDate, 'mid': reqmid}
                 params = {
@@ -135,7 +135,7 @@ def for_api(item):
     }
 
     #api_url = 'http://778vpn.com/notify/selfZFBNotify?key=9902312&appid=151261552310206'
-    api_url = 'http://192.168.3.111:8081/notify/selfZFBNotify?key=9902312&appid=151261552310206'
+    api_url = 'http://uupp777.vicp.cc:28771/notify/selfZFBNotify?key=9902312&appid=151261552310206'
     a = requests.get(api_url, headers=headers, params=item)
     print(a.text)
 
@@ -161,13 +161,12 @@ water_copy = []
 def main():
     global count
 
-
     info = get_data(page='1', switch='true', trade_type='')
     try:
         for item in info:
             if count == 1:
                 print('once%s' % item)
-                #for_api(item)
+                for_api(item)
             elif item not in water_copy and len(water_copy) != 0:
                 print('second%s' % item)
                 for_api(item)
@@ -184,5 +183,7 @@ def main():
         print(e)
 
 while 1:
+
     main()
     time.sleep(1)
+
