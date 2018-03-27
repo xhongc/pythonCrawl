@@ -7,6 +7,7 @@ from scrapy.selector import Selector
 import hashlib
 import threading
 
+
 conf = configparser.ConfigParser()
 conf.read('goods.conf',encoding='utf-8')
 
@@ -23,7 +24,7 @@ def get_beizhu(params,wx_session):
             'Cookie': 'SESSION=%s; route=ff7ccc9ac07719e8e706ebafb1588dfa; JSESSIONID=GMMdB5gvvcQjvhVv0NyJdy1CwtZrcQBSHj21-Q3cdpgu73bmjFZV!-1058374088' % (
                 wx_session)
         }
-        html = requests.get(url, params=params, headers=headers)
+        html = s.get(url, params=params, headers=headers,timeout = 500)
         # print(html.text)
         selector = Selector(html)
         detail = selector.xpath('//div[@class ="ums_text"]/span[@class="ums_text_value ums_margin_right8"]/text()').extract()[4].replace(' ', '').replace('\n', '')
@@ -34,50 +35,50 @@ def get_beizhu(params,wx_session):
         return 'error'
 
 def get_data(page='1', switch='false',user=''):
+    global s
+
+    url = 'https://qr.chinaums.com/netpay-mer-portal/merchant/queryBills.do'
+    wx_session = conf.get('settings','wx_session')
+    #print(user)
+    reqmid = conf.get(user,'reqmid')
+    #　print(reqmid)
+    # reqmid = conf.get('user1','reqmid')
+    # print(wx_session)
+    headers = {
+        'Host': 'qr.chinaums.com',
+        #'Connection': 'keep-alive',
+        #'Content-Length': '89',
+        'Accept': 'application/json, text/javascript, */*; q=0.01',
+        'Origin': 'https://qr.chinaums.com',
+        'X-Requested-With': 'XMLHttpRequest',
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0.1; MI NOTE LTE Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043906 Mobile Safari/537.36 MicroMessenger/6.6.1.1220(0x26060135) NetType/WIFI Language/zh_CN',
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'Referer': 'https://qr.chinaums.com/netpay-mer-portal/merchant/merAuth.do',
+        'Accept-Encoding': 'gzip, deflate',
+        'Accept-Language': 'zh-CN,en-US;q=0.8',
+        'Cookie': 'SESSION=%s; route=ff7ccc9ac07719e8e706ebafb1588dfa; JSESSIONID=0doJ-707FwJx2fGA7Fbf8Fse3cQTQYth1_NpUDuVlw_teeQf_cnj!-1058374088' % (
+            wx_session)
+    }
+    year = datetime.now().year
+    month = datetime.now().month
+    day = datetime.now().day
+    billDate = '%s-%s-%s'%(year,month,day)
+    # billDate = '2018-03-19'
+    # print('1a1a',reqmid)
+    data = {
+        'reqMid': reqmid,
+        'pageSize': '15',
+        'curPage': page,
+        'billDate': '%s年%s月%s日' % (year, month, day)
+    }
+    # print(data)
+    s = requests.session()
+    s.keep_alive = False
     try:
-        url = 'https://qr.chinaums.com/netpay-mer-portal/merchant/queryBills.do'
-        wx_session = conf.get('settings','wx_session')
-        #print(user)
-        reqmid = conf.get(user,'reqmid')
-        #　print(reqmid)
-        # reqmid = conf.get('user1','reqmid')
-        # print(wx_session)
-
-        headers = {
-            'Host': 'qr.chinaums.com',
-            'Connection': 'keep-alive',
-            'Content-Length': '89',
-            'Accept': 'application/json, text/javascript, */*; q=0.01',
-            'Origin': 'https://qr.chinaums.com',
-            'X-Requested-With': 'XMLHttpRequest',
-            'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0.1; MI NOTE LTE Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043906 Mobile Safari/537.36 MicroMessenger/6.6.1.1220(0x26060135) NetType/WIFI Language/zh_CN',
-            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-            'Referer': 'https://qr.chinaums.com/netpay-mer-portal/merchant/merAuth.do',
-            'Accept-Encoding': 'gzip, deflate',
-            'Accept-Language': 'zh-CN,en-US;q=0.8',
-            'Cookie': 'SESSION=%s; route=ff7ccc9ac07719e8e706ebafb1588dfa; JSESSIONID=0doJ-707FwJx2fGA7Fbf8Fse3cQTQYth1_NpUDuVlw_teeQf_cnj!-1058374088' % (
-                wx_session)
-        }
-
-        year = datetime.now().year
-        month = datetime.now().month
-        day = datetime.now().day
-        billDate = '%s-%s-%s'%(year,month,day)
-        #billDate = '2018-03-19'
-        # print('1a1a',reqmid)
-        data = {
-            'reqMid': reqmid,
-            'pageSize': '15',
-            'curPage': page,
-            'billDate': '%s年%s月%S日'  % (year, month, day)
-        }
-        # print(data)
-
-        html = requests.post(url, headers=headers, data=data)
+        html = s.post(url, headers=headers, data=data,timeout = 500)
         # print(trade_type)
         # print(json.loads(html.text))
         html = json.loads(html.text, encoding='utf-8')
-
         list_all = html['paymentList']['content']
         items = []
         for each in list_all:
@@ -98,11 +99,11 @@ def get_data(page='1', switch='false',user=''):
             items.append(item)
             # print(items)
         #items = json.dumps(items, ensure_ascii=False)
-        # print(items)
+        #　print('%s:%s'%(user,items))
         return items
     except BaseException as e:
-        print(e)
-        # for_close_api()
+        time.sleep(3)
+
 
 def for_api(item):
     params = item
@@ -139,13 +140,13 @@ def main1():
     water_copy = []
     user = threading.current_thread().name
     while 1:
-        # print(user)
+        #print(user)
         info = get_data(page='1', switch='true',user=user)
-        # print(water_copy)
+        # print(info)
         try:
             for item in info:
                 if count == 1:
-                    print('once%s' % item)
+                    print('%s:%s' % (user,item))
                     for_api(item)
                 elif item not in water_copy and len(water_copy) != 0:
                     print('second%s' % item)
@@ -154,17 +155,18 @@ def main1():
                     pass
                     # for_api(item)
                     water_copy.clear()
-                    #print('不需要重复数据！')
+                    # print('不需要重复数据！')
 
             # for item in info:
             #     water_copy.append(item)
             water_copy = info
             count = 2
-        except TypeError as e:
+        except BaseException as e:
             print(e)
             # for_close_api(user)
             # break
-        time.sleep(1)
+        time.sleep(1.5)
+
 
 def main2():
     count = 1
@@ -173,11 +175,11 @@ def main2():
     while 1:
         # print(user)
         info = get_data(page='1', switch='true',user=user)
-        # print(water_copy)
+        # print(info)
         try:
             for item in info:
                 if count == 1:
-                    print('once%s' % item)
+                    print('%s:%s' % (user, item))
                     for_api(item)
                 elif item not in water_copy and len(water_copy) != 0:
                     print('second%s' % item)
@@ -185,17 +187,17 @@ def main2():
                 else:
                     pass
                     # for_api(item)
-                    #print('不需要重复数据！')
+                    # print('不需要重复数据！')
 
             # for item in info:
             #     water_copy.append(item)
             water_copy = info
             count = 2
-        except TypeError as e:
+        except BaseException as e:
             print(e)
             # for_close_api(user)
             # break
-        time.sleep(1)
+        time.sleep(1.5)
 def main3():
     count = 1
     water_copy = []
@@ -203,11 +205,11 @@ def main3():
     while 1:
         # print(user)
         info = get_data(page='1', switch='true',user=user)
-        # print(water_copy)
+        # print(info)
         try:
             for item in info:
                 if count == 1:
-                    print('once%s' % item)
+                    print('%s:%s' % (user, item))
                     for_api(item)
                 elif item not in water_copy and len(water_copy) != 0:
                     print('second%s' % item)
@@ -221,11 +223,11 @@ def main3():
             #     water_copy.append(item)
             water_copy = info
             count = 2
-        except TypeError as e:
+        except BaseException as e:
             print(e)
             # for_close_api(user)
             # break
-        time.sleep(1)
+        time.sleep(1.5)
 def main4():
     count = 1
     water_copy = []
@@ -233,11 +235,42 @@ def main4():
     while 1:
         # print(user)
         info = get_data(page='1', switch='true',user=user)
-        # print(water_copy)
+        # print(info)
         try:
             for item in info:
                 if count == 1:
-                    print('once%s' % item)
+                    print('%s:%s' % (user, item))
+                    for_api(item)
+                elif item not in water_copy and len(water_copy) != 0:
+                    print('second%s' % item)
+                    for_api(item)
+                else:
+                    pass
+                    # for_api(item)
+                    # print('不需要重复数据！')
+
+            # for item in info:
+            #     water_copy.append(item)
+            water_copy = info
+            count = 2
+        except BaseException as e:
+            print(e)
+            # for_close_api(user)
+            # break
+        time.sleep(1.5)
+
+def main5():
+    count = 1
+    water_copy = []
+    user = threading.current_thread().name
+    while 1:
+        # print(user)
+        info = get_data(page='1', switch='true',user=user)
+        # print(info)
+        try:
+            for item in info:
+                if count == 1:
+                    print('%s:%s' % (user, item))
                     for_api(item)
                 elif item not in water_copy and len(water_copy) != 0:
                     print('second%s' % item)
@@ -251,11 +284,11 @@ def main4():
             #     water_copy.append(item)
             water_copy = info
             count = 2
-        except TypeError as e:
+        except BaseException as e:
             print(e)
             # for_close_api(user)
             # break
-        time.sleep(1)
+        time.sleep(1.5)
 
 if conf.get('user1','reqmid'):
     t1 = threading.Thread(target=main1,name='user1')
@@ -272,3 +305,7 @@ if conf.get('user3','reqmid'):
 if conf.get('user4','reqmid'):
     t4 = threading.Thread(target=main4,name='user4')
     t4.start()
+
+if conf.get('user5','reqmid'):
+    t5 = threading.Thread(target=main5,name='user5')
+    t5.start()
