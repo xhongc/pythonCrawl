@@ -1,13 +1,5 @@
-import threading
-def ppap():
-    i=1
-    while 1:
-        i+=1
-        print(i)
-        if i ==25:
-            print('gggg')
-            break
-
-for t in range(5):
-    t = threading.Thread(target=ppap,name=t)
-    t.start()
+with open(r'D:\work\DoubleBlack\班门弄斧\御剑\御剑配置文件\ASP.TXT') as f:
+    count = 0
+    for each in f.readlines():
+        count+=1
+    print(count)

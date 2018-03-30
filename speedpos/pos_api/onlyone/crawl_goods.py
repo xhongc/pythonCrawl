@@ -17,7 +17,8 @@ def get_beizhu(params,wx_session):
         params = params
 
 
-        # print(params)
+        #print(params)
+
         headers = {
             'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0.1; MI NOTE LTE Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043909 Mobile Safari/537.36 MicroMessenger/6.6.1.1220(0x26060135) NetType/WIFI Language/zh_CN',
             'Host': 'qr.chinaums.com',
@@ -72,6 +73,7 @@ def get_data(page='1', switch='false',user=''):
         'billDate': '%s年%s月%s日' % (year, month, day)
     }
     # print(data)
+    requests.adapters.DEFAULT_RETRIES = 5
     s = requests.session()
     s.keep_alive = False
     try:
@@ -102,6 +104,7 @@ def get_data(page='1', switch='false',user=''):
         #　print('%s:%s'%(user,items))
         return items
     except BaseException as e:
+        print('getdata',e)
         time.sleep(3)
 
 
@@ -142,7 +145,7 @@ def main1():
     while 1:
         #print(user)
         info = get_data(page='1', switch='true',user=user)
-        # print(info)
+        print('1',info)
         try:
             for item in info:
                 if count == 1:
@@ -165,7 +168,7 @@ def main1():
             print(e)
             # for_close_api(user)
             # break
-        time.sleep(1.5)
+        time.sleep(1.1)
 
 
 def main2():
@@ -175,7 +178,7 @@ def main2():
     while 1:
         # print(user)
         info = get_data(page='1', switch='true',user=user)
-        # print(info)
+        print('2',info)
         try:
             for item in info:
                 if count == 1:
@@ -197,7 +200,7 @@ def main2():
             print(e)
             # for_close_api(user)
             # break
-        time.sleep(1.5)
+        time.sleep(1.2)
 def main3():
     count = 1
     water_copy = []
@@ -205,7 +208,7 @@ def main3():
     while 1:
         # print(user)
         info = get_data(page='1', switch='true',user=user)
-        # print(info)
+        print('3',info)
         try:
             for item in info:
                 if count == 1:
@@ -224,10 +227,10 @@ def main3():
             water_copy = info
             count = 2
         except BaseException as e:
-            print(e)
+            print('3',e)
             # for_close_api(user)
             # break
-        time.sleep(1.5)
+        time.sleep(1.3)
 def main4():
     count = 1
     water_copy = []
@@ -235,7 +238,7 @@ def main4():
     while 1:
         # print(user)
         info = get_data(page='1', switch='true',user=user)
-        # print(info)
+        print('4',info)
         try:
             for item in info:
                 if count == 1:
@@ -257,7 +260,7 @@ def main4():
             print(e)
             # for_close_api(user)
             # break
-        time.sleep(1.5)
+        time.sleep(1.4)
 
 def main5():
     count = 1
@@ -266,7 +269,7 @@ def main5():
     while 1:
         # print(user)
         info = get_data(page='1', switch='true',user=user)
-        # print(info)
+        print('5',info)
         try:
             for item in info:
                 if count == 1:
