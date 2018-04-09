@@ -16,7 +16,7 @@
     <SUITE FILE_PATH="coverage/speedpos$qwer.coverage" NAME="qwer Coverage Results" MODIFIED="1521530485234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
     <SUITE FILE_PATH="coverage/speedpos$threadddd.coverage" NAME="threadddd Coverage Results" MODIFIED="1522217774488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pos_api" />
     <SUITE FILE_PATH="coverage/speedpos$crawl_goods.coverage" NAME="crawl_goods Coverage Results" MODIFIED="1521794402501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pos_api" />
-    <SUITE FILE_PATH="coverage/speedpos$crawl_goods__1_.coverage" NAME="crawl_goods (1) Coverage Results" MODIFIED="1522223799416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pos_api/onlyone" />
+    <SUITE FILE_PATH="coverage/speedpos$crawl_goods__1_.coverage" NAME="crawl_goods (1) Coverage Results" MODIFIED="1523001033809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pos_api/onlyone" />
     <SUITE FILE_PATH="coverage/speedpos$crawl_er.coverage" NAME="crawl_er Coverage Results" MODIFIED="1521796030466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pos_api" />
     <SUITE FILE_PATH="coverage/speedpos$qwer__1_.coverage" NAME="qwer (1) Coverage Results" MODIFIED="1521528258512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pexpect" />
     <SUITE FILE_PATH="coverage/speedpos$itchat_tw.coverage" NAME="itchat_tw Coverage Results" MODIFIED="1521285494590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
@@ -38,11 +38,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="crawl_goods.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="crawl_goods.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pos_api/onlyone/crawl_goods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5148">
-              <caret line="293" column="23" lean-forward="false" selection-start-line="293" selection-start-column="23" selection-end-line="293" selection-end-column="23" />
+            <state relative-caret-position="18">
+              <caret line="210" column="25" lean-forward="false" selection-start-line="210" selection-start-column="25" selection-end-line="210" selection-end-column="25" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -63,8 +63,8 @@
       <file leaf-file-name="new_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pos_api/new_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="411" column="32" lean-forward="true" selection-start-line="411" selection-start-column="32" selection-end-line="411" selection-end-column="32" />
+            <state relative-caret-position="16326">
+              <caret line="918" column="25" lean-forward="false" selection-start-line="918" selection-start-column="25" selection-end-line="918" selection-end-column="25" />
               <folding>
                 <element signature="e#42#57#0" expanded="true" />
               </folding>
@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_api.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login_api.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pos_api/login_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="59" column="26" lean-forward="true" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+            <state relative-caret-position="864">
+              <caret line="59" column="26" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -88,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/pos_api/post_man.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -214,12 +214,12 @@
         <option value="$PROJECT_DIR$/pos_api/crawl_goods.py" />
         <option value="$PROJECT_DIR$/pos_api/crawl_er.py" />
         <option value="$PROJECT_DIR$/pos_api/onlyone/crawl_er.py" />
-        <option value="$PROJECT_DIR$/pos_api/onlyone/goods.conf" />
-        <option value="$PROJECT_DIR$/pos_api/onlyone/crawl_goods.py" />
         <option value="$PROJECT_DIR$/pos_api/threadddd.py" />
         <option value="$PROJECT_DIR$/pos_api/templates/login.html" />
         <option value="$PROJECT_DIR$/pos_api/post_man.py" />
         <option value="$PROJECT_DIR$/pos_api/login_api.py" />
+        <option value="$PROJECT_DIR$/pos_api/onlyone/goods.conf" />
+        <option value="$PROJECT_DIR$/pos_api/onlyone/crawl_goods.py" />
       </list>
     </option>
   </component>
@@ -250,7 +250,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,46 +263,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speedpos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speedpos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pos_api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speedpos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speedpos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pos_api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -318,7 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.post_man">
+  <component name="RunManager" selected="Python.crawl_goods (1)">
     <configuration default="false" name="threadddd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -571,9 +539,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.post_man" />
-        <item index="1" class="java.lang.String" itemvalue="Python.login_api" />
-        <item index="2" class="java.lang.String" itemvalue="Python.crawl_goods (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.crawl_goods (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.post_man" />
+        <item index="2" class="java.lang.String" itemvalue="Python.login_api" />
         <item index="3" class="java.lang.String" itemvalue="Python.threadddd" />
         <item index="4" class="java.lang.String" itemvalue="Python.crawl_er (1)" />
       </list>
@@ -602,15 +570,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24659607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26172465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26728112" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23963134" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5652842" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23348695" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -864,24 +832,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pos_api/crawl_er.py" />
-    <entry file="file://$PROJECT_DIR$/pos_api/onlyone/crawl_er.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pos_api/onlyone/goods.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/sqlmap/sqlmap.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6881">
@@ -889,28 +839,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pos_api/threadddd.py">
+    <entry file="file://$PROJECT_DIR$/pos_api/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="252">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pos_api/onlyone/crawl_goods.py">
+    <entry file="file://$PROJECT_DIR$/pos_api/post_man.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5148">
-          <caret line="293" column="23" lean-forward="false" selection-start-line="293" selection-start-column="23" selection-end-line="293" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pos_api/cut_pic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="70" lean-forward="false" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+        <state relative-caret-position="126">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -923,39 +862,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pos_api/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/pos_api/onlyone/crawl_er.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="72">
+          <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="54" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pos_api/post_man.py">
+    <entry file="file://$PROJECT_DIR$/pos_api/threadddd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="72">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pos_api/cut_pic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="70" lean-forward="false" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pos_api/login_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="59" column="26" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pos_api/new_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="411" column="32" lean-forward="true" selection-start-line="411" selection-start-column="32" selection-end-line="411" selection-end-column="32" />
+        <state relative-caret-position="16326">
+          <caret line="918" column="25" lean-forward="false" selection-start-line="918" selection-start-column="25" selection-end-line="918" selection-end-column="25" />
           <folding>
             <element signature="e#42#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pos_api/login_api.py">
+    <entry file="file://$PROJECT_DIR$/pos_api/onlyone/goods.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="59" column="26" lean-forward="true" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        <state relative-caret-position="198">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pos_api/onlyone/crawl_goods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="210" column="25" lean-forward="false" selection-start-line="210" selection-start-column="25" selection-end-line="210" selection-end-column="25" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

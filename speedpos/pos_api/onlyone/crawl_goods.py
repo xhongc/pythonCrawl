@@ -145,7 +145,7 @@ def main1():
     while 1:
         #print(user)
         info = get_data(page='1', switch='true',user=user)
-        print('1',info)
+        # print('1',info)
         try:
             for item in info:
                 if count == 1:
@@ -178,7 +178,7 @@ def main2():
     while 1:
         # print(user)
         info = get_data(page='1', switch='true',user=user)
-        print('2',info)
+        # print('2',info)
         try:
             for item in info:
                 if count == 1:
@@ -208,7 +208,7 @@ def main3():
     while 1:
         # print(user)
         info = get_data(page='1', switch='true',user=user)
-        print('3',info)
+        #　print('3',info)
         try:
             for item in info:
                 if count == 1:
@@ -238,7 +238,7 @@ def main4():
     while 1:
         # print(user)
         info = get_data(page='1', switch='true',user=user)
-        print('4',info)
+        # print('4',info)
         try:
             for item in info:
                 if count == 1:
@@ -269,7 +269,7 @@ def main5():
     while 1:
         # print(user)
         info = get_data(page='1', switch='true',user=user)
-        print('5',info)
+        # print('5',info)
         try:
             for item in info:
                 if count == 1:
