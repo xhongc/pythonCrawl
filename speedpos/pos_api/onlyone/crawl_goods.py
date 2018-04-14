@@ -101,7 +101,7 @@ def get_data(page='1', switch='false',user=''):
             items.append(item)
             # print(items)
         #items = json.dumps(items, ensure_ascii=False)
-        #　print('%s:%s'%(user,items))
+        print('%s:%s'%(user,items))
         return items
     except BaseException as e:
         print('getdata',e)
@@ -143,7 +143,7 @@ def main1():
     water_copy = []
     user = threading.current_thread().name
     while 1:
-        #print(user)
+        print(user)
         info = get_data(page='1', switch='true',user=user)
         # print('1',info)
         try:
@@ -176,7 +176,7 @@ def main2():
     water_copy = []
     user = threading.current_thread().name
     while 1:
-        # print(user)
+        print(user)
         info = get_data(page='1', switch='true',user=user)
         # print('2',info)
         try:
@@ -206,7 +206,7 @@ def main3():
     water_copy = []
     user = threading.current_thread().name
     while 1:
-        # print(user)
+        print(user)
         info = get_data(page='1', switch='true',user=user)
         #　print('3',info)
         try:
@@ -236,7 +236,7 @@ def main4():
     water_copy = []
     user = threading.current_thread().name
     while 1:
-        # print(user)
+        print(user)
         info = get_data(page='1', switch='true',user=user)
         # print('4',info)
         try:
@@ -267,7 +267,7 @@ def main5():
     water_copy = []
     user = threading.current_thread().name
     while 1:
-        # print(user)
+        print(user)
         info = get_data(page='1', switch='true',user=user)
         # print('5',info)
         try:
