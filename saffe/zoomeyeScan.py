@@ -39,6 +39,7 @@ def search(queryType, queryStr, PAGECOUNT, user, passwd,login_sign):
         r = requests.get(url='https://api.zoomeye.org/' + queryType + '/search?query=' + queryStr + '&page=' + str(i),
                          headers=headers)
         response = json.loads(r.text)
+        print(response)
         try:
             if queryType == "host":
                 for x in response['matches']:
