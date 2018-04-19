@@ -1,0 +1,2 @@
+1、关于requests的session方法保持cookie的问题。
+http://blog.csdn.net/falseen/article/details/46962011

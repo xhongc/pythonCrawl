@@ -178,12 +178,12 @@ def work(money,page):
     os.popen('adb shell input tap %s %s' % (read_conf('action9')[0], read_conf('action9')[1]))
 
 if __name__ == '__main__':
-    #video()
+    video()
     #write_conf()
-    a = time.time()
-    work(1,1)
-    b = time.time()
-    print(b-a)
+    # a = time.time()
+    # work(1,1)
+    # b = time.time()
+    # print(b-a)
     #work_once(1,1)
     #scr_and_diff('now2', 'action2')
 
