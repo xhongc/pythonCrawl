@@ -1,8 +1,10 @@
 #!/usr/bin/env python
+
 from threading import Lock
 from flask import Flask, render_template, session, request
 from flask_socketio import SocketIO, Namespace, emit, join_room, leave_room, \
     close_room, rooms, disconnect
+import json
 
 # Set this variable to "threading", "eventlet" or "gevent" to test the
 # different async modes, or leave it set to None for the application to choose
@@ -27,14 +29,16 @@ def background_thread():
                       namespace='/test')
 
 
-@app.route('/')
+@app.route('/chat')
 def index():
     return render_template('index.html', async_mode=socketio.async_mode)
 
 
 class MyNamespace(Namespace):
     def on_my_event(self, message):
+
         session['receive_count'] = session.get('receive_count', 0) + 1
+        #print(json.dumps(message,ensure_ascii=False))
         emit('my_response',
              {'data': message['data'], 'count': session['receive_count']})
 
