@@ -2,11 +2,158 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1be0d9-07b3-4efa-9499-f6dde6cd94c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Process/threading_example.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/saffe/re_qq_num.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/saffe/chuli_txt.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/.idea/cai491.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/cai491/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/cai491/items.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/cai491/middlewares.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/cai491/pipelines.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/cai491/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/cai491/spiders/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/cai491/spiders/cai491.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/cai491/t33.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/scrapy.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/text1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cai491/text2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/.idea/cp_plan.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/SpiderKeeper.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/items.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/middlewares.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/pipelines.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/spider_api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/spiders/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/spiders/spiders_5fc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/build/lib/cp_plan/spiders/spiders_ssc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/items.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/middlewares.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/pipelines.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spider_api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/dict_orm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_2fc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_2fc_all.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_5fc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_5fc_all.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_ffc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_ffc_all.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_jssc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_jssc_all.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_pcdd.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_pcdd_all.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_pk10.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_pk10_all.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_ssc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_ssc_all.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_xyft.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/cp_plan/spiders/spiders_xyft_all.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/dbs/cp_plan.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/dbs/default.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/eggs/cp_plan/01261121.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/eggs/cp_plan/1516937245.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/06647ffa029611e88d2d089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/13ffa7d002ff11e8804e089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/4e13c014029611e8bd57089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/5b85316202ff11e8aa65089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/beda42ca029511e8b99d089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/2fc/f4d0bda402fe11e8b90c089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/06bb5fc6029611e88408089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/3cb854fa029311e88a1c089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/53daf824029511e89898089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/a14db58c029411e8a3ba089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/ee1bc214029311e8bc9e089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/5fc/fa2518de02fe11e8ba34089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/04ab5d7a029011e8bfa9089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/2858d064029011e88cee089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/4c1ad264029011e89306089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/7017b652029011e88c0f089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/ac29d762029211e8b615089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ffc/f51f51c8028f11e89bf8089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/0c09af90029511e8a111089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/1495c80002ff11e8844e089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/4de8658c029611e89bff089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/77659470029511e8a96f089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/e29d9a6e029511e89b0c089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/jssc/fb70f7be02fe11e8946f089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/0681dd22029611e8b6cb089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/3bcac80a029311e89a86089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/53a7cf8a029511e8b266089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/a0dbdb12029411e896b9089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/edf372b8029311e89eea089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pcdd/fbb0de3802fe11e88fe7089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/06d832a2029611e8af1c089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/3c9c1598029311e89d03089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/5392b3a8029511e89985089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/a0f8ba40029411e8a699089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/ee36ff6c029311e891f6089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/pk10/fb172fac02fe11e8838b089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/069daab6029611e8b808089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/3c1535ac029311e8be8b089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/7079fe5e029011e88e42089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/a0c58b0c029411e8849f089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/d5828e82029111e8bdd8089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/ssc/fbf349be02fe11e89138089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/07027ce2029611e8a249089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/3b2427c6029311e896ba089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/53bae40a029511e8a847089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/a16f87ba029411e89507089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/ee088500029311e89ca0089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/cp_plan/xfft/f6f6a6dc02fe11e88b3c089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/project/5fc/07b0af46023711e8981f089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/project/5fc/1c45c3a6024011e89f9e089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/project/5fc/2f72e3c0023611e89a5d089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/project/5fc/c61bad9e023e11e8a736089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/project/5fc/da68514c023e11e89957089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/project/5fc/ddb7b2ae023f11e882b2089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/projectcp/5fc/1edc6e8a00f911e8b536089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/logs/projectcp/5fc/e94ec76c00fa11e89eff089e01bd501c.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/open_wait.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/output.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/plan_content.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/project.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/project.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/project.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/project.egg-info/entry_points.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/project.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/scrapy.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/scrapyd-deploy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_plan/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/.idea/cp_result.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/cp_result/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/cp_result/items.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/cp_result/middlewares.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/cp_result/pipelines.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/cp_result/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/cp_result/spiders/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/cp_result/spiders/beijingpk10.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cp_result/scrapy.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct/.idea/ct.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct/juadmin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct/result.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct/result_admin.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct/useragents.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/the_whole_web_spider/Spider" afterPath="$PROJECT_DIR$/the_whole_web_spider/Spider" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_web_api/websocket_example/Flask-SocketIO-master/example/app_namespace.py" afterPath="$PROJECT_DIR$/flask_web_api/websocket_example/Flask-SocketIO-master/example/app_namespace.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saffe/email.txt" afterPath="$PROJECT_DIR$/saffe/email.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saffe/py_smtp.py" afterPath="$PROJECT_DIR$/saffe/py_smtp.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +169,7 @@
     <SUITE FILE_PATH="coverage/pythonCrawl$judge_same_pic.coverage" NAME="judge_same_pic Coverage Results" MODIFIED="1517476128954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonCrawl$pyhook_exam.coverage" NAME="pyhook_exam Coverage Results" MODIFIED="1517484409032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonCrawl$sessions.coverage" NAME="sessions Coverage Results" MODIFIED="1524126394407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_web_api/websocket_example/Flask-SocketIO-master/example" />
-    <SUITE FILE_PATH="coverage/pythonCrawl$py_smtp.coverage" NAME="py_smtp Coverage Results" MODIFIED="1524204308235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
+    <SUITE FILE_PATH="coverage/pythonCrawl$py_smtp.coverage" NAME="py_smtp Coverage Results" MODIFIED="1524560755883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
     <SUITE FILE_PATH="coverage/pythonCrawl$getevent_test.coverage" NAME="getevent_test Coverage Results" MODIFIED="1524101464928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adb_mult_run" />
     <SUITE FILE_PATH="coverage/pythonCrawl$yield_t.coverage" NAME="yield_t Coverage Results" MODIFIED="1523273994140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonCrawl$width_spider.coverage" NAME="width_spider Coverage Results" MODIFIED="1524209897825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/the_whole_web_spider/Spider" />
@@ -41,6 +188,7 @@
     <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_in_threading_example_py.coverage" NAME="Unittests in threading_example.py Coverage Results" MODIFIED="1524114271837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Process" />
     <SUITE FILE_PATH="coverage/pythonCrawl$kelu_auto.coverage" NAME="kelu_auto Coverage Results" MODIFIED="1524104396962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adb_mult_run" />
     <SUITE FILE_PATH="coverage/pythonCrawl$.coverage" NAME="井字棋游戏 Coverage Results" MODIFIED="1524141931083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/Tencent Files/408737515/FileRecv" />
+    <SUITE FILE_PATH="coverage/pythonCrawl$chuli_txt.coverage" NAME="chuli_txt Coverage Results" MODIFIED="1524626401949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
     <SUITE FILE_PATH="coverage/pythonCrawl$app_namespace.coverage" NAME="app_namespace Coverage Results" MODIFIED="1524126471974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_web_api/websocket_example/Flask-SocketIO-master/example" />
     <SUITE FILE_PATH="coverage/pythonCrawl$crawl_goods.coverage" NAME="crawl_goods Coverage Results" MODIFIED="1523679832409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/speedpos/pos_api/onlyone" />
     <SUITE FILE_PATH="coverage/pythonCrawl$zoomeyeScan.coverage" NAME="zoomeyeScan Coverage Results" MODIFIED="1523934014101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
@@ -54,36 +202,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Myspider.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/Myspider.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_auth_example/django_auth_example/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+            <state relative-caret-position="1962">
+              <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="width_spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/width_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="138" column="26" lean-forward="false" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="depth_spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/depth_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="118" column="34" lean-forward="false" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -91,10 +215,30 @@
       <file leaf-file-name="py_smtp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/saffe/py_smtp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="44" column="51" lean-forward="false" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
+            <state relative-caret-position="90">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chuli_txt.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/saffe/chuli_txt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="like_netcat.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Blackhat/like_netcat.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding>
-                <element signature="e#1#15#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,8 +248,20 @@
         <entry file="file://$PROJECT_DIR$/saffe/email.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+              <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_auth_example/users/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,9 +305,8 @@
     <setting file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/width_spider.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/login/login/spiders/douban.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/login/login/pipelines.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/cp_result/cp_result/spiders/beijingpk10.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Blackhat/like_netcat.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/saffe/aizhanScan.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/cp_plan/cp_plan/pipelines.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/adb_mult_run/kelu_auto.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/pyhook/pyhook_exam.py" root0="SKIP_INSPECTION" />
   </component>
@@ -199,9 +354,13 @@
         <option value="$PROJECT_DIR$/flask_web_api/websocket_example/Flask-SocketIO-master/example/sessions.py" />
         <option value="$PROJECT_DIR$/flask_web_api/websocket_example/Flask-SocketIO-master/example/app_namespace.py" />
         <option value="$PROJECT_DIR$/the_whole_web_spider/Spider/depth_spider.py" />
-        <option value="$PROJECT_DIR$/saffe/email.txt" />
-        <option value="$PROJECT_DIR$/saffe/py_smtp.py" />
         <option value="$PROJECT_DIR$/the_whole_web_spider/Spider/width_spider.py" />
+        <option value="$PROJECT_DIR$/django_auth_example/users/models.py" />
+        <option value="$PROJECT_DIR$/django_auth_example/django_auth_example/settings.py" />
+        <option value="$PROJECT_DIR$/saffe/py_smtp.py" />
+        <option value="$PROJECT_DIR$/saffe/email.txt" />
+        <option value="$PROJECT_DIR$/saffe/chuli_txt.py" />
+        <option value="$PROJECT_DIR$/Blackhat/like_netcat.py" />
       </list>
     </option>
   </component>
@@ -233,8 +392,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -275,17 +432,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="saffe" />
+              <option name="myItemId" value="django_auth_example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blackhat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -300,26 +473,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Myspider">
-    <configuration default="false" name="app_namespace" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_web_api/websocket_example/Flask-SocketIO-master/example" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="learngit" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_web_api/websocket_example/Flask-SocketIO-master/example/app_namespace.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.chuli_txt">
     <configuration default="false" name="py_smtp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -391,6 +545,25 @@
       <module name="learngit" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/the_whole_web_spider/Spider/Myspider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="chuli_txt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/saffe" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="learngit" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/saffe/chuli_txt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -562,19 +735,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in threading_example.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python.app_namespace" />
-      <item index="2" class="java.lang.String" itemvalue="Python.py_smtp" />
-      <item index="3" class="java.lang.String" itemvalue="Python.width_spider" />
-      <item index="4" class="java.lang.String" itemvalue="Python.井字棋游戏" />
-      <item index="5" class="java.lang.String" itemvalue="Python.Myspider" />
+      <item index="1" class="java.lang.String" itemvalue="Python.py_smtp" />
+      <item index="2" class="java.lang.String" itemvalue="Python.width_spider" />
+      <item index="3" class="java.lang.String" itemvalue="Python.井字棋游戏" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Myspider" />
+      <item index="5" class="java.lang.String" itemvalue="Python.chuli_txt" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Myspider" />
-        <item index="1" class="java.lang.String" itemvalue="Python.width_spider" />
-        <item index="2" class="java.lang.String" itemvalue="Python.py_smtp" />
-        <item index="3" class="java.lang.String" itemvalue="Python.井字棋游戏" />
-        <item index="4" class="java.lang.String" itemvalue="Python.app_namespace" />
+        <item index="0" class="java.lang.String" itemvalue="Python.chuli_txt" />
+        <item index="1" class="java.lang.String" itemvalue="Python.py_smtp" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Myspider" />
+        <item index="3" class="java.lang.String" itemvalue="Python.width_spider" />
+        <item index="4" class="java.lang.String" itemvalue="Python.井字棋游戏" />
       </list>
     </recent_temporary>
   </component>
@@ -610,18 +783,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24583964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32526475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30769232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3430769" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.74153847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33076924" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33073324" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41230768" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -672,45 +846,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/adb_mult_run/Super_adb_Run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adb_mult_run/now/60x30/now2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adb_mult_run/now/60x30/now1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adb_mult_run/cature/60x30/action8.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adb_mult_run/1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adb_mult_run/cature/60x30/action7.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adb_mult_run/cature/60x30/action3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adb_mult_run/adb.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -945,51 +1080,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/saffe/email.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/saffe/py_smtp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="44" column="51" lean-forward="false" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
-          <folding>
-            <element signature="e#1#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/depth_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="118" column="34" lean-forward="false" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/saffe/aizhanScan.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-162">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/width_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="138" column="26" lean-forward="false" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -997,7 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2808">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,7 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,7 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,15 +1112,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/depth_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2088">
+          <caret line="118" column="34" lean-forward="false" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/width_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2412">
+          <caret line="138" column="26" lean-forward="false" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/Myspider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        <state relative-caret-position="756">
+          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_auth_example/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_auth_example/django_auth_example/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1962">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/BNZ.5adee1aa10b8b16c/sunny.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/BNZ.5adee1bc10b8f877/sunny.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/BNZ.5adee1b010b8c8eb/sunny.py" />
+    <entry file="file://$PROJECT_DIR$/saffe/email.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saffe/py_smtp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saffe/chuli_txt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blackhat/like_netcat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
