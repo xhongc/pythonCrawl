@@ -8,10 +8,12 @@ import time
 
 # 第三方 SMTP 服务
 mail_host = "smtp.qq.com"  # 设置服务器
-mail_user = "1184405959@qq.com"  # 用户名
-mail_pass = "dwjybikeqdawhhbc"  # 口令,QQ邮箱是输入授权码，在qq邮箱设置 里用验证过的手机发送短信获得，不含空格
-sender = '1184405959@qq.com'
-
+# mail_user = "1184405959@qq.com"  # 用户名
+# mail_pass = "dwjybikeqdawhhbc"  # 口令,QQ邮箱是输入授权码，在qq邮箱设置 里用验证过的手机发送短信获得，不含空格
+# sender = '1184405959@qq.com'
+mail_user = "408737515@qq.com"  # 用户名
+mail_pass = "****"  # 口令,QQ邮箱是输入授权码，在qq邮箱设置 里用验证过的手机发送短信获得，不含空格
+sender = '408737515@qq.com'
 
 def send_mail():
 
@@ -31,7 +33,7 @@ def send_mail():
 ###################
     try:
 
-        with open('email.txt', 'r')as f:
+        with open('emaila.txt', 'r')as f:
             for each in f.readlines():
                 smtpObj = smtplib.SMTP_SSL(mail_host, 465)
                 smtpObj.login(mail_user, mail_pass)

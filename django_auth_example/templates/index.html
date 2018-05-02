@@ -78,7 +78,7 @@
 				<div class="nav">
 					<div class="wp">
 						<ul>
-							<li class="active" ><a href="index.html">首页</a></li>
+							<li class="active" ><a href="{% url 'index' %}">首页</a></li>
 							<li >
 								<a href="course-list.html">
 									公开课<img class="hot" src="/static/images/nav_hot.png">
@@ -87,7 +87,7 @@
 							<li >
 								<a href="teachers-list.html">授课教师</a>
 							</li>
-							<li ><a href="org-list.html">授课机构</a></li>
+							<li ><a href="{% url 'org_list' %}">授课机构</a></li>
 						</ul>
 					</div>
 				</div>
@@ -107,31 +107,31 @@
 						<ul class="imgs">
                             
                             <li>
-                                    <a href="http://www.imooc.com">
+                                    <a href="#">
                                         <img width="1200" height="478" src="/static/media/banner/2016/11/57a801860001c34b12000460.jpg" />
                                     </a>
                                 </li>
                             
                             <li>
-                                    <a href="http://www.projectsedu.com">
+                                    <a href="#">
                                         <img width="1200" height="478" src="/static/media/banner/2016/11/57aa86a0000145c512000460.jpg" />
                                     </a>
                                 </li>
                             
                             <li>
-                                    <a href="http://www.projectsedu.com">
+                                    <a href="#">
                                         <img width="1200" height="478" src="/static/media/banner/2016/11/57a801860001c34b12000460_z4Vb8zl.jpg" />
                                     </a>
                                 </li>
                             
                             <li>
-                                    <a href="http://www.projectsedu.com">
+                                    <a href="#">
                                         <img width="1200" height="478" src="/static/media/banner/2016/11/57aa86a0000145c512000460_nMwvoQD.jpg" />
                                     </a>
                                 </li>
                             
                             <li>
-                                    <a href="http://www.projectsedu.com">
+                                    <a href="#">
                                         <img width="1200" height="478" src="/static/media/banner/2016/11/57aa86a0000145c512000460_GXIBATC.jpg" />
                                     </a>
                                 </li>
@@ -321,7 +321,7 @@
 					<div class="module3_1 left">
 						<img width="228" height="463" src="/static/images/module3_1.jpg"/>
 						<p class="fisrt_word">名校来袭<br/>权威认证</p>
-						<a class="more" href="org-list.html">查看更多机构 ></a>
+						<a class="more" href="{% url 'org_list' %}">查看更多机构 ></a>
 					</div>
 					<div class="right">
 						<ul>

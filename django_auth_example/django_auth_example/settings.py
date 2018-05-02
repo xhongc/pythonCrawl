@@ -63,6 +63,13 @@ AUTH_USER_MODEL ='users.User'
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/'
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = "408737515@qq.com"       # 邮箱地址
+EMAIL_HOST_PASSWORD = "*****"    # 密码
+EMAIL_USE_TLS= True
+EMAIL_FROM = "408737515@qq.com"            # 邮箱地址
+
 AUTHENTICATION_BACKENDS = ('users.views.CustomBackend',)
 TEMPLATES = [
     {
