@@ -22,7 +22,12 @@ class CourseOrg(models.Model):
     address = models.CharField('机构地址',max_length=150,)
     city = models.ForeignKey(CityDict,verbose_name='所在城市',on_delete=models.CASCADE)
     add_time = models.DateTimeField(default=datetime.now)
-
+    Org_choices = (
+        ('pxjg',u'培训机构'),
+        ('gx',u'高校'),
+        ('gr',u'个人')
+    )
+    category = models.CharField(max_length=20,choices=Org_choices,verbose_name='机构类别',default='pxjg')
     class Meta:
         verbose_name = '课程机构'
         verbose_name_plural = verbose_name

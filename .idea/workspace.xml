@@ -2,21 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1be0d9-07b3-4efa-9499-f6dde6cd94c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/saffe/123.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/saffe/email.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_rest_api/.idea/django_rest_api.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_rest_api/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_rest_api/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_rest_api/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_rest_api/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/saffe/crawl_cc.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/the_whole_web_spider/Spider" afterPath="$PROJECT_DIR$/the_whole_web_spider/Spider" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/learngit.iml" afterPath="$PROJECT_DIR$/.idea/learngit.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_auth_example/.idea/workspace.xml" afterPath="$PROJECT_DIR$/django_auth_example/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_auth_example/apps/organization/views.py" afterPath="$PROJECT_DIR$/django_auth_example/apps/organization/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_auth_example/apps/users/forms.py" afterPath="$PROJECT_DIR$/django_auth_example/apps/users/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_auth_example/apps/users/views.py" afterPath="$PROJECT_DIR$/django_auth_example/apps/users/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_auth_example/apps/organization/models.py" afterPath="$PROJECT_DIR$/django_auth_example/apps/organization/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_auth_example/django_auth_example/settings.py" afterPath="$PROJECT_DIR$/django_auth_example/django_auth_example/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_auth_example/django_auth_example/urls.py" afterPath="$PROJECT_DIR$/django_auth_example/django_auth_example/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_auth_example/templates/index.html" afterPath="$PROJECT_DIR$/django_auth_example/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_auth_example/templates/login.html" afterPath="$PROJECT_DIR$/django_auth_example/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_auth_example/templates/register.html" afterPath="$PROJECT_DIR$/django_auth_example/templates/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_auth_example/templates/base.html" afterPath="$PROJECT_DIR$/django_auth_example/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saffe/123.py" afterPath="$PROJECT_DIR$/saffe/123.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saffe/emaila.txt" afterPath="$PROJECT_DIR$/saffe/emaila.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saffe/py_smtp.py" afterPath="$PROJECT_DIR$/saffe/py_smtp.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +32,11 @@
     <SUITE FILE_PATH="coverage/pythonCrawl$judge_same_pic.coverage" NAME="judge_same_pic Coverage Results" MODIFIED="1517476128954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonCrawl$pyhook_exam.coverage" NAME="pyhook_exam Coverage Results" MODIFIED="1517484409032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonCrawl$sessions.coverage" NAME="sessions Coverage Results" MODIFIED="1524126394407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_web_api/websocket_example/Flask-SocketIO-master/example" />
-    <SUITE FILE_PATH="coverage/pythonCrawl$py_smtp.coverage" NAME="py_smtp Coverage Results" MODIFIED="1524901552249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
+    <SUITE FILE_PATH="coverage/pythonCrawl$py_smtp.coverage" NAME="py_smtp Coverage Results" MODIFIED="1525230289822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
     <SUITE FILE_PATH="coverage/pythonCrawl$getevent_test.coverage" NAME="getevent_test Coverage Results" MODIFIED="1524101464928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adb_mult_run" />
     <SUITE FILE_PATH="coverage/pythonCrawl$yield_t.coverage" NAME="yield_t Coverage Results" MODIFIED="1523273994140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonCrawl$width_spider.coverage" NAME="width_spider Coverage Results" MODIFIED="1524209897825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/the_whole_web_spider/Spider" />
-    <SUITE FILE_PATH="coverage/pythonCrawl$123.coverage" NAME="123 Coverage Results" MODIFIED="1524834666780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
+    <SUITE FILE_PATH="coverage/pythonCrawl$123.coverage" NAME="123 Coverage Results" MODIFIED="1525312629366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
     <SUITE FILE_PATH="coverage/pythonCrawl$websocket.coverage" NAME="websocket Coverage Results" MODIFIED="1524125038655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
     <SUITE FILE_PATH="coverage/pythonCrawl$Super_auto.coverage" NAME="Super_auto Coverage Results" MODIFIED="1517574442969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyhook" />
     <SUITE FILE_PATH="coverage/pythonCrawl$Super_adb_Run.coverage" NAME="Super_adb_Run Coverage Results" MODIFIED="1524101205440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adb_mult_run" />
@@ -51,6 +51,7 @@
     <SUITE FILE_PATH="coverage/pythonCrawl$app.coverage" NAME="app Coverage Results" MODIFIED="1524125238641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_web_api/websocket_example/Flask-SocketIO-master/example" />
     <SUITE FILE_PATH="coverage/learngit$11.coverage" NAME="11 Coverage Results" MODIFIED="1504154958942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/算法系列" />
     <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_in_threading_example_py.coverage" NAME="Unittests in threading_example.py Coverage Results" MODIFIED="1524114271837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Process" />
+    <SUITE FILE_PATH="coverage/pythonCrawl$crawl_cc.coverage" NAME="crawl_cc Coverage Results" MODIFIED="1525253243995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
     <SUITE FILE_PATH="coverage/pythonCrawl$kelu_auto.coverage" NAME="kelu_auto Coverage Results" MODIFIED="1524104396962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adb_mult_run" />
     <SUITE FILE_PATH="coverage/pythonCrawl$.coverage" NAME="井字棋游戏 Coverage Results" MODIFIED="1524141931083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/Tencent Files/408737515/FileRecv" />
     <SUITE FILE_PATH="coverage/pythonCrawl$chuli_txt.coverage" NAME="chuli_txt Coverage Results" MODIFIED="1524662759787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
@@ -58,7 +59,7 @@
     <SUITE FILE_PATH="coverage/pythonCrawl$crawl_goods.coverage" NAME="crawl_goods Coverage Results" MODIFIED="1523679832409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/speedpos/pos_api/onlyone" />
     <SUITE FILE_PATH="coverage/pythonCrawl$zoomeyeScan.coverage" NAME="zoomeyeScan Coverage Results" MODIFIED="1523934014101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
     <SUITE FILE_PATH="coverage/pythonCrawl$threading_example.coverage" NAME="threading_example Coverage Results" MODIFIED="1524114587768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Process" />
-    <SUITE FILE_PATH="coverage/pythonCrawl$py3_md5.coverage" NAME="py3_md5 Coverage Results" MODIFIED="1516686974043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonCrawl$py3_md5.coverage" NAME="py3_md5 Coverage Results" MODIFIED="1525317481045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
     <SUITE FILE_PATH="coverage/pythonCrawl$Myspider.coverage" NAME="Myspider Coverage Results" MODIFIED="1524210201158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/the_whole_web_spider/Spider" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -67,11 +68,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="py_smtp.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="py_smtp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/saffe/py_smtp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="792">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
                 <element signature="e#1#15#0" expanded="true" />
               </folding>
@@ -79,11 +80,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="emaila.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/saffe/emaila.txt">
+      <file leaf-file-name="crawl_cc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/saffe/crawl_cc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="git_reslt.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/saffe/git_reslt.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result_ok_qq.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/saffe/result_ok_qq.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,31 +115,19 @@
       <file leaf-file-name="123.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/saffe/123.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chuli_txt.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/saffe/chuli_txt.py">
+      <file leaf-file-name="py3_md5.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/others/py3_md5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="108">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="like_netcat.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Blackhat/like_netcat.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#23#33#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -128,19 +139,6 @@
               <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spider_tb.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/淘宝美食/spider_tb.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1502355131320" expanded="true" signature="2628:2692" ph="insert into taobao... " />
               </folding>
             </state>
           </provider>
@@ -165,6 +163,8 @@
       <find>Server generated event</find>
       <find>time</find>
       <find>send</find>
+      <find>_server</find>
+      <find>inner</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,6 +181,7 @@
     <setting file="file://$PROJECT_DIR$/adb_mult_run/Super_adb_Run.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/算法系列/insert_sort.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/算法系列/shell_sort.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/saffe/crawl_cc.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/pyhook/cature/60x30/let_me_test.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/saffe/py_smtp.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/width_spider.py" root0="SKIP_INSPECTION" />
@@ -195,11 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/算法系列/insert_sort.py" />
-        <option value="$PROJECT_DIR$/算法系列/11.py" />
-        <option value="$PROJECT_DIR$/login/login/items.py" />
-        <option value="$PROJECT_DIR$/login/login/settings.py" />
-        <option value="$PROJECT_DIR$/login/login/spiders/douban.py" />
         <option value="$PROJECT_DIR$/login/login/pipelines.py" />
         <option value="$PROJECT_DIR$/算法系列/shell_sort.py" />
         <option value="$PROJECT_DIR$/websocket.py" />
@@ -243,9 +239,14 @@
         <option value="$PROJECT_DIR$/Blackhat/other_netcat.py" />
         <option value="$PROJECT_DIR$/Blackhat/like_netcat.py" />
         <option value="$PROJECT_DIR$/saffe/chuli_txt.py" />
-        <option value="$PROJECT_DIR$/saffe/123.py" />
         <option value="$PROJECT_DIR$/saffe/emaila.txt" />
         <option value="$PROJECT_DIR$/saffe/py_smtp.py" />
+        <option value="$PROJECT_DIR$/saffe/qq_result.txt" />
+        <option value="$PROJECT_DIR$/saffe/distinct_qq_num.txt" />
+        <option value="$PROJECT_DIR$/saffe/git_reslt.txt" />
+        <option value="$PROJECT_DIR$/saffe/crawl_cc.py" />
+        <option value="$PROJECT_DIR$/saffe/123.py" />
+        <option value="$PROJECT_DIR$/others/py3_md5.py" />
       </list>
     </option>
   </component>
@@ -256,10 +257,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="218" />
+    <option name="width" value="697" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -278,6 +278,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,18 +315,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="saffe" />
+              <option name="myItemId" value="others" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/django_auth_example" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -340,7 +340,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.py_smtp">
+  <component name="RunManager" selected="Python.py3_md5">
     <configuration default="false" name="py_smtp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -355,25 +355,6 @@
       <module name="learngit" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/saffe/py_smtp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Myspider" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/the_whole_web_spider/Spider" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="learngit" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/the_whole_web_spider/Spider/Myspider.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -398,25 +379,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="123_auto" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/the_whole_web_spider/Spider" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="learngit" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/the_whole_web_spider/Spider/123_auto.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="123" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -431,6 +393,44 @@
       <module name="learngit" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/saffe/123.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="crawl_cc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/saffe" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="learngit" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/saffe/crawl_cc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py3_md5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/others" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="learngit" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/others/py3_md5.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -603,18 +603,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in threading_example.py" />
       <item index="1" class="java.lang.String" itemvalue="Python.py_smtp" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Myspider" />
-      <item index="3" class="java.lang.String" itemvalue="Python.chuli_txt" />
-      <item index="4" class="java.lang.String" itemvalue="Python.123_auto" />
-      <item index="5" class="java.lang.String" itemvalue="Python.123" />
+      <item index="2" class="java.lang.String" itemvalue="Python.chuli_txt" />
+      <item index="3" class="java.lang.String" itemvalue="Python.123" />
+      <item index="4" class="java.lang.String" itemvalue="Python.crawl_cc" />
+      <item index="5" class="java.lang.String" itemvalue="Python.py3_md5" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.py_smtp" />
+        <item index="0" class="java.lang.String" itemvalue="Python.py3_md5" />
         <item index="1" class="java.lang.String" itemvalue="Python.123" />
-        <item index="2" class="java.lang.String" itemvalue="Python.chuli_txt" />
-        <item index="3" class="java.lang.String" itemvalue="Python.123_auto" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Myspider" />
+        <item index="2" class="java.lang.String" itemvalue="Python.crawl_cc" />
+        <item index="3" class="java.lang.String" itemvalue="Python.py_smtp" />
+        <item index="4" class="java.lang.String" itemvalue="Python.chuli_txt" />
       </list>
     </recent_temporary>
   </component>
@@ -649,27 +649,27 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
+    <frame x="218" y="0" width="697" height="775" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26172465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50392467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2830769" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3430769" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21216848" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33073324" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41230768" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41230768" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -713,69 +713,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/news/32.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/news/18.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/news/16.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2079">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/-860555368/_thread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Process/process_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Process/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Process/threading_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/saffe/qunhaozhen.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/saffe/result.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15315">
@@ -881,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/saffe/re_qq_num.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/Tencent Files/408737515/FileRecv/井字棋游戏.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -961,20 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1502355131320" expanded="true" signature="2628:2692" ph="insert into taobao... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/123_auto.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -996,9 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1006,7 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,29 +937,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/saffe/123.py">
+    <entry file="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/-860555368/lxml/etree/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/the_whole_web_spider/Spider/123_auto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/saffe/emaila.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="863" column="0" lean-forward="false" selection-start-line="863" selection-start-column="0" selection-end-line="863" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/saffe/py_smtp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="792">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="e#1#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saffe/distinct_qq_num" />
+    <entry file="file://$PROJECT_DIR$/saffe/qq_result.txt" />
+    <entry file="file://$PROJECT_DIR$/saffe/re_qq_num.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saffe/distinct_qq_num.txt" />
+    <entry file="file://$PROJECT_DIR$/saffe/result_ok_qq.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saffe/git_reslt.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saffe/crawl_cc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saffe/123.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/others/py3_md5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
