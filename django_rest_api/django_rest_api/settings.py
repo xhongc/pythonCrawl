@@ -129,5 +129,5 @@ STATIC_URL = '/static/'
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES":['api.utils.auth.Authentication',],
-    "DEFAULT_PERMISSION_CLASSES":['api.utils.permission.SVIPPremission'],
+    
 }

@@ -19,6 +19,9 @@ sys.path.insert(0,BASE_DIR)
 sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
 sys.path.insert(0,os.path.join(BASE_DIR,'extra_apps'))
 
+MEDIA_URL="/media/"
+MEDIA_ROOT=os.path.join(BASE_DIR,"media")
+
 AUTH_USER_MODEL = 'users.UserProfile'
 
 # Quick-start development settings - unsuitable for production
