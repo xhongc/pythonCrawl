@@ -49,7 +49,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>打招呼</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
@@ -62,7 +62,20 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>停止</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>160</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>回复</string>
    </property>
   </widget>
  </widget>

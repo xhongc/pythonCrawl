@@ -53,5 +53,4 @@ def main():
             count = 0
             off = 120
             time.sleep(1.3)
-LeftClick(240,460)
-Ctrl_V()
+def reply_chat():

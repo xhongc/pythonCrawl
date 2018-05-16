@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QPushButton, QAc
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import pyqtSlot
 
+
 class App(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -18,21 +19,21 @@ class App(QMainWindow):
         self.setGeometry(self.left, self.top, self.width, self.height)
 
         self.textbox = QLineEdit(self)
-        self.textbox.move(20,20)
-        self.textbox.resize(280,40)
+        self.textbox.move(20, 20)
+        self.textbox.resize(280, 40)
 
-        self.button =  QPushButton('show text',self)
-        self.button.move(20,80)
+        self.button = QPushButton('show text', self)
+        self.button.move(20, 80)
 
         self.button.clicked.connect(self.on_click)
         self.show()
+
     @pyqtSlot()
     def on_click(self):
         textboxValue = self.textbox.text()
-        QMessageBox.question(self,'Message','you typed:' + textboxValue,QMessageBox.Ok,QMessageBox.Ok)
+        QMessageBox.question(self, 'Message', 'you typed:' + textboxValue, QMessageBox.Ok, QMessageBox.Ok)
         print(textboxValue)
         self.textbox.setText("")
-
 
 
 app = QApplication(sys.argv)
