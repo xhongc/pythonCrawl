@@ -12,7 +12,7 @@ class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(303, 316)
-        Dialog.setSizeGripEnabled(False)
+        # Dialog.setSizeGripEnabled(False)
         self.pushButton = QtWidgets.QPushButton(Dialog)
         self.pushButton.setGeometry(QtCore.QRect(15, 149, 61, 31))
         self.pushButton.setObjectName("pushButton")
@@ -73,9 +73,9 @@ class Ui_Dialog(object):
         self.pushButton_20 = QtWidgets.QPushButton(Dialog)
         self.pushButton_20.setGeometry(QtCore.QRect(85, 109, 61, 31))
         self.pushButton_20.setObjectName("pushButton_20")
-        self.textBrowser = QtWidgets.QTextBrowser(Dialog)
-        self.textBrowser.setGeometry(QtCore.QRect(20, 40, 261, 51))
-        self.textBrowser.setObjectName("textBrowser")
+        self.lineEdit = QtWidgets.QLineEdit(Dialog)
+        self.lineEdit.setGeometry(QtCore.QRect(20, 40, 261, 51))
+        self.lineEdit.setObjectName("textBrowser")
 
         self.retranslateUi(Dialog)
         self.pushButton_17.clicked.connect(Dialog.close)

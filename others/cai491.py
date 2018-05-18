@@ -1,11 +1,10 @@
-# -*- coding: utf-8 -*-
-import scrapy
 
-
-class Cai491Spider(scrapy.Spider):
-    name = 'cai491'
-    allowed_domains = ['496.cc']
-    start_urls = ['http://496.cc/']
-
-    def parse(self, response):
-        pass
+pools = ['1','2','-','3']
+if '-' in pools:
+    index_jian = pools.index('-')
+    a = pools[:index_jian]
+    b = pools[index_jian+1:]
+    a = ''.join(a)
+    b = ''.join(b)
+    result = int(a) - int(b)
+    print(result)
