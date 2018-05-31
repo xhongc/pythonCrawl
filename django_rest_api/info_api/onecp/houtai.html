@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="彩票，一元彩票">
+    <meta name="keywords" content="彩票，一元彩票">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>后台页面</title>
+    <link rel="icon" href="./img2/3.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/houtai.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <!--<script src="./chaxun-pc.js"></script>-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+       <div class="top">
+          <img src="./img2/3.png">
+        </div>
+        <div class="sousuo">
+           <div class="shuru">
+                   <input id="chaput" class="iupt" type="" name="">  
+                     <button id="chaxun" onclick="chacha()" class="btn btn-default" style="width: 50px;height: 35px;margin-top: 7.5px;background-color: #e3b323" type="button">查询</button>
+             </div><!-- /.row -->                 
+        </div>
+        <div class="bisaoge">
+           <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>会员账号</th>
+                    <th>活动时间</th>
+                    <th>状态</th>
+                    <th>奖金</th>
+                    <th>银行卡</th>
+                    <th>操作状态</th>
+                    <th>体现操作</th>
+                    <th>历史记录</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+               </tbody>
+          </table>
+        </div>
+        <div class="tanchuang_1">
+           <div class="login_header">
+                <div class="login_header_c"><span style="margin-left: 10%">银行卡</span></div>
+                <div  class="login_header_y2">关闭</div>
+            </div>
+            <div class="card_cont">
+                <div class="card_cont_item name">
+                    <span class="spanpan">姓名：</span><span class="spanpan2">rgfergewgwergrtgwrg</span>
+                </div>
+                 <div class="card_cont_item card">
+                    <span class="spanpan">银行卡：</span><span class="spanpan2">rgfergewgwergrtgwrg</span>
+                </div>
+                 <div class="card_cont_item bank">
+                    <span class="spanpan">开户行：</span><span class="spanpan2">rgfergewgwergrtgwrg</span>
+                </div>
+                 <div class="card_cont_item price">
+                    <span class="spanpan">余额：</span><span class="spanpan2">1889</span>
+                </div>
+        
+            </div>
+        </div>
+        <div class="tanchuang_2">
+           <div class="login_header">
+                <div class="login_header_c"><span style="margin-left: 10%">失败原因</span></div>
+                <div  class="login_header_y2">关闭</div>
+            </div>
+            <div class="card_cont">
+                由于您的操作有误，所以导致您体现有误，建议您认真查看活动规则。
+            </div>
+        </div>
+        <div class="tanchuang_3">
+            <div class="login_header">
+                <div class="login_header_c"><span style="margin-left: 10%">银行卡</span></div>
+                <div  class="login_header_y2">关闭</div>
+            </div>
+            <div class="card_cont">
+                <div class="time"></div>
+                <div class="operation"></div>
+            </div>
+        </div>
+        <div class="tanchuang_login" id="login">
+            <div class="login_header">
+                <div class="login_header_c"><span style="margin-left: 10%">管理员密码</span></div>
+                <div  class="login_header_y">关闭</div>
+            </div>
+            <div class="login_c">
+                <span class="login_c_1">密码</span>
+                <input type="text" name="" class="login_c_2">
+                <button class="login_c_3">确定</button>
+            </div>
+        </div>
+        <div class="footer_fenye">
+            <nav aria-label="Page navigation fenye">
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+            </nav>
+        </div>
+</body>
+<script type="text/javascript">
+      $(document).ready(function () {
+        var diaomao=[];
+        $.ajax({
+            type:"GET",
+            dataType:'json',
+            url: "http://char.ngrok.uplaygo.com:8000/event/",
+            success:function(res){
+              console.log(res.results)
+              var html = '';
+	           for(i=0;i<res.results.length;i++){
+	           		html += '<tr>'
+	           		html += ''
+	           		html += '<td id="huiyuan_zhanghao">'+res.results[i].username+'</td>'
+                    html += '<td id="shijian">'+res.results[i].join_time+'小时</td>'
+                    if(res.results[i].event_status==0){
+                        html += '<td id="zhuangtai"><span id="zzz_t">审核中</span></td>'
+                    }
+                    else if(res.results[i].event_status==1){
+                        html += '<td id="zhuangtai"><span id="zzz_t">成功</span></td>'
+                    }else if(res.results[i].event_status==2){
+                        html += '<td id="zhuangtai"><span id="zzz_t">失败</span><button class="season" data-id="'+res.results[i].id+'">原因</button></td>'
+                    }
+                    html += '<td id="jiangjin">'+res.results[i].prize+'</td>'
+                    html += '<td id="card">银行卡 <button class="lookBank" data-id="'+res.results[i].id+'">查看</button></td>'
+                    if(res.results[i].tixian_status==0){
+                        html += '<td id="caozuozhaungtai"><button>成功</button></td>'
+                    }else{
+                        html += '<td id="caozuozhaungtai"><button>失败</button></td>'
+                    }
+                    if(res.results[i].tixian_status==0){
+                        tixian_status='未领'
+                    }else{
+                        tixian_status='已领'
+                    }
+                    html += '<td id="tixiancaozuo">'+tixian_status+'</td>'
+                    html += '<td><button class="lookRecord" data-id="'+res.results[i].id+'">查看</button></td>'
+					html += '</tr>'
+	           }
+	           $('tbody').html(html)
+               lookBank();
+               lookSeason();
+               lookHistory();
+                // if(res.results[i].event_status==0){
+                //         $('#zzz_t').html('审核中')
+                // }
+                // else if(res.results[i].event_status==1){
+                //    $('#zzz_t').html('成功')
+                // }else if(res.results[i].event_status==2){
+                //         $('#zzz_t').html('失败')
+                // }
+            }
+            
+        });
+    })
+</script>
+<script type="text/javascript">
+    // 弹窗点击按钮影藏
+    $('.login_header_y2').click(function(){
+        $('.tanchuang_1').css("display","none")
+        $('.tanchuang_2').css("display","none")
+        $('.tanchuang_3').css("display","none")
+    })
+</script>
+<script type="text/javascript">
+    // 登陆开始
+    $(function(){
+        $('.login_c_3').click(function(){
+            var mima=$('.login_c_2').val()
+            if(mima==''){
+                alert('请输入密码')
+            }
+            else{
+                  $.ajax({
+                            type:"POST",
+                            dataType:'json',
+                            data:{
+                                password:mima
+                            },
+                            url:"http://char.ngrok.uplaygo.com:8000/login/",
+                            success:function(res){
+                              if(res.code==0){
+                                alert('密码错误')
+                                $('.login_c_2').val("")
+                              }else if(res.code==1){
+                                 alert('登陆成功')
+                                 $('.tanchuang_login').css("display","none")
+                              }
+                            },
+                    });
+             }
+         
+        })
+    })
+</script>
+<script type="text/javascript">
+    function chacha(){
+         var chaput=$('#chaput').val()
+                if(chaput==''){
+                   alert('请输入查询账号')
+                }else{
+                    $.ajax({
+                            type:"GET",
+                            dataType:'json',
+                            data:{
+                                search:chaput
+                            },
+                            url:"http://char.ngrok.uplaygo.com:8000/usersearch/",
+                            success:function(res){
+                              console.log(res)
+                                var html = '';
+                               for(i=0;i<res.length;i++){
+                                    var status = '';
+                                    var tixian_status='';
+                                    html += '<tr>'
+                                    html += ''
+                                    html += '<td id="huiyuan_zhanghao">'+res[i].username+'</td>'
+                                    html += '<td id="shijian">'+res[i].join_time+'小时</td>'
+                                    if(res[i].event_status==0){
+                                        html += '<td id="zhuangtai"><span id="zzz_t">审核中</span></td>'
+                                    }
+                                    else if(res[i].event_status==1){
+                                        html += '<td id="zhuangtai"><span id="zzz_t">成功</span></td>'
+                                    }else if(res[i].event_status==2){
+                                        html += '<td id="zhuangtai"><span id="zzz_t">失败</span><button class="season" data-id="'+res[i].id+'">原因</button></td>'
+                                    }
+                                    html += '<td id="jiangjin">'+res[i].prize+'</td>'
+                                    html += '<td id="card">银行卡 <button class="lookBank" data-id="'+res[i].id+'">查看</button></td>'
+                                    if(res[i].tixian_status==0){
+                                        html += '<td id="caozuozhaungtai"><button>成功</button></td>'
+                                    }else{
+                                        html += '<td id="caozuozhaungtai"><button>失败</button></td>'
+                                    }
+                                    
+                                    if(res[i].tixian_status==0){
+                                        tixian_status='未领'
+                                    }else{
+                                        tixian_status='已领'
+                                    }
+                                    html += '<td id="tixiancaozuo">'+tixian_status+'</td>'
+                                    html += '<td><button class="lookRecord" data-id="'+res[i].id+'">查看</button></td>'
+                                    html += '</tr>'
+                               }
+                               $('tbody').html(html)
+                               lookBank();
+                               lookSeason();
+                               lookHistory();
+                        },
+                    });
+                }
+    
+    }
+               
+</script>
+<script type="text/javascript">
+    function lookBank(){
+        $('.lookBank').click(function(){
+            var id = $(this).attr('data-id');
+            console.log(id)
+            
+             $.ajax({
+                type:"GET",
+                dataType:'json',
+                data:{
+                    search:id
+                },
+                url:"http://char.ngrok.uplaygo.com:8000/bankinfo/",
+                success:function(res){
+                    console.log(res)
+                    $('.tanchuang_1').css('display','block')
+                    $('.name .spanpan2').html(res[0].name)
+                    $('.card .spanpan2').html(res[0].bankcard)
+                    $('.bank .spanpan2').html(res[0].bankaddr)
+                    $('.tanchuang_1').css('display','block')
+                }
+            })
+        })
+    }
+
+    function lookSeason(){
+        $('.season').click(function(){
+            var id = $(this).attr('data-id');
+            console.log(id)
+            $('.tanchuang_2').css('display','block')
+            //  $.ajax({
+            //     type:"GET",
+            //     dataType:'json',
+            //     data:{
+            //         search:id
+            //     },
+            //     url:"http://char.ngrok.uplaygo.com:8000/bankinfo/",
+            //     success:function(res){
+            //         console.log(res)
+            //         $('.tanchuang_1').css('display','block')
+            //         $('.name .spanpan2').html(res[0].name)
+            //         $('.card .spanpan2').html(res[0].bankcard)
+            //         $('.bank .spanpan2').html(res[0].bankaddr)
+            //     }
+            // })
+        })
+    }
+    function lookHistory(){
+        $('.lookRecord').click(function(){
+            var id = $(this).attr('data-id');
+            console.log(id)
+            
+             $.ajax({
+                type:"POST",
+                dataType:'json',
+                data:{
+                    username:id
+                },
+                url:"http://char.ngrok.uplaygo.com:8000/history/",
+                success:function(res){
+                    console.log(res)
+                    $('.tanchuang_3').css('display','block')
+                    $('.tanchuang_3 .time').html(res.add_time)
+                    $('.tanchuang_3 .operation').html(res.add_operation)
+                    $('.tanchuang_3').css('display','block')
+                }
+            })
+        })
+    }
+</script>
+</html>

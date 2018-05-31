@@ -1,0 +1,94 @@
+.chaxun-bg{
+    width: 100%;
+}
+.shuru{
+    width: 100%;height:5%;position:absolute;top:28%;background-color: #302e2f;display: flex;
+    flex-direction: row;
+}
+.zhangdiaomao{
+    width: 50%;height: 100%;display: flex;flex-direction: row;
+}
+.wenzi1{
+    width:48%;height: 35px;line-height: 35px;color: white;font-size: 14px;color:#e3b323 ;
+}
+.zhangdiaomao img{
+width: 100%;height: 100%;
+}
+.btn1{
+    width:39%;height:5.6%;position: absolute;top: 22.4%;left: 0;background-color: black;
+}
+.btn2{
+    width:39%;height: 5.6%;position: absolute;top:22.4%;right: 0;background-color: black;
+}
+.input1{
+    width:35%;height:2.68%;position: absolute;top: 29%;left:13.88%;
+    background-color:black;color: white;border: 0px;border-radius: 6px;outline: 0;
+}
+.input2{
+    width: 35.1%;height:2.6%;position: absolute;top: 29.3%;right:1.31%;background-color:black;color: white;
+    border: 0px;outline: 0;border-radius: 6px;
+}
+.tanchunag{
+    width: 80%;height: 40%;
+    position: absolute;top:28%;left: 10%;display: flex;
+    flex-direction: column;background-color:#363636;display: none;
+}
+.biaoti{
+    width: 100%;height: 15%;margin: 0 auto;display: flex;
+    flex-direction: row;text-align: center;justify-content: center;
+    justify-items: center;
+}
+.shurukuang{
+    width:100%;height:15%;margin: 0 auto;display: flex;
+    flex-direction: row;
+}
+.span111{
+     color: #e3b323;font-size: 22px;width:60%;height:40px;
+     margin-left:33%;line-height: 40px;
+ }
+.spanpan{
+    width: 20%;height:40px;color:#e3b323 ;line-height:40px;
+    text-align: center;justify-items: center;justify-content: center;margin-left: 20%;margin-top: -10px;
+}
+/*====================*/
+.shuru-1{
+    width:34%;height: 40px;line-height: 40px;text-align: center;font-size: 18px;color: #e3b323;
+}
+.shuru-2{
+    width: 58%;height:33px;border:2px solid #e3b323 ;background-color:#363636;color:#e3b323;margin-left: -4.5%;
+}
+.shuru-3{
+    width: 20%;height: 33px;line-height: 33px;text-align: center;font-size: 18px;background-color: #000000;
+    color: white;color:#e3b323 ;border: 2px solid black;border-right: 0px!important;display: block;
+}
+.jieguo{
+    width:90%;height:65%;margin: 0 auto;font-size:20px;color:#e3b323 ;
+    background-color: #272727;line-height:40px;display: flex;
+    flex-wrap: wrap;
+}
+/*弹窗2*/
+.tanchunag2{
+    width: 80%;height: 40%;
+    position: absolute;top:28%;left: 10%;display: flex;
+    flex-direction: column;background-color:#363636;display: none;
+}
+.shuru3{
+    width: 60%;height: 40px;line-height: 40px;color:#e3b323 ;font-size: 18px;
+}
+.jieguo2{
+    width:90%;height:65%;margin: 0 auto;font-size:20px;color:#e3b323 ;
+    background-color: #272727;line-height:40px;display: flex;
+    flex-wrap: wrap;display: flex;flex-direction: column;justify-content: space-around;
+}
+.item-i{
+    width: 90%;height:16.6%;display: flex;flex-direction: row;
+}
+.item-i .item-txt{
+    width:45%;height: 40px;line-height: 40px;
+}
+.item-txt2{
+    width:45%;height:30px;line-height:30px;margin: 5px auto;background-color: black;text-align: center;
+}
+.item-i span input{
+    width:110%;height:25px;border: 2px solid #e3b323;background-color: #363636;color: white;
+}

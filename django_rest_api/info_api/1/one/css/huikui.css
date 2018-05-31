@@ -1,0 +1,92 @@
+.boddy{
+    margin: 0px;padding: 0px;
+    width:100%;min-height:700px;
+}
+.daohang-txt{
+    width: 100%;height:60px;background-color:#1b1a1a;
+   z-index: 99;display: flex;flex-direction: row;
+    justify-content: space-around;position: fixed;bottom: 0px;
+}
+.inputput{
+    width:250px;height:40px;margin-top: 10px;border:3px solid  #fec76d;
+    background-color:#181617;color: #ffffff!important;border-radius: 5px;margin-left: 8px;
+}
+.txt-txt-img{
+    width:80%;height: 60px;line-height: 60px;display: flex;
+    flex-direction: row;color:black;margin: 0 auto;
+    font-size: 24px;text-align: center;margin-left:90px;
+}
+.txt-txt{
+    width:33%;height: 60px;line-height: 60px;display: flex;
+    flex-direction: row;color:black;
+    font-size: 24px;text-align: center;justify-content: right;
+}
+.jiba{
+    width: 100%;height:800px;
+    background-image:url('../img3/head.png');
+    background:url(../img3/head.png) no-repeat 0 0;
+    opacity: 0.9;
+    /*background-attachment: fixed;*/
+}
+.contant{
+    width:95%;height: 300px;margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contant1{
+    width:48%;height: 300px;
+    background-image:url('../img3/huodong.png');
+    background:url(../img3/huodong.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    /*background-attachment: fixed;*/
+}
+.contant2{
+    width:48%;height: 300px;
+}
+@media (max-width: 1500px) {
+    .jiba{
+        width: 100%;height:800px;
+        background-image:url('../img3/head.png');
+        opacity: 0.9;background-size: 100% 100%;
+    }
+}
+@media (min-width:2000px) {
+    .jiba{
+        min-width: 103%;height:800px;
+        background-image:url('../img3/head.png');
+        opacity: 0.9;background-size: 100% 100%;
+    }
+}
+@media (min-width:1900px) {
+    .txt-txt-img{
+        width:80%;height: 60px;line-height: 60px;display: flex;
+        flex-direction: row;color:black;margin: 0 auto;
+        font-size: 24px;text-align: center;margin-left:203px;
+    }
+}
+.contant2-cont{
+    width: 100%;height: 240px;display: flex;border: 1px solid black;overflow: hidden;
+    flex-direction: column
+}
+.contant2-c{
+    width:80%;height: 40px;border-bottom: 1px solid grey;margin: 0 auto;
+    display: flex;flex-direction: row;
+}
+.item{
+    width: 50%;height:40px;line-height: 40px;text-align: center;
+    font-size: 18px;color: black;
+}
+.ad{
+    width: 60%;height:360px;margin:30px auto;
+}
+.ad-item{
+    width: 100%;height:60px;;line-height: 60px;text-align: center;font-size:18px;
+}
+/*底部开始*/
+.footer{
+    width:85%;height:290px;margin: 0px auto;
+    /*background-image:url('./img3/wangzhan.png');*/
+    /*background:url(./img3/wangzhan.png) no-repeat 0 0;*/
+    /*background-size: 100% 250px;*/
+    /*background-attachment: fixed;*/
+}

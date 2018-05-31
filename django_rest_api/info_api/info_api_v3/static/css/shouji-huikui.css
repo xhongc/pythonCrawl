@@ -1,0 +1,83 @@
+.top-pic{
+    width: 100%;
+}
+.contant-pic{
+    width: 100%;
+}
+.contant-pic-c{
+    width: 80%;height:85%;margin:5% auto;display: flex;
+    flex-direction: column;justify-content: space-between;
+}
+.cccc1{
+    width: 100%;height:48%;
+}
+.zhonglist{
+    width: 100%;height:48%;display: flex;
+    flex-direction: column;
+}
+.zhongtop{
+    width: 100%;height:35px;background-color: black;color: white;line-height:35px;justify-items: center;
+    justify-content: center;
+}
+.zhonglist2{
+    width: 100%;
+    height: 80%;overflow: hidden;background-color: #bfbfbf;
+}
+/*.zhonglist2 div{*/
+    /*width: 100%;height:16%;display: flex;flex-direction: row;border-bottom: 1px solid grey;*/
+/*}*/
+.item-m{
+    width: 100%;height:16.3%;display: flex;flex-direction: row;border-bottom: 1px solid gray;
+}
+.item-m-z{
+    width:65%;height: 25px;line-height: 25px;
+}
+.item-m-y{
+    width:35%;height:25px;line-height: 25px;text-align: center;
+}
+/*底部开始=======*/
+.footer{
+    width: 100%;position: fixed;bottom:0px;outline: 0!important;
+    display: flex;background-color: black;flex-direction: row;
+}
+.footer-z{
+    width: 70%;height:95%;margin-top:0.5%;display: flex;
+    flex-direction: column;flex-wrap: wrap;justify-content: space-around;
+}
+.footer-z-item{
+    width: 90%;height:45%;display: flex;
+    flex-direction: row;color: #f58308;
+}
+.input-txt{
+    width: 65%;height: 23px;background-color: black;border:2px solid #f58308;line-height:23px;margin-top: 4px;
+}
+.footer-y{
+    width: 30%;height:100%;margin-top:0;background-color: #363636;
+}
+/*广告开始*/
+.adad{
+width:95%;height:364px;margin:-70px auto;display: flex;
+    flex-direction: column;
+}
+.adad1{
+    width: 100%;height: 50px;line-height: 50px;text-align: center;
+    display: flex;flex-direction: row;
+}
+.ad-span{
+    width: 40%;height: 50px;
+}
+.ad-txt{
+    width: 20%;height: 50px;line-height: 50px;text-align: center;
+}
+.adad2{
+    width: 100%;height:200px;
+}
+.ad2-item{
+    width: 100%;height: 50px;line-height: 50px;text-align: center;font-size: 12px;
+}
+.ad-item{
+    width: 100%;height: 40px;display: flex;flex-direction: row;
+}
+.foot-pic{
+    width: 100%;height:120px;
+}

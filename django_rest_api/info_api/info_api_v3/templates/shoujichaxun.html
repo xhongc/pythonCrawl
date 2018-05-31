@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="彩票，一元彩票">
+    <meta name="keywords" content="彩票，一元彩票">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>搜索查询</title>
+    <link rel="icon" href="./img2/3.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/shoujichaxun.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./myScrol.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<style>
+    .res-chenggong{
+        width: 100%;height: 100px;
+    }
+    .res-p{
+        width:100%;height:40px;margin: 0 auto;line-height: 30px;
+    }
+    .span-btn1{
+        width: 60px;height: 40px;line-height: 40px;text-align: left;margin-left:12px;
+        border:2px solid  #e3b323;
+    }
+    .res-p2{
+        width:100%;height:70px;margin: 0 auto;line-height: 70px;text-align: center;
+    }
+</style>
+<body>
+ <div class="chaxun-bg">
+     <img style="width: 100%;height: 100%" src="./chaxunImg/chaxun-bg.jpg" alt="">
+     <div class="shuru">
+         <label class="zhangdiaomao" for="">
+             <img style="width: 100%;height: 95%" src="./chaxunImg/4.png" alt="">
+         </label>
+         <label class="zhangdiaomao" for="">
+             <img style="margin-top: 1px" src="./chaxunImg/2.png" alt="">
+         </label>
+     </div>
+      <img class="btn1" src="./chaxunImg/3.png" alt="">
+      <img class="btn2" src="./chaxunImg/1.png" alt="">
+     <input class="input1" placeholder="会员账号" type="text">
+     <input class="input2" placeholder="数字1-4其中一个" maxlength="1"  type="text">
+     <div class="tanchunag">
+         <div class="biaoti">
+             <span class="span111">进度查询</span>
+             <span class="spanpan"><button class="guanbi" style="width: 100%;height: 30px;margin: 8px auto;margin-top:10px;line-height: 30px;margin-left:3%!important;background-color: black;outline: 0;border: 0">关</button></span>
+         </div>
+         <div class="shurukuang">
+             <span class="shuru-1" >会员账号：</span>
+             <input placeholder="输入会员账号" id="zhanghao_phone" class="shuru-2" type="text">
+             <button id="shuru-3" class="shuru-3" style="z-index: 999999" onclick="chaxun()">确定</button>
+         </div>
+         <div class="jieguo">
+
+         </div>
+     </div>
+     <div class="tanchunag2">
+         <div class="biaoti">
+             <span class="span111">进度查询</span>
+             <span class="spanpan"><button class="guanbi" style="width: 100%;height: 30px;margin: 8px auto;margin-top:10px;line-height: 30px;margin-left:3%!important;background-color: black;outline: 0;border: 0">关</button></span>
+         </div>
+         <div class="shurukuang">
+             <span class="shuru-1" style="font-size: 20px;margin-left: 15px">会员账号：</span>
+              <span id="zhanghao_id" class="shuru3" style="font-size: 20px;"></span>
+         </div>
+         <div class="jieguo2">
+             <label class="item-i" for=""><span class="item-txt">银行卡:</span><span><input id="ppp11" type="text"></span></label>
+             <label class="item-i" for=""><span class="item-txt">姓&nbsp;&nbsp;名:</span><span><input id="ppp22" type="text"></span></label>
+             <label class="item-i" for=""><span class="item-txt">开户行:</span><span><input id="ppp33" type="text"></span></label>
+             <label class="item-i" for=""><span class="item-txt">手机号:</span><span><input id="ppp44" type="text"></span></label>
+             <label class="item-i" for=""><span class="item-txt2" onclick="tijiao()">确定</span></label>
+         </div>
+     </div>
+ </div>
+</body>
+<script>
+    var h = document.documentElement.clientHeight
+    console.log(h)
+    $(".chaxun-bg").css("height", h);
+</script>
+<script>
+    <!--左侧按钮接口开始-->
+$(function () {
+    $('.btn1').click(function () {
+        $('.tanchunag').css('display','block')
+    });
+    //=======================================================
+    //==================================
+    $('.guanbi').click(function () {
+        $('.tanchunag').css('display','none')
+        $('.tanchunag2').css('display','none')
+        $('#zhanghao_phone').val("")
+        $('.res-chenggong').css('display','none')
+
+    })
+})
+</script>
+<script>
+    <!--右侧按钮接口-->
+    $(function () {
+        $('.btn2').click(function () {
+            if($('.input1').val()==''||$('.input2').val()==''){
+                alert('账号或者时间不能为空')
+            }else {
+                var put_shou1= $('.input1').val()
+                var put_shou2=$('.input2').val()
+                $.ajax({
+                    type:"POST",
+                    dataType:'json',
+                    data: {
+                        username: put_shou1,
+                        join_time:put_shou2
+                    },
+                    url: "http://char.ngrok.uplaygo.com:8000/event/",
+                    success:function(res){
+                        console.log(res)
+                        $('.input1').val("")
+                        $('.input2').val("")
+                        alert("恭喜您成功参加该活动~");
+                    },
+                    error:function(res){
+                        $('.input1').val("")
+                        $('.input2').val("")
+                        alert("您已经参加过该活动了哟!");
+                    }
+                });
+            }
+        })
+
+    })
+</script>
+<script>
+    function chaxun() {
+            console.log(11111111)
+            var put_p=$('#zhanghao_phone').val()
+        if(put_p==''){
+            alert('请输入查询的账号 ')
+        }else{
+            $.ajax({
+                type:"GET",
+                dataType:'json',
+                data: {
+                    search:put_p
+                },
+                url: "http://char.ngrok.uplaygo.com:8000/usersearch/?search",
+                success:function(res){
+                    // $('#zhanghao_id').html(res[len-1].username)
+                    console.log(res)
+                    if(res.length==0){
+                        $('.jieguo').html("" +
+                            "<p class='res-p2'>您输入的账号不存在</p>"
+                        );
+                    }
+                    else{
+                        for(var i=0;i<res.length;i++){
+                            var len=res.length
+                            console.log(res[len-1].add_time)
+                            if(res[len-1].event_status==0){
+                                $('.jieguo').html("" +
+                                    "<div class='res-chenggong'>" +
+                                    "<p class='res-p' style='text-align: center'>状态正在审核中...</p>" +
+                                    "</div>"
+                                );
+                            }
+                            else if(res[len-1].event_status==1){
+                                $('.jieguo').html("" +
+                                    "<div class='res-chenggong'>" +
+                                    "<p class='res-p'><span>参与时间：</span><span id='time1' class='time'></span></p>" +
+                                    "<p class='res-p'><span>状态：</span><span class='zhuangtai-z'>成功</span></p>" +
+                                    "<p class='res-p shadiao'><span>领取方式:</span><span id='span-btn' class='span-btn1' onclick='huiyuan()'>会员账号</span><span id='span-btn2' class='span-btn1' onclick='yinhangka()'>银行卡</span></p>"+
+                                    "</div>"
+                                );
+                                $('#time1').html(res[len-1].add_time)
+                                $('#zhanghao_id').html(res[len-1].username)
+                                console.log( $('#time1'))
+                                $('.tanchaung10').find('#span-btn2').click(function () {
+                                    $('.tanchaung9').css('display','block')
+                                    $('.tanchaung10').css('display','none')
+                                    $('.tanchaung11').css('display','none')
+                                })
+                                $('.tanchaung10').find('#span-btn').click(function () {
+                                    $('.tanchaung9').css('display','none')
+                                    $('.tanchaung10').css('display','none')
+                                    $('.tanchaung11').css('display','none')
+                                    alert('已经帮您存入会员账户，请5分钟后登陆网站查询')
+                                })
+                            }
+                            else  if(res[len-1].event_status==2){
+                                $('.res-p span .time').innerHTML=res[len-1].add_time
+                                $('.jieguo').html("" +
+                                    "<div class='res-chenggong'>" +
+                                    "<p class='res-p'><span>参与时间：</span><span id='time2' class='time'></span></p>" +
+                                    "<p class='res-p'><span>状态：</span><span class='zhuangtai-z'>失败</span</p>" +
+                                    "<p class='res-p'><span>原因:</span><span>可能未知网络错误的影响</span></p>"+
+                                    "</div>"
+                                );
+                                $('#time2').html(res[len-1].add_time)
+                            }
+                        }
+                    }
+                },
+                error:function(res){
+                    // $('.jinduchaxun').html("傻狗也");
+                }
+            });
+        }
+
+    }
+</script>
+<script>
+    function yinhangka() {
+        $('.res-chenggong').css('display','none')
+
+        $('.tanchunag').css('display','none')
+        $('.tanchunag2').css('display','block')
+        chaxun();
+    }
+    function huiyuan() {
+        $('.tanchunag').css('display','none')
+        $('.tanchunag2').css('display','none')
+        $('#input111').val("")
+        $('#input222').val("")
+        $('#input333').val("")
+        $('#input444').val("")
+        $('.res-chenggong').css('display','none')
+        alert('已经帮您存入会员账户，请五分钟后登入网站查询')
+    }
+    function tijiao() {
+        var card=$('#ppp11').val()
+        var name=$('#ppp22').val()
+        var address=$('#ppp33').val()
+        var haoma=$('#ppp44').val()
+        $('#zhanghao_phone').val("")
+
+        if(card==''||name==''||address==''||haoma==''){
+            alert('请将您的银行卡信息填写完整')
+        }else{
+            $.ajax({
+                type:"POST",
+                dataType:'json',
+                data:{
+                    bankcard:card,
+                    phone_no:haoma,
+                    name:name,
+                    bankaddr:address
+                },
+                url:"http://char.ngrok.uplaygo.com:8000/bankinfo/",
+                success:function(res){
+                    console.log(res)
+                    $('.tanchunag2').css('display','none')
+                    $('#input111').val("")
+                    $('#input222').val("")
+                    $('#input333').val("")
+                    $('#input444').val("")
+                    $('#zhanghao_phone').val("")
+                    alert('已经为您提交银行处理，请注意查收')
+                },
+                error:function(res){
+                    console.log(res.responseText)
+                }
+            });
+        }
+    }
+</script>
+</html>

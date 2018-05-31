@@ -1,27 +1,14 @@
-# import cal
-# import counter
-# from PyQt5.QtWidgets import QApplication,QDialog
-# import sys
-#
-# if __name__ == '__main__':
-#
-#     app = QApplication(sys.argv)
-#
-#     Dialog = QDialog()
-#
-#     ui = counter.Ui_Dialog()
-#     ui.setupUi(Dialog)
-#     Dialog.show()
-#     sys.exit(app.exec_())
-b = b"Hello, world!"  # bytes object
-s = "Hello, world!"   # str object
+import requests
+import time
+session = requests.session()
+a = time.time()
+url = 'http://127.0.0.1:8080/login/'
+params = {'page': '1', 'page_size': '1'}
+data = {'password':'adminadmin'}
 
-print('str --> bytes')
-print(bytes(s, encoding="utf8"))
-print(str.encode(s))   # 默认 encoding="utf-8"
-print(s.encode())      # 默认 encoding="utf-8"
-
-print('\nbytes --> str')
-print(str(b, encoding="utf-8"))
-print(bytes.decode(b))  # 默认 encoding="utf-8"
-print(b.decode())       # 默认 encoding="utf-8"
+html = session.post(url, data=data)
+print(html.text)
+b = time.time()
+print(b - a)
+html = session.get('http://127.0.0.1:8080/event/')
+print(html.text)
