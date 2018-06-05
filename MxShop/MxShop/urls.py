@@ -18,9 +18,11 @@ from django.urls import path,include
 import xadmin
 from django.views.static import serve
 from MxShop.settings import MEDIA_ROOT
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),
     path('ueditor/',include('DjangoUeditor.urls')),
     path('media/<path:path>',serve,{'document_root':MEDIA_ROOT}),
+    path('index/', TemplateView.as_view(template_name='index.html'), name='index'),
 ]
