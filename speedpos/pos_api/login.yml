@@ -1,47 +1,49 @@
-This is the test awesomeness API
-    Call this api passing a test name and get back its features
-    ---
 
-    paths
-      /:
-        get:
-          parameters:
-            - name: login_name
-              in: path
-              type: string
-              required: true
-              description: 什么语言
-            - name: size
-              in: query
-              type: integer
-              description: size of awesomeness
-#         post:
-#            parameters:
-#               - name: login_name
-#                 in: path
-#                 type: string
-#                 required: true
-#                 description: 什么语言
-#               - name: size
-#                 in: query
-#                 type: integer
-#                 description: size of awesomeness
-
-    responses:
-      500:
-        description: Error The language is not awesome!
-      200:
-        description: A language with its awesomeness
-        schema:
-          id: awesome
-          properties:
-            language:
-              type: string
-              description: The language name
-              default: Lua
-            features:
-              type: array
-              description: The awesomeness list
-              items:
-                type: string
-              default: ["perfect", "simple", "lovely"]
+schemes:
+  - http
+parameters:
+  - name: appid
+    in: body
+    description: 指定需要编译镜像的appid
+    type: integer
+    enum: ['111', '222',]
+    required: true
+    default: all
+  - name: dbenv
+    in: body
+    description: 指定数据库db环境
+    type: string
+    enum: ['formal', 'test']
+    required: true
+    default: all
+  - name: dbname
+    in: body
+    description: 指定数据库db
+    type: string
+    enum: ['kubernetes', 'cdsmdb']
+    required: true
+    default: all
+  - name: releaseenv
+    in: body
+    description: 发布环境
+    type: string
+    enum: ['test', 'pro']
+    required: true
+    default: all
+definitions:
+  Palette:
+    type: object
+    properties:
+      palette_name:
+        type: array
+        items:
+          $ref: '#/definitions/k8sbuildjob'
+  Color:
+    type: string
+responses:
+  200:
+    description: 返回的是一个元组，第一位是状态码0成功,1失败，第二个是成功或失败的信息
+    schema:
+      $ref: '#/definitions/k8sbuildjob'
+    examples:
+      data: (0, "send rabbitmq k8s job success")
