@@ -12,6 +12,6 @@ img = cv2.imread(r'd:\test\1.png', 0)
 #     cv2.imwrite('messigray.png', img)
 #     cv2.destroyAllWindows()
 
-plt.imshow(img,cmap='gray',interpolation='bicubic')
-plt.xticks([]),plt.yticks([]) # 隐藏X轴和Y轴上的刻度值
+plt.imshow(img, cmap='gray', interpolation='bicubic')
+plt.xticks([]), plt.yticks([])  # 隐藏X轴和Y轴上的刻度值
 plt.show()

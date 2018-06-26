@@ -2,7 +2,8 @@ import requests, json
 import time
 
 
-def get_cookies():
+# 爬虫
+def get_cookies(ymt_name, ymt_pwd):
     url = 'http://fzms.498.net/member.php/User/login.html'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
@@ -14,8 +15,8 @@ def get_cookies():
     # print('aaaaaaaaa', cookie_one)
     url = 'http://fzms.498.net/member.php/User/loginCheck.html'
     data = {
-        'account': '1001469703',
-        'pwd': 'qian4418',
+        'account': ymt_name,
+        'pwd': ymt_pwd,
         'verify': '',
         'operator': '0'
     }
@@ -44,7 +45,7 @@ def get_cookies():
     return all_Cookie
 
 
-def get_order(cookies, trade_type=0,page=1):
+def get_order(cookies, trade_type=0, page=1):
     url = 'http://fzms.498.net/member.php/Flows/flowsList.html'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36',
@@ -56,7 +57,7 @@ def get_order(cookies, trade_type=0,page=1):
     }
     data = {
         'trade_type': trade_type,
-        'page':page,
+        'page': page,
     }
     html = requests.post(url, headers=headers, data=data)
     html = json.loads(html.text, encoding='utf-8')
@@ -89,13 +90,13 @@ def get_order(cookies, trade_type=0,page=1):
         res.append(item)
 
     data['code'] = '000000'
-    data['total_page'] = int(len(res)/16 +0.5) +1
+    data['total_page'] = int(len(res) / 16 + 0.5) + 1
     data['data'] = res
     # return json.dumps(res, ensure_ascii=False)
     return data
 
 
-def get_dayorder(cookies,trade_type=0):
+def get_dayorder(cookies, trade_type=0):
     url = 'http://fzms.498.net/member.php/Flows/dayFlowsList.html'
     # cookies = get_cookies()
     headers = {
@@ -106,10 +107,10 @@ def get_dayorder(cookies,trade_type=0):
         'Referer': 'http://fzms.498.net/member.php/User/login.html',
         'Cookie': cookies
     }
-    data={
-        'trade_type':trade_type
+    data = {
+        'trade_type': trade_type
     }
-    html = requests.post(url,headers=headers,data=data)
+    html = requests.post(url, headers=headers, data=data)
     html = json.loads(html.text, encoding='utf-8')
     content = html['data']
     res = []
@@ -137,7 +138,8 @@ def get_dayorder(cookies,trade_type=0):
     data['data'] = res
     return data
 
-def get_monthorder(cookies,trade_type=0):
+
+def get_monthorder(cookies, trade_type=0):
     url = 'http://fzms.498.net/member.php/Flows/monthFlowsList.html'
     # cookies = get_cookies()
     headers = {
@@ -149,9 +151,9 @@ def get_monthorder(cookies,trade_type=0):
         'Cookie': cookies
     }
     data = {
-        'trade_type':trade_type
+        'trade_type': trade_type
     }
-    html = requests.post(url,headers=headers,data=data)
+    html = requests.post(url, headers=headers, data=data)
     html = json.loads(html.text, encoding='utf-8')
     content = html['data']
     res = []
@@ -178,5 +180,7 @@ def get_monthorder(cookies,trade_type=0):
     data['code'] = '000000'
     data['data'] = res
     return data
+
+
 if __name__ == '__main__':
     print(get_monthorder())
