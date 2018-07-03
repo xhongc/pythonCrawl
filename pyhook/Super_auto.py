@@ -13,7 +13,7 @@ from PIL import ImageGrab,ImageChops
 import pythoncom
 import pyHook
 import sys
-import ConfigParser
+import configparser
 import pythoncom
 import pyHook
 import codecs
@@ -27,7 +27,7 @@ w3 = win32gui.FindWindowEx(w1, None, 'ATL:00913F40', None)  # 输入框句柄
 
 win32gui.SetForegroundWindow(w1)
 
-conf = ConfigParser.ConfigParser()
+conf = configparser.ConfigParser()
 conf.readfp(codecs.open('auto.conf',"r","utf-8-sig"))
 
 count_name =1
@@ -42,55 +42,55 @@ def onMouseEvent(event):
         work_mode = conf.get('work_mode','work_mode')
         if work_mode == 'zhifubao':
             if action == 'action1':
-                print u'请点击< 添加收款理由'
+                print(u'请点击< 添加收款理由')
                 screen(x, y, action)
             elif action == 'action2':
-                print u'输入理由后请点击 < 发送'
+                print(u'输入理由后请点击 < 发送')
                 screen(x, y, action)
             elif action == 'action3':
-                print u'请点击 < 金额输入框'
+                print(u'请点击 < 金额输入框')
             elif action == 'action4':
-                print u'输入金额后请点击 < 发送'
+                print(u'输入金额后请点击 < 发送')
             elif action == 'action5':
-                print u'请点击 < 确定点击在蓝色空区域'
+                print(u'请点击 < 确定点击在蓝色空区域')
             elif action == 'action6':
-                print u'请点击 < 二维码右上角区域'
+                print(u'请点击 < 二维码右上角区域')
             elif action == 'action7':
-                print u'请点击 < 保存图片'
+                print(u'请点击 < 保存图片')
             elif action == 'action8':
-                print u'请点击 < 清楚金额'
+                print(u'请点击 < 清楚金额')
             else:
-                print u'\n(退出模拟:直接关闭控制台！)'
+                print(u'\n(退出模拟:直接关闭控制台！)')
             conf.set('auto_set',action,str((x,y)))
             count_name += 1
             conf.write(open("auto.conf", "w"))
 
         elif work_mode == 'weixin':
             if action == 'action1':
-                print u'请点击< 添加收钱备注'
+                print(u'请点击< 添加收钱备注')
                 screen(x, y, action)
             elif action == 'action2':
-                print u'在弹出的输入框 点击》'
+                print(u'在弹出的输入框 点击》')
                 screen(x, y, action)
             elif action == 'action3':
                 screen(x, y, action)
-                print u'点击 取消后》直接输入金额》后按下回车'
+                print(u'点击 取消后》直接输入金额》后按下回车')
             elif action == 'action4':
-                print u'在确定按钮左绿色区域 点击'
+                print(u'在确定按钮左绿色区域 点击')
             elif action == 'action5':
-                print u'在二维码右上角 黑色中点 》点击'
+                print(u'在二维码右上角 黑色中点 》点击')
             elif action == 'action6':
-                print u'点击》保存收款码'
+                print(u'点击》保存收款码')
             elif action == 'action7':
-                print u'点击》清除金额'
+                print(u'点击》清除金额')
             elif action == 'action8':
-                print u'关闭控制台 开始work'
+                print(u'关闭控制台 开始work')
             elif action == 'action9':
-                print u'关闭控制台 开始work'
+                print(u'关闭控制台 开始work')
             elif action == 'action10':
-                print u'退出模拟:直接关闭控制台'
+                print(u'退出模拟:直接关闭控制台')
             else:
-                print u'\n(退出模拟:直接关闭控制台！)'
+                print(u'\n(退出模拟:直接关闭控制台！)')
             conf.set('auto_set',action,str((x,y)))
             count_name += 1
             conf.write(open("auto.conf", "w"))
@@ -152,7 +152,7 @@ def LeftClick_with_screen(x,y,local_action,action,size):
 
     im = judge_pic(size,local_action,action)
     im_count = 1
-    print im
+    print(im)
     while im:
         time.sleep(1)
         screen(x,y,action)
@@ -211,7 +211,7 @@ def work(money, page):
     num = conf.get('settings', 'num')
     no = '-0' + str(page)
     reason = num + '-' + str(money) + no
-    #print reason
+    #print(reason
     # time.sleep(0.2)
     win32api.SendMessage(w3, win32con.WM_SETTEXT, None, str(reason))
     # time.sleep(0.2)
@@ -298,7 +298,7 @@ def wechat_work(money,page):
     # 点击输入
     # LeftClick(read_conf('action4')[0], read_conf('action4')[1])
     # time.sleep(0.4)
-    print money,page
+    print(money,page)
     money = money + page *10 **(-2)
     win32api.SendMessage(w3, win32con.WM_SETTEXT, None, str(money))
     PressOnce(x=13)
@@ -392,30 +392,30 @@ if work_mode == 'zhifubao':
 
     if mode == 'work':
         time.sleep(1)
-        print u'--------开始工作---------'
+        print(u'--------开始工作---------')
         main()
     elif mode == 'que':
         que()
     elif mode == 'video':
         time.sleep(1)
-        print u'--------开始点击---------'
+        print(u'--------开始点击---------')
         main_pyhook()
     else:
-        print u'大侠！请重新来过'
+        print(u'大侠！请重新来过')
 elif work_mode == 'weixin':
     if mode =='work':
         time.sleep(1)
-        print u'--------开始工作---------'
+        print(u'--------开始工作---------')
         wechat_main()
     elif mode == 'que':
         time.sleep(1)
-        print u'--------开始工作---------'
+        print(u'--------开始工作---------')
         que_we()
     elif mode == 'video':
         time.sleep(1)
-        print u'--------开始点击---------'
+        print(u'--------开始点击---------')
         main_pyhook()
     else:
-        print u'大侠！请重新来过！'
+        print(u'大侠！请重新来过！')
 else:
-    print u'大侠！请重新来过！'
+    print(u'大侠！请重新来过！')
