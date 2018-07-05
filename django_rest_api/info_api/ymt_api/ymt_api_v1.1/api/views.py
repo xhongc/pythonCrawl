@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from rest_framework import viewsets
-from api.tools import get_cookies, get_order, get_dayorder, get_monthorder
+from api.tools import get_cookies, get_order, get_dayorder, get_monthorder, PeaceBank
 from rest_framework import mixins
 import json
 from api.serializers import OrderSerializer
@@ -392,4 +392,42 @@ class RandomPWD(mixins.ListModelMixin, viewsets.GenericViewSet):
     def list(self, request, *args, **kwargs):
         randompwd = random.randint(100000, 999999)
         data = {'randompwd': randompwd}
+        return JsonResponse(data)
+
+
+class PeaceBankOrderViewsets(mixins.ListModelMixin, viewsets.GenericViewSet):
+    serializer_class = OrderSerializer
+
+    def list(self, request):
+        try:
+            # username = request.session.get('username')
+            # model = UserAdmin.objects.filter(username=username).first()
+            # peace_name = model.ymt_name
+            # peace_pwd = model.ymt_pwd
+            peace_name = '530580007822'
+            peace_pwd = 'qq360360'
+            peace = PeaceBank(peace_name, peace_pwd)
+            data = peace.run()
+
+        except:
+            data = {'code': '1', 'msg': u' 未登陆'}
+
+        # print(data)
+        return JsonResponse(data)
+
+    def create(self, request):
+        try:
+            username = request.session.get('username')
+            model = UserAdmin.objects.filter(username=username).first()
+            peace_name = model.ymt_name
+            peace_pwd = model.ymt_pwd
+            # peace_name = '530580007822'
+            # peace_pwd = 'qq360360'
+            peace = PeaceBank(peace_name, peace_pwd)
+            data = peace.getOrder()
+
+        except:
+            data = {'code': '1', 'msg': u' 未登陆'}
+
+        # print(data)
         return JsonResponse(data)
