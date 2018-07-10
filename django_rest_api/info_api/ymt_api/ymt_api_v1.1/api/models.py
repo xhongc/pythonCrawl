@@ -12,6 +12,7 @@ class UserAdmin(AbstractUser):
     last_login_time = models.CharField('登入时间', max_length=64, blank=True, null=True)
     is_status = models.CharField('启用状态', max_length=20, blank=True, null=True, default='1')
     is_joke = models.CharField(max_length=20, blank=True, null=True, default='1')
+    reqmid = models.CharField(max_length=20, blank=TabError, null=True)
 
     class Meta:
         verbose_name = "用户映射"

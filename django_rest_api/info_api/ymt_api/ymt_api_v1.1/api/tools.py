@@ -273,7 +273,7 @@ class PeaceBank(object):
 
     def parser_data(self, html):
         resp = html['rows']
-        print(resp)
+        # print(resp)
         items = []
         data = {}
         for each in resp:

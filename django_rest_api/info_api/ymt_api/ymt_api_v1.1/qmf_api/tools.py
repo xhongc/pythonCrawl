@@ -3,6 +3,7 @@ import re
 import json
 import time
 from datetime import datetime
+from scrapy.selector import Selector
 
 
 def login_qmf():
@@ -25,7 +26,7 @@ def login_qmf():
         'Referer': 'https://qr.chinaums.com/netpay-mer-portal/merchant/merAuth.do?instMid=QMFDEFAULT&bizType=bills\
         &appId=9&category=BILLS&wxAppId=wx3220f3baaad5ed30',
 
-        'Cookie': 'SESSION=3c02159f-4bf7-4ea2-beab-50ee45016e35; route=ff7ccc9ac07719e8e706ebafb1588dfa; \
+        'Cookie': 'SESSION=b1c93c27-9674-48cf-b271-71a5cb8330fd; route=ff7ccc9ac07719e8e706ebafb1588dfa; \
         JSESSIONID=0doJ-707FwJx2fGA7Fbf8Fse3cQTQYth1_NpUDuVlw_teeQf_cnj!-1058374088'
     }
 
@@ -34,9 +35,9 @@ def login_qmf():
         'appId': '9',
         'instMid': 'QMFDEFAULT',
         'category': 'BILLS',
-        'userId': 'wysskcyd',
+        'userId': 'lsszqqwlg',
         'userPwd': 'Xm123456',
-        'nickName': '刘凯'
+        'nickName': '雷仕秀'
     }
     # print(data)
     try:
@@ -47,11 +48,12 @@ def login_qmf():
     html = html.text
 
     reqmid = re.search('var reqMid = "(.*?)";', html)
-
+    # print(reqmid)
     return reqmid
 
 
-def get_data(page='1', switch='true', trade_type='', wx_session=None, reqmid=None):
+def get_data(page='1', switch='1', trade_type='', wx_session=None, reqmid=None):
+
     try:
         url = 'https://qr.chinaums.com/netpay-mer-portal/merchant/queryBills.do'
 
@@ -74,17 +76,19 @@ def get_data(page='1', switch='true', trade_type='', wx_session=None, reqmid=Non
             JSESSIONID=0doJ-707FwJx2fGA7Fbf8Fse3cQTQYth1_NpUDuVlw_teeQf_cnj!-1058374088' % (wx_session)
 
         }
-        # year = billDate.split('-')[0]
-        # month = billDate.split('-')[1]
-        # day = billDate.split('-')[2]
-        billDate = datetime.now().strftime('%Y年%m月%d日')
-        reqmid = 898352254990101
+        billDate = datetime.now().strftime('%Y-%m-%d')
+        year = billDate.split('-')[0]
+        month = billDate.split('-')[1]
+        day = billDate.split('-')[2]
+
+        # print('1111111', billDate)
+        # reqmid = 898352254990101
 
         data = {
             'reqMid': reqmid,
             'pageSize': '15',
             'curPage': page,
-            'billDate': billDate
+            'billDate': '%s年%s月%s日' % (year, month, day)
         }
         # print(data)
 
@@ -92,72 +96,78 @@ def get_data(page='1', switch='true', trade_type='', wx_session=None, reqmid=Non
         # print(trade_type)
         # print(json.loads(html.text))
         html = json.loads(html.text, encoding='utf-8')
-        print(html)
-        total_money = html['sumAmount'] * 0.001
-        total_money = round(total_money, 2)
-        total_dict = {'total_money': str(total_money)}
+        # print(html)
+
         list_all = html['paymentList']['content']
         items = []
         data = {}
+        total_money = 0
         for each in list_all:
             item = {}
             if each['targetSys'] == trade_type and trade_type == 'Alipay 2.0':
-                pay_time = each['payTime'] * 0.001
-                pay_time = time.localtime(pay_time)
-                dt = time.strftime("%Y-%m-%d %H:%M:%S", pay_time)
-                item['pay_time'] = dt
-                item['order_num'] = each['merOrderId']
-                item['pay_money'] = round(each['totalAmount'] * 0.001, 2)
+                c_time = each['payTime'] * 0.001
+                c_time = time.localtime(c_time)
+                dt = time.strftime("%Y-%m-%d %H:%M:%S", c_time)
+                item['c_time'] = dt
+                item['order_no'] = each['merOrderId']
+                item['pay_money'] = round(each['totalAmount'] * 0.01, 3)
                 item['trade_type'] = '支付宝支付'
-                if switch == 'true':
+                if switch == '1':
                     params_data = {'merOrderId': each['merOrderId'], 'billDate': billDate, 'mid': reqmid}
                     params = {
                         'billsQueryInfo': str(params_data),
                         'role': 'Merchant'}
-                    item['detail'] = get_beizhu(params)
+                    item['beizhu'] = get_beizhu(params, wx_session)
+                item['trade_status'] = '支付成功'
                 items.append(item)
             elif each['targetSys'] == trade_type and trade_type == 'WXPay':
-                pay_time = each['payTime'] * 0.001
-                pay_time = time.localtime(pay_time)
-                dt = time.strftime("%Y-%m-%d %H:%M:%S", pay_time)
-                item['pay_time'] = dt
-                item['order_num'] = each['merOrderId']
-                item['pay_money'] = round(each['totalAmount'] * 0.001, 2)
+                c_time = each['payTime'] * 0.001
+                c_time = time.localtime(c_time)
+                dt = time.strftime("%Y-%m-%d %H:%M:%S", c_time)
+                item['c_time'] = dt
+                item['order_no'] = each['merOrderId']
+                item['pay_money'] = round(each['totalAmount'] * 0.01, 3)
                 item['trade_type'] = '微信支付'
-                if switch == 'true':
+                if switch == '1':
                     params_data = {'merOrderId': each['merOrderId'], 'billDate': billDate, 'mid': reqmid}
                     params = {
                         'billsQueryInfo': str(params_data),
                         'role': 'Merchant'}
-                    item['detail'] = get_beizhu(params)
+                    item['beizhu'] = get_beizhu(params, wx_session)
+                item['trade_status'] = '支付成功'
                 items.append(item)
             elif trade_type == '':
-                pay_time = each['payTime'] * 0.001
-                pay_time = time.localtime(pay_time)
-                dt = time.strftime("%Y-%m-%d %H:%M:%S", pay_time)
-                item['pay_time'] = dt
-                item['order_num'] = each['merOrderId']
-                item['pay_money'] = round(each['totalAmount'] * 0.001, 2)
+                c_time = each['payTime'] * 0.001
+                c_time = time.localtime(c_time)
+                dt = time.strftime("%Y-%m-%d %H:%M:%S", c_time)
+                item['c_time'] = dt
+                item['order_no'] = each['merOrderId']
+                item['pay_money'] = round(each['totalAmount'] * 0.01, 3)
                 item['trade_type'] = each['targetSys'].replace('Alipay 2.0', '支付宝支付').replace('WXPay', '微信支付')
-                if switch == 'true':
+                if switch == '1':
                     params_data = {'merOrderId': each['merOrderId'], 'billDate': billDate, 'mid': reqmid}
                     params = {
                         'billsQueryInfo': str(params_data),
                         'role': 'Merchant'}
-                    item['detail'] = get_beizhu(params)
+                    item['beizhu'] = get_beizhu(params, wx_session)
+                item['trade_status'] = '支付成功'
                 items.append(item)
                 # print(items)
-        items.append(total_dict)
-        items = json.dumps(items, ensure_ascii=False)
+            total_money += round(each['totalAmount'] * 0.01, 3)
+        # items = json.dumps(items, ensure_ascii=False)
         data['code'] = '000000'
         data['data'] = items
+        data['total_page'] = int(html['paymentList']['total'] / 15) + 1
+        data['total_money'] = str(total_money)
+        # print('data:', data)
         return data
     except BaseException as e:
-        data = {'code': '1', 'msg': e}
+        data = {'code': '1', 'msg': '未登录wx'}
+        print('aaaaaaaaaa', e)
         return data
 
 
-def get_beizhu(params):
+def get_beizhu(params, wx_session):
     url = 'https://qr.chinaums.com/netpay-mer-portal/merchant/queryBill.do'
     params = params
 
@@ -168,18 +178,19 @@ def get_beizhu(params):
         MicroMessenger/6.6.1.1220(0x26060135) NetType/WIFI Language/zh_CN',
         'Host': 'qr.chinaums.com',
         'Cookie': 'SESSION=%s; route=ff7ccc9ac07719e8e706ebafb1588dfa; \
-        JSESSIONID=GMMdB5gvvcQjvhVv0NyJdy1CwtZrcQBSHj21-Q3cdpgu73bmjFZV!-1058374088'
+        JSESSIONID=GMMdB5gvvcQjvhVv0NyJdy1CwtZrcQBSHj21-Q3cdpgu73bmjFZV!-1058374088' % (wx_session)
     }
     html = requests.get(url, params=params, headers=headers)
+    # print(html.text)
     selector = Selector(html)
-    detail = \
+    beizhu = \
         selector.xpath('//div[@class ="ums_text"]/span[@class="ums_text_value ums_margin_right8"]/text()').extract()[
-            4].replace(' ', '').replace('\n', '')
-    # print(detail)
+            5].replace(' ', '').replace('\n', '')
+    # print(beizhu)
 
-    return detail
+    return beizhu
 
 
 if __name__ == '__main__':
     # print(login_qmf())
-    print(get_data())
+    print(get_data(wx_session='e11b3d1b-05f3-4f49-8e74-d2c86fba068c', reqmid=898352254990101))
