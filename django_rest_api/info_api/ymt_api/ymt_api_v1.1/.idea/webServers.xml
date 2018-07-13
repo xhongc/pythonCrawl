@@ -10,6 +10,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="1fccd2c0-6eb2-443d-8d4e-27b7da6e4218" name="公司阿里服务器" url="http://39.108.5.138">
+        <fileTransfer host="39.108.5.138" port="22" rootFolder="/home" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

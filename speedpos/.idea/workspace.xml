@@ -44,8 +44,8 @@
       <file leaf-file-name="new_spider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pos_api/new_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-770">
-              <caret line="329" column="4" selection-start-line="329" selection-start-column="4" selection-end-line="329" selection-end-column="4" />
+            <state relative-caret-position="322">
+              <caret line="929" selection-start-line="929" selection-end-line="929" />
               <folding>
                 <element signature="e#42#57#0" expanded="true" />
               </folding>
@@ -56,7 +56,7 @@
       <file leaf-file-name="keep_sess.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pos_api/keep_sess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
+            <state relative-caret-position="627">
               <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -250,17 +250,15 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1384" />
-    <option name="height" value="786" />
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,12 +275,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pyhook" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -463,8 +462,8 @@
       <window_info anchor="bottom" id="Run" order="9" sideWeight="0.4969743" weight="0.34716982" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32872504" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.2327044" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16809817" />
+      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.15471698" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17213115" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -751,7 +750,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pos_api/keep_sess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
+        <state relative-caret-position="627">
           <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -761,8 +760,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pos_api/new_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-770">
-          <caret line="329" column="4" selection-start-line="329" selection-start-column="4" selection-end-line="329" selection-end-column="4" />
+        <state relative-caret-position="322">
+          <caret line="929" selection-start-line="929" selection-end-line="929" />
           <folding>
             <element signature="e#42#57#0" expanded="true" />
           </folding>

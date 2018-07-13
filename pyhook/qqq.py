@@ -17,12 +17,12 @@ headers = {
     'Referer': 'https://qr.chinaums.com/netpay-mer-portal/merchant/merAuth.do?instMid=QMFDEFAULT&bizType=bills&appId=9&category=BILLS&wxAppId=wx3220f3baaad5ed30',
     'Accept-Encoding': 'gzip, deflate',
     'Accept-Language': 'zh-CN,en-US;q=0.8',
-    'Cookie': 'SESSION=27a696ea-1780-4c04-93ec-bd2ecf29e0e0; route=fa50261eb05f8f663b9307b92ceab0ae',
+    'Cookie': 'SESSION=aa23815d-a216-4b00-86ca-052df67f38da; route=fa50261eb05f8f663b9307b92ceab0ae',
     'X-Requested-With': 'com.tencent.mm'
 
 }
 data = {
-    'reqMid': '898352259990101',
+    'reqMid': '898352259410102',
     'instMid': 'QMFDEFAULT',
     'category': 'BILLS',
     'bizType': 'bills',

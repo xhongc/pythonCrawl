@@ -52,7 +52,8 @@ def login_qmf():
     return reqmid
 
 
-def get_data(page='1', switch='1', trade_type='', wx_session=None, reqmid=None):
+def get_data(page='1', switch='1', trade_type='', wx_session=None, reqmid=None,
+             billDate=datetime.now().strftime('%Y-%m-%d')):
 
     try:
         url = 'https://qr.chinaums.com/netpay-mer-portal/merchant/queryBills.do'
@@ -76,7 +77,7 @@ def get_data(page='1', switch='1', trade_type='', wx_session=None, reqmid=None):
             JSESSIONID=0doJ-707FwJx2fGA7Fbf8Fse3cQTQYth1_NpUDuVlw_teeQf_cnj!-1058374088' % (wx_session)
 
         }
-        billDate = datetime.now().strftime('%Y-%m-%d')
+        # billDate = datetime.now().strftime('%Y-%m-%d')
         year = billDate.split('-')[0]
         month = billDate.split('-')[1]
         day = billDate.split('-')[2]
@@ -92,7 +93,8 @@ def get_data(page='1', switch='1', trade_type='', wx_session=None, reqmid=None):
         }
         # print(data)
 
-        html = requests.post(url, headers=headers, data=data)
+        html = requests.post(url, headers=headers, data=data, timeout=10)
+
         # print(trade_type)
         # print(json.loads(html.text))
         html = json.loads(html.text, encoding='utf-8')
@@ -102,6 +104,7 @@ def get_data(page='1', switch='1', trade_type='', wx_session=None, reqmid=None):
         items = []
         data = {}
         total_money = 0
+
         for each in list_all:
             item = {}
             if each['targetSys'] == trade_type and trade_type == 'Alipay 2.0':
@@ -117,7 +120,8 @@ def get_data(page='1', switch='1', trade_type='', wx_session=None, reqmid=None):
                     params = {
                         'billsQueryInfo': str(params_data),
                         'role': 'Merchant'}
-                    item['beizhu'] = get_beizhu(params, wx_session)
+                    item['beizhu'] = get_beizhu(params, wx_session)[0]
+                    item['beizhu2'] = get_beizhu(params, wx_session)[1]
                 item['trade_status'] = '支付成功'
                 items.append(item)
             elif each['targetSys'] == trade_type and trade_type == 'WXPay':
@@ -133,7 +137,8 @@ def get_data(page='1', switch='1', trade_type='', wx_session=None, reqmid=None):
                     params = {
                         'billsQueryInfo': str(params_data),
                         'role': 'Merchant'}
-                    item['beizhu'] = get_beizhu(params, wx_session)
+                    item['beizhu'] = get_beizhu(params, wx_session)[0]
+                    item['beizhu2'] = get_beizhu(params, wx_session)[1]
                 item['trade_status'] = '支付成功'
                 items.append(item)
             elif trade_type == '':
@@ -149,7 +154,8 @@ def get_data(page='1', switch='1', trade_type='', wx_session=None, reqmid=None):
                     params = {
                         'billsQueryInfo': str(params_data),
                         'role': 'Merchant'}
-                    item['beizhu'] = get_beizhu(params, wx_session)
+                    item['beizhu'] = get_beizhu(params, wx_session)[0]
+                    item['beizhu2'] = get_beizhu(params, wx_session)[1]
                 item['trade_status'] = '支付成功'
                 items.append(item)
                 # print(items)
@@ -158,8 +164,10 @@ def get_data(page='1', switch='1', trade_type='', wx_session=None, reqmid=None):
         data['code'] = '000000'
         data['data'] = items
         data['total_page'] = int(html['paymentList']['total'] / 15) + 1
+        data['count'] = html['paymentList']['total']
         data['total_money'] = str(total_money)
         # print('data:', data)
+
         return data
     except BaseException as e:
         data = {'code': '1', 'msg': '未登录wx'}
@@ -187,10 +195,33 @@ def get_beizhu(params, wx_session):
         selector.xpath('//div[@class ="ums_text"]/span[@class="ums_text_value ums_margin_right8"]/text()').extract()[
             5].replace(' ', '').replace('\n', '')
     # print(beizhu)
+    beizhu2 = \
+        selector.xpath('//div[@class ="ums_text"]/span[@class="ums_text_value ums_margin_right8"]/text()').extract()[
+            4].replace(' ', '').replace('\n', '')
+    # print(beizhu, beizhu2)
+    return beizhu, beizhu2
 
-    return beizhu
+
+def applyCode(productName, productAmout, productId):
+    url = 'https://service.chinaums.com/uis/qrCodeController/applyQRCode'
+    headers = {
+        'Cookie': 'uisroute=52f19a93ba008e36206cbb159c674dac; nuismerwebsessionId=chinaums-newuis-0b6d3140-b79d-4e1f-a11b-b576361bbeb4; _ga=GA1.2.65013444.1530761979; Hm_lvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531374562; _gid=GA1.2.211168171.1531374562; _gat=1; Hm_lpvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531374745',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) \
+        Chrome/68.0.3440.17 Safari/537.36'
+    }
+    data = {
+        'productName': productName,
+        'amountType': '1',
+        'productAmout': productAmout,
+        'productId': productId
+    }
+    html = requests.post(url=url, headers=headers)
+
+    data = html.text
+
+    return data
 
 
 if __name__ == '__main__':
-    # print(login_qmf())
-    print(get_data(wx_session='e11b3d1b-05f3-4f49-8e74-d2c86fba068c', reqmid=898352254990101))
+    #print(applyCode('1', '2', '3'))
+    print(get_data(wx_session='5427ee52-24ad-47f0-b46c-bfde60417d96', reqmid='898352259410102'))
