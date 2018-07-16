@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 class UserAdmin(AbstractUser):
-    url = models.CharField('url', max_length=65, blank=True, null=True)
+    url = models.TextField('url', max_length=512, blank=True, null=True)
     display_password = models.CharField('铭文密码', max_length=255, blank=True, default='0')
     ymt_name = models.CharField('用户名称', max_length=50, blank=True, null=True)
     ymt_pwd = models.CharField(max_length=64, blank=True, null=True)

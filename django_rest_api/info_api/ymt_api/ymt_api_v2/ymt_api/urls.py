@@ -3,7 +3,7 @@ from django.contrib import admin
 from rest_framework.routers import DefaultRouter
 from api.views import OrderViewset, LoginViewset, UserViewset, AdminUserViewset, DayOrderViewset, RandomPWD, \
     PeaceBankOrderViewsets
-from qmf_api.views import QmfOrderViewsets
+from qmf_api.views import QmfOrderViewsets, GenerateCodeViewsets, UpOrderViewsrts
 from rest_framework.documentation import include_docs_urls
 from django.views.generic import TemplateView
 
@@ -17,10 +17,13 @@ router.register(r'users', UserViewset, base_name='users')
 router.register(r'adminuser', AdminUserViewset, base_name='adminuser')
 router.register(r'RandomPWD', RandomPWD, base_name='RandomPWD')
 router.register(r'qmf_order', QmfOrderViewsets, base_name='qmf_order')
+router.register(r'gcode', GenerateCodeViewsets, base_name='gcode')
+router.register(r'uporder', UpOrderViewsrts, base_name='uporder')
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('^api/', include(router.urls)),
     url('docs/', include_docs_urls(title='API 与 狗', description='young api')),
     url('index/', TemplateView.as_view(template_name='index.html'), name='index'),
+
 ]

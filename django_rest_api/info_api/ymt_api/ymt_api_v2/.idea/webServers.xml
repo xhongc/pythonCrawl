@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ce41f44b-8823-46c5-80a9-c1c9e8f211a7" name="198服务器" url="http://112.74.164.198">
+        <fileTransfer host="112.74.164.198" port="22" rootFolder="/home" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="1fccd2c0-6eb2-443d-8d4e-27b7da6e4218" name="公司阿里服务器" url="http://39.108.5.138">
+        <fileTransfer host="39.108.5.138" port="22" rootFolder="/home" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

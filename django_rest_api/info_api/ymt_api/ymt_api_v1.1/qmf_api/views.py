@@ -5,11 +5,11 @@ from rest_framework import viewsets
 from api.tools import get_cookies, get_order, get_dayorder, get_monthorder, PeaceBank
 from rest_framework import mixins
 import json
-from qmf_api.serializers import QmforderSerializer, GCodeSerializer
+from qmf_api.serializers import QmforderSerializer, GCodeSerializer, UpOrderSerializer
 from rest_framework.response import Response
 from api.serializers import UserSerializer, UserUpdateSerializer, AdminUserSerializer, LoginSerializer
 from api.models import UserAdmin
-from qmf_api.tools import get_data, applyCode
+from qmf_api.tools import get_data, applyCode, for_api, get_all_data
 from qmf_api.models import Wxsession
 from datetime import datetime
 
@@ -43,13 +43,14 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
         # print('I am :  ', username)
         if username:
             user = UserAdmin.objects.filter(username=username).first()
-            reqmid = user.reqmid
+            # reqmid = user.reqmid
             # print(reqmid)
             wx = UserAdmin.objects.filter(username=username).first()
             wx_session = wx.url
             print(wx_session)
-            data = get_data(wx_session=wx_session, reqmid=reqmid, page=page, trade_type=trade_type, switch=switch,
-                            billDate=billDate)
+            # data = get_data(wx_session=wx_session, reqmid=reqmid, page=page, trade_type=trade_type, switch=switch,
+            #                 billDate=billDate)
+            data = get_all_data(wx_session, page)
         else:
             data = {'code': 11, 'msg': '账号未登录'}
         return JsonResponse(data)
@@ -65,4 +66,23 @@ class GenerateCodeViewsets(viewsets.GenericViewSet):
 
         data = applyCode(productName, productAmout, productId)
         data = json.loads(data)
+        return JsonResponse(data)
+
+
+class UpOrderViewsrts(viewsets.GenericViewSet):
+    serializer_class = UpOrderSerializer
+
+    def create(self, request):
+        PayNO = request.data.get('PayNO', None)
+        PayJe = request.data.get('PayJe', None)
+        payType = request.data.get('payType', None)
+        PayMore = request.data.get('PayMore', None)
+
+        item = {}
+        item['PayNO'] = PayNO
+        item['PayJe'] = PayJe
+        item['payType'] = payType
+        item['PayMore'] = PayMore
+        data = for_api(item)
+
         return JsonResponse(data)

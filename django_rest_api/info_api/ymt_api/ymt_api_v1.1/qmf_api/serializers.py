@@ -13,3 +13,10 @@ class GCodeSerializer(serializers.Serializer):
     productName = serializers.CharField(help_text='商品名称')
     productAmout = serializers.CharField(help_text='商品金额')
     productId = serializers.CharField(help_text='商品备注')
+
+
+class UpOrderSerializer(serializers.Serializer):
+    PayNO = serializers.CharField(required=True, min_length=27, max_length=27, help_text='订单号27位')
+    PayJe = serializers.CharField(required=True, help_text='交易金额')
+    payType = serializers.CharField(required=True, help_text='1为支付宝，2为微信')
+    PayMore = serializers.CharField(required=True, help_text='二维码备注 exp：327-100-03')

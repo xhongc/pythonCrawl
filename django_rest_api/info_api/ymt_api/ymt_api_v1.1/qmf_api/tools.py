@@ -54,7 +54,6 @@ def login_qmf():
 
 def get_data(page='1', switch='1', trade_type='', wx_session=None, reqmid=None,
              billDate=datetime.now().strftime('%Y-%m-%d')):
-
     try:
         url = 'https://qr.chinaums.com/netpay-mer-portal/merchant/queryBills.do'
 
@@ -222,6 +221,133 @@ def applyCode(productName, productAmout, productId):
     return data
 
 
+def for_api(item):
+    params = item
+
+    # print(data)
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+
+    }
+    api_url = 'http://778vpn.com/notify/selfYLSWNotify?key=9902312&appid=151261552310206'
+    # api_url = 'http://192.168.3.23:8081/notify/selfZFBNotify'
+    a = requests.get(api_url, headers=headers, params=item, timeout=20)
+    a = a.text
+    data = {}
+    data['code'] = '000000'
+    data['data'] = a
+    return data
+
+
+def get_qmt_data(cookie, page):
+    url = 'https://service.chinaums.com/uis-wxfront/wx/common/request/doProcess.do'
+    page = int(page) - 1
+
+    headers = {
+
+        'Host': 'service.chinaums.com',
+        'Connection': 'keep-alive',
+        'Content-Length': '127',
+        'Accept': 'application/json, text/javascript, */*; q=0.01',
+        'Origin': 'https://service.chinaums.com',
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 5A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 MicroMessenger/6.6.7.1320(0x26060734) NetType/WIFI Language/zh_CN',
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'Referer': 'https://service.chinaums.com/uiswx/BIZ-WF-BILL/dang.html?role=2&userAppType=2&mchntName=%E6%AD%A6%E5%A4%B7%E5%B1%B1%E5%B8%82%E8%83%9C%E5%87%AF%E8%8C%B6%E4%B8%9A%E5%BA%97',
+        'Accept-Encoding': 'gzip, deflate',
+        'Accept-Language': 'zh-CN,en-US;q=0.9',
+        # 'Cookie': 'uiswxftroute=8f244af579fb1977c154a6b4e377a7d6; Hm_lvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531476076; _ga=GA1.2.910577194.1531476077; _gid=GA1.2.1871546130.1531476077; Hm_lpvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531476096; JSESSIONID=D8CTyL0vVKpzqyZze4nia1pm3rol0jFfTvpp8Fo8zhcYybdfTQne!-2024523785',
+        'Cookie': cookie,
+        'X-Requested-With': 'com.tencent.mm',
+
+    }
+    dt = datetime.now().strftime('%Y%m%d%H%M%S')
+    # print(dt)
+    data = {"appRequestDate": dt,
+            "service": "qryRealTransListForWx",
+            "pageSize": "15",
+            "page": str(page),
+            "isTotal": "",
+            "qryRealType": "03"}
+    data = json.dumps(data)
+    html = requests.post(url, headers=headers, data=data)
+    html = json.loads(html.text)
+    try:
+        html = html['content']
+    except:
+        data = {'code': '11', 'msg': '无html数据'}
+        return data
+    item = []
+    for each in html:
+        seqId = each['seqId']
+        item.append(seqId)
+    # print(item)
+    return item
+
+
+def get_qmf_beizhu(seqId, cookie):
+    url = 'https://service.chinaums.com/uis-wxfront/wx/common/request/doProcess.do '
+    headers = {
+        'Host': 'service.chinaums.com',
+        'Connection': 'keep-alive',
+        'Content-Length': '114',
+        'Accept': 'application/json, text/javascript, */*; q=0.01',
+        'Origin': 'https://service.chinaums.com',
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 5A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 MicroMessenger/6.6.7.1320(0x26060734) NetType/WIFI Language/zh_CN',
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'Referer': 'https://service.chinaums.com/uiswx/BIZ-WF-BILL/CSAOBDetails.html?billDate=20180713&seqId=6276888387&mchntName=%E6%AD%A6%E5%A4%B7%E5%B1%B1%E5%B8%82%E8%83%9C%E5%87%AF%E8%8C%B6%E4%B8%9A%E5%BA%97',
+        'Accept-Encoding': 'gzip, deflate',
+        'Accept-Language': 'zh-CN,en-US;q=0.9',
+        # 'Cookie': 'uiswxftroute=8f244af579fb1977c154a6b4e377a7d6; Hm_lvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531476076; _ga=GA1.2.910577194.1531476077; _gid=GA1.2.1871546130.1531476077; Hm_lpvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531476096; JSESSIONID=D8CTyL0vVKpzqyZze4nia1pm3rol0jFfTvpp8Fo8zhcYybdfTQne!-2024523785',
+        'Cookie': cookie,
+        'X-Requested-With': 'com.tencent.mm'
+    }
+    dt = datetime.now().strftime('%Y%m%d%H%M%S')
+    billDate = datetime.now().strftime('%Y%m%d')
+    data = {"appRequestDate": dt, "service": "qryRealTransDetailForWx", "billDate": billDate,
+            "seqId": seqId}
+    data = json.dumps(data)
+    html = requests.post(url, headers=headers, data=data)
+    html = html.text
+    html = json.loads(html, encoding='utf-8')
+    print(html)
+    item = {}
+    pay_money = html['total_amount'] * 0.01
+    item['pay_money'] = pay_money
+    item['order_no'] = html['mer_order_id']
+    try:
+        item['beizhu'] = html['memo']
+    except:
+        item['beizhu'] = '无'
+    item['trade_status'] = html['status']
+    item['c_time'] = html['pay_time']
+    try:
+        item['beizhu2'] = html['counter_no']
+    except:
+        item['beizhu2'] = '无'
+    item['trade_type'] = html['target_sys']
+    # print(item)
+    return item, pay_money
+
+
+def get_all_data(cookie, page):
+    item = get_qmt_data(cookie, page)
+    items = []
+    data = {}
+    total_money = 0
+    for each in item:
+        result = get_qmf_beizhu(each, cookie)
+        item = result[0]
+        total_money += result[1]
+
+        items.append(item)
+    data['code'] = '000000'
+    data['data'] = items
+    data['total_money'] = total_money
+    # print(items)
+    return data
+
+
 if __name__ == '__main__':
-    #print(applyCode('1', '2', '3'))
-    print(get_data(wx_session='5427ee52-24ad-47f0-b46c-bfde60417d96', reqmid='898352259410102'))
+    # print(applyCode('1', '2', '3'))
+    # print(get_data(wx_session='5427ee52-24ad-47f0-b46c-bfde60417d96', reqmid='898352259410102'))
+    get_all_data()
