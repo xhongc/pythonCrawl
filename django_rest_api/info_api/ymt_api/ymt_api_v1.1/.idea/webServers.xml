@@ -18,6 +18,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="f7403672-2742-49ea-b0f9-8589a62431c8" name="47.104.137.28" url="http://47.104.137.28">
+        <fileTransfer host="47.104.137.28" port="22" rootFolder="/home/ymt" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

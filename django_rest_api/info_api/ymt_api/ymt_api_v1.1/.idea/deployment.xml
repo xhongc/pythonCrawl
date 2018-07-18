@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="root@112.74.164.198:22">
+  <component name="PublishConfigData" autoUpload="Always" serverName="47.104.137.28">
     <serverData>
       <paths name="198服务器">
         <serverdata>
           <mappings>
             <mapping deploy="/home" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="47.104.137.28">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/ymt" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

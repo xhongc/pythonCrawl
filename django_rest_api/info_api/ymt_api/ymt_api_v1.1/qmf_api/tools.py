@@ -271,8 +271,10 @@ def get_qmt_data(cookie, page):
     data = json.dumps(data)
     html = requests.post(url, headers=headers, data=data)
     html = json.loads(html.text)
+
     try:
         html = html['content']
+
     except:
         data = {'code': '11', 'msg': '无html数据'}
         return data
@@ -280,7 +282,7 @@ def get_qmt_data(cookie, page):
     for each in html:
         seqId = each['seqId']
         item.append(seqId)
-    # print(item)
+
     return item
 
 
@@ -309,7 +311,7 @@ def get_qmf_beizhu(seqId, cookie):
     html = requests.post(url, headers=headers, data=data)
     html = html.text
     html = json.loads(html, encoding='utf-8')
-    print(html)
+
     item = {}
     pay_money = html['total_amount'] * 0.01
     item['pay_money'] = pay_money
@@ -331,6 +333,7 @@ def get_qmf_beizhu(seqId, cookie):
 
 def get_all_data(cookie, page):
     item = get_qmt_data(cookie, page)
+
     items = []
     data = {}
     total_money = 0
@@ -350,4 +353,6 @@ def get_all_data(cookie, page):
 if __name__ == '__main__':
     # print(applyCode('1', '2', '3'))
     # print(get_data(wx_session='5427ee52-24ad-47f0-b46c-bfde60417d96', reqmid='898352259410102'))
-    get_all_data()
+    get_all_data(
+        cookie='uiswxftroute=8f244af579fb1977c154a6b4e377a7d6; Hm_lvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531476076; _ga=GA1.2.910577194.1531476077; _gid=GA1.2.1871546130.1531476077; Hm_lpvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531476096; JSESSIONID=D8CTyL0vVKpzqyZze4nia1pm3rol0jFfTvpp8Fo8zhcYybdfTQne!-2024523785',
+        page='1')

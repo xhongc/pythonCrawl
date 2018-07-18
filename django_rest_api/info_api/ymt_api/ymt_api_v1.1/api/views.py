@@ -303,7 +303,12 @@ class UserViewset(mixins.CreateModelMixin, viewsets.GenericViewSet):
 
     def create(self, request, *args, **kwargs):
         username = request.session.get('username', None)
+        old_password = request.data.get('old_password',None)
         if username:
+            user = UserAdmin.objects.filter(username=username).first()
+            # print(dir(user))
+            if user.password != old_password:
+                return Response({'code': 1, 'msg': '旧密码不正确'}, status=status.HTTP_400_BAD_REQUEST)
             if request.data.get('password2') != request.data.get('password'):
                 return Response({'code': 1, 'msg': '两次密码不一样'}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -333,7 +338,7 @@ class AdminUserViewset(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.Up
     authentication_classes = (BasicAuthentication,)
     pagination_class = GoodsPagination
     filter_backends = (DjangoFilterBackend, filters.SearchFilter)
-    search_fields = ('=username',)
+    search_fields = ('$username',)
 
     # def get_permissions(self):
     #     if self.action == 'create':
