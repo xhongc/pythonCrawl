@@ -51,10 +51,23 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
         page = request.data.get('page', '1')
         trade_type = request.data.get('trade_type', None)
         switch = request.data.get('switch', '1')
-        default_billDate = datetime.now().strftime('%Y-%m-%d')
+
         billDate = request.data.get('billDate', '1')
+        if billDate == '1':
+            default_billDate = datetime.now().strftime('%Y-%m-%d')
+        else:
+            default_billDate = billDate
         start_date = request.data.get('start_date', None)
+        if start_date:
+            start_date = int(start_date) / 1000
+            start_date = time.localtime(start_date)
+            start_date = time.strftime("%Y-%m-%d", start_date)
+
         end_date = request.data.get('end_date', None)
+        if end_date:
+            end_date = int(end_date) / 1000
+            end_date = time.localtime(end_date)
+            end_date = time.strftime("%Y-%m-%d", end_date)
 
         serach_type = request.data.get('serach_type', 'now')
         page_size = request.data.get('page_size', '15')

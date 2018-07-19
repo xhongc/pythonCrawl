@@ -345,7 +345,7 @@ def get_all_data(cookie, page):
         items.append(item)
     data['code'] = '000000'
     data['data'] = items
-    data['total_money'] = total_money
+
     # print(items)
     return data
 
