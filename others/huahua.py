@@ -1,8 +1,3 @@
-def buggy(arg, result=[]):
-    print(result)
-    result.append(arg)
-    print(result)
+import sqlite3
 
-buggy('a')
-buggy('b')
-buggy('c')
+conn = sqlite3.connect('test.db')
