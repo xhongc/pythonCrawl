@@ -9,7 +9,7 @@ from qmf_api.serializers import QmforderSerializer, GCodeSerializer, UpOrderSeri
 from rest_framework.response import Response
 from api.serializers import UserSerializer, UserUpdateSerializer, AdminUserSerializer, LoginSerializer
 from api.models import UserAdmin
-from qmf_api.tools import get_data, applyCode, for_api, get_all_data
+from qmf_api.tools import get_data, applyCode, for_api, get_all_data, get_jl_data
 from qmf_api.models import Wxsession, OrderList
 from datetime import datetime, date
 from django.core import serializers
@@ -18,6 +18,7 @@ from django.core.paginator import Paginator
 from rest_framework.pagination import PageNumberPagination
 from collections import OrderedDict, namedtuple
 from django.db.models import Sum
+from qmf_api.gcode import LFOrder
 
 
 class GoodsPagination(PageNumberPagination):
@@ -58,16 +59,20 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
         else:
             default_billDate = billDate
         start_date = request.data.get('start_date', None)
-        if start_date:
-            start_date = int(start_date) / 1000
-            start_date = time.localtime(start_date)
-            start_date = time.strftime("%Y-%m-%d", start_date)
+        try:
+            if start_date:
+                start_date = int(start_date) / 1000
+                start_date = time.localtime(start_date)
+                start_date = time.strftime("%Y-%m-%d", start_date)
 
-        end_date = request.data.get('end_date', None)
-        if end_date:
-            end_date = int(end_date) / 1000
-            end_date = time.localtime(end_date)
-            end_date = time.strftime("%Y-%m-%d", end_date)
+            end_date = request.data.get('end_date', None)
+            if end_date:
+                end_date = int(end_date) / 1000
+                end_date = time.localtime(end_date)
+                end_date = time.strftime("%Y-%m-%d", end_date)
+        except:
+            data = {'code': '999999', 'msg': '时间错误'}
+            return JsonResponse(data)
 
         serach_type = request.data.get('serach_type', 'now')
         page_size = request.data.get('page_size', '15')
@@ -89,9 +94,19 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                 # print(wx_session)
                 # data = get_data(wx_session=wx_session, reqmid=reqmid, page=page, trade_type=trade_type, switch=switch,
                 #                 billDate=billDate)
-                data = get_all_data(wx_session, page)
+                channel_type = wx.channel_type
+                print(channel_type)
+                if channel_type == 'YL':
+                    data = get_all_data(wx_session, page)
+                elif channel_type == 'JL':
+                    data = get_jl_data(wx_session, page)
+                    print(data)
+                else:
+                    data = get_all_data(wx_session, page)
+
                 # print('data:', data)
                 data_list = data['data']
+                # print(data_list)
                 # 保存数据库
                 for each in data_list:
                     each['username'] = username
@@ -146,6 +161,7 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                 data['count'] = count
                 data['total_money'] = total_money['total_money']
                 # return JsonResponse(data, safe=False)
+
                 return JsonResponse(data)
 
             except BaseException as e:
@@ -205,7 +221,7 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                 data = {'code': 11, 'msg': '时间'}
                 return JsonResponse(data, status=status.HTTP_400_BAD_REQUEST)
             except BaseException as e:
-                data = {'code': 112, 'msg': '错愕了'}
+                data = {'code': 112, 'msg': '错了'}
                 print(e)
                 return JsonResponse(data, status=status.HTTP_400_BAD_REQUEST)
 
@@ -214,12 +230,48 @@ class GenerateCodeViewsets(viewsets.GenericViewSet):
     serializer_class = GCodeSerializer
 
     def create(self, request):
+        login = request.data.get('login', None)
         productName = request.data.get('productName', None)
-        productAmout = request.data.get('productName', None)
-        productId = request.data.get('productName', None)
-
-        data = applyCode(productName, productAmout, productId)
-        data = json.loads(data)
+        productAmout = request.data.get('productAmout', None)
+        productId = request.data.get('productId', None)
+        print(productName, productAmout, productId)
+        data = {}
+        login_list = {
+            'tingting': 'tingting123',
+            'gaolei': 'gaolei123',
+            'caoxinpeng': 'caoxinpeng123',
+            'wangzhibin': 'wangzhibin123',
+            'hushan': 'hushan123'
+        }
+        sid_list = {
+            'tingting': '105874',
+            'gaolei': '105868',
+            'caoxinpeng': '105884',
+            'wangzhibin': '105889',
+            'hushan': '105892'
+        }
+        apikey_list = {
+            'tingting': '105874001',
+            'gaolei': '105868001',
+            'caoxinpeng': '105884001',
+            'wangzhibin': '105889001',
+            'hushan': '105892001'
+        }
+        if login in login_list:
+            username = login
+            password = login_list[login]
+            sid = sid_list[login]
+            apikey = apikey_list[login]
+            # data = applyCode(productName, productAmout, productId)
+            a = LFOrder(username=username, password=password)
+            a.gcode(beizhu=productId, money=productAmout, sid=sid, apikey=apikey)
+            time.sleep(1)
+            resUrl = a.get_code_url()
+            # data = json.loads(data)
+            data['code'] = '000000'
+            data['data'] = resUrl
+        else:
+            data = {'code': '11', 'msg': 'bucunzai'}
         return JsonResponse(data)
 
 

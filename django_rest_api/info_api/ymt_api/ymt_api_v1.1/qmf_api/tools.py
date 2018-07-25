@@ -1,7 +1,7 @@
 import requests
 import re
 import json
-import time
+import time, random
 from datetime import datetime
 from scrapy.selector import Selector
 
@@ -204,7 +204,7 @@ def get_beizhu(params, wx_session):
 def applyCode(productName, productAmout, productId):
     url = 'https://service.chinaums.com/uis/qrCodeController/applyQRCode'
     headers = {
-        'Cookie': 'uisroute=52f19a93ba008e36206cbb159c674dac; nuismerwebsessionId=chinaums-newuis-0b6d3140-b79d-4e1f-a11b-b576361bbeb4; _ga=GA1.2.65013444.1530761979; Hm_lvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531374562; _gid=GA1.2.211168171.1531374562; _gat=1; Hm_lpvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531374745',
+        'Cookie': 'fishmsg=1; uisroute=81db7a754b2503b3a951d254eb8f8b4e; nuismerwebsessionId=chinaums-newuis-dde134dd-a04f-4065-9eb3-dcd2ee801102; _ga=GA1.2.65013444.1530761979; Hm_lvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531993020; _gid=GA1.2.1285314808.1531993020; Hm_lpvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531993147',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) \
         Chrome/68.0.3440.17 Safari/537.36'
     }
@@ -214,10 +214,13 @@ def applyCode(productName, productAmout, productId):
         'productAmout': productAmout,
         'productId': productId
     }
-    html = requests.post(url=url, headers=headers)
+    html = requests.post(url=url, headers=headers, data=data)
+    data = {}
+    res = html.text
+    res = json.loads(res)
 
-    data = html.text
-
+    data['code'] = '000000'
+    data['data'] = res['qrCodeUrl']
     return data
 
 
@@ -350,9 +353,85 @@ def get_all_data(cookie, page):
     return data
 
 
+USER_AGENTS = [
+    "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)",
+    "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)",
+    "Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)",
+    "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)",
+    "Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6",
+    "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1",
+    "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0",
+    "Mozilla/5.0 (X11; Linux i686; U;) Gecko/20070322 Kazehakase/0.4.5",
+    'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+    'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.46 Safari/525.19',
+    'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.43 Safari/525.19 ',
+    'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.42 Safari/525.19 ',
+    'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/0.4.154.31 Safari/525.19 ',
+    'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/0.2.153.0 Safari/525.19 ',
+    'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/0.2.152.0 Safari/525.19 ',
+    'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/0.2.151.0 Safari/525.19 '
+]
+
+
+def random_agent():
+    agent = random.choice(USER_AGENTS)
+    return agent
+
+
+def get_jl_data(cookie, page):
+    url = 'https://b.jlpay.com/cost/queryCostincom.mt'
+    headers = {
+        'Cookie': cookie,
+        'Host': 'b.jlpay.com',
+        'Origin': 'https://b.jlpay.com',
+        'Referer': 'https://b.jlpay.com/cost/toCostincom',
+        'User-Agent': random_agent(),
+        'X-Requested-With': 'XMLHttpRequest'
+    }
+    dt = datetime.now().strftime('%Y-%m-%d')
+    dt = '2018-07-18'
+    start_date = dt + ' 00:00:00'
+    end_date = dt + ' 23:59:59'
+    data = {
+        'pageIndex': page,
+        'pageSize': '15',
+        'busiSubType': '',
+        'debitCreditFlag': '',
+        'starTime': start_date,
+        'endTime': end_date,
+        'orderNo': ''
+    }
+    html = requests.post(url=url, headers=headers, data=data)
+    html = json.loads(html.text)
+
+    try:
+        res = html['data']
+    except KeyError:
+        data = {'code': '000000', 'msg': '未登录'}
+        return data
+
+    items = []
+    data = {}
+    for each in res:
+        item = {}
+        item['c_time'] = each['transTime']
+        item['trade_type'] = each['tradeType']
+        item['pay_money'] = each['sourceAmt']
+        item['beizhu'] = each['remarks']
+        item['order_no'] = each['orderId']
+        items.append(item)
+    data['code'] = '000000'
+    data['data'] = items
+    return data
+
+
+
 if __name__ == '__main__':
     # print(applyCode('1', '2', '3'))
     # print(get_data(wx_session='5427ee52-24ad-47f0-b46c-bfde60417d96', reqmid='898352259410102'))
-    get_all_data(
-        cookie='uiswxftroute=8f244af579fb1977c154a6b4e377a7d6; Hm_lvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531476076; _ga=GA1.2.910577194.1531476077; _gid=GA1.2.1871546130.1531476077; Hm_lpvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531476096; JSESSIONID=D8CTyL0vVKpzqyZze4nia1pm3rol0jFfTvpp8Fo8zhcYybdfTQne!-2024523785',
-        page='1')
+    # get_all_data(
+    #     cookie='uiswxftroute=8f244af579fb1977c154a6b4e377a7d6; Hm_lvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531476076; _ga=GA1.2.910577194.1531476077; _gid=GA1.2.1871546130.1531476077; Hm_lpvt_1c0d3d1413bff5b48a4a97f64a35f6a4=1531476096; JSESSIONID=D8CTyL0vVKpzqyZze4nia1pm3rol0jFfTvpp8Fo8zhcYybdfTQne!-2024523785',
+    #     page='1')
+    print(get_jl_data(
+        cookie='SESSION=3e3cd839-0ab6-4112-a897-58eb920edae3; mt_merchant_session_id=3e3cd839-0ab6-4112-a897-58eb920e;',
+        page='1'))

@@ -14,9 +14,10 @@ class QmforderSerializer(serializers.Serializer):
 
 
 class GCodeSerializer(serializers.Serializer):
+    login = serializers.CharField(required=False, help_text='账号')
     productName = serializers.CharField(help_text='商品名称')
     productAmout = serializers.CharField(help_text='商品金额')
-    productId = serializers.CharField(help_text='商品备注')
+    productId = serializers.CharField(required=False, help_text='商品备注')
 
 
 class UpOrderSerializer(serializers.Serializer):
