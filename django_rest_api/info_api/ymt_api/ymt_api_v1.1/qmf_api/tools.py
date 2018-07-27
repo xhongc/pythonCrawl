@@ -316,6 +316,9 @@ def get_qmf_beizhu(seqId, cookie):
     html = json.loads(html, encoding='utf-8')
 
     item = {}
+
+    if html['responseCode'] == '555555':
+        return '007', '007'
     pay_money = html['total_amount'] * 0.01
     item['pay_money'] = pay_money
     item['order_no'] = html['mer_order_id']
@@ -342,6 +345,9 @@ def get_all_data(cookie, page):
     total_money = 0
     for each in item:
         result = get_qmf_beizhu(each, cookie)
+        if result[0] == '007':
+            data = {'code': '001122', 'msg': '会话失效', 'data': []}
+            return data
         item = result[0]
         total_money += result[1]
 
@@ -423,7 +429,6 @@ def get_jl_data(cookie, page):
     data['code'] = '000000'
     data['data'] = items
     return data
-
 
 
 if __name__ == '__main__':

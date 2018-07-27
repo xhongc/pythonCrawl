@@ -3,6 +3,8 @@ import json
 from scrapy.selector import Selector
 import random
 import time
+from datetime import datetime
+import re
 
 agents = [
     "Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; Nexus S Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
@@ -84,7 +86,7 @@ class LFOrder(object):
 
     def login(self):
         try:
-            print('loging---------------')
+            print('loging------%s---------' % self.username)
             url = 'http://daili.lfwin.com/Vendor/Public/login'
             headers = {
                 'User-Agent': random_agent()
@@ -96,7 +98,7 @@ class LFOrder(object):
             SERVERID = cookies['SERVERID']
             login_headers = {
                 'User-Agent': random_agent(),
-                'Cookie': f'PHPSESSID={PHPSESSID}; updateInfo=1; SERVERID={SERVERID}'
+                'Cookie': 'PHPSESSID=%s; updateInfo=1; SERVERID=%s' % (PHPSESSID, SERVERID)
             }
             data = {
                 'username': self.username,
@@ -106,9 +108,8 @@ class LFOrder(object):
             html = self.session.post(url=url, headers=login_headers, data=data, timeout=100)
             html = json.loads(html.text, encoding='utf-8')
             return PHPSESSID, SERVERID
-        except:
-            time.sleep(3.3)
-            self.login()
+        except BaseException as e:
+            return '1', '1'
 
     def get_data(self):
         try:
@@ -117,54 +118,110 @@ class LFOrder(object):
             list_headers = {
                 'Connection': 'close',
                 'User-Agent': random_agent(),
-                'Cookie': f'PHPSESSID={PHPSESSID}; updateInfo=1; SERVERID={SERVERID}'
+                'Cookie': 'PHPSESSID=%s; updateInfo=1; SERVERID=%s' % (PHPSESSID, SERVERID)
             }
-
+            dt = datetime.now().strftime('%Y-%m-%d')
+            stime = dt + ' 00:00:00'
+            etime = dt + ' 23:59:59'
+            # print(stime, etime)
+            params = {
+                'stime': stime,
+                'etime': etime
+            }
             data_url = 'http://daili.lfwin.com/Vendor/Qrcode/lists?orderid=&m_paytype=alipay&sku_\
             id=&sid=&paystatus=&is_refund=&smoney=&emoney=&stime=&etime=&submit=1'
-            html = self.session.get(url=data_url, headers=list_headers)
+            data_url2 = 'http://daili.lfwin.com/Vendor/Qrcode/lists?orderid=&m_paytype=wxpay&sku_\
+                        id=&sid=&paystatus=&is_refund=&smoney=&emoney=&submit=1'
+            html = self.session.get(url=data_url, headers=list_headers, params=params)
+            html2 = self.session.get(url=data_url2, headers=list_headers, params=params)
             # print(html.text)
             selector = Selector(html)
+            selector2 = Selector(html2)
             res = selector.xpath('//tr')
-            if not res:
-                print('ccc')
-                PHPSESSID, SERVERID = self.login()
-                list_headers = {
-                    'Connection': 'close',
-                    'User-Agent': random_agent(),
-                    'Cookie': f'PHPSESSID={PHPSESSID}; updateInfo=1; SERVERID={SERVERID}'
-                }
-
-                data_url = 'http://daili.lfwin.com/Vendor/Qrcode/lists?orderid=&m_paytype=alipay&sku_\
-                id=&sid=&paystatus=&is_refund=&smoney=&emoney=&stime=&etime=&submit=1'
-                html = self.session.get(url=data_url, headers=list_headers)
-                # print(html.text)
-                selector = Selector(html)
-                res = selector.xpath('//tr')
+            res2 = selector2.xpath('//tr')
+            resp = res + res2
             items = []
-            for each in res:
+            data = {}
+            for each in resp:
                 item = {}
                 result = each.xpath('.//td/text()').extract()
                 # print(result)
                 if result:
-                    item['upCode'] = result[0]
-                    item['payMoney'] = result[3]
-                    item['content'] = result[8]
-                    payType = result[7].replace('微信', 'WEIXIN').replace('支付宝', 'ALI')
-                    item['payType'] = payType
-                    item['platform'] = payType
-                    item['status'] = 'SUCCESS'
-                    item['login'] = self.username
+                    item['order_no'] = result[0]
+                    item['pay_money'] = result[3]
+                    item['beizhu'] = result[8]
+                    payType = result[7].replace('微信支付', '微信')
+                    item['trade_type'] = payType
+                    item['trade_status'] = '成功'
                     dt = result[6]
                     if dt != '---':
-                        dt1 = dt.split(' ')
-                        dt2 = dt1[0] + 'T' + dt1[1] + ':00Z'
-                        item['payTime'] = dt2
+                        dt = dt + ':00'
+                        item['c_time'] = dt
                         items.append(item)
-            print(items)
-            return items
+            # print(items)
+            data['data'] = items
+            return data
         except BaseException as e:
-            print(e)
+            data = {'code': '1', 'msg': '未登录ku'}
+            return data
+
+    def get_free_data(self):
+        try:
+            PHPSESSID = self.PHPSESSID
+            SERVERID = self.SERVERID
+            list_headers = {
+                'Connection': 'close',
+                'User-Agent': random_agent(),
+                'Cookie': 'PHPSESSID=%s; updateInfo=1; SERVERID=%s' % (PHPSESSID, SERVERID)
+            }
+            dt = datetime.now().strftime('%Y-%m-%d')
+            stime = dt + ' 00:00:00'
+            etime = dt + ' 23:59:59'
+            # print(stime, etime)
+            params = {
+
+                'stime': stime,
+                'etime': etime,
+
+            }
+
+            data_url = 'http://daili.lfwin.com/Vendor/Bill/lists?orderid=&m_paytype=allmobile&bank_type=-1&sid=&mid=0&cdid=0&smoney=&emoney=&paystatus=1&is_refund=-1&paytype=0&fix_qrcode=1&stime=2018-07-26+00%3A00%3A00&etime=2018-07-27+00%3A00%3A00&mch_orderid=&submit=1'
+            html = self.session.get(url=data_url, headers=list_headers, params=params)
+            # print(html.text)
+            selector = Selector(html)
+            res = selector.xpath('//tr')
+
+            res_list = []
+
+            for each in res:
+                each = each.xpath('./td/a/@href').extract_first()
+                if each:
+                    each = 'http://daili.lfwin.com' + each
+                    res_list.append(each)
+            items = []
+            for every in res_list:
+                item = {}
+                html = self.session.get(url=every, headers=list_headers)
+                selector = Selector(html)
+                li_label = selector.xpath('//li').extract()
+                # print(li_label)
+                resp = ''.join(li_label).replace('\n', '').replace('\t', '').replace('\r', '')
+                # print(resp)
+
+                item['trade_type'] = re.search('支付通道</label>(.*?)</li>', resp).group(1)
+                item['order_no'] = re.search('支付流水号</label>(.*?)</li>', resp).group(1)
+                item['pay_money'] = re.search('消费金额</label>(.*?)元 </li>', resp).group(1)
+                item['c_time'] = re.search('支付时间</label>(.*?)</li>', resp).group(1)
+                item['trade_status'] = re.search('付款状态</label>(.*?)<span', resp).group(1)
+                item['beizhu'] = re.search('订单备注</label>(.*?)</li>', resp).group(1)
+                items.append(item)
+            # print(items)
+            data = {}
+            data['data'] = items
+            return data
+        except BaseException as e:
+            data = {'code': '1', 'msg': '未登录ku'}
+            return data
 
     def gcode(self, beizhu, money, sid, apikey):
         PHPSESSID = self.PHPSESSID
@@ -172,7 +229,7 @@ class LFOrder(object):
         code_headers = {
             'Connection': 'close',
             'User-Agent': random_agent(),
-            'Cookie': f'PHPSESSID={PHPSESSID}; updateInfo=1; SERVERID={SERVERID}'
+            'Cookie': 'PHPSESSID=%s; updateInfo=1; SERVERID=%s' % (PHPSESSID, SERVERID)
         }
         data = {
             'pname': beizhu,
@@ -199,7 +256,7 @@ class LFOrder(object):
         code_headers = {
             'Connection': 'close',
             'User-Agent': random_agent(),
-            'Cookie': f'PHPSESSID={PHPSESSID}; updateInfo=1; SERVERID={SERVERID}'
+            'Cookie': 'PHPSESSID=%s; updateInfo=1; SERVERID=%s' % (PHPSESSID, SERVERID)
         }
         html = self.session.get(url=url, headers=code_headers)
         selector = Selector(html)

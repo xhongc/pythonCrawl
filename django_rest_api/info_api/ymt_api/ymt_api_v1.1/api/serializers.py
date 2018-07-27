@@ -15,7 +15,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UserAdmin
-        fields = ('username', 'password', 'display_password', 'url', 'ymt_name', 'ymt_pwd')
+        fields = ('username', 'password', 'display_password', 'url', 'ymt_name', 'ymt_pwd', 'channel_type')
 
 
 # 登陆
@@ -48,9 +48,10 @@ class AdminUserSerializer(serializers.ModelSerializer):
     is_joke = serializers.CharField(label='用户权限', required=False, help_text='0关闭，1启用', default='1')
     login_ip = serializers.CharField(read_only=True)
     last_login_time = serializers.CharField(read_only=True)
+    channel_type = serializers.CharField(required=False)
 
     class Meta:
         model = UserAdmin
         fields = (
             'id', 'username', 'password', 'display_password', 'url', 'is_status', 'is_joke', 'ymt_name', 'ymt_pwd',
-            'login_ip', 'last_login_time')
+            'login_ip', 'last_login_time', 'channel_type')

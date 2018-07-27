@@ -98,15 +98,21 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                 print(channel_type)
                 if channel_type == 'YL':
                     data = get_all_data(wx_session, page)
-                elif channel_type == 'JL':
-                    data = get_jl_data(wx_session, page)
-                    print(data)
+                elif channel_type == 'KU':
+                    user_name = wx.ymt_name
+                    user_pwd = wx.ymt_pwd
+                    a = LFOrder(username=user_name, password=user_pwd)
+                    data = a.get_free_data()
+                    # print(data)
                 else:
                     data = get_all_data(wx_session, page)
 
                 # print('data:', data)
-                data_list = data['data']
-                # print(data_list)
+                try:
+                    data_list = data['data']
+                    # print(data_list)
+                except:
+                    data_list = []
                 # 保存数据库
                 for each in data_list:
                     each['username'] = username
@@ -115,6 +121,7 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                         model.save()
                     except BaseException as e:
                         continue
+
             else:
                 pass
 
@@ -124,18 +131,18 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
 
                     if trade_type:
                         model = OrderList.objects.filter(username=username, c_time__startswith=default_billDate,
-                                                         trade_type=trade_type).order_by('-id')
+                                                         trade_type=trade_type).order_by('-c_time')
                     else:
                         model = OrderList.objects.filter(username=username,
                                                          c_time__startswith=default_billDate).order_by(
-                            '-id')
+                            '-c_time')
                 else:
                     if trade_type:
                         model = OrderList.objects.filter(c_time__startswith=default_billDate,
-                                                         trade_type=trade_type).order_by('-id')
+                                                         trade_type=trade_type).order_by('-c_time')
                     else:
                         model = OrderList.objects.filter(c_time__startswith=default_billDate).order_by(
-                            '-id')
+                            '-c_time')
                 # data = serializers.serialize('json', model)
                 # data = json.loads(data, encoding='utf-8')
                 # print(list(data))
@@ -241,21 +248,39 @@ class GenerateCodeViewsets(viewsets.GenericViewSet):
             'gaolei': 'gaolei123',
             'caoxinpeng': 'caoxinpeng123',
             'wangzhibin': 'wangzhibin123',
-            'hushan': 'hushan123'
+            'hushan': 'hushan123',
+            'wanyijie': 'wanyijie123',
+            'tingtinga': 'tingtinga123',
+            'gaoleia': 'gaoleia123',
+            'caoxinpenga': 'caoxinpenga123',
+            'wangzhibina': 'wangzhibina123',
+            'husana': 'husana123',
         }
         sid_list = {
             'tingting': '105874',
             'gaolei': '105868',
             'caoxinpeng': '105884',
             'wangzhibin': '105889',
-            'hushan': '105892'
+            'hushan': '105892',
+            'wanyijie': '105899',
+            'tingtinga': '105905',
+            'gaoleia': '105906',
+            'caoxinpenga': '105908',
+            'wangzhibina': '105909',
+            'husana': '105910',
         }
         apikey_list = {
             'tingting': '105874001',
             'gaolei': '105868001',
             'caoxinpeng': '105884001',
             'wangzhibin': '105889001',
-            'hushan': '105892001'
+            'hushan': '105892001',
+            'wanyijie': '105899001',
+            'tingtinga': '105905001',
+            'gaoleia': '105906001',
+            'caoxinpenga': '105908001',
+            'wangzhibina': '105909001',
+            'husana': '105910001',
         }
         if login in login_list:
             username = login
