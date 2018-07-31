@@ -7,6 +7,7 @@ from api.views import OrderViewset, LoginViewset, UserViewset, AdminUserViewset,
 from qmf_api.views import QmfOrderViewsets, GenerateCodeViewsets, UpOrderViewsrts, AddOrderViewsets
 from rest_framework.documentation import include_docs_urls
 from django.views.generic import TemplateView
+import xadmin
 
 router = DefaultRouter()
 # router.register(r'order', OrderViewset, base_name='order')
@@ -23,7 +24,7 @@ router.register(r'uporder', UpOrderViewsrts, base_name='uporder')
 router.register(r'addorder', AddOrderViewsets, base_name='addorder')
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', xadmin.site.urls),
     path('api/', include(router.urls)),
     path('docs/', include_docs_urls(title='API 与 狗', description='young api')),
     re_path('', TemplateView.as_view(template_name='index.html'), name='index'),

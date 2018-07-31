@@ -110,9 +110,11 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                 # print('data:', data)
                 try:
                     data_list = data['data']
+                    data_code = data['code']
                     # print(data_list)
                 except:
                     data_list = []
+                    data_code = '998998'
                 # 保存数据库
                 for each in data_list:
                     each['username'] = username
@@ -162,7 +164,7 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                 # 聚合函数aggregate 统计
                 total_money = model.aggregate(total_money=Sum('pay_money'))
                 data = {}
-                data['code'] = '000000'
+                data['code'] = data_code
                 data['data'] = res
                 data['total_page'] = total_page
                 data['count'] = count
@@ -269,24 +271,12 @@ class GenerateCodeViewsets(viewsets.GenericViewSet):
             'wangzhibina': '105909',
             'husana': '105910',
         }
-        apikey_list = {
-            'tingting': '105874001',
-            'gaolei': '105868001',
-            'caoxinpeng': '105884001',
-            'wangzhibin': '105889001',
-            'hushan': '105892001',
-            'wanyijie': '105899001',
-            'tingtinga': '105905001',
-            'gaoleia': '105906001',
-            'caoxinpenga': '105908001',
-            'wangzhibina': '105909001',
-            'husana': '105910001',
-        }
+
         if login in login_list:
             username = login
             password = login_list[login]
             sid = sid_list[login]
-            apikey = apikey_list[login]
+            apikey = sid + '001'
             # data = applyCode(productName, productAmout, productId)
             a = LFOrder(username=username, password=password)
             a.gcode(beizhu=productId, money=productAmout, sid=sid, apikey=apikey)

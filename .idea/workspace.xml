@@ -2,12 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1be0d9-07b3-4efa-9499-f6dde6cd94c2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/denglu/qmf_api/ppap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/gcode.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/gcode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/ymt_api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/ymt_api/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/ymt_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/ymt_api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/.idea/webServers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/.idea/ymt_api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/middleware.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/migrations/0002_auto_20180622_1300.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/migrations/0003_useradmin_reqmid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/migrations/0004_auto_20180713_2302.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/migrations/0005_auto_20180713_2305.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/migrations/0006_auto_20180719_1700.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/signals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/tools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/api/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/migrations/0002_orderlist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/migrations/0003_auto_20180716_1406.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/migrations/0004_auto_20180716_1421.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/migrations/0005_auto_20180716_1452.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/migrations/0006_auto_20180716_1458.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/tools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/qmf_api/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/templates/static/css/app.df8a4f36f5a39fff6f94f0d1f4c62c19.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/templates/static/css/app.df8a4f36f5a39fff6f94f0d1f4c62c19.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/templates/static/fonts/element-icons.6f0a763.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/templates/static/img/comfirmBack.352a0aa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/templates/static/img/loginBack.6b29ec3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/templates/static/js/app.630c0b3804f5bf867773.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/templates/static/js/app.630c0b3804f5bf867773.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/templates/static/js/manifest.3ad1d5771e9b13dbdad2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/templates/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/templates/static/js/vendor.f835178f050bbd4bb80d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/templates/static/js/vendor.f835178f050bbd4bb80d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/ymt_api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/ymt_api/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/ymt_api/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1_build/ymt_api/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/others/huahua.py" beforeDir="false" afterPath="$PROJECT_DIR$/others/huahua.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +97,7 @@
     <SUITE FILE_PATH="coverage/pythonCrawl$zoomeyeScan.coverage" NAME="zoomeyeScan Coverage Results" MODIFIED="1523934014101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
     <SUITE FILE_PATH="coverage/pythonCrawl$treading01.coverage" NAME="treading01 Coverage Results" MODIFIED="1525935914910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Process" />
     <SUITE FILE_PATH="coverage/pythonCrawl$cai491.coverage" NAME="cai491 Coverage Results" MODIFIED="1531808206412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
-    <SUITE FILE_PATH="coverage/pythonCrawl$huahua.coverage" NAME="huahua Coverage Results" MODIFIED="1532511324101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
+    <SUITE FILE_PATH="coverage/pythonCrawl$huahua.coverage" NAME="huahua Coverage Results" MODIFIED="1532943917650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
     <SUITE FILE_PATH="coverage/pythonCrawl$123_auto.coverage" NAME="123_auto Coverage Results" MODIFIED="1524652006968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/the_whole_web_spider/Spider" />
     <SUITE FILE_PATH="coverage/pythonCrawl$aizhanScan.coverage" NAME="aizhanScan Coverage Results" MODIFIED="1523969219660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
     <SUITE FILE_PATH="coverage/pythonCrawl$app_namespace.coverage" NAME="app_namespace Coverage Results" MODIFIED="1524126471974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_web_api/websocket_example/Flask-SocketIO-master/example" />
@@ -145,8 +205,8 @@
       <file leaf-file-name="huahua.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/others/huahua.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="285">
+              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -177,15 +237,6 @@
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_auth_example/apps/users/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -227,7 +278,12 @@
       <find>Queue</find>
       <find>annotate</find>
       <find>agents</find>
+      <find>water_copy8</find>
+      <find>water_copy12</find>
     </findStrings>
+    <replaceStrings>
+      <replace>water_copy13</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -329,7 +385,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="977" />
     <option name="height" value="1089" />
@@ -348,16 +404,6 @@
               <item name="pythonCrawl" type="b2602c69:ProjectViewProjectNode" />
               <item name="pythonCrawl" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="pythonCrawl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonCrawl" type="462c0819:PsiDirectoryNode" />
-              <item name="others" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonCrawl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonCrawl" type="462c0819:PsiDirectoryNode" />
-              <item name="淘宝美食" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -366,7 +412,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../model/adb_auto/ZhiFuBaoErWeiMaGongJu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -581,16 +627,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1646" height="933" extended-state="7" />
+    <frame x="-8" y="-8" width="1646" height="933" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32761312" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5030257" side_tool="true" weight="0.28" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32761312" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.34165367" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.27295598" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.318239" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.31538463" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20176545" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1595208" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -604,30 +651,30 @@
       <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3307888" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="8" weight="0.3276923" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28923076" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Data View" order="4" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3430769" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.33076924" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.32923076" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41230768" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3430769" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,20 +694,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/others/pycurl_xhc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/others/biling/demo01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_rest_api/api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -939,10 +972,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/others/hello.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/others/qrcode.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/others/huahua.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="285">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
         </state>
       </provider>
     </entry>
