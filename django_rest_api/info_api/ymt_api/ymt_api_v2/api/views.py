@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from rest_framework import viewsets
-from api.tools import get_cookies, get_order, get_dayorder, get_monthorder
+from api.tools import get_cookies, get_order, get_dayorder, get_monthorder, PeaceBank
 from rest_framework import mixins
 import json
 from api.serializers import OrderSerializer
@@ -22,8 +22,10 @@ from rest_framework import filters
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.pagination import PageNumberPagination
 from collections import OrderedDict, namedtuple
+import random
 
 
+# 分页类，重写get_paginated_response 加入总页数
 class GoodsPagination(PageNumberPagination):
     '''
     商品列表自定义分页
@@ -36,16 +38,18 @@ class GoodsPagination(PageNumberPagination):
     page_query_param = 'page'
     # 最多能显示多少页
     max_page_size = 100
+
     def get_paginated_response(self, data):
         return Response(OrderedDict([
-            ('total_page', int(self.page.paginator.count//10)+1),
+            ('total_page', int(self.page.paginator.count // 10) + 1),
             ('count', self.page.paginator.count),
             ('next', self.get_next_link()),
             ('previous', self.get_previous_link()),
             ('results', data)
         ]))
 
-@method_decorator(csrf_exempt, name='dispatch')
+
+# 订单详情，调用tools 里爬虫方法
 class OrderViewset(mixins.ListModelMixin, mixins.CreateModelMixin, viewsets.GenericViewSet):
     """
     list:
@@ -54,47 +58,65 @@ class OrderViewset(mixins.ListModelMixin, mixins.CreateModelMixin, viewsets.Gene
         根据交易类型页数查询
     """
     serializer_class = OrderSerializer
-    # permission_classes = (IsAuthenticated,)
     authentication_classes = (BasicAuthentication,)
 
     def list(self, request):
         # print(request.user.ymt_name)
         try:
             cookies = request.session.get('cookies', None)
-            # print(cookies)
             if not cookies:
-                cookies = get_cookies()
+                # 登陆后 保存username 提取moedel 相应一码通账号密码
+                username = request.session.get('username')
+                model = UserAdmin.objects.filter(username=username).first()
+                ymt_name = model.ymt_name
+                ymt_pwd = model.ymt_pwd
+
+                cookies = get_cookies(ymt_name, ymt_pwd)
                 request.session['cookies'] = cookies
             cookies = request.session['cookies']
             data = get_order(cookies)
         except KeyError:
-            cookies = get_cookies()
+            username = request.session.get('username')
+            model = UserAdmin.objects.filter(username=username).first()
+            ymt_name = model.ymt_name
+            ymt_pwd = model.ymt_pwd
+            cookies = get_cookies(ymt_name, ymt_pwd)
+
             request.session['cookies'] = cookies
+
             try:
                 data = get_order(cookies)
             except TypeError:
                 data = {'code': '1', 'msg': u'无数据·'}
-                # data = json.dumps(data, ensure_ascii=False)
             except KeyError:
                 data = {'code': '2', 'msg': u'出现未知问题'}
-                # data = json.dumps(data, ensure_ascii=False)
         except TypeError:
             data = {'code': '1', 'msg': u'无数据·1'}
-            # data = json.dumps(data, ensure_ascii=False)
         return JsonResponse(data)
 
     def create(self, request, *args, **kwargs):
+        # 参数查询
         trade_type = request.data.get('trade_type', 0)
         page = request.data.get('page', 1)
 
         try:
             if not request.session['cookies']:
-                cookies = get_cookies()
+                username = request.session.get('username')
+                model = UserAdmin.objects.filter(username=username).first()
+                ymt_name = model.ymt_name
+                ymt_pwd = model.ymt_pwd
+                cookies = get_cookies(ymt_name, ymt_pwd)
+
                 request.session['cookies'] = cookies
             cookies = request.session['cookies']
             data = get_order(cookies, trade_type, page)
         except KeyError:
-            cookies = get_cookies()
+            username = request.session.get('username')
+            model = UserAdmin.objects.filter(username=username).first()
+            ymt_name = model.ymt_name
+            ymt_pwd = model.ymt_pwd
+            cookies = get_cookies(ymt_name, ymt_pwd)
+
             request.session['cookies'] = cookies
             try:
                 data = get_order(cookies, trade_type, page)
@@ -112,8 +134,7 @@ class OrderViewset(mixins.ListModelMixin, mixins.CreateModelMixin, viewsets.Gene
         return JsonResponse(data)
 
 
-# @method_decorator(csrf_exempt, name='dispatch')
-class DayOrderViewset( viewsets.GenericViewSet):
+class DayOrderViewset(viewsets.GenericViewSet):
     """
         list:
             日统计
@@ -123,15 +144,25 @@ class DayOrderViewset( viewsets.GenericViewSet):
     authentication_classes = (BasicAuthentication,)
 
     def list(self, request):
-        # print(request.user.ymt_name)
+
         try:
             if not request.session['cookies']:
-                cookies = get_cookies()
+                username = request.session.get('username')
+                model = UserAdmin.objects.filter(username=username).first()
+                ymt_name = model.ymt_name
+                ymt_pwd = model.ymt_pwd
+                cookies = get_cookies(ymt_name, ymt_pwd)
+
                 request.session['cookies'] = cookies
             cookies = request.session['cookies']
             data = get_dayorder(cookies)
         except KeyError:
-            cookies = get_cookies()
+            username = request.session.get('username')
+            model = UserAdmin.objects.filter(username=username).first()
+            ymt_name = model.ymt_name
+            ymt_pwd = model.ymt_pwd
+            cookies = get_cookies(ymt_name, ymt_pwd)
+
             request.session['cookies'] = cookies
             try:
                 data = get_dayorder(cookies)
@@ -149,16 +180,26 @@ class DayOrderViewset( viewsets.GenericViewSet):
     def create(self, request, *args, **kwargs):
         trade_type = request.data.get('trade_type', 0)
         search_type = request.data.get('search_type', '0')
-        # print(type(search_type),search_type)
+
         if str(search_type) == '0':
             try:
                 if not request.session['cookies']:
-                    cookies = get_cookies()
+                    username = request.session.get('username')
+                    model = UserAdmin.objects.filter(username=username).first()
+                    ymt_name = model.ymt_name
+                    ymt_pwd = model.ymt_pwd
+                    cookies = get_cookies(ymt_name, ymt_pwd)
+
                     request.session['cookies'] = cookies
                 cookies = request.session['cookies']
                 data = get_dayorder(cookies, trade_type)
             except KeyError:
-                cookies = get_cookies()
+                username = request.session.get('username')
+                model = UserAdmin.objects.filter(username=username).first()
+                ymt_name = model.ymt_name
+                ymt_pwd = model.ymt_pwd
+                cookies = get_cookies(ymt_name, ymt_pwd)
+
                 request.session['cookies'] = cookies
                 try:
                     data = get_dayorder(cookies, trade_type)
@@ -176,12 +217,22 @@ class DayOrderViewset( viewsets.GenericViewSet):
             try:
                 # print('aaaa')
                 if not request.session['cookies']:
-                    cookies = get_cookies()
+                    username = request.session.get('username')
+                    model = UserAdmin.objects.filter(username=username).first()
+                    ymt_name = model.ymt_name
+                    ymt_pwd = model.ymt_pwd
+                    cookies = get_cookies(ymt_name, ymt_pwd)
+
                     request.session['cookies'] = cookies
                 cookies = request.session['cookies']
                 data = get_monthorder(cookies, trade_type)
             except KeyError:
-                cookies = get_cookies()
+                username = request.session.get('username')
+                model = UserAdmin.objects.filter(username=username).first()
+                ymt_name = model.ymt_name
+                ymt_pwd = model.ymt_pwd
+                cookies = get_cookies(ymt_name, ymt_pwd)
+
                 request.session['cookies'] = cookies
                 try:
                     data = get_monthorder(cookies, trade_type)
@@ -199,66 +250,6 @@ class DayOrderViewset( viewsets.GenericViewSet):
             return JsonResponse({'code': '2', 'msg': u'出现未知问题'})
 
 
-@method_decorator(csrf_exempt, name='dispatch')
-class MonthOrderViewset(mixins.ListModelMixin, mixins.CreateModelMixin, viewsets.GenericViewSet):
-    """
-    list:
-        月统计
-    """
-    serializer_class = OrderSerializer
-    # permission_classes = (IsAuthenticated,)
-    authentication_classes = (BasicAuthentication,)
-
-    def list(self, request):
-        # print(request.user.ymt_name)
-        try:
-            if not request.session['cookies']:
-                cookies = get_cookies()
-                request.session['cookies'] = cookies
-            cookies = request.session['cookies']
-            data = get_monthorder(cookies)
-        except KeyError:
-            cookies = get_cookies()
-            request.session['cookies'] = cookies
-            try:
-                data = get_monthorder(cookies)
-            except TypeError:
-                data = {'code': '1', 'msg': u'无数据·'}
-                # data = json.dumps(data, ensure_ascii=False)
-            except KeyError:
-                data = {'code': '2', 'msg': u'出现未知问题'}
-                # data = json.dumps(data, ensure_ascii=False)
-        except TypeError:
-            data = {'code': '1', 'msg': u'无数据·1'}
-            # data = json.dumps(data, ensure_ascii=False)
-        return JsonResponse(data)
-
-    def create(self, request, *args, **kwargs):
-        trade_type = request.data.get('trade_type', 0)
-        try:
-            if not request.session['cookies']:
-                cookies = get_cookies()
-                request.session['cookies'] = cookies
-            cookies = request.session['cookies']
-            data = get_monthorder(cookies, trade_type)
-        except KeyError:
-            cookies = get_cookies()
-            request.session['cookies'] = cookies
-            try:
-                data = get_monthorder(cookies, trade_type)
-            except TypeError:
-                data = {'code': '1', 'msg': u'无数据·'}
-                # data = json.dumps(data, ensure_ascii=False)
-            except KeyError:
-                data = {'code': '2', 'msg': u'出现未知问题'}
-                # data = json.dumps(data, ensure_ascii=False)
-        except TypeError:
-            data = {'code': '1', 'msg': u'无数据·1'}
-            # data = json.dumps(data, ensure_ascii=False)
-        return JsonResponse(data)
-
-
-@method_decorator(csrf_exempt, name='dispatch')
 class LoginViewset(mixins.CreateModelMixin, viewsets.GenericViewSet):
     """
     create:
@@ -267,34 +258,33 @@ class LoginViewset(mixins.CreateModelMixin, viewsets.GenericViewSet):
     queryset = UserAdmin.objects.all().order_by('id')
     serializer_class = LoginSerializer
 
-
     def create(self, request, *args, **kwargs):
         user_name = request.data.get('username', None)
         user_pwd = request.data.get('password', None)
-
+        # 因前端不传 CSRF 故authenticate，login内置方法无法正常使用
         # user = authenticate(username=user_name, password=user_pwd)
         user = UserAdmin.objects.filter(username=user_name).first()
 
-        # print(user_name, user_pwd, user)
         if user is not None:
             if user.display_password == user_pwd:
-                if str(user.is_status) =='1':
+                if str(user.is_status) == '1':
                     # login(request, user)
-                    # print('here')
+                    # 登陆后 将username保存全局中
                     request.session['username'] = user_name
-                    # print(request.session['username'])
 
+                    # 获取访问者IP
                     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
                     if x_forwarded_for:
                         ip = x_forwarded_for.split(',')[0]
                     else:
                         ip = request.META.get('REMOTE_ADDR')
 
+                    # last登陆时间
                     model = UserAdmin.objects.filter(username=user_name).first()
                     model.login_ip = ip
                     model.last_login_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                    # print(ip,datetime.now())
                     model.save()
+                    # 超级用户判断
                     if user.is_superuser:
                         return JsonResponse({'code': '100', 'msg': '登陆成功'})
                     else:
@@ -302,7 +292,6 @@ class LoginViewset(mixins.CreateModelMixin, viewsets.GenericViewSet):
         return JsonResponse({'code': '0', 'msg': '登陆失败'})
 
 
-@method_decorator(csrf_exempt, name='dispatch')
 class UserViewset(mixins.CreateModelMixin, viewsets.GenericViewSet):
     """
     create:
@@ -310,24 +299,15 @@ class UserViewset(mixins.CreateModelMixin, viewsets.GenericViewSet):
     """
     serializer_class = UserUpdateSerializer
     queryset = UserAdmin.objects.all().order_by('id')
-    # permission_classes = (IsAuthenticated,)
     authentication_classes = (BasicAuthentication,)
 
-    # def get_serializer_class(self):
-    #     if self.action == 'create':
-    #         return UserSerializer
-    #     elif self.action == 'update':
-    #         return UserUpdateSerializer
-    #     return UserSerializer
-
     def create(self, request, *args, **kwargs):
-        username = request.session.get('username',None)
+        username = request.session.get('username', None)
         if username:
             if request.data.get('password2') != request.data.get('password'):
                 return Response({'code': 1, 'msg': '两次密码不一样'}, status=status.HTTP_400_BAD_REQUEST)
 
-            # jiami
-            new_pwd = make_password(request.data.get('password'))
+            new_pwd = request.data.get('password')
 
             user = UserAdmin.objects.filter(username=username).first()
             user.password = new_pwd
@@ -338,7 +318,6 @@ class UserViewset(mixins.CreateModelMixin, viewsets.GenericViewSet):
         return Response({'code': 0, 'msg': '000'}, status=status.HTTP_201_CREATED)
 
 
-# @method_decorator(csrf_exempt, name='dispatch')
 class AdminUserViewset(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.UpdateModelMixin,
                        viewsets.GenericViewSet):
     """
@@ -349,7 +328,7 @@ class AdminUserViewset(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.Up
     update:
         账号修改
     """
-    # serializer_class = AdminUserSerializer
+
     queryset = UserAdmin.objects.all().order_by('id')
     authentication_classes = (BasicAuthentication,)
     pagination_class = GoodsPagination
@@ -369,14 +348,13 @@ class AdminUserViewset(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.Up
         return AdminUserSerializer
 
     def create(self, request, *args, **kwargs):
+        # copy 一份data ，原有不能修改，之前加密时需要
         new_data = request.data.copy()
-        new_pwd = make_password(request.data.get('password'))
+        new_pwd = request.data.get('password')
         new_data['password'] = new_pwd
         new_data['display_password'] = request.data.get('password')
-        # print(new_data)
         serializer = UserSerializer(data=new_data)
         serializer.is_valid(raise_exception=True)
-        # print(serializer)
         self.perform_create(serializer)
         headers = self.get_success_headers(serializer.data)
 
@@ -386,14 +364,11 @@ class AdminUserViewset(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.Up
         new_data = request.data.copy()
         partial = kwargs.pop('partial', False)
         instance = self.get_object()
-        # jiami
         pass1 = request.data.get('password', None)
-        #print(pass1)
         if pass1 is not None:
-            #print('1')
-            new_pwd = make_password(request.data.get('password', None))
+            new_pwd = request.data.get('password', None)
             if new_pwd:
-                new_data['password'] = new_pwd
+                new_data['display_password'] = pass1
 
         serializer = self.get_serializer(instance, data=new_data, partial=partial)
         serializer.is_valid(raise_exception=True)
@@ -405,3 +380,54 @@ class AdminUserViewset(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.Up
             instance._prefetched_objects_cache = {}
 
         return Response(serializer.data)
+
+
+class RandomPWD(mixins.ListModelMixin, viewsets.GenericViewSet):
+    """
+        list:
+            随机密码（just for fun）
+    """
+    serializer_class = OrderSerializer
+
+    def list(self, request, *args, **kwargs):
+        randompwd = random.randint(100000, 999999)
+        data = {'randompwd': randompwd}
+        return JsonResponse(data)
+
+
+class PeaceBankOrderViewsets(mixins.ListModelMixin, viewsets.GenericViewSet):
+    serializer_class = OrderSerializer
+
+    def list(self, request):
+        try:
+            # username = request.session.get('username')
+            # model = UserAdmin.objects.filter(username=username).first()
+            # peace_name = model.ymt_name
+            # peace_pwd = model.ymt_pwd
+            peace_name = '530580007822'
+            peace_pwd = 'qq360360'
+            peace = PeaceBank(peace_name, peace_pwd)
+            data = peace.run()
+
+        except:
+            data = {'code': '1', 'msg': u' 未登陆'}
+
+        # print(data)
+        return JsonResponse(data)
+
+    def create(self, request):
+        try:
+            username = request.session.get('username')
+            model = UserAdmin.objects.filter(username=username).first()
+            peace_name = model.ymt_name
+            peace_pwd = model.ymt_pwd
+            # peace_name = '530580007822'
+            # peace_pwd = 'qq360360'
+            peace = PeaceBank(peace_name, peace_pwd)
+            data = peace.getOrder()
+
+        except:
+            data = {'code': '1', 'msg': u' 未登陆'}
+
+        # print(data)
+        return JsonResponse(data)

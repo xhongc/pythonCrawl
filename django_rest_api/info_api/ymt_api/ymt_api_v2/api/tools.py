@@ -1,8 +1,11 @@
 import requests, json
 import time
+from datetime import datetime
+from pprint import pprint
 
 
-def get_cookies():
+# 爬虫
+def get_cookies(ymt_name, ymt_pwd):
     url = 'http://fzms.498.net/member.php/User/login.html'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
@@ -14,8 +17,8 @@ def get_cookies():
     # print('aaaaaaaaa', cookie_one)
     url = 'http://fzms.498.net/member.php/User/loginCheck.html'
     data = {
-        'account': '1001469703',
-        'pwd': 'qian4418',
+        'account': ymt_name,
+        'pwd': ymt_pwd,
         'verify': '',
         'operator': '0'
     }
@@ -44,7 +47,7 @@ def get_cookies():
     return all_Cookie
 
 
-def get_order(cookies, trade_type=0,page=1):
+def get_order(cookies, trade_type=0, page=1):
     url = 'http://fzms.498.net/member.php/Flows/flowsList.html'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36',
@@ -56,7 +59,7 @@ def get_order(cookies, trade_type=0,page=1):
     }
     data = {
         'trade_type': trade_type,
-        'page':page,
+        'page': page,
     }
     html = requests.post(url, headers=headers, data=data)
     html = json.loads(html.text, encoding='utf-8')
@@ -89,13 +92,13 @@ def get_order(cookies, trade_type=0,page=1):
         res.append(item)
 
     data['code'] = '000000'
-    data['total_page'] = int(len(res)/16 +0.5) +1
+    data['total_page'] = int(len(res) / 16 + 0.5) + 1
     data['data'] = res
     # return json.dumps(res, ensure_ascii=False)
     return data
 
 
-def get_dayorder(cookies,trade_type=0):
+def get_dayorder(cookies, trade_type=0):
     url = 'http://fzms.498.net/member.php/Flows/dayFlowsList.html'
     # cookies = get_cookies()
     headers = {
@@ -106,10 +109,10 @@ def get_dayorder(cookies,trade_type=0):
         'Referer': 'http://fzms.498.net/member.php/User/login.html',
         'Cookie': cookies
     }
-    data={
-        'trade_type':trade_type
+    data = {
+        'trade_type': trade_type
     }
-    html = requests.post(url,headers=headers,data=data)
+    html = requests.post(url, headers=headers, data=data)
     html = json.loads(html.text, encoding='utf-8')
     content = html['data']
     res = []
@@ -137,7 +140,8 @@ def get_dayorder(cookies,trade_type=0):
     data['data'] = res
     return data
 
-def get_monthorder(cookies,trade_type=0):
+
+def get_monthorder(cookies, trade_type=0):
     url = 'http://fzms.498.net/member.php/Flows/monthFlowsList.html'
     # cookies = get_cookies()
     headers = {
@@ -149,9 +153,9 @@ def get_monthorder(cookies,trade_type=0):
         'Cookie': cookies
     }
     data = {
-        'trade_type':trade_type
+        'trade_type': trade_type
     }
-    html = requests.post(url,headers=headers,data=data)
+    html = requests.post(url, headers=headers, data=data)
     html = json.loads(html.text, encoding='utf-8')
     content = html['data']
     res = []
@@ -178,5 +182,145 @@ def get_monthorder(cookies,trade_type=0):
     data['code'] = '000000'
     data['data'] = res
     return data
+
+
+import requests
+from pprint import pprint
+import json
+import datetime
+
+class PeaceBank(object):
+    def __init__(self, username, password):
+        self.session = requests.Session()
+        self.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)\
+            Chrome/68.0.3440.17 Safari/537.36',
+            'X-Requested-With': 'XMLHttpRequest',
+
+        }
+        self.username = username
+        self.password = password
+
+    def login(self):
+        url = 'https://brapmch.pingan.com.cn/login_pc'
+        data = {
+            'userName': self.username,
+            # 'password': 'dc4de3c2cd6d4414ed45628f5837237d',
+            'password': self.password,
+            'randCode': '',
+            'rmbLoginName': '0'
+        }
+        html = self.session.post(url, data=data, headers=self.headers)
+
+    def get_data(self, starttime, endtime):
+        data2 = {
+            'loginOrgId': self.username,
+            'orgType': '12',
+            'startTime': starttime,
+            'endTime': endtime,
+            'tradeState': '2',
+            'feeType': 'CNY',
+            'page': '1',
+            'rows': '10'
+        }
+        html = self.session.post('https://brapmch.pingan.com.cn/tra/order/batchPayOrder/datagrid.json',
+                                 headers=self.headers, data=data2)
+        # pprint(html.text)
+        html = json.loads(html.text, encoding='utf-8')
+        return html
+
+    def get_data_total(self,timer):
+
+        url = 'https://brapmch.pingan.com.cn/acc/checkBillMerchant/datagrid.json'
+        data = {
+            'oginOrgId': '530580007822',
+            'payStartTimeDate': timer,
+            'payEndTimeDate': timer,
+            'page': '1',
+            'rows': '10'
+        }
+        html = self.session.post(url=url,
+                                 headers=self.headers, data=data)
+        # pprint(html.text)
+        html = json.loads(html.text, encoding='utf-8')
+        return html
+
+    def getTotal(self,timer='now'):
+        self.login()
+        if timer == 'now':
+            a = datetime.datetime.now().strftime('%Y-%m-%d ')
+            # a = '2018-07-04 '
+            html = self.get_data_total(timer=a)
+        else:
+            now = datetime.datetime.now()
+            delta = datetime.timedelta(days=1)
+            n_days = now - delta
+            a = n_days.strftime('%Y-%m-%d ')
+            html = self.get_data_total(timer=a)
+        data = {}
+        items = []
+        item = {}
+        # print(html['rows'])
+        for each in html['rows']:
+            item['c_time'] = each['payTradeTime']
+            item['successCount'] = each['successCount']
+            item['successFee'] = each['successFee']
+            items.append(item)
+
+        data['code'] = '000000'
+        data['data'] = items
+        return data
+
+    def parser_data(self, html):
+        resp = html['rows']
+        # print(resp)
+        items = []
+        data = {}
+        for each in resp:
+            item = {}
+            item['c_time'] = each['tradeTime']
+            item['order_no'] = each['orderNo']
+            # item['outTradeNo'] = each['outTradeNo']
+            # item['mchNo'] = each['mchNo']
+            # item['mchNo'] = each['mchNo']
+            item['trade_type'] = each['payTypeName']
+            item['trade_money'] = each['money']
+            # item['totalFee'] = each['totalFee']
+            try:
+                item['beizhu'] = each['attach']
+            except BaseException as e:
+                item['beizhu'] = '无'
+
+            item['real_money'] = each['totalFee']
+            # item['login'] = '530580007822'
+            items.append(item)
+        data['code'] = '000000'
+        data['data'] = items
+        # print(items)
+        return data
+
+    def getOrder(self):
+
+        a = datetime.datetime.now().strftime('%Y-%m-%d ')
+        # a = '2018-07-04 '
+        starttime = a + '00:00:00'
+        endtime = a + '23:59:59'
+        self.login()
+        html = self.get_data(starttime, endtime)
+        # print(html)
+        result = self.parser_data(html)
+        # print(result)
+        return result
+
+
+
 if __name__ == '__main__':
-    print(get_monthorder())
+    peace = PeaceBank('530580007822', 'qq360360')
+    result = peace.getTotal(timer='yes')
+    pprint(result)
+
+
+
+if __name__ == '__main__':
+    peace = PeaceBank('530580007822', 'qq360360')
+    print(peace.run())

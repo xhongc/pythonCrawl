@@ -887,8 +887,8 @@ def fflash():
     while 1:
         try:
             url = 'https://qr.chinaums.com/netpay-mer-portal/merchant/queryBills.do'
-            user = Fire_user.query.filter_by(login_name='fa4418').first()
-            wx_session = user.wx_session
+
+            wx_session = b1c93c27-9674-48cf-b271-71a5cb8330fd
             # print(wx_session)
             headers = {
                 'Host': 'qr.chinaums.com',
@@ -912,7 +912,7 @@ def fflash():
             # reqmid = session['reqmid']
             # print('1a1a', reqmid)
             data = {
-                'reqMid': '898393058120502',
+                'reqMid': '898352254990101',
                 'pageSize': '15',
                 'curPage': '1',
                 'billDate': '2018年03月10日'

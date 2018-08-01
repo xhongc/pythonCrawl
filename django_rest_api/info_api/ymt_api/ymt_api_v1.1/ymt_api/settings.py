@@ -10,11 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
-import os
+import os, sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u(x2$hm=w-xd^rr6(%_aie=+%x$w-uvju$f*@t%%=pw9eawv@u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 AUTH_USER_MODEL = 'api.UserAdmin'
@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'api',
     'qmf_api',
-    'corsheaders'
+    'corsheaders',
+    'xadmin',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +60,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = (
     '*'
 )
-CORS_ALLOW_METHODS =(
+CORS_ALLOW_METHODS = (
     'GET',
     'POST',
     'PUT',
