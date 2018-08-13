@@ -18,7 +18,7 @@ from django.core.paginator import Paginator
 from rest_framework.pagination import PageNumberPagination
 from collections import OrderedDict, namedtuple
 from django.db.models import Sum
-from qmf_api.gcode import LFOrder
+from qmf_api.gcode import LFOrder, Bill99, UlineOrder
 
 
 class GoodsPagination(PageNumberPagination):
@@ -104,6 +104,15 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                     a = LFOrder(username=user_name, password=user_pwd)
                     data = a.get_free_data()
                     # print(data)
+                elif channel_type == 'KQ':
+                    a = Bill99(cookie=wx_session)
+                    data = a.down_and_get_data()
+                elif channel_type == 'UL':
+                    user_name = wx.ymt_name
+                    user_pwd = wx.ymt_pwd
+                    a = UlineOrder(username=user_name, password=user_pwd)
+                    data = a.get_uline_data()
+                    print('111', data)
                 else:
                     data = get_all_data(wx_session, page)
 

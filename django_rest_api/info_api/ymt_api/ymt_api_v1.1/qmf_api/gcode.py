@@ -3,9 +3,11 @@ import json
 from scrapy.selector import Selector
 import random
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 import re
-
+import os
+import zipfile
+import xlrd
 agents = [
     "Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; Nexus S Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/532.5 (KHTML, like Gecko) Chrome/4.0.249.0 Safari/532.5",
@@ -159,7 +161,7 @@ class LFOrder(object):
                         item['c_time'] = dt
                         items.append(item)
             # print(items)
-            data['code']='000000'
+            data['code'] = '000000'
             data['data'] = items
             return data
         except BaseException as e:
@@ -270,6 +272,282 @@ class LFOrder(object):
         result_url = 'https://daili.lfwin.com/Home/Qrcode/qimg/id/' + res
         print(result_url)
         return result_url
+
+
+class Bill99(object):
+    def __init__(self, cookie):
+        self.cookie = cookie
+
+        self.headers = {
+            'Accept': '*/*',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'zh-CN,zh;q=0.9',
+            'Connection': 'keep-alive',
+            'Content-Length': '199',
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Cookie': self.cookie,
+            'Host': 'www.99bill.com',
+            'Origin': 'https://www.99bill.com',
+            'Referer': 'https://www.99bill.com/website/vpos/vposQuery.htm',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.17 Safari/537.36'
+        }
+        self.session = requests.session()
+        self.session.keep_alive = False
+
+    def get_data_list(self):
+        url = 'https://www.99bill.com/website/vpos/manageVposQuery.htm?method=query'
+        dt = datetime.now().strftime('%Y-%m-%d')
+        dt1 = (datetime.now() + timedelta(days=1)).strftime('%Y-%m-%d')
+        # print(dt1)
+
+        data = {
+            'ifPage': 'no',
+            'zipNum': '',
+            'atm': '',
+            'txnType': '',
+            'txnMode': '',
+            'extTraceNo': '',
+            'srvConditionCode': '',
+            'settleFlag': '',
+            'txnFlag': 'S',
+            'termOperId': '',
+            'terminalId': '',
+            'idTxn': '',
+            'srvChannelType': '',
+            'terminalName': '',
+            'rfdAtm': '',
+            'beginTxnDate': dt,
+            'endTxnDate': dt1,
+            'settleBeginDate': '',
+            'settleEndDate': ''
+        }
+        html = self.session.post(url=url, headers=self.headers, data=data, timeout=5000)
+        # print(html.text)
+        selector = Selector(html)
+        res = selector.xpath('//tr[@class="tablex"]')
+
+        url_list = []
+        for each in res:
+            url = each.xpath('./td/a/@href').extract_first()
+            if url:
+                url = 'https://www.99bill.com' + url
+                url_list.append(url)
+        print('url:', url_list)
+        return url_list
+
+    def get_data(self, url):
+        # url = 'https://www.99bill.com/website/vpos/vposQuery.htm?method=detail&ID_TXN_CTRL=19518280881'
+        headers = {
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'zh-CN,zh;q=0.9',
+            'Cache-Control': 'max-age=0',
+            'Connection': 'keep-alive',
+            'Cookie': self.cookie,
+            'Host': 'www.99bill.com',
+            'Referer': "https://www.99bill.com/website/vpos/vposQuery.htm?method=advancedQuery",
+            'Upgrade-Insecure-Requests': '1',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.17 Safari/537.36'
+        }
+        html = self.session.get(url, headers=headers, timeout=5000)
+        # print(html.text)
+        selector = Selector(html)
+        res = selector.xpath('//div[@class="userInfo"]/ul').extract()
+        res = ''.join(res)
+        # print(res)
+        item = {}
+        item['trade_type'] = re.search('交易类型：</li>\n\t<li class="userInfoR">(.*?)</li>', res).group(1)
+        item['pay_money'] = re.search('交易金额：</li>\n\t<li class="userInfoR">(.*?)元</li>\n</ul>', res).group(1)
+        item['c_time'] = re.search('交易时间：</li>\n\t<li class="userInfoR">(.*?)</li>', res).group(1)
+        item['trade_status'] = re.search('交易标志：</li>\n\t<li class="userInfoR">(.*?)</li>', res).group(1)
+        item['beizhu'] = re.search('商户订单号：</li>\n\t<li class="userInfoR">(.*?)</li>', res).group(1)
+        item['beizhu2'] = re.search('商户订单号：</li>\n\t<li class="userInfoR">(.*?)</li>', res).group(1)
+        item['order_no'] = re.search('系统参考编号：</li>\n\t<li class="userInfoR">(.*?)</li>', res).group(1)
+
+        return item
+
+    def get_all_data(self):
+        url_list = self.get_data_list()
+        items = []
+        data = {}
+        for url in url_list:
+            res = self.get_data(url)
+            items.append(res)
+        data['code'] = '000000'
+        data['data'] = items
+        return data
+
+    def get_zip_url(self):
+        url = 'https://www.99bill.com/website/vpos/manageVposQuery.htm?method=query'
+        dt = datetime.now().strftime('%Y-%m-%d')
+        dt1 = (datetime.now() + timedelta(days=1)).strftime('%Y-%m-%d')
+        # print(dt1)
+
+        data = {
+            'ifPage': 'no',
+            'zipNum': '',
+            'atm': '',
+            'txnType': '',
+            'txnMode': '',
+            'extTraceNo': '',
+            'srvConditionCode': '',
+            'settleFlag': '',
+            'txnFlag': 'S',
+            'termOperId': '',
+            'terminalId': '',
+            'idTxn': '',
+            'srvChannelType': '',
+            'terminalName': '',
+            'rfdAtm': '',
+            'beginTxnDate': dt,
+            'endTxnDate': dt1,
+            'settleBeginDate': '',
+            'settleEndDate': ''
+        }
+        html = self.session.post(url=url, headers=self.headers, data=data, timeout=5000)
+        # print(html.text)
+        selector = Selector(html)
+        down_zip_url = selector.xpath("//div[@id='downloadDiv']/a/@onclick").extract_first()
+        if down_zip_url is None:
+            return
+        down_zip_url = down_zip_url.split("'")[1]
+        down_zip_url = 'https://www.99bill.com' + down_zip_url
+        print(down_zip_url)
+        return down_zip_url
+
+    def download_zip(self, url):
+        # url = 'https://www.99bill.com/website/vpos/vposQuery.htm?method=downLoadVposDeal'
+        headers = {
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'zh-CN,zh;q=0.9',
+            'Cache-Control': 'max-age=0',
+            'Connection': 'keep-alive',
+            'Cookie': self.cookie,
+            'Host': 'www.99bill.com',
+            'Referer': "https://www.99bill.com/website/vpos/vposQuery.htm?method=advancedQuery",
+            'Upgrade-Insecure-Requests': '1',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.17 Safari/537.36'
+        }
+        html = requests.get(url=url, headers=headers)
+        # print(html.text)
+        with open(r'.\2018.zip', 'wb') as f:
+            f.write(html.content)
+
+    def unzip_download_zip(self):
+        file_list = os.listdir(r'.')
+
+        for file_name in file_list:
+            if os.path.splitext(file_name)[1] == '.zip':
+                print(file_name)
+                # file_name = r'.\\' + file_name
+                file_zip = zipfile.ZipFile(file_name, 'r')
+                for file in file_zip.namelist():
+                    file_zip.extract(file, r'.')
+                file_zip.close()
+                os.remove(file_name)
+
+    def read_xls(self):
+        file_list = os.listdir(r'.')
+        data = {}
+        for file_name in file_list:
+            if os.path.splitext(file_name)[1] == '.xls':
+                print(file_name)
+                workbook = xlrd.open_workbook(file_name)
+                # print(workbook.sheet_names())  # 查看所有sheet
+                booksheet = workbook.sheet_by_index(0)  # 用索引取第一个sheet
+                items = []
+
+                for each in range(2, booksheet.nrows - 4):
+                    item = {}
+                    row = booksheet.row_values(each)
+                    item['trade_type'] = row[1]
+                    item['pay_money'] = row[8]
+                    item['c_time'] = row[13]
+                    item['trade_status'] = row[21]
+                    item['beizhu'] = row[20]
+                    item['beizhu2'] = row[20]
+                    item['order_no'] = int(row[0])
+                    items.append(item)
+                data['code'] = '000000'
+                data['data'] = items
+                # print(data)
+                os.remove(file_name)
+        return data
+
+    def down_and_get_data(self):
+        try:
+            url = self.get_zip_url()
+            if url:
+                self.download_zip(url=url)
+                self.unzip_download_zip()
+                data = self.read_xls()
+                return data
+            else:
+                data = {'code': '112312', 'data': []}
+                return data
+        except:
+            data = {'code': '112244', 'data': []}
+            return data
+
+
+class UlineOrder(object):
+    def __init__(self, username, password):
+        self.session = requests.session()
+        self.headers = {
+            'Accept': 'application/json, text/javascript, */*; q=0.01',
+            'Accept-Encoding': 'gzip, deflate',
+            'Accept-Language': 'zh-CN,zh;q=0.9',
+            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            'Host': 'cms.bosc.uline.cc',
+            'Origin': 'http://cms.bosc.uline.cc',
+            'Referer': 'http://cms.bosc.uline.cc/account/',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.17 Safari/537.36',
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+        self.username = username
+        self.password = password
+        self.login()
+
+    def login(self):
+        url = 'http://cms.bosc.uline.cc/account/login'
+
+        data = {
+            'login_name': self.username,
+            'password': self.password
+        }
+        html = self.session.post(url=url, headers=self.headers, data=data)
+        print(html.text)
+
+    def get_uline_data(self):
+        dt_end = datetime.now().strftime('%Y-%m-%d 00:00:00')
+        dt_start = (datetime.now() + timedelta(days=-1)).strftime('%Y-%m-%d 00:00:00')
+
+        data = {
+            'complete_at_start': dt_start,
+            'complete_at_end': dt_end
+        }
+        html1 = self.session.post(url='http://cms.bosc.uline.cc/merchant/transaction/trade', headers=self.headers,
+                                  data=data)
+        selector = Selector(html1)
+        res = selector.xpath("//tbody[@id='tbodyBox']/tr")
+        items = []
+        data = {}
+        for each in res:
+            item = {}
+            item['order_no'] = each.xpath('./td/p/text()').extract_first()
+            each = each.xpath('./td/text()').extract()
+            item['c_time'] = each[0]
+
+            item['pay_money'] = each[6]
+            item['trade_type'] = each[4]
+            item['trade_status'] = each[7]
+            item['beizhu'] = each[8].replace('\n', '无')
+            items.append(item)
+        data['code'] = '000000'
+        data['data'] = items
+        print(data)
+        return data
 
 
 class ForYizhufuApi(object):
