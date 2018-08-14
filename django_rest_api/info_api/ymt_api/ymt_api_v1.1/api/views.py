@@ -303,7 +303,7 @@ class UserViewset(mixins.CreateModelMixin, viewsets.GenericViewSet):
 
     def create(self, request, *args, **kwargs):
         username = request.session.get('username', None)
-        old_password = request.data.get('old_password',None)
+        old_password = request.data.get('old_password', None)
         if username:
             user = UserAdmin.objects.filter(username=username).first()
             # print(dir(user))
@@ -338,7 +338,7 @@ class AdminUserViewset(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.Up
     authentication_classes = (BasicAuthentication,)
     pagination_class = GoodsPagination
     filter_backends = (DjangoFilterBackend, filters.SearchFilter)
-    search_fields = ('$username',)
+    search_fields = ('$username', '$ymt_pwd')
 
     # def get_permissions(self):
     #     if self.action == 'create':
