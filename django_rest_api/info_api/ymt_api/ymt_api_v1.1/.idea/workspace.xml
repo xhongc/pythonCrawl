@@ -202,8 +202,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="826" />
-    <option name="y" value="9" />
+    <option name="x" value="841" />
+    <option name="y" value="16" />
     <option name="width" value="1076" />
     <option name="height" value="1067" />
   </component>
@@ -426,6 +426,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1646" height="933" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
