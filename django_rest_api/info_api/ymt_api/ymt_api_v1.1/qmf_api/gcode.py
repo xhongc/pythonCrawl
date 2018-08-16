@@ -457,22 +457,29 @@ class Bill99(object):
                 # print(workbook.sheet_names())  # 查看所有sheet
                 booksheet = workbook.sheet_by_index(0)  # 用索引取第一个sheet
                 items = []
+                row = booksheet.row_values(1)
+                order_no_index = row.index('交易编号')
+                trade_type_index = row.index('交易类型')
+                pay_money_index = row.index('交易金额')
+                c_time_index = row.index('交易时间')
+                trade_status_index = row.index('交易标志')
+                beizhu_index = row.index('外部跟踪编号')
 
                 for each in range(2, booksheet.nrows - 4):
                     item = {}
                     row = booksheet.row_values(each)
-                    item['trade_type'] = row[1]
-                    item['pay_money'] = row[8]
-                    item['c_time'] = row[13]
-                    item['trade_status'] = row[21]
-                    item['beizhu'] = row[20]
-                    item['beizhu2'] = row[20]
-                    item['order_no'] = int(row[0])
+                    item['trade_type'] = row[trade_type_index]
+                    item['pay_money'] = row[pay_money_index]
+                    item['c_time'] = row[c_time_index]
+                    item['trade_status'] = row[trade_status_index]
+                    item['beizhu'] = row[beizhu_index]
+                    item['beizhu2'] = row[beizhu_index]
+                    item['order_no'] = int(row[order_no_index])
                     items.append(item)
                 data['code'] = '000000'
                 data['data'] = items
                 # print(data)
-                os.remove(file_name)
+                # os.remove(file_name)
         return data
 
     def down_and_get_data(self):
