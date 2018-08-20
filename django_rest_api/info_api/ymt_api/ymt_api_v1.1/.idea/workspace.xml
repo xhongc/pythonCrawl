@@ -38,7 +38,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qmf_api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
+            <state relative-caret-position="-802">
               <caret line="345" column="30" selection-start-line="345" selection-start-column="30" selection-end-line="345" selection-end-column="30" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -51,7 +51,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ymt_api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="342">
               <caret line="24" column="13" selection-start-line="24" selection-end-line="25" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -63,7 +63,7 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qmf_api/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="243">
               <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
             </state>
           </provider>
@@ -168,10 +168,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="976" />
-    <option name="height" value="1088" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="951" />
+    <option name="y" value="29" />
+    <option name="width" value="1389" />
+    <option name="height" value="996" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -209,7 +210,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../others" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../learnOpencv" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -396,7 +397,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1646" height="933" extended-state="6" />
+    <frame x="-8" y="-8" width="1646" height="933" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -405,9 +406,9 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.28427672" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30062893" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24276729" />
-      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.1368222" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16771753" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22767295" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.1368222" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17717528" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3297604" />
@@ -765,7 +766,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ymt_api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="342">
           <caret line="24" column="13" selection-start-line="24" selection-end-line="25" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -775,14 +776,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qmf_api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="243">
           <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qmf_api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
+        <state relative-caret-position="-802">
           <caret line="345" column="30" selection-start-line="345" selection-start-column="30" selection-end-line="345" selection-end-column="30" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
