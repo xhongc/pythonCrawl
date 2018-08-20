@@ -41,3 +41,16 @@ class AddOrderSerializer(serializers.ModelSerializer):
         model = OrderList
         fields = (
             'username', 'c_time', 'order_no', 'pay_money', 'trade_type', 'trade_status', 'beizhu', 'beizhu2', 'beizhu2')
+
+
+class StatisticsSerializer(serializers.Serializer):
+    page = serializers.IntegerField(label='page',required=False, help_text='查询页数')
+    page_size = serializers.CharField(label='page_size',required=False, help_text='当页条数')
+    username = serializers.CharField(label='用户名', required=False, read_only=True)
+    nicke_name = serializers.CharField(label='昵称', required=False, read_only=True)
+    channel_type = serializers.CharField(label='平台', required=False, help_text='YL,KQ')
+    trade_type = serializers.CharField(label='支付方式', required=False)
+    order_count = serializers.CharField(label='总笔数', required=False, read_only=True)
+    total_money = serializers.CharField(label='总金额', required=False, read_only=True)
+    start_date = serializers.CharField(label='开始时间', required=False, help_text='1534495819000')
+    end_date = serializers.CharField(label='结束时间', required=False, help_text='1534495819000')

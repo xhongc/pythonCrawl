@@ -55,3 +55,5 @@ class AdminUserSerializer(serializers.ModelSerializer):
         fields = (
             'id', 'username', 'password', 'display_password', 'url', 'is_status', 'is_joke', 'ymt_name', 'ymt_pwd',
             'login_ip', 'last_login_time', 'channel_type')
+
+

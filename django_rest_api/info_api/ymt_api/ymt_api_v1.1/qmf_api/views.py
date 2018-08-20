@@ -5,7 +5,8 @@ from rest_framework import viewsets
 from api.tools import get_cookies, get_order, get_dayorder, get_monthorder, PeaceBank
 from rest_framework import mixins
 import json, time
-from qmf_api.serializers import QmforderSerializer, GCodeSerializer, UpOrderSerializer, AddOrderSerializer
+from qmf_api.serializers import QmforderSerializer, GCodeSerializer, UpOrderSerializer, AddOrderSerializer, \
+    StatisticsSerializer
 from rest_framework.response import Response
 from api.serializers import UserSerializer, UserUpdateSerializer, AdminUserSerializer, LoginSerializer
 from api.models import UserAdmin
@@ -107,15 +108,16 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                 elif channel_type == 'KQ':
                     a = Bill99(cookie=wx_session)
                     data = a.down_and_get_data()
+                    print('daaaaaaa', data)
                 elif channel_type == 'UL':
-                    user_name = wx.ymt_name
-                    user_pwd = wx.ymt_pwd
-                    a = UlineOrder(username=user_name, password=user_pwd)
-                    data = a.get_uline_data()
-                    print('111', data)
+                    # user_name = wx.ymt_name
+                    # user_pwd = wx.ymt_pwd
+                    # a = UlineOrder(username=user_name, password=user_pwd)
+                    # data = a.get_uline_data()
+                    # print('111', data)
+                    data = {'code': '000000', 'data': []}
                 else:
                     data = get_all_data(wx_session, page)
-
                 # print('data:', data)
                 try:
                     data_list = data['data']
@@ -323,3 +325,96 @@ class AddOrderViewsets(mixins.ListModelMixin, mixins.CreateModelMixin, viewsets.
     serializer_class = AddOrderSerializer
     queryset = OrderList.objects.all().order_by('id')
     pagination_class = GoodsPagination
+
+
+class StatisticsViewsets(mixins.CreateModelMixin, viewsets.GenericViewSet):
+    serializer_class = StatisticsSerializer
+
+    def create(self, request, *args, **kwargs):
+        trade_type = request.data.get('trade_type', None)
+        channel_type = request.data.get('channel_type', None)
+        start_date = request.data.get('start_date', None)
+        page = request.data.get('page', '1')
+        page_size = request.data.get('page_size', '15')
+        filter_dict = {}
+        try:
+            if start_date:
+                start_date = int(start_date) / 1000
+                start_date = time.localtime(start_date)
+                start_date = time.strftime("%Y-%m-%d 00:00:00", start_date)
+
+            end_date = request.data.get('end_date', None)
+            if end_date:
+                end_date = int(end_date) / 1000
+                end_date = time.localtime(end_date)
+                end_date = time.strftime("%Y-%m-%d 23:59:59", end_date)
+                filter_dict['c_time__range'] = (start_date, end_date)
+        except:
+            data = {'code': '999999', 'msg': '时间错误'}
+            return JsonResponse(data)
+        if channel_type:
+            user = UserAdmin.objects.filter(channel_type=channel_type).order_by('username')
+        else:
+            user = UserAdmin.objects.all().order_by('username')
+
+        if trade_type:
+            filter_dict['trade_type'] = trade_type
+
+        items = user.values()
+        res = list(items)
+        # print(res)
+        # 分页功能 object_list 返回列表数据
+        p = Paginator(res, page_size)
+        result = p.page(page)
+        # print(result.object_list)
+        res = result.object_list
+        # 总页数
+        total_page = p.num_pages
+        count = p.count
+
+        items = []
+        data = {}
+        all_money = 0
+        all_order_count = 0
+        all_channel = set()
+
+        for each in res:
+            item = {}
+            username = each['username']
+            nick_name = each['ymt_name']
+            filter_dict['username'] = username
+            model = OrderList.objects.filter(**filter_dict).all()
+
+            order_count = model.count()
+            all_order_count = all_order_count + order_count
+
+            total_money = model.aggregate(total_money=Sum('pay_money'))
+            total_money = total_money['total_money']
+            if total_money:
+                total_money = round(total_money, 2)
+            else:
+                total_money = 0
+            all_money = all_money + total_money
+            item['username'] = username
+            item['nick_name'] = nick_name
+            channel_type = each['channel_type']
+            item['channel_type'] = channel_type
+            if channel_type:
+                all_channel.update([channel_type, ])
+            if trade_type:
+                item['trade_type'] = trade_type
+            else:
+                item['trade_type'] = '全部'
+            item['order_count'] = order_count
+            item['total_money'] = total_money
+            items.append(item)
+            print(username, nick_name, order_count, total_money)
+        print(all_channel)
+        data['code'] = '000000'
+        data['data'] = items
+        data['count'] = count
+        data['total_page'] = total_page
+        data['all_money'] = all_money
+        data['all_order_count'] = all_order_count
+        data['channel_count'] = len(all_channel)
+        return JsonResponse(data)
