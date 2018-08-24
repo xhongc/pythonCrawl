@@ -12,7 +12,6 @@ class OrderListAdmin(object):
     search_fields = ['username', 'order_no']
 
 
-
 class BaseSetting(object):
     # 添加主题功能
     enable_themes = True

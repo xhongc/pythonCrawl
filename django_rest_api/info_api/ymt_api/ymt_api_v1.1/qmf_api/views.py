@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from rest_framework import viewsets
 from api.tools import get_cookies, get_order, get_dayorder, get_monthorder, PeaceBank
@@ -64,13 +63,13 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
             if start_date:
                 start_date = int(start_date) / 1000
                 start_date = time.localtime(start_date)
-                start_date = time.strftime("%Y-%m-%d", start_date)
+                start_date = time.strftime("%Y-%m-%d %H:%M:%S", start_date)
 
             end_date = request.data.get('end_date', None)
             if end_date:
                 end_date = int(end_date) / 1000
                 end_date = time.localtime(end_date)
-                end_date = time.strftime("%Y-%m-%d", end_date)
+                end_date = time.strftime("%Y-%m-%d %H:%M:%S", end_date)
         except:
             data = {'code': '999999', 'msg': '时间错误'}
             return JsonResponse(data)
@@ -179,9 +178,10 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                 data['data'] = res
                 data['total_page'] = total_page
                 data['count'] = count
-                data['total_money'] = total_money['total_money']
+                data['total_money'] = round(int(total_money['total_money']), 2)
+                print(total_money)
                 # return JsonResponse(data, safe=False)
-
+                print(data)
                 return JsonResponse(data)
 
             except BaseException as e:
@@ -235,7 +235,7 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                     data['data'] = res
                     data['total_page'] = total_page
                     data['count'] = count
-                    data['total_money'] = total_money['total_money']
+                    data['total_money'] = round(int(total_money['total_money']), 2)
                     # return JsonResponse(data, safe=False)
                     return JsonResponse(data)
                 data = {'code': 11, 'msg': '时间'}
