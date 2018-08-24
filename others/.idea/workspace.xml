@@ -300,13 +300,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="842" y="33" width="830" height="936" extended-state="0" />
+    <frame x="842" y="33" width="830" height="936" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23433584" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23433584" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
