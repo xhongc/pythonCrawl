@@ -160,7 +160,7 @@
       <find>UserSerializer</find>
       <find>SessionAuthentication</find>
       <find>@csrf_exempt</find>
-      <find />
+      <find>@method_decorator(csrf_exempt, name='dispatch')</find>
       <find>OrderedDict</find>
       <find>permission_classes</find>
       <find>get_cookies</find>
@@ -186,8 +186,8 @@
     <replaceStrings>
       <replace>request.session</replace>
       <replace />
-      <replace />
-      <replace />
+      <replace>#@method_decorator(csrf_exempt, name='dispatch')</replace>
+      <replace>@method_decorator(csrf_exempt, name='dispatch')</replace>
       <replace>c_time</replace>
       <replace>order_no</replace>
       <replace>beizhu</replace>
@@ -246,8 +246,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="980" />
-    <option name="y" value="28" />
+    <option name="x" value="570" />
+    <option name="y" value="62" />
     <option name="width" value="977" />
     <option name="height" value="1102" />
   </component>
