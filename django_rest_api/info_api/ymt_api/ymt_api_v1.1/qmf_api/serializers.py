@@ -5,12 +5,13 @@ from qmf_api.models import OrderList
 class QmforderSerializer(serializers.Serializer):
     username = serializers.CharField(required=False, help_text='username')
     page = serializers.IntegerField(required=False, help_text='查询页数')
+    page_size = serializers.CharField(required=False, help_text='当页条数')
     trade_type = serializers.CharField(required=False, help_text='支付类型 支付宝, 微信')
+    account_status = serializers.CharField(required=False, help_text='结算状态')
     switch = serializers.CharField(required=False, help_text='备注开关 1为开')
     start_date = serializers.CharField(required=False, help_text='2018-07-10')
     end_date = serializers.CharField(required=False, help_text='2018-07-10')
     serach_type = serializers.CharField(required=False, help_text='查询类型')
-    page_size = serializers.CharField(required=False, help_text='当页条数')
 
 
 class GCodeSerializer(serializers.Serializer):
@@ -44,8 +45,8 @@ class AddOrderSerializer(serializers.ModelSerializer):
 
 
 class StatisticsSerializer(serializers.Serializer):
-    page = serializers.IntegerField(label='page',required=False, help_text='查询页数')
-    page_size = serializers.CharField(label='page_size',required=False, help_text='当页条数')
+    page = serializers.IntegerField(label='page', required=False, help_text='查询页数')
+    page_size = serializers.CharField(label='page_size', required=False, help_text='当页条数')
     username = serializers.CharField(label='用户名', required=False, read_only=True)
     nicke_name = serializers.CharField(label='昵称', required=False, read_only=True)
     channel_type = serializers.CharField(label='平台', required=False, help_text='YL,KQ')

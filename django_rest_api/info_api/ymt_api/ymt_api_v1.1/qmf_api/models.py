@@ -17,6 +17,7 @@ class OrderList(models.Model):
     pay_money = models.CharField('金额', max_length=255, blank=True, null=True)
     trade_type = models.CharField('支付类型', max_length=255, blank=True, null=True)
     trade_status = models.CharField('支付状态', max_length=255, blank=True, null=True)
+    account_status = models.CharField('结算状态', max_length=255, blank=True, null=True)
     username = models.CharField('username', max_length=255, blank=True, null=True)
     beizhu = models.CharField('beizhu', max_length=255, blank=True, null=True)
     beizhu2 = models.CharField('beizhu2', max_length=255, blank=True, null=True)

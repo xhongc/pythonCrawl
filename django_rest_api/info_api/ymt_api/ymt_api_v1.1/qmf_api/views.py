@@ -51,8 +51,8 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
         username = request.data.get('username', None)
         page = request.data.get('page', '1')
         trade_type = request.data.get('trade_type', None)
+        account_status = request.data.get('account_status', None)
         switch = request.data.get('switch', '1')
-
         billDate = request.data.get('billDate', '1')
         if billDate == '1':
             default_billDate = datetime.now().strftime('%Y-%m-%d')
@@ -132,29 +132,23 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                         model = OrderList.objects.create(**each)
                         model.save()
                     except BaseException as e:
+                        print('11111', e)
                         continue
-
             else:
-                pass
-
+                data_code = '098765'
+            filter_dict = {}
             try:
                 # 没有username调全部数据
+                filter_dict['c_time__startswith'] = default_billDate
                 if username:
+                    filter_dict['username'] = username
+                if trade_type:
+                    filter_dict['trade_type'] = trade_type
+                if account_status:
+                    filter_dict['account_status'] = account_status
 
-                    if trade_type:
-                        model = OrderList.objects.filter(username=username, c_time__startswith=default_billDate,
-                                                         trade_type=trade_type).order_by('-c_time')
-                    else:
-                        model = OrderList.objects.filter(username=username,
-                                                         c_time__startswith=default_billDate).order_by(
-                            '-c_time')
-                else:
-                    if trade_type:
-                        model = OrderList.objects.filter(c_time__startswith=default_billDate,
-                                                         trade_type=trade_type).order_by('-c_time')
-                    else:
-                        model = OrderList.objects.filter(c_time__startswith=default_billDate).order_by(
-                            '-c_time')
+                model = OrderList.objects.filter(**filter_dict).order_by('-c_time')
+
                 # data = serializers.serialize('json', model)
                 # data = json.loads(data, encoding='utf-8')
                 # print(list(data))
@@ -173,12 +167,19 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                 # res = json.dumps(res, ensure_ascii=False)
                 # 聚合函数aggregate 统计
                 total_money = model.aggregate(total_money=Sum('pay_money'))
+                total_money = total_money['total_money']
                 data = {}
                 data['code'] = data_code
                 data['data'] = res
                 data['total_page'] = total_page
                 data['count'] = count
-                data['total_money'] = round(int(total_money['total_money']), 2)
+                if total_money:
+                    try:
+                        data['total_money'] = round(float(total_money), 2)
+                    except:
+                        data['total_money'] = round(total_money, 2)
+                else:
+                    data['total_money'] = total_money
                 print(total_money)
                 # return JsonResponse(data, safe=False)
                 print(data)
@@ -186,34 +187,24 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
 
             except BaseException as e:
                 data = {'code': 112, 'msg': '错了'}
-                print(e)
+                print('22222', e)
                 return JsonResponse(data, status=status.HTTP_400_BAD_REQUEST)
 
         else:
+            filter_dict = {}
             try:
                 if billDate:
                     start_date = start_date + ' 00:00:00'
                     end_date = end_date + ' 23:59:59'
                     if username:
-                        if trade_type:
-                            model = OrderList.objects.filter(username=username, c_time__range=(start_date, end_date),
-                                                             trade_type=trade_type).order_by('-id')
-                        else:
-                            # start_date = datetime(2018, 7, 16, 00, 00, 00)
-                            # end_date = datetime(2018, 7, 17, 23, 59, 59)
+                        filter_dict['username'] = username
+                    if trade_type:
+                        filter_dict['trade_type'] = trade_type
+                    if account_status:
+                        filter_dict['account_status'] = account_status
+                    filter_dict['c_time__range'] = (start_date, end_date)
+                    model = OrderList.objects.filter(**filter_dict).order_by('-id')
 
-                            model = OrderList.objects.filter(username=username,
-                                                             c_time__range=(start_date, end_date)).order_by('-id')
-                    else:
-                        if trade_type:
-                            model = OrderList.objects.filter(c_time__range=(start_date, end_date),
-                                                             trade_type=trade_type).order_by('-id')
-                        else:
-                            # start_date = datetime(2018, 7, 16, 00, 00, 00)
-                            # end_date = datetime(2018, 7, 17, 23, 59, 59)
-
-                            model = OrderList.objects.filter(
-                                c_time__range=(start_date, end_date)).order_by('-id')
                     # data = serializers.serialize('json', model)
                     # data = json.loads(data, encoding='utf-8')
                     # print(list(data))
@@ -229,21 +220,28 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                     count = p.count
                     # res = json.dumps(res, ensure_ascii=False)
                     total_money = model.aggregate(total_money=Sum('pay_money'))
-
+                    total_money = total_money['total_money']
                     data = {}
                     data['code'] = '000000'
                     data['data'] = res
                     data['total_page'] = total_page
                     data['count'] = count
-                    data['total_money'] = round(int(total_money['total_money']), 2)
-                    # return JsonResponse(data, safe=False)
+
+                    if total_money:
+                        try:
+                            data['total_money'] = round(float(total_money), 2)
+                        except:
+                            data['total_money'] = round(total_money, 2)
+                    else:
+                        data['total_money'] = total_money
+
                     return JsonResponse(data)
                 data = {'code': 11, 'msg': '时间'}
                 return JsonResponse(data, status=status.HTTP_400_BAD_REQUEST)
             except BaseException as e:
-                data = {'code': 112, 'msg': '错了'}
+                data = {'code': 112, 'msg': 'error'}
                 print(e)
-                return JsonResponse(data, status=status.HTTP_400_BAD_REQUEST)
+            return JsonResponse(data, status=status.HTTP_400_BAD_REQUEST)
 
 
 class GenerateCodeViewsets(viewsets.GenericViewSet):
