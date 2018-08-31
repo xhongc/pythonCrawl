@@ -50,7 +50,7 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qmf_api/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="627">
               <caret line="33" column="17" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="17" />
             </state>
           </provider>
@@ -59,7 +59,7 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qmf_api/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="1197">
               <caret line="64" column="48" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -71,8 +71,11 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qmf_api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-987">
-              <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="60" />
+            <state relative-caret-position="245">
+              <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,9 +168,9 @@
         <option value="&lt;f7403672-2742-49ea-b0f9-8589a62431c8&gt;/qmf_api/models.py" />
         <option value="&lt;f7403672-2742-49ea-b0f9-8589a62431c8&gt;/qmf_api/serializers.py" />
         <option value="&lt;f7403672-2742-49ea-b0f9-8589a62431c8&gt;/ymt_api/urls.py" />
-        <option value="$PROJECT_DIR$/qmf_api/views.py" />
         <option value="&lt;f7403672-2742-49ea-b0f9-8589a62431c8&gt;/qmf_api/admin.py" />
         <option value="&lt;f7403672-2742-49ea-b0f9-8589a62431c8&gt;/qmf_api/views.py" />
+        <option value="$PROJECT_DIR$/qmf_api/views.py" />
       </list>
     </option>
   </component>
@@ -180,16 +183,18 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="657" />
-    <option name="width" value="1236" />
-    <option name="height" value="1102" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="806" />
+    <option name="y" value="100" />
+    <option name="width" value="1052" />
+    <option name="height" value="937" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,21 +202,10 @@
               <item name="ymt_api_v1.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="ymt_api_v1.1" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ymt_api_v1.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ymt_api_v1.1" type="462c0819:PsiDirectoryNode" />
-              <item name="qmf_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ymt_api_v1.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ymt_api_v1.1" type="462c0819:PsiDirectoryNode" />
-              <item name="ymt_api" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,7 +215,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../model/adb_auto/ZhiFuBaoErWeiMaGongJu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -408,18 +402,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1646" height="933" extended-state="7" />
+    <frame x="-8" y="-8" width="1646" height="933" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.19371068" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30062893" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.28427672" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2163522" />
-      <window_info anchor="right" id="Remote Host" order="3" weight="0.17528373" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15699874" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2163522" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.17528373" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1002522" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3297604" />
@@ -434,7 +429,6 @@
       <window_info anchor="bottom" id="REST Client" order="9" weight="0.39496854" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.20125785" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
@@ -442,14 +436,14 @@
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.22446406" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Data View" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.22767295" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32955974" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="REST Client" order="14" weight="0.39496854" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18600252" />
@@ -457,12 +451,12 @@
       <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.20377359" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="SciView" order="6" weight="0.3297604" />
       <window_info anchor="bottom" id="File Transfer" order="13" weight="0.19874214" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="5" weight="0.32980332" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32955974" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,14 +775,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qmf_api/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="627">
           <caret line="33" column="17" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qmf_api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="1197">
           <caret line="64" column="48" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -798,8 +792,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qmf_api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-987">
-          <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="60" />
+        <state relative-caret-position="245">
+          <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

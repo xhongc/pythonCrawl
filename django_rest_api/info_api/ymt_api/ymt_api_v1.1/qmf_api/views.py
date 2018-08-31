@@ -21,6 +21,7 @@ from django.db.models import Sum
 from qmf_api.gcode import LFOrder, Bill99, UlineOrder
 
 
+# 分页
 class GoodsPagination(PageNumberPagination):
     '''
     商品列表自定义分页
