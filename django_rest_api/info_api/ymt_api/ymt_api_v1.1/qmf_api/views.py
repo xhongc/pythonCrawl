@@ -5,12 +5,12 @@ from api.tools import get_cookies, get_order, get_dayorder, get_monthorder, Peac
 from rest_framework import mixins
 import json, time
 from qmf_api.serializers import QmforderSerializer, GCodeSerializer, UpOrderSerializer, AddOrderSerializer, \
-    StatisticsSerializer
+    StatisticsSerializer, PaymentSerializer
 from rest_framework.response import Response
 from api.serializers import UserSerializer, UserUpdateSerializer, AdminUserSerializer, LoginSerializer
 from api.models import UserAdmin
 from qmf_api.tools import get_data, applyCode, for_api, get_all_data, get_jl_data
-from qmf_api.models import Wxsession, OrderList
+from qmf_api.models import Wxsession, OrderList, paymentList
 from datetime import datetime, date
 from django.core import serializers
 from rest_framework import status
@@ -88,6 +88,7 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
             # print(reqmid)
 
             wx = UserAdmin.objects.filter(username=username).first()
+
             # 没有username 情况 返回全部
             if wx:
                 wx_session = wx.url
@@ -116,7 +117,7 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                     # print('111', data)
                     data = {'code': '000000', 'data': []}
                 else:
-                    data = get_all_data(wx_session, page)
+                    data = {'code': '999999', 'data': []}
                 # print('data:', data)
                 try:
                     data_list = data['data']
@@ -167,7 +168,9 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                 # res = json.dumps(res, ensure_ascii=False)
                 # 聚合函数aggregate 统计
                 total_money = model.aggregate(total_money=Sum('pay_money'))
+                charge_total_money = model.aggregate(charge_total_money=Sum('charge'))
                 total_money = total_money['total_money']
+                charge_total_money = charge_total_money['charge_total_money']
                 data = {}
                 data['code'] = data_code
                 data['data'] = res
@@ -180,9 +183,13 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                         data['total_money'] = round(total_money, 2)
                 else:
                     data['total_money'] = total_money
-                print(total_money)
-                # return JsonResponse(data, safe=False)
-                print(data)
+                if charge_total_money:
+                    try:
+                        data['charge_total_money'] = round(float(charge_total_money), 2)
+                    except:
+                        data['charge_total_money'] = round(charge_total_money, 2)
+                else:
+                    data['charge_total_money'] = charge_total_money
                 return JsonResponse(data)
 
             except BaseException as e:
@@ -192,6 +199,7 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
 
         else:
             filter_dict = {}
+
             try:
                 if billDate:
                     start_date = start_date + ' 00:00:00'
@@ -203,8 +211,9 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                     if account_status:
                         filter_dict['account_status'] = account_status
                     filter_dict['c_time__range'] = (start_date, end_date)
+                    # print(filter_dict)
                     model = OrderList.objects.filter(**filter_dict).order_by('-id')
-
+                    # print(model)
                     # data = serializers.serialize('json', model)
                     # data = json.loads(data, encoding='utf-8')
                     # print(list(data))
@@ -220,7 +229,10 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                     count = p.count
                     # res = json.dumps(res, ensure_ascii=False)
                     total_money = model.aggregate(total_money=Sum('pay_money'))
+                    charge_total_money = model.aggregate(charge_total_money=Sum('charge'))
                     total_money = total_money['total_money']
+                    charge_total_money = charge_total_money['charge_total_money']
+
                     data = {}
                     data['code'] = '000000'
                     data['data'] = res
@@ -234,6 +246,14 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                             data['total_money'] = round(total_money, 2)
                     else:
                         data['total_money'] = total_money
+
+                    if charge_total_money:
+                        try:
+                            data['charge_total_money'] = round(float(charge_total_money), 2)
+                        except:
+                            data['charge_total_money'] = round(charge_total_money, 2)
+                    else:
+                        data['charge_total_money'] = charge_total_money
 
                     return JsonResponse(data)
                 data = {'code': 11, 'msg': '时间'}
@@ -416,3 +436,86 @@ class StatisticsViewsets(mixins.CreateModelMixin, viewsets.GenericViewSet):
         data['all_order_count'] = all_order_count
         data['channel_count'] = len(all_channel)
         return JsonResponse(data)
+
+
+class PaymentViewsets(viewsets.GenericViewSet):
+    serializer_class = PaymentSerializer
+
+    def create(self, request):
+        username = request.data.get('username', None)
+        page = request.data.get('page', '1')
+        page_size = request.data.get('page_size', '15')
+        start_date = request.data.get('start_date', None)
+        try:
+            if start_date:
+                start_date = int(start_date) / 1000
+                start_date = time.localtime(start_date)
+                start_date = time.strftime("%Y-%m-%d %H:%M:%S", start_date)
+
+            end_date = request.data.get('end_date', None)
+            if end_date:
+                end_date = int(end_date) / 1000
+                end_date = time.localtime(end_date)
+                end_date = time.strftime("%Y-%m-%d %H:%M:%S", end_date)
+        except:
+            data = {'code': '999999', 'msg': '时间错误'}
+            return JsonResponse(data)
+        wx = UserAdmin.objects.filter(username=username).first()
+
+        # 没有username 情况 返回全部
+        if wx:
+            channel_type = wx.channel_type
+            if channel_type == 'UL':
+                filter_dict = {}
+
+                try:
+                    if username:
+                        filter_dict['username'] = username
+                    if start_date and end_date:
+                        filter_dict['end_date__range'] = (start_date, end_date)
+                except:
+                    pass
+                model = paymentList.objects.filter(**filter_dict).order_by('-end_date')
+                items = model.values()
+                res = list(items)
+                # print(res)
+                # 分页功能 object_list 返回列表数据
+                p = Paginator(res, page_size)
+                result = p.page(page)
+                # print(result.object_list)
+                res = result.object_list
+                # 总页数
+                total_page = p.num_pages
+                count = p.count
+                # res = json.dumps(res, ensure_ascii=False)
+                # 聚合函数aggregate 统计
+                total_money = model.aggregate(total_money=Sum('trade_money'))
+                charge_total_money = model.aggregate(charge_total_money=Sum('charge'))
+                total_money = total_money['total_money']
+                charge_total_money = charge_total_money['charge_total_money']
+                data = {}
+                data['code'] = '000000'
+                data['data'] = res
+                data['total_page'] = total_page
+                data['count'] = count
+                # 总计
+                if total_money:
+                    try:
+                        data['total_money'] = round(float(total_money), 2)
+                    except:
+                        data['total_money'] = round(total_money, 2)
+                else:
+                    data['total_money'] = total_money
+                # 余额
+                if charge_total_money:
+                    try:
+                        data['charge_total_money'] = round(float(charge_total_money), 2)
+                    except:
+                        data['charge_total_money'] = round(charge_total_money, 2)
+                else:
+                    data['charge_total_money'] = charge_total_money
+
+                return JsonResponse(data)
+        else:
+            data = {'code': '576757', 'msg': '账号错误'}
+            return JsonResponse(data)

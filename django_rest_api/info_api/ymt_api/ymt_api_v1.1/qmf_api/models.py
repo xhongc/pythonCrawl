@@ -15,6 +15,7 @@ class OrderList(models.Model):
     c_time = models.CharField('时间', max_length=255, blank=True, null=True)
     order_no = models.CharField('订单号', max_length=255, blank=True, null=True, unique=True)
     pay_money = models.CharField('金额', max_length=255, blank=True, null=True)
+    charge = models.CharField('手续费', max_length=255, blank=True, null=True)
     trade_type = models.CharField('支付类型', max_length=255, blank=True, null=True)
     trade_status = models.CharField('支付状态', max_length=255, blank=True, null=True)
     account_status = models.CharField('结算状态', max_length=255, blank=True, null=True)
@@ -28,3 +29,17 @@ class OrderList(models.Model):
 
     def __str__(self):
         return self.order_no
+
+
+class paymentList(models.Model):
+    start_date = models.CharField('时间', max_length=255, blank=True, null=True)
+    end_date = models.CharField('时间', max_length=255, blank=True, null=True)
+    trade_no = models.CharField('订单号', max_length=255, blank=True, null=True, unique=True)
+    withdraw_status = models.CharField('提现状态', max_length=255, blank=True, null=True)
+    trade_money = models.CharField('金额', max_length=255, blank=True, null=True)
+    charge = models.CharField('金额', max_length=255, blank=True, null=True)
+    trade_status = models.CharField('支付状态', max_length=255, blank=True, null=True)
+    username = models.CharField('username', max_length=255, blank=True, null=True)
+    class Meta:
+        verbose_name = "提现详情"
+        verbose_name_plural = verbose_name

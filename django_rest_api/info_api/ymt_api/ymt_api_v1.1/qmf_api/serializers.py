@@ -55,3 +55,11 @@ class StatisticsSerializer(serializers.Serializer):
     total_money = serializers.CharField(label='总金额', required=False, read_only=True)
     start_date = serializers.CharField(label='开始时间', required=False, help_text='1534495819000')
     end_date = serializers.CharField(label='结束时间', required=False, help_text='1534495819000')
+
+
+class PaymentSerializer(serializers.Serializer):
+    username = serializers.CharField(required=False, help_text='username')
+    page = serializers.IntegerField(required=False, help_text='查询页数')
+    page_size = serializers.CharField(required=False, help_text='当页条数')
+    start_date = serializers.CharField(required=False, help_text='2018-07-10')
+    end_date = serializers.CharField(required=False, help_text='2018-07-10')
