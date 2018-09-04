@@ -12,6 +12,7 @@ class QmforderSerializer(serializers.Serializer):
     start_date = serializers.CharField(required=False, help_text='2018-07-10')
     end_date = serializers.CharField(required=False, help_text='2018-07-10')
     serach_type = serializers.CharField(required=False, help_text='查询类型')
+    belong = serializers.CharField(required=False, help_text='归属')
 
 
 class GCodeSerializer(serializers.Serializer):

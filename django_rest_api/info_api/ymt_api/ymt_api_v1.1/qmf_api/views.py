@@ -55,6 +55,7 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
         account_status = request.data.get('account_status', None)
         switch = request.data.get('switch', '1')
         billDate = request.data.get('billDate', '1')
+        belong = request.data.get('belong', None)
         if billDate == '1':
             default_billDate = datetime.now().strftime('%Y-%m-%d')
         else:
@@ -148,7 +149,8 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                     filter_dict['trade_type'] = trade_type
                 if account_status:
                     filter_dict['account_status'] = account_status
-
+                if belong:
+                    filter_dict['belong'] = belong
                 model = OrderList.objects.filter(**filter_dict).order_by('-c_time')
 
                 # data = serializers.serialize('json', model)
@@ -211,6 +213,8 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                         filter_dict['trade_type'] = trade_type
                     if account_status:
                         filter_dict['account_status'] = account_status
+                    if belong:
+                        filter_dict['belong'] = belong
                     filter_dict['c_time__range'] = (start_date, end_date)
                     # print(filter_dict)
                     model = OrderList.objects.filter(**filter_dict).order_by('-id')

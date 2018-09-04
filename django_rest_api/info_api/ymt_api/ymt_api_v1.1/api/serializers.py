@@ -49,11 +49,10 @@ class AdminUserSerializer(serializers.ModelSerializer):
     login_ip = serializers.CharField(read_only=True)
     last_login_time = serializers.CharField(read_only=True)
     channel_type = serializers.CharField(required=False)
+    belong = serializers.CharField(required=False)
 
     class Meta:
         model = UserAdmin
         fields = (
             'id', 'username', 'password', 'display_password', 'url', 'is_status', 'is_joke', 'ymt_name', 'ymt_pwd',
-            'login_ip', 'last_login_time', 'channel_type')
-
-
+            'login_ip', 'last_login_time', 'channel_type', 'belong')

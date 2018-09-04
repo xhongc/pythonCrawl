@@ -14,6 +14,7 @@ class UserAdmin(AbstractUser):
     is_joke = models.CharField(max_length=20, blank=True, null=True, default='1')
     reqmid = models.CharField(max_length=20, blank=True, null=True)
     channel_type = models.CharField('渠道类型', max_length=20, blank=True, null=True)
+    belong = models.CharField('渠道类型', max_length=255, blank=True, null=True, default='')
 
     class Meta:
         verbose_name = "用户映射"
