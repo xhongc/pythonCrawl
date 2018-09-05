@@ -6,7 +6,8 @@ from rest_framework import mixins
 import json
 from api.serializers import OrderSerializer
 from rest_framework.response import Response
-from api.serializers import UserSerializer, UserUpdateSerializer, AdminUserSerializer, LoginSerializer
+from api.serializers import UserSerializer, UserUpdateSerializer, AdminUserSerializer, LoginSerializer, \
+    UserAttrSerializer
 from api.models import UserAdmin
 from django.contrib.auth import login, authenticate
 from rest_framework.authentication import BasicAuthentication, SessionAuthentication
@@ -436,3 +437,29 @@ class PeaceBankOrderViewsets(mixins.ListModelMixin, viewsets.GenericViewSet):
 
         # print(data)
         return JsonResponse(data)
+
+
+class UserAttrViewsets(viewsets.GenericViewSet):
+    serializer_class = UserAttrSerializer
+
+    def create(self, request):
+        username = request.data.get('username', None)
+        if username:
+            model = UserAdmin.objects.filter(username=username)
+            items = model.values()
+            res = list(items)
+            res = res[0]
+            belong = res['belong']
+            data = {
+                'code': '000000',
+                'belong': belong
+            }
+            return JsonResponse(data)
+        else:
+
+            data = {
+                'code': '000001',
+                'data': '',
+                'msg': '用户名错误'
+            }
+            return JsonResponse(data, status=status.HTTP_400_BAD_REQUEST)

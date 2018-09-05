@@ -3,7 +3,7 @@ from django.urls import path, re_path
 from django.contrib import admin
 from rest_framework.routers import DefaultRouter
 from api.views import OrderViewset, LoginViewset, UserViewset, AdminUserViewset, DayOrderViewset, RandomPWD, \
-    PeaceBankOrderViewsets
+    PeaceBankOrderViewsets, UserAttrViewsets
 from qmf_api.views import QmfOrderViewsets, GenerateCodeViewsets, UpOrderViewsrts, AddOrderViewsets, StatisticsViewsets, \
     PaymentViewsets
 from rest_framework.documentation import include_docs_urls
@@ -25,6 +25,7 @@ router.register(r'uporder', UpOrderViewsrts, base_name='uporder')
 router.register(r'addorder', AddOrderViewsets, base_name='addorder')
 router.register(r'statistics', StatisticsViewsets, base_name='statistics')
 router.register(r'payment', PaymentViewsets, base_name='payment')
+router.register(r'userattr', UserAttrViewsets, base_name='userattr')
 
 urlpatterns = [
     path('admin/', xadmin.site.urls),
