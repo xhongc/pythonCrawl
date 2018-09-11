@@ -1,24 +1,22 @@
-from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
-from rest_framework import viewsets
-from api.tools import get_cookies, get_order, get_dayorder, get_monthorder, PeaceBank
+import time
+from collections import OrderedDict
+from datetime import datetime
+
+from django.core.paginator import Paginator
+from django.db.models import Sum
+from django.http import JsonResponse
 from rest_framework import mixins
-import json, time
+from rest_framework import status
+from rest_framework import viewsets
+from rest_framework.pagination import PageNumberPagination
+from rest_framework.response import Response
+
+from api.models import UserAdmin
+from qmf_api.gcode import LFOrder, Bill99
+from qmf_api.models import OrderList, paymentList
 from qmf_api.serializers import QmforderSerializer, GCodeSerializer, UpOrderSerializer, AddOrderSerializer, \
     StatisticsSerializer, PaymentSerializer
-from rest_framework.response import Response
-from api.serializers import UserSerializer, UserUpdateSerializer, AdminUserSerializer, LoginSerializer
-from api.models import UserAdmin
-from qmf_api.tools import get_data, applyCode, for_api, get_all_data, get_jl_data
-from qmf_api.models import Wxsession, OrderList, paymentList
-from datetime import datetime, date
-from django.core import serializers
-from rest_framework import status
-from django.core.paginator import Paginator
-from rest_framework.pagination import PageNumberPagination
-from collections import OrderedDict, namedtuple
-from django.db.models import Sum
-from qmf_api.gcode import LFOrder, Bill99, UlineOrder
+from qmf_api.tools import for_api, get_all_data
 
 
 # 分页
@@ -117,7 +115,11 @@ class QmfOrderViewsets(viewsets.GenericViewSet):
                     # a = UlineOrder(username=user_name, password=user_pwd)
                     # data = a.get_uline_data()
                     # print('111', data)
-                    data = {'code': '000000', 'data': []}
+                    sign = wx.is_joke
+                    if sign == 'fail':
+                        data = {'code': '000002', 'data': []}
+                    else:
+                        data = {'code': '000000', 'data': []}
                 else:
                     data = {'code': '999999', 'data': []}
                 # print('data:', data)
@@ -479,7 +481,8 @@ class PaymentViewsets(viewsets.GenericViewSet):
                     if start_date and end_date:
                         filter_dict['end_date__range'] = (start_date, end_date)
                 except:
-                    pass
+                    data = {'code': '999999', 'msg': '时间错误'}
+                    return JsonResponse(data)
                 model = paymentList.objects.filter(**filter_dict).order_by('-end_date')
                 items = model.values()
                 res = list(items)

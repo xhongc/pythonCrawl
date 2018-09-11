@@ -1,14 +1,14 @@
-from django.conf.urls import url, include
+from django.conf.urls import include
 from django.urls import path, re_path
-from django.contrib import admin
+from django.views.generic import TemplateView
+from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
-from api.views import OrderViewset, LoginViewset, UserViewset, AdminUserViewset, DayOrderViewset, RandomPWD, \
-    PeaceBankOrderViewsets, UserAttrViewsets
+
+import xadmin
+from api.views import LoginViewset, UserViewset, AdminUserViewset, DayOrderViewset, RandomPWD, \
+    UserAttrViewsets, UserBelongViewset
 from qmf_api.views import QmfOrderViewsets, GenerateCodeViewsets, UpOrderViewsrts, AddOrderViewsets, StatisticsViewsets, \
     PaymentViewsets
-from rest_framework.documentation import include_docs_urls
-from django.views.generic import TemplateView
-import xadmin
 
 router = DefaultRouter()
 # router.register(r'order', OrderViewset, base_name='order')
@@ -26,6 +26,7 @@ router.register(r'addorder', AddOrderViewsets, base_name='addorder')
 router.register(r'statistics', StatisticsViewsets, base_name='statistics')
 router.register(r'payment', PaymentViewsets, base_name='payment')
 router.register(r'userattr', UserAttrViewsets, base_name='userattr')
+router.register(r'userbelong', UserBelongViewset, base_name='userbelong')
 
 urlpatterns = [
     path('admin/', xadmin.site.urls),

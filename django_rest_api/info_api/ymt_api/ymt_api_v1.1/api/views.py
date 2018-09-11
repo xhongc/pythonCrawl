@@ -1,29 +1,23 @@
-from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
-from rest_framework import viewsets
-from api.tools import get_cookies, get_order, get_dayorder, get_monthorder, PeaceBank
-from rest_framework import mixins
-import json
-from api.serializers import OrderSerializer
-from rest_framework.response import Response
-from api.serializers import UserSerializer, UserUpdateSerializer, AdminUserSerializer, LoginSerializer, \
-    UserAttrSerializer
-from api.models import UserAdmin
-from django.contrib.auth import login, authenticate
-from rest_framework.authentication import BasicAuthentication, SessionAuthentication
-from rest_framework.permissions import IsAuthenticated
-from django.contrib.auth.hashers import make_password, check_password
-from rest_framework import status
-from django.contrib.auth import get_user_model
-from datetime import datetime
-from django.views.decorators.csrf import csrf_exempt
-from django.views.decorators.csrf import csrf_exempt
-from django.utils.decorators import method_decorator
-from rest_framework import filters
-from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework.pagination import PageNumberPagination
-from collections import OrderedDict, namedtuple
+from django.http import JsonResponse
 import random
+from collections import OrderedDict
+from datetime import datetime
+
+from django.http import JsonResponse
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters
+from rest_framework import mixins
+from rest_framework import status
+from rest_framework import viewsets
+from rest_framework.authentication import BasicAuthentication
+from rest_framework.pagination import PageNumberPagination
+from rest_framework.response import Response
+
+from api.models import UserAdmin, UserBelong
+from api.serializers import OrderSerializer
+from api.serializers import UserSerializer, UserUpdateSerializer, AdminUserSerializer, LoginSerializer, \
+    UserAttrSerializer, UserBelongSerializers
+from api.tools import get_cookies, get_order, get_dayorder, get_monthorder, PeaceBank
 
 
 # 分页类，重写get_paginated_response 加入总页数
@@ -362,6 +356,7 @@ class AdminUserViewset(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.Up
         serializer = UserSerializer(data=new_data)
         serializer.is_valid(raise_exception=True)
         self.perform_create(serializer)
+
         headers = self.get_success_headers(serializer.data)
 
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
@@ -379,13 +374,44 @@ class AdminUserViewset(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.Up
         serializer = self.get_serializer(instance, data=new_data, partial=partial)
         serializer.is_valid(raise_exception=True)
         self.perform_update(serializer)
+        # 保存嵌套里的userbelng 数据
+        belong = request.data.get('belong', None)
+        belong_id = request.data.get('belong_id', None)
+        # 部分更新
+        if belong and belong_id:
+            new_data['user'] = kwargs.get('pk', None)
+            # instance 查出存在的进行 部分更新
+            instance2 = UserBelong.objects.filter(user_id=kwargs.get('pk', None),id=belong_id).first()
 
+            serializer2 = UserBelongSerializers(instance2, data=new_data)
+
+            serializer2.is_valid(raise_exception=True)
+            serializer2.save()
+        # 新增
+        elif belong:
+            new_data['user'] = kwargs.get('pk', None)
+            serializer2 = UserBelongSerializers(data=new_data)
+            serializer2.is_valid(raise_exception=True)
+            serializer2.save()
         if getattr(instance, '_prefetched_objects_cache', None):
             # If 'prefetch_related' has been applied to a queryset, we need to
             # forcibly invalidate the prefetch cache on the instance.
             instance._prefetched_objects_cache = {}
 
         return Response(serializer.data)
+
+
+class UserBelongViewset(mixins.CreateModelMixin, viewsets.GenericViewSet):
+    serializer_class = UserBelongSerializers
+    queryset = UserBelong.objects.all()
+
+    # def create(self, request):
+    #     data = request.data
+    #     print(data)
+    #     user_id = request.data.get('user_id', None)
+    #     print(user_id)
+    #     data = {}
+    #     return JsonResponse(data)
 
 
 class RandomPWD(mixins.ListModelMixin, viewsets.GenericViewSet):
@@ -441,6 +467,7 @@ class PeaceBankOrderViewsets(mixins.ListModelMixin, viewsets.GenericViewSet):
 
 class UserAttrViewsets(viewsets.GenericViewSet):
     serializer_class = UserAttrSerializer
+    queryset = UserBelong.objects.all()
 
     def create(self, request):
         username = request.data.get('username', None)

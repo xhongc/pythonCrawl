@@ -1,13 +1,15 @@
-import requests
 import json
-from scrapy.selector import Selector
-import random
-import time
-from datetime import datetime, timedelta
-import re
 import os
+import random
+import re
+import time
 import zipfile
+from datetime import datetime, timedelta
+
+import requests
 import xlrd
+from scrapy.selector import Selector
+
 agents = [
     "Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; Nexus S Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/532.5 (KHTML, like Gecko) Chrome/4.0.249.0 Safari/532.5",

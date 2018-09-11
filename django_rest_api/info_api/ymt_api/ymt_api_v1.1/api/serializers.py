@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from api.models import UserAdmin
+
+from api.models import UserAdmin, UserBelong
 
 
 # 订单序列化
@@ -35,10 +36,36 @@ class UserUpdateSerializer(serializers.ModelSerializer):
         fields = ('old_password', 'password', 'password2')
 
 
+class UserAttrSerializer(serializers.ModelSerializer):
+    username = serializers.CharField(required=False)
+    user = serializers.CharField(read_only=True)
+    belong = serializers.CharField(read_only=True)
+    connect_status = serializers.CharField(read_only=True)
+    cookie = serializers.CharField(read_only=True)
+
+    class Meta:
+        model = UserBelong
+        fields = '__all__'
+
+
+class UserBelongSerializers(serializers.ModelSerializer):
+    # user = serializers.CharField(required=False)
+    user = serializers.PrimaryKeyRelatedField(required=True, queryset=UserAdmin.objects.all())
+    # id = AdminUserSerializer(many=False)
+    belong = serializers.CharField(required=False)
+    connect_status = serializers.CharField(required=False)
+    cookie = serializers.CharField(required=False)
+
+    class Meta:
+        model = UserBelong
+        fields = ('belong', 'connect_status', 'cookie', 'user')
+
+
 # 后台列表
 class AdminUserSerializer(serializers.ModelSerializer):
     # id = serializers.CharField(required=False)
     username = serializers.CharField(required=False)
+    belong_id = serializers.CharField(required=False)
     url = serializers.CharField(required=False)
     password = serializers.CharField(required=False)
     display_password = serializers.CharField(required=False)
@@ -49,20 +76,24 @@ class AdminUserSerializer(serializers.ModelSerializer):
     login_ip = serializers.CharField(read_only=True)
     last_login_time = serializers.CharField(read_only=True)
     channel_type = serializers.CharField(required=False)
-    belong = serializers.CharField(required=False)
+    # user = serializers.PrimaryKeyRelatedField(required=False, queryset=UserBelong.objects.all(), many=False)
+    belong = serializers.CharField(label='belong', required=False)
+    cookie = serializers.CharField(label='cookie', required=False)
+    connect_status = serializers.CharField(label='connect_status', required=False)
+    userbelong = serializers.SerializerMethodField(read_only=True)
+
+    def get_userbelong(self, obj):
+        user = UserAdmin.objects.get(id=obj.id)
+        userbelong = user.userbelong.all().values()
+        userbelong = list(userbelong)
+
+        return userbelong
+
+    # belong = UserAttrSerializer(many=True)
 
     class Meta:
         model = UserAdmin
         fields = (
-            'id', 'username', 'password', 'display_password', 'url', 'is_status', 'is_joke', 'ymt_name', 'ymt_pwd',
-            'login_ip', 'last_login_time', 'channel_type', 'belong')
-
-
-class UserAttrSerializer(serializers.ModelSerializer):
-    username = serializers.CharField(required=False)
-    belong = serializers.CharField(read_only=True)
-
-    class Meta:
-        model = UserAdmin
-        fields = (
-            'id', 'username', 'belong')
+            'id', 'belong_id', 'username', 'password', 'display_password', 'url', 'is_status', 'is_joke', 'ymt_name',
+            'ymt_pwd',
+            'login_ip', 'last_login_time', 'channel_type', 'belong', 'cookie', 'userbelong', 'connect_status')

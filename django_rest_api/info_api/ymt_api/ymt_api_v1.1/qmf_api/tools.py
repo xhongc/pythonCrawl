@@ -1,8 +1,10 @@
-import requests
-import re
 import json
-import time, random
+import random
+import re
+import time
 from datetime import datetime
+
+import requests
 from scrapy.selector import Selector
 
 
