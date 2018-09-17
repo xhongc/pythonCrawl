@@ -483,7 +483,7 @@ a.popup_link:hover {
     REPORT_TMPL = """
 <p id='show_detail_line'>显示
 <a href='javascript:showCase(0)'>概要</a>
-<a href='javascript:showCase(1)'>失败</a>
+<a href='javascript:showCase(1)' >失败</a>
 <a href='javascript:showCase(2)'>所有</a>
 </p>
 

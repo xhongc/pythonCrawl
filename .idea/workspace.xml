@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1be0d9-07b3-4efa-9499-f6dde6cd94c2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/unit_test/HTMLTestRunner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_test/unit01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/learngit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learngit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit_test/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/HTMLReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit_test/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/HTMLTestRunner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit_test/unit01.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/unit01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_in_unit01_py.coverage" NAME="Unittests in unit01.py Coverage Results" MODIFIED="1537166428973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test" />
+    <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_in_unit01_py.coverage" NAME="Unittests in unit01.py Coverage Results" MODIFIED="1537172568096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test" />
     <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_for_test_case_TestLogin_test_info.coverage" NAME="Unittests for test_case.TestLogin.test_info Coverage Results" MODIFIED="1526608783278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ceshi_api" />
     <SUITE FILE_PATH="coverage/pythonCrawl$gevent01.coverage" NAME="gevent01 Coverage Results" MODIFIED="1525942191391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Process" />
     <SUITE FILE_PATH="coverage/pythonCrawl$pyqt_draganddrog.coverage" NAME="pyqt_draganddrog Coverage Results" MODIFIED="1526106602947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyqt5" />
@@ -154,11 +153,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unit01.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="unit01.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unit_test/unit01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+            <state relative-caret-position="1083">
+              <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -166,30 +165,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTMLTestRunner.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit_test/HTMLTestRunner.py">
+      <file leaf-file-name="HTMLReport.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit_test/HTMLReport.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1911">
-              <caret line="813" column="19" selection-start-line="813" selection-start-column="14" selection-end-line="813" selection-end-column="19" />
-              <folding>
-                <element signature="e#24#2571#1" />
-                <element signature="e#2684#3364#1" />
-                <element signature="e#3463#3478#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="106">
+              <caret line="300" column="75" selection-start-line="300" selection-start-column="75" selection-end-line="300" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTMLReport.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/unit_test/HTMLReport.html">
+      <file leaf-file-name="HTMLTestRunner.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit_test/HTMLTestRunner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2470">
-              <caret line="130" column="23" lean-forward="true" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
+            <state relative-caret-position="-728">
+              <caret line="609" column="34" lean-forward="true" selection-start-line="609" selection-start-column="34" selection-end-line="609" selection-end-column="34" />
               <folding>
-                <element signature="e#6890#6896#1" expanded="true" />
-                <element signature="e#7200#7206#1" expanded="true" />
-                <element signature="e#7220#7226#1" expanded="true" />
-                <element signature="e#7308#7314#1" expanded="true" />
+                <element signature="e#24#2571#1" />
+                <element signature="e#2684#3364#1" />
+                <element signature="e#3463#3478#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -249,6 +242,8 @@
       <find>header_row</find>
       <find>PY3K</find>
       <find>print</find>
+      <find>popup_link</find>
+      <find>失败</find>
     </findStrings>
     <replaceStrings>
       <replace>water_copy13</replace>
@@ -339,9 +334,9 @@
         <option value="$PROJECT_DIR$/others/download_lot.py" />
         <option value="$PROJECT_DIR$/others/huahua.py" />
         <option value="$USER_HOME$/Downloads/HTMLTestRunner.py" />
-        <option value="$PROJECT_DIR$/unit_test/unit01.py" />
         <option value="$PROJECT_DIR$/unit_test/HTMLReport.html" />
         <option value="$PROJECT_DIR$/unit_test/HTMLTestRunner.py" />
+        <option value="$PROJECT_DIR$/unit_test/unit01.py" />
       </list>
     </option>
   </component>
@@ -401,7 +396,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.HTMLTestRunner">
+  <component name="RunManager" selected="Python tests.Unittests in unit01.py">
     <configuration name="HTMLTestRunner" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learngit" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -523,8 +518,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.HTMLTestRunner" />
         <item itemvalue="Python tests.Unittests in unit01.py" />
+        <item itemvalue="Python.HTMLTestRunner" />
         <item itemvalue="Python tests.Unittests for unit_test.unit01.TestMathFunc.test_add" />
         <item itemvalue="Python tests.Unittests for unit01.TestMathFunc.test_add" />
         <item itemvalue="Python tests.Unittests for unit01.TestMathFunc" />
@@ -545,9 +540,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 37m 07s.xml">
-      <configuration name="Unittests in unit01.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 37m 22s.xml">
       <configuration name="Unittests in unit01.py" configurationId="tests" />
     </history-entry>
@@ -575,6 +567,9 @@
     <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 40m 29s.xml">
       <configuration name="Unittests in unit01.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 16h 22m 48s.xml">
+      <configuration name="Unittests in unit01.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -588,15 +583,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1646" height="933" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.27421385" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5030257" side_tool="true" weight="0.28" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.22515723" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.45157233" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32761312" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.34165367" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28805032" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19119497" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25472888" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -908,20 +902,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit_test/unit01.py">
+    <entry file="file://$PROJECT_DIR$/unit_test/HTMLReport.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="106">
+          <caret line="300" column="75" selection-start-line="300" selection-start-column="75" selection-end-line="300" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unit_test/HTMLTestRunner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1911">
-          <caret line="813" column="19" selection-start-line="813" selection-start-column="14" selection-end-line="813" selection-end-column="19" />
+        <state relative-caret-position="-728">
+          <caret line="609" column="34" lean-forward="true" selection-start-line="609" selection-start-column="34" selection-end-line="609" selection-end-column="34" />
           <folding>
             <element signature="e#24#2571#1" />
             <element signature="e#2684#3364#1" />
@@ -930,15 +921,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit_test/HTMLReport.html">
+    <entry file="file://$PROJECT_DIR$/unit_test/unit01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2470">
-          <caret line="130" column="23" lean-forward="true" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
+        <state relative-caret-position="1083">
+          <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
           <folding>
-            <element signature="e#6890#6896#1" expanded="true" />
-            <element signature="e#7200#7206#1" expanded="true" />
-            <element signature="e#7220#7226#1" expanded="true" />
-            <element signature="e#7308#7314#1" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
