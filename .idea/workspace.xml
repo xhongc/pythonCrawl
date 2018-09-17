@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1be0d9-07b3-4efa-9499-f6dde6cd94c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/gcode.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/gcode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_rest_api/info_api/ymt_api/ymt_api_v1.1/qmf_api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lagou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lagou/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/login/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/login/spiders/douban.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/login/spiders/douban.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/others/huahua.py" beforeDir="false" afterPath="$PROJECT_DIR$/others/huahua.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit_test/HTMLTestRunner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit_test/unit01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/learngit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learngit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,6 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_in_unit01_py.coverage" NAME="Unittests in unit01.py Coverage Results" MODIFIED="1537166428973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test" />
     <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_for_test_case_TestLogin_test_info.coverage" NAME="Unittests for test_case.TestLogin.test_info Coverage Results" MODIFIED="1526608783278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ceshi_api" />
     <SUITE FILE_PATH="coverage/pythonCrawl$gevent01.coverage" NAME="gevent01 Coverage Results" MODIFIED="1525942191391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Process" />
     <SUITE FILE_PATH="coverage/pythonCrawl$pyqt_draganddrog.coverage" NAME="pyqt_draganddrog Coverage Results" MODIFIED="1526106602947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyqt5" />
@@ -27,6 +24,7 @@
     <SUITE FILE_PATH="coverage/pythonCrawl$demo01.coverage" NAME="demo01 Coverage Results" MODIFIED="1526114228131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others/biling" />
     <SUITE FILE_PATH="coverage/pythonCrawl$sessions.coverage" NAME="sessions Coverage Results" MODIFIED="1524126394407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_web_api/websocket_example/Flask-SocketIO-master/example" />
     <SUITE FILE_PATH="coverage/pythonCrawl$down_sex.coverage" NAME="down_sex Coverage Results" MODIFIED="1523609674755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_for_unit01_TestMathFunc_test_add.coverage" NAME="Unittests for unit01.TestMathFunc.test_add Coverage Results" MODIFIED="1537164964639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test" />
     <SUITE FILE_PATH="coverage/pythonCrawl$crawl_goods.coverage" NAME="crawl_goods Coverage Results" MODIFIED="1523679832409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/speedpos/pos_api/onlyone" />
     <SUITE FILE_PATH="coverage/pythonCrawl$csv1.coverage" NAME="csv1 Coverage Results" MODIFIED="1527565911691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
     <SUITE FILE_PATH="coverage/pythonCrawl$Super_adb_Run.coverage" NAME="Super_adb_Run Coverage Results" MODIFIED="1524101205440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adb_mult_run" />
@@ -51,6 +49,7 @@
     <SUITE FILE_PATH="coverage/pythonCrawl$baidu_spider_url.coverage" NAME="baidu_spider_url Coverage Results" MODIFIED="1526626237345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/the_whole_web_spider/Spider" />
     <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_for_unittest_try_TestMathFunc_test_add.coverage" NAME="Unittests for unittest_try.TestMathFunc.test_add Coverage Results" MODIFIED="1532158799350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
     <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_for_unittest_try_MyTest_testb.coverage" NAME="Unittests for unittest_try.MyTest.testb Coverage Results" MODIFIED="1532158573365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
+    <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_for_unit01_TestMathFunc.coverage" NAME="Unittests for unit01.TestMathFunc Coverage Results" MODIFIED="1537164956315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test" />
     <SUITE FILE_PATH="coverage/pythonCrawl$width_spider.coverage" NAME="width_spider Coverage Results" MODIFIED="1524209897825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/the_whole_web_spider/Spider" />
     <SUITE FILE_PATH="coverage/pythonCrawl$tuling.coverage" NAME="tuling Coverage Results" MODIFIED="1525437049602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
     <SUITE FILE_PATH="coverage/pythonCrawl$pyqt_textbox.coverage" NAME="pyqt_textbox Coverage Results" MODIFIED="1526556576185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyqt5" />
@@ -60,6 +59,7 @@
     <SUITE FILE_PATH="coverage/pythonCrawl$getevent_test.coverage" NAME="getevent_test Coverage Results" MODIFIED="1524101464928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adb_mult_run" />
     <SUITE FILE_PATH="coverage/pythonCrawl$app.coverage" NAME="app Coverage Results" MODIFIED="1532412464374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
     <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_in_threading_example_py.coverage" NAME="Unittests in threading_example.py Coverage Results" MODIFIED="1524114271837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Process" />
+    <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_for_unit_test_unit01_TestMathFunc_test_add.coverage" NAME="Unittests for unit_test.unit01.TestMathFunc.test_add Coverage Results" MODIFIED="1537166058809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_for_unittest_try_MyTest_testhaha.coverage" NAME="Unittests for unittest_try.MyTest.testhaha Coverage Results" MODIFIED="1532158586683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
     <SUITE FILE_PATH="coverage/pythonCrawl$re_qq_num.coverage" NAME="re_qq_num Coverage Results" MODIFIED="1524123789520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
     <SUITE FILE_PATH="coverage/pythonCrawl$let_me_test.coverage" NAME="let_me_test Coverage Results" MODIFIED="1517561507810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyhook/cature/60x30" />
@@ -81,6 +81,7 @@
     <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_for_unittest_try_TestStringMethods.coverage" NAME="Unittests for unittest_try.TestStringMethods Coverage Results" MODIFIED="1532159497538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
     <SUITE FILE_PATH="coverage/pythonCrawl$Unittests_in_unittest_try_py.coverage" NAME="Unittests in unittest_try.py Coverage Results" MODIFIED="1532159475904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
     <SUITE FILE_PATH="coverage/pythonCrawl$websocket.coverage" NAME="websocket Coverage Results" MODIFIED="1524125038655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/others" />
+    <SUITE FILE_PATH="coverage/pythonCrawl$HTMLTestRunner.coverage" NAME="HTMLTestRunner Coverage Results" MODIFIED="1537169106884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test" />
     <SUITE FILE_PATH="coverage/pythonCrawl$py_smtp.coverage" NAME="py_smtp Coverage Results" MODIFIED="1525230289822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saffe" />
     <SUITE FILE_PATH="coverage/pythonCrawl$pyhook_exam.coverage" NAME="pyhook_exam Coverage Results" MODIFIED="1517484409032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonCrawl$pyqt_menu.coverage" NAME="pyqt_menu Coverage Results" MODIFIED="1526106999937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyqt5" />
@@ -106,11 +107,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/others/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -144,7 +142,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="huahua.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="huahua.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/others/huahua.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
@@ -156,11 +154,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Auto_v3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/others/Auto_v3.py">
+      <file leaf-file-name="unit01.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit_test/unit01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="462">
+              <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTMLTestRunner.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit_test/HTMLTestRunner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1911">
+              <caret line="813" column="19" selection-start-line="813" selection-start-column="14" selection-end-line="813" selection-end-column="19" />
+              <folding>
+                <element signature="e#24#2571#1" />
+                <element signature="e#2684#3364#1" />
+                <element signature="e#3463#3478#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTMLReport.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/unit_test/HTMLReport.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2470">
+              <caret line="130" column="23" lean-forward="true" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
+              <folding>
+                <element signature="e#6890#6896#1" expanded="true" />
+                <element signature="e#7200#7206#1" expanded="true" />
+                <element signature="e#7220#7226#1" expanded="true" />
+                <element signature="e#7308#7314#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -186,15 +216,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unittest_try.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/others/unittest_try.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -206,7 +227,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>print</find>
       <find>raw</find>
       <find>thread</find>
       <find>loop</find>
@@ -225,6 +245,10 @@
       <find>agents</find>
       <find>water_copy8</find>
       <find>water_copy12</find>
+      <find>in</find>
+      <find>header_row</find>
+      <find>PY3K</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>water_copy13</replace>
@@ -267,10 +291,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/the_whole_web_spider/Spider/width_spider.py" />
-        <option value="$PROJECT_DIR$/django_auth_example/users/models.py" />
-        <option value="$PROJECT_DIR$/django_auth_example/django_auth_example/settings.py" />
-        <option value="$PROJECT_DIR$/saffe/email.txt" />
         <option value="$PROJECT_DIR$/the_whole_web_spider/Spider/123_auto.py" />
         <option value="$PROJECT_DIR$/Blackhat/other_netcat.py" />
         <option value="$PROJECT_DIR$/Blackhat/like_netcat.py" />
@@ -318,6 +338,10 @@
         <option value="$PROJECT_DIR$/others/Auto_v3.py" />
         <option value="$PROJECT_DIR$/others/download_lot.py" />
         <option value="$PROJECT_DIR$/others/huahua.py" />
+        <option value="$USER_HOME$/Downloads/HTMLTestRunner.py" />
+        <option value="$PROJECT_DIR$/unit_test/unit01.py" />
+        <option value="$PROJECT_DIR$/unit_test/HTMLReport.html" />
+        <option value="$PROJECT_DIR$/unit_test/HTMLTestRunner.py" />
       </list>
     </option>
   </component>
@@ -331,9 +355,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="width" value="979" />
-    <option name="height" value="1090" />
+    <option name="x" value="875" />
+    <option name="width" value="836" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -352,7 +376,7 @@
             <path>
               <item name="pythonCrawl" type="b2602c69:ProjectViewProjectNode" />
               <item name="pythonCrawl" type="462c0819:PsiDirectoryNode" />
-              <item name="others" type="462c0819:PsiDirectoryNode" />
+              <item name="unit_test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -363,7 +387,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -377,8 +401,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.huahua">
-    <configuration name="Auto_v3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.HTMLTestRunner">
+    <configuration name="HTMLTestRunner" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learngit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -386,69 +410,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/others" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unit_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/others/Auto_v3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="learngit" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/others" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/others/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="download_lot" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="learngit" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/others" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/others/download_lot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="huahua" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="learngit" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/others" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/others/huahua.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unit_test/HTMLTestRunner.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -462,18 +429,46 @@
       <arguments />
       <envs />
     </configuration>
-    <configuration name="Unittests for unittest_try.TestStringMethods.test_isupper" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for unit01.TestMathFunc" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="learngit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/others" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unit_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;unittest_try.TestStringMethods.test_isupper&quot;" />
+      <option name="_new_target" value="&quot;unit01.TestMathFunc&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for unit01.TestMathFunc.test_add" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="learngit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unit_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;unit01.TestMathFunc.test_add&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for unit_test.unit01.TestMathFunc.test_add" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="learngit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;unit_test.unit01.TestMathFunc.test_add&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="Unittests in threading_example.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
@@ -488,6 +483,20 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/Process/threading_example.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="Unittests in unit01.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="learngit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unit_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/unit_test/unit01.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -506,19 +515,19 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.Unittests in threading_example.py" />
-      <item itemvalue="Python tests.Unittests for unittest_try.TestStringMethods.test_isupper" />
-      <item itemvalue="Python.app" />
-      <item itemvalue="Python.Auto_v3" />
-      <item itemvalue="Python.download_lot" />
-      <item itemvalue="Python.huahua" />
+      <item itemvalue="Python tests.Unittests in unit01.py" />
+      <item itemvalue="Python tests.Unittests for unit01.TestMathFunc" />
+      <item itemvalue="Python tests.Unittests for unit01.TestMathFunc.test_add" />
+      <item itemvalue="Python tests.Unittests for unit_test.unit01.TestMathFunc.test_add" />
+      <item itemvalue="Python.HTMLTestRunner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.huahua" />
-        <item itemvalue="Python.download_lot" />
-        <item itemvalue="Python.Auto_v3" />
-        <item itemvalue="Python.app" />
-        <item itemvalue="Python tests.Unittests for unittest_try.TestStringMethods.test_isupper" />
+        <item itemvalue="Python.HTMLTestRunner" />
+        <item itemvalue="Python tests.Unittests in unit01.py" />
+        <item itemvalue="Python tests.Unittests for unit_test.unit01.TestMathFunc.test_add" />
+        <item itemvalue="Python tests.Unittests for unit01.TestMathFunc.test_add" />
+        <item itemvalue="Python tests.Unittests for unit01.TestMathFunc" />
       </list>
     </recent_temporary>
   </component>
@@ -536,39 +545,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_threading_example_py - 2018.04.19 at 13h 04m 32s.xml">
-      <configuration name="Unittests in threading_example.py" configurationId="tests" />
+    <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 37m 07s.xml">
+      <configuration name="Unittests in unit01.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_unittest_try_MyTest_testb - 2018.07.21 at 15h 36m 13s.xml">
-      <configuration name="Unittests for unittest_try.MyTest.testb" configurationId="tests" />
+    <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 37m 22s.xml">
+      <configuration name="Unittests in unit01.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_unittest_try_MyTest_testhaha - 2018.07.21 at 15h 36m 28s.xml">
-      <configuration name="Unittests for unittest_try.MyTest.testhaha" configurationId="tests" />
+    <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 38m 10s.xml">
+      <configuration name="Unittests in unit01.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_unittest_try_py - 2018.07.21 at 15h 37m 09s.xml">
-      <configuration name="Unittests in unittest_try.py" configurationId="tests" />
+    <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 38m 18s.xml">
+      <configuration name="Unittests in unit01.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_unittest_try_TestMathFunc_test_add - 2018.07.21 at 15h 39m 59s.xml">
-      <configuration name="Unittests for unittest_try.TestMathFunc.test_add" configurationId="tests" />
+    <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 38m 43s.xml">
+      <configuration name="Unittests in unit01.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_unittest_try_TestMathFunc - 2018.07.21 at 15h 40m 08s.xml">
-      <configuration name="Unittests for unittest_try.TestMathFunc" configurationId="tests" />
+    <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 39m 07s.xml">
+      <configuration name="Unittests in unit01.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_unittest_try_TestMathFunc - 2018.07.21 at 15h 40m 12s.xml">
-      <configuration name="Unittests for unittest_try.TestMathFunc" configurationId="tests" />
+    <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 39m 34s.xml">
+      <configuration name="Unittests in unit01.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_unittest_try_py - 2018.07.21 at 15h 51m 16s.xml">
-      <configuration name="Unittests in unittest_try.py" configurationId="tests" />
+    <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 39m 46s.xml">
+      <configuration name="Unittests in unit01.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_unittest_try_TestStringMethods - 2018.07.21 at 15h 51m 37s.xml">
-      <configuration name="Unittests for unittest_try.TestStringMethods" configurationId="tests" />
+    <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 40m 22s.xml">
+      <configuration name="Unittests in unit01.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_unittest_try_TestStringMethods_test_isupper - 2018.07.21 at 15h 51m 52s.xml">
-      <configuration name="Unittests for unittest_try.TestStringMethods.test_isupper" configurationId="tests" />
+    <history-entry file="Unittests_in_unit01_py - 2018.09.17 at 14h 40m 29s.xml">
+      <configuration name="Unittests in unit01.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
+      <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
     <todo-panel id="all">
@@ -580,19 +590,20 @@
     <frame x="-8" y="-8" width="1646" height="933" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32761312" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.27421385" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5030257" side_tool="true" weight="0.28" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.318239" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.22515723" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32761312" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.34165367" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31538463" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16141236" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28805032" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25472888" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32955974" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41132075" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41075796" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -601,30 +612,29 @@
       <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3307888" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="8" weight="0.3276923" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28923076" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Data View" order="4" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3430769" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.33076924" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.32923076" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41230768" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3430769" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,41 +654,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django_rest_api/api/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyqt5/pyqt_inputdialog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyqt5/pyqt_messagebox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/others/linel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/others/cal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/others/counter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="844">
@@ -780,16 +755,8 @@
     <entry file="file://$PROJECT_DIR$/MxShop/apps/user_operation/views.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_rest_api/api/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_rest_api/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/django_rest_api/api/tests.py" />
+    <entry file="file://$PROJECT_DIR$/django_rest_api/api/views.py" />
     <entry file="file://$PROJECT_DIR$/django_auth_example/apps/users/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -824,9 +791,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_rest_api/api/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/django_rest_api/api/admin.py" />
     <entry file="file://$PROJECT_DIR$/others/cai491.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -879,20 +844,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/others/Auto_v3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/others/Auto_v3.py" />
     <entry file="file://$PROJECT_DIR$/others/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -934,6 +890,55 @@
           <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="837" selection-start-line="837" selection-end-line="837" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/HTMLTestRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="29" lean-forward="true" selection-end-line="976" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_test/unit01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_test/HTMLTestRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1911">
+          <caret line="813" column="19" selection-start-line="813" selection-start-column="14" selection-end-line="813" selection-end-column="19" />
+          <folding>
+            <element signature="e#24#2571#1" />
+            <element signature="e#2684#3364#1" />
+            <element signature="e#3463#3478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_test/HTMLReport.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2470">
+          <caret line="130" column="23" lean-forward="true" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
+          <folding>
+            <element signature="e#6890#6896#1" expanded="true" />
+            <element signature="e#7200#7206#1" expanded="true" />
+            <element signature="e#7220#7226#1" expanded="true" />
+            <element signature="e#7308#7314#1" expanded="true" />
           </folding>
         </state>
       </provider>
