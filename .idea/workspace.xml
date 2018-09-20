@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a1be0d9-07b3-4efa-9499-f6dde6cd94c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/unit_test/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/HTMLReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_test/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/HTMLTestRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_test/unit01.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/unit01.py" afterDir="false" />
-    </list>
+    <list default="true" id="5a1be0d9-07b3-4efa-9499-f6dde6cd94c2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -349,7 +345,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="875" />
     <option name="width" value="836" />
     <option name="height" value="1010" />
@@ -582,7 +578,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1646" height="933" extended-state="6" />
+    <frame x="-8" y="-8" width="1646" height="933" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.27421385" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5030257" side_tool="true" weight="0.28" />
