@@ -77,7 +77,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ymt_api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="57">
               <caret line="3" column="33" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="33" />
             </state>
           </provider>
@@ -96,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/qmf_api/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -240,11 +240,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1079" />
-    <option name="y" value="9" />
-    <option name="width" value="976" />
-    <option name="height" value="1093" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1101" />
+    <option name="y" value="30" />
+    <option name="width" value="1068" />
+    <option name="height" value="1089" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -257,11 +257,6 @@
             <path>
               <item name="ymt_api_v1.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="ymt_api_v1.1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ymt_api_v1.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ymt_api_v1.1" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ymt_api_v1.1" type="b2602c69:ProjectViewProjectNode" />
@@ -289,7 +284,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../model/adb_auto/ZhiFuBaoErWeiMaGongJu/coding" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../MxShop" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -481,7 +476,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1646" height="933" extended-state="7" />
+    <frame x="-8" y="-8" width="1646" height="933" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885087" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50124377" side_tool="true" weight="0.25604552" />
@@ -491,7 +486,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.28427672" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49875623" weight="0.23960881" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.17906684" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16015132" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1223203" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.24653216" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3297604" />
@@ -500,14 +495,14 @@
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3297604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.19371068" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="bottom" id="REST Client" order="9" weight="0.39496854" />
+      <window_info anchor="bottom" id="Database Console" order="10" weight="0.32955974" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="10" weight="0.32955974" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.19371068" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
@@ -515,14 +510,14 @@
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.22446406" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Data View" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.22767295" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32955974" />
       <window_info anchor="bottom" id="REST Client" order="14" weight="0.39496854" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18600252" />
@@ -530,12 +525,12 @@
       <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.20377359" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="SciView" order="6" weight="0.3297604" />
       <window_info anchor="bottom" id="File Transfer" order="13" weight="0.19874214" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="5" weight="0.32980332" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32955974" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -841,7 +836,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ymt_api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="57">
           <caret line="3" column="33" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="33" />
         </state>
       </provider>
@@ -849,7 +844,7 @@
     <entry file="file://$PROJECT_DIR$/qmf_api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
