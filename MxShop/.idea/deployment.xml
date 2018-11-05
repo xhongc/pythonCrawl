@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" serverName="mxshop">
     <serverData>
-      <paths name="root@112.74.164.198:22">
+      <paths name="mxshop">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/root/projects/MxShop" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
