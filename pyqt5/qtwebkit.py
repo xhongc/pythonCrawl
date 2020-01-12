@@ -11,7 +11,7 @@ class Ui_MainWindow(object):
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
         self.webView = QtWebEngineWidgets.QWebEngineView(self.centralwidget)
-        self.webView.setUrl(QtCore.QUrl("http://www.jiyujiancai.com/"))
+        self.webView.setUrl(QtCore.QUrl("http://www.taobao.com/"))
         self.webView.setObjectName("webView")
         self.gridLayout.addWidget(self.webView, 0, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
